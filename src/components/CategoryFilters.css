@@ -70,11 +70,12 @@
   }
 }
 
-/* Active pill: solid primary blue with white text. */
+/* Active pill: solid primary blue with white text; the border stays the
+   locked outline colour. */
 .filter-pill.is-active,
 .filter-pill.is-active:hover {
   background-color: var(--accent-primary);
-  border-color: var(--accent-primary);
+  border-color: var(--outline);
   color: var(--accent-primary-text);
 }
 

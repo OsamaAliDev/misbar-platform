@@ -131,10 +131,9 @@
   }
 }
 
-/* The dashboard is the current view. */
+/* The dashboard is the current view (fill tint only; border stays outline). */
 .teacher-btn[aria-current='page'] {
   background-color: var(--accent-help-soft);
-  border-color: var(--accent-help);
   color: var(--accent-help-text);
 }
 

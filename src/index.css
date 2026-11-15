@@ -205,7 +205,7 @@ button {
   min-width: var(--touch-target);
   min-height: var(--control-height);
   padding-inline: 20px;
-  border: var(--border-width) solid transparent;
+  border: var(--border); /* locked: 2px solid var(--outline) on every button */
   border-radius: var(--radius);
   font-size: 16px;
   font-weight: 700;
@@ -227,19 +227,18 @@ button {
 
 .btn--primary {
   background-color: var(--accent-primary);
-  border-color: var(--accent-primary);
   color: var(--accent-primary-text);
 }
 
 .btn--neutral {
   background-color: var(--surface-card);
-  border-color: var(--outline);
   color: var(--text-primary);
 }
 
 @media (hover: hover) {
+  /* Hover darkens the fill; the outline border stays locked. */
   .btn--primary:hover {
-    border-color: var(--accent-primary-soft-text);
+    background-color: var(--accent-primary-soft-text);
   }
 
   .btn--neutral:hover {
