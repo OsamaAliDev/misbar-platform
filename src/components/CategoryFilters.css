@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Category filter pills
+   --------------------------------------------------------------------------
+   Pills WRAP (never scroll or clip). On phones (≤ 480px) they form an even
+   2 × 2 grid so labels like "الفلك" stay fully visible at 320px and 390px.
+   ========================================================================== */
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: var(--touch-target);
+  padding-inline: 20px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-primary);
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease,
+    color var(--duration-fast) ease,
+    transform 80ms ease;
+}
+
+.filter-pill:active {
+  transform: translateY(2px);
+}
+
+.filter-pill__dot {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-round);
+}
+
+/* Hover tints follow each subject's colour family (Stitch Catalog). */
+@media (hover: hover) {
+  .filter-pill--all:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary-soft-text);
+  }
+
+  .filter-pill--physics:hover {
+    border-color: var(--accent-tools);
+    color: var(--accent-tools-text);
+  }
+
+  .filter-pill--math:hover {
+    border-color: var(--accent-info);
+    color: var(--accent-info-text);
+  }
+
+  .filter-pill--astronomy:hover {
+    border-color: var(--accent-reward);
+    color: var(--accent-reward-text);
+  }
+}
+
+/* Active pill: solid primary blue with white text. */
+.filter-pill.is-active,
+.filter-pill.is-active:hover {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary-text);
+}
+
+/* Keep the subject dot readable on the blue fill. */
+.filter-pill.is-active .filter-pill__dot {
+  outline: 2px solid var(--accent-primary-text);
+}
+
+/* -- Phones: even 2 × 2 grid ------------------------------------------- */
+@media (max-width: 480px) {
+  .category-filters {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .filter-pill {
+    width: 100%;
+    min-width: 0;
+    padding-inline: 10px;
+    gap: 6px;
+  }
+}

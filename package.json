@@ -1,0 +1,21 @@
+{
+  "name": "misbar-platform",
+  "private": true,
+  "version": "0.1.0",
+  "description": "مِسبار (Misbar) — Arabic RTL interactive science & math experiments platform for students aged 10–14.",
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.3.8"
+  }
+}

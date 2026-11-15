@@ -1,0 +1,232 @@
+/* ==========================================================================
+   App header
+   ========================================================================== */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 76px;
+  padding: 12px 24px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.app-header__start,
+.app-header__end {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.app-header__end {
+  gap: 12px;
+}
+
+.app-header__divider {
+  flex-shrink: 0;
+  width: 2px;
+  height: 28px;
+  background-color: var(--outline);
+}
+
+/* Nour's greeting lives in the header only when there is room for it;
+   otherwise <MascotGreeting variant="strip"> is shown under the header. */
+.app-header__divider,
+.app-header__greeting {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .app-header__divider,
+  .app-header__greeting {
+    display: flex;
+  }
+}
+
+/* -- Brand ---------------------------------------------------------------- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.brand__mark {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-primary-soft);
+  border: var(--border-width) solid var(--accent-primary);
+  border-radius: 12px;
+}
+
+.brand__mark svg {
+  width: 22px;
+  height: 22px;
+}
+
+.brand__word {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* -- Student chip ----------------------------------------------------------- */
+.student-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.student-chip__name {
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* -- Star balance --------------------------------------------------------- */
+.star-balance {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  height: 40px;
+  padding-inline: 14px;
+  background-color: var(--accent-reward-soft);
+  border: var(--border-width) solid var(--accent-reward);
+  border-radius: var(--radius-round);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.star-balance .icon {
+  color: var(--accent-reward);
+}
+
+/* -- Teacher / parent portal button ---------------------------------------- */
+.teacher-btn {
+  flex-shrink: 0;
+  min-height: var(--touch-target);
+  padding-inline: 16px;
+  font-size: 15px;
+}
+
+.teacher-btn__icon {
+  color: var(--accent-help);
+}
+
+@media (hover: hover) {
+  .teacher-btn:hover {
+    border-color: var(--accent-help);
+    color: var(--accent-help-text);
+  }
+}
+
+/* The dashboard is the current view. */
+.teacher-btn[aria-current='page'] {
+  background-color: var(--accent-help-soft);
+  border-color: var(--accent-help);
+  color: var(--accent-help-text);
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+/* Narrow tablets: keep the avatar, hide the nickname text. */
+@media (max-width: 760px) {
+  .student-chip__name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* Phones: compact header (Stitch mobile Catalog). */
+@media (max-width: 640px) {
+  .app-header {
+    min-height: 60px;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .app-header__end {
+    gap: 6px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand__mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+  }
+
+  .brand__mark svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .brand__word {
+    font-size: 22px;
+  }
+
+  .star-balance {
+    height: 36px;
+    padding-inline: 10px;
+    gap: 4px;
+  }
+
+  .star-balance .icon {
+    --icon-size: 18px;
+  }
+
+  /* "١٢" only — the word stays in the accessible label. */
+  .star-balance__unit {
+    display: none;
+  }
+
+  /* Icon-only portal button, still a 44×44 touch target. */
+  .teacher-btn {
+    width: var(--touch-target);
+    padding: 0;
+  }
+
+  .teacher-btn__icon {
+    --icon-size: 22px;
+  }
+
+  .teacher-btn__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .app-header {
+    padding-inline: 10px;
+  }
+
+  .student-chip .avatar {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}

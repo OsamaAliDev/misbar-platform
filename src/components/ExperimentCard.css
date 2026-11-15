@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Experiment card — proportions from the Stitch Catalog
+   (16px padding · 96px illustration box · 17px/800 title · 48px CTA)
+   ========================================================================== */
+
+.experiment-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 16px;
+  transition: border-color var(--duration-fast) ease;
+}
+
+@media (hover: hover) {
+  .experiment-card:hover {
+    border-color: var(--accent-primary);
+  }
+}
+
+/* Highlight the whole card while its button has keyboard focus. */
+.experiment-card:has(.experiment-card__cta:focus-visible) {
+  border-color: var(--accent-primary);
+}
+
+.experiment-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.experiment-card__stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.experiment-card__stars .is-earned {
+  color: var(--accent-reward);
+}
+
+.experiment-card__stars .is-empty {
+  color: var(--outline);
+}
+
+/* Illustration box: subtle canvas inset with its own outline. */
+.experiment-card__art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  margin-bottom: 14px;
+  padding: 4px 8px;
+  background-color: var(--bg-canvas);
+  border: var(--border);
+  border-radius: var(--radius-inner);
+  overflow: hidden;
+}
+
+.experiment-card__art svg {
+  width: 100%;
+  height: 100%;
+}
+
+.experiment-card__title {
+  margin-bottom: 4px;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+
+.experiment-card__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Push the CTA to the bottom so buttons align across a grid row. */
+.experiment-card__cta {
+  margin-top: auto;
+}
+
+.experiment-card__description {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 480px) {
+  .experiment-card__art {
+    height: 88px;
+  }
+}

@@ -1,0 +1,13 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Environment files (never commit secrets)
+.env*
+
+# Logs & OS noise
+npm-debug.log*
+pnpm-debug.log*
+.DS_Store

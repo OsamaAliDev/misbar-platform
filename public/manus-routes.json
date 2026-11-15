@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"مكتبة التجارب التفاعلية"},{"path":"/#/playground/:experimentId","title":"ساحة التجارب"},{"path":"/#/dashboard","title":"لوحة المعلم وولي الأمر"}]}

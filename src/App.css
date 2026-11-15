@@ -1,0 +1,16 @@
+/* Vertical rhythm of the shell: header → current view. */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-main {
+  min-width: 0;
+}
+
+@media (max-width: 480px) {
+  .app-layout {
+    gap: 16px;
+  }
+}

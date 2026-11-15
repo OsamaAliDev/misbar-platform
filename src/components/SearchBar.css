@@ -1,0 +1,87 @@
+/* Search field — 2px outline, 20px radius, blue border on focus (flat). */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--control-height);
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+  transition: border-color var(--duration-fast) ease;
+}
+
+.search-bar:focus-within {
+  border-color: var(--accent-primary);
+}
+
+.search-bar__icon {
+  position: absolute;
+  /* Physical `right` on purpose: `.icon` forces `direction: ltr` (needed for
+     ligatures), which would flip a logical inset to the left side. The app is
+     RTL-only, so the start edge is always the right edge. */
+  right: 14px;
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+.search-bar__input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding-inline: 46px 16px;
+  background: transparent;
+  border: 0;
+  border-radius: inherit;
+  font-size: 16px; /* ≥16px prevents iOS zoom-on-focus */
+  font-weight: 600;
+  color: var(--text-primary);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* The wrapper shows focus; hide the native search decorations. */
+.search-bar__input::-webkit-search-decoration,
+.search-bar__input::-webkit-search-cancel-button,
+.search-bar__input::-webkit-search-results-button,
+.search-bar__input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search-bar__input::placeholder {
+  color: var(--text-secondary);
+  opacity: 1;
+}
+
+/* Has a clear button → make room for it. */
+.search-bar:has(.search-bar__clear) .search-bar__input {
+  padding-inline-end: 52px;
+}
+
+.search-bar__clear {
+  position: absolute;
+  inset-inline-end: 2px;
+  display: grid;
+  place-items: center;
+  width: var(--touch-target);
+  height: var(--touch-target);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 18px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.search-bar__clear:focus-visible {
+  outline-offset: -3px;
+}
+
+@media (hover: hover) {
+  .search-bar__clear:hover {
+    color: var(--accent-help-text);
+    background-color: var(--accent-help-soft);
+  }
+}

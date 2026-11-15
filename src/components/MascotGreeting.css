@@ -1,0 +1,53 @@
+/* -- Header badge (desktop ≥ 1200px) ------------------------------------- */
+.mascot-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 3px;
+  padding-inline: 6px 16px;
+  background-color: var(--surface-subtle);
+  border: var(--border);
+  border-radius: var(--radius-round);
+}
+
+.mascot-badge__img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.mascot-badge__text {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* -- Welcome strip (tablet & mobile, < 1200px) ---------------------------- */
+.mascot-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mascot-strip__avatar {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius-round);
+}
+
+.mascot-strip__avatar img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+@media (min-width: 1200px) {
+  .mascot-strip {
+    display: none;
+  }
+}

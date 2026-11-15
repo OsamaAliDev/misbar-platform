@@ -1,0 +1,72 @@
+.placeholder-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 640px;
+  margin-inline: auto;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.placeholder-panel__mascot {
+  width: 112px;
+  height: 112px;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.placeholder-panel__badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.placeholder-panel__title {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.placeholder-panel__message {
+  max-width: 46ch;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.placeholder-panel__back {
+  margin-top: 24px;
+  min-width: 200px;
+}
+
+/* Optional preview block (e.g. the chosen experiment's illustration). */
+.placeholder-panel__preview {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .placeholder-panel {
+    padding: 24px 16px;
+  }
+
+  .placeholder-panel__mascot {
+    width: 92px;
+    height: 92px;
+  }
+
+  .placeholder-panel__title {
+    font-size: 22px;
+  }
+
+  .placeholder-panel__back {
+    width: 100%;
+    min-width: 0;
+  }
+}

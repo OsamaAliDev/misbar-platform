@@ -1,0 +1,392 @@
+/* ==========================================================================
+   مِسبار (Misbar) — Locked Design System
+   --------------------------------------------------------------------------
+   Single source of truth for colour, shape, type and motion.
+
+   These tokens are LOCKED. Do not introduce colours outside this palette —
+   the drifted colour values found in the Stitch export are intentionally
+   replaced by the variables below.
+
+   Hard rules for every component:
+     • Strictly flat: no drop shadows, no colour blends, no frosted-glass blur.
+     • NO Unicode emoji — inline SVG + Material Symbols Outlined only.
+     • 2px solid var(--outline) borders and a 20px radius on cards, header,
+       search bar and buttons.
+     • Cairo is the only typeface (400 / 600 / 700 / 800).
+   ========================================================================== */
+
+:root {
+  /* -- Neutrals ----------------------------------------------------------- */
+  --bg-canvas: #FBF6EF;
+  --surface-card: #FFFFFF;
+  --surface-subtle: #F5EDE2;
+  --outline: #E3D9CC;
+  --text-primary: #2B2824;
+  --text-secondary: #5C5650;
+
+  /* -- Accent: primary actions (start / run / continue) ------------------- */
+  --accent-primary: #2F8FE0;
+  --accent-primary-text: #FFFFFF;
+  --accent-primary-soft: #D6E9FA;
+  --accent-primary-soft-text: #1B5E99;
+
+  /* -- Accent: rewards, stars & progress --------------------------------- */
+  --accent-reward: #F0B429;
+  --accent-reward-soft: #FCEBC0;
+  --accent-reward-text: #6E4F00;
+
+  /* -- Accent: help & alerts -------------------------------------------- */
+  --accent-help: #EF6B5E;
+  --accent-help-soft: #FDE0DC;
+  --accent-help-text: #8A2A21;
+
+  /* -- Accent: tools, sliders & toggles --------------------------------- */
+  --accent-tools: #9B5DE0;
+  --accent-tools-soft: #EBDDFA;
+  --accent-tools-text: #5B2E99;
+
+  /* -- Accent: info & live results -------------------------------------- */
+  --accent-info: #53BBD9;
+  --accent-info-soft: #D9F0F7;
+  --accent-info-text: #1B6279;
+
+  /* -- Shape ------------------------------------------------------------ */
+  --border-width: 2px;
+  --border: var(--border-width) solid var(--outline);
+  --radius: 20px;          /* cards, header, search bar, buttons */
+  --radius-inner: 16px;    /* boxes nested inside a card */
+  --radius-round: 9999px;  /* non-interactive badges, chips & avatars */
+
+  /* -- Typography -------------------------------------------------------- */
+  --font-family: 'Cairo', sans-serif;
+
+  /* -- Layout & touch --------------------------------------------------- */
+  --container-max: 1280px;
+  --page-gutter: 20px;
+  --touch-target: 44px;    /* minimum interactive size */
+  --control-height: 48px;  /* primary buttons & search field */
+
+  /* -- Motion ----------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-base: 260ms;
+
+  color-scheme: light;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background-color: var(--accent-primary-soft);
+  color: var(--accent-primary-soft-text);
+}
+
+/* Keyboard focus: a crisp flat ring (an outline, never a glow/shadow). */
+:focus-visible {
+  outline: 3px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Headings that receive programmatic focus on view change. */
+[tabindex='-1']:focus {
+  outline: none;
+}
+
+/* ==========================================================================
+   App shell — centred container, max 1280px
+   ========================================================================== */
+
+.app-shell {
+  width: 100%;
+  padding: var(--page-gutter);
+}
+
+.app-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --page-gutter: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --page-gutter: 12px;
+  }
+}
+
+/* ==========================================================================
+   Primitives
+   ========================================================================== */
+
+/* -- Material Symbols Outlined (see <Icon />) ----------------------------- */
+.icon {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: var(--icon-size, 20px);
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  flex-shrink: 0;
+  user-select: none;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  font-variation-settings: 'FILL' var(--icon-fill, 0), 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+.icon--filled {
+  --icon-fill: 1;
+}
+
+/* -- Buttons ------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: var(--touch-target);
+  min-height: var(--control-height);
+  padding-inline: 20px;
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background-color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease,
+    color var(--duration-fast) ease,
+    transform 80ms ease;
+}
+
+/* Mechanical, shadow-free press: the element drops 2px. */
+.btn:active {
+  transform: translateY(2px);
+}
+
+.btn--primary {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary-text);
+}
+
+.btn--neutral {
+  background-color: var(--surface-card);
+  border-color: var(--outline);
+  color: var(--text-primary);
+}
+
+@media (hover: hover) {
+  .btn--primary:hover {
+    border-color: var(--accent-primary-soft-text);
+  }
+
+  .btn--neutral:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary-soft-text);
+  }
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn--icon {
+  width: var(--touch-target);
+  min-height: var(--touch-target);
+  padding: 0;
+}
+
+/* -- Card ---------------------------------------------------------------- */
+.card {
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+/* -- Badges (non-interactive category / status labels) ------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 12px;
+  border: var(--border-width) solid;
+  border-radius: var(--radius-round);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background-color: var(--accent-primary-soft);
+  border-color: var(--accent-primary);
+  color: var(--accent-primary-soft-text);
+}
+
+.badge--reward {
+  background-color: var(--accent-reward-soft);
+  border-color: var(--accent-reward);
+  color: var(--accent-reward-text);
+}
+
+.badge--help {
+  background-color: var(--accent-help-soft);
+  border-color: var(--accent-help);
+  color: var(--accent-help-text);
+}
+
+.badge--tools {
+  background-color: var(--accent-tools-soft);
+  border-color: var(--accent-tools);
+  color: var(--accent-tools-text);
+}
+
+.badge--info {
+  background-color: var(--accent-info-soft);
+  border-color: var(--accent-info);
+  color: var(--accent-info-text);
+}
+
+/* -- Speech bubble (Nour callouts) ---------------------------------------- */
+/* The tail points to the inline-start side (right, the app is RTL-only),
+   where Nour's avatar sits. Two bordered sides of a rotated square form a
+   seamless flat tail without any shadow. */
+.speech-bubble {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  padding: 10px 16px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--surface-card);
+  border-top: var(--border);
+  border-right: var(--border);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* -- Flat SVG illustrations (see <FlatIllustration />) -------------------- */
+.flat-illustration text {
+  font-family: var(--font-family);
+}
+
+/* -- Accessibility helper ------------------------------------------------- */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ==========================================================================
+   Motion — short, physical, flat (opacity + small translate only)
+   ========================================================================== */
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.view-enter {
+  animation: rise-in var(--duration-base) var(--ease-out) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

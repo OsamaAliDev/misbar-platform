@@ -1,0 +1,4 @@
+# Reviewed lifecycle-script policy (pnpm 11+).
+# Vite 8 ships native bindings (rolldown / lightningcss) as optional platform
+# packages, so no dependency currently needs an install script.
+allowBuilds: {}
