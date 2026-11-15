@@ -1,0 +1,159 @@
+/* ==========================================================================
+   Mascot Challenge & Tip Bar
+   ========================================================================== */
+
+.challenge-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+  transition: background-color var(--duration-base) ease;
+}
+
+/* Challenge achieved: soft mustard fill (reward family). */
+.challenge-bar.is-achieved {
+  background-color: var(--accent-reward-soft);
+}
+
+.challenge-bar__mascot {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: var(--accent-reward-soft);
+  border: var(--border-width) solid var(--accent-reward);
+  border-radius: 50%;
+}
+
+.challenge-bar.is-achieved .challenge-bar__mascot {
+  background-color: var(--surface-card);
+}
+
+.challenge-bar__mascot img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.challenge-bar__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.challenge-bar__title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.challenge-bar__label {
+  flex-shrink: 0;
+}
+
+.challenge-bar__prompt {
+  min-width: 0;
+}
+
+.challenge-bar__message {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.challenge-bar__message--tip {
+  color: var(--text-secondary);
+}
+
+.challenge-bar__message--retry {
+  color: var(--accent-help-text);
+}
+
+.challenge-bar__message--success {
+  color: var(--accent-reward-text);
+}
+
+.challenge-bar__btn {
+  flex-shrink: 0;
+}
+
+/* "أتممت التجربة (+١ نجمة)" — mustard reward fill. */
+.challenge-bar__btn--claim {
+  background-color: var(--accent-reward);
+  color: var(--text-primary);
+  animation: claim-pop 600ms var(--ease-out) both;
+}
+
+.challenge-bar__btn--done {
+  background-color: var(--surface-card);
+  color: var(--accent-reward-text);
+  cursor: default;
+}
+
+.challenge-bar__btn--done .icon {
+  color: var(--accent-reward);
+}
+
+.challenge-bar__btn--done:active {
+  transform: none;
+}
+
+@media (hover: hover) {
+  .challenge-bar__btn--claim:hover {
+    background-color: var(--accent-reward-soft);
+  }
+}
+
+@keyframes claim-pop {
+  0% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 767px) {
+  .challenge-bar {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .challenge-bar__mascot {
+    width: 52px;
+    height: 52px;
+  }
+
+  .challenge-bar__mascot img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .challenge-bar__text {
+    flex-basis: calc(100% - 66px);
+  }
+
+  .challenge-bar__btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .challenge-bar__btn--claim {
+    animation: none;
+  }
+}

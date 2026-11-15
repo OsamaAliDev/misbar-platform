@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import AppHeader from './components/AppHeader.jsx';
+import PlaygroundView from './components/PlaygroundView.jsx';
 import { ALL_CATEGORY_ID, getExperimentById } from './data/experiments.js';
 import { VIEWS, useNavigation } from './state/navigation.jsx';
 import CatalogView from './views/CatalogView.jsx';
 import DashboardView from './views/DashboardView.jsx';
-import PlaygroundView from './views/PlaygroundView.jsx';
 
 const SITE_NAME = 'مِسبار';
 
@@ -21,9 +21,11 @@ function documentTitleFor(view, params) {
 /**
  * <App /> — application shell.
  *
- * Renders the shared header and exactly one of the three views. The
- * catalog's search/filter state lives here so it survives a round trip to
- * the Playground or Dashboard placeholder.
+ * Renders exactly one of the three views. The catalog and dashboard share
+ * the app header; the Playground has its own header (back · title · stars ·
+ * help) and, on desktop, fits the whole viewport (`app-shell--fit`).
+ * The catalog's search/filter state lives here so it survives a round trip
+ * to the Playground or Dashboard.
  */
 export default function App() {
   const { view, params, navigate } = useNavigation();
@@ -73,10 +75,14 @@ export default function App() {
     );
   }
 
+  const isPlayground = view === VIEWS.PLAYGROUND;
+
   return (
-    <div className="app-shell">
+    <div className={`app-shell ${isPlayground ? 'app-shell--fit' : ''}`.trim()}>
       <div className="app-container app-layout">
-        <AppHeader onOpenDashboard={openDashboard} isDashboardOpen={view === VIEWS.DASHBOARD} />
+        {isPlayground ? null : (
+          <AppHeader onOpenDashboard={openDashboard} isDashboardOpen={view === VIEWS.DASHBOARD} />
+        )}
         <main key={routeKey} className="app-main view-enter">
           {content}
         </main>

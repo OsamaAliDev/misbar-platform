@@ -1,0 +1,100 @@
+import { useEffect, useRef } from 'react';
+import { HINT_TITLES } from '../data/guides.js';
+import { formatNumber } from '../lib/arabic.js';
+import { NOUR_SRC } from '../lib/assets.js';
+import Icon from './Icon.jsx';
+import './HelpModal.css';
+
+/**
+ * <HelpModal /> — "مساعدة نُور" (Stitch Help Modal screen `_7`).
+ *
+ * Built on the native <dialog> element opened with showModal(): the browser
+ * provides the focus trap, Escape to close, inert background and focus
+ * return to the "محتاج مساعدة؟" button.
+ *
+ * @param {object}   props
+ * @param {boolean}  props.open
+ * @param {Function} props.onClose
+ * @param {string}   props.experimentTitle
+ * @param {{ intro: string, hints: string[], fact: string }} props.guide
+ */
+export default function HelpModal({ open, onClose, experimentTitle, guide }) {
+  const dialogRef = useRef(null);
+
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+    if (open && !dialog.open) dialog.showModal();
+    if (!open && dialog.open) dialog.close();
+  }, [open]);
+
+  // Clicks on the backdrop land on the <dialog> itself (the card fills it).
+  const handleClick = (event) => {
+    if (event.target === dialogRef.current) onClose();
+  };
+
+  return (
+    <dialog
+      ref={dialogRef}
+      className="help-modal"
+      aria-labelledby="help-modal-title"
+      aria-describedby="help-modal-intro"
+      onClose={onClose}
+      onClick={handleClick}
+    >
+      <div className="help-modal__card">
+        <header className="help-modal__header">
+          <span className="help-modal__avatar">
+            <img src={NOUR_SRC} alt="" width="48" height="48" />
+          </span>
+          <div className="help-modal__heading">
+            <h2 id="help-modal-title" className="help-modal__title">
+              مساعدة نُور
+            </h2>
+            <p className="help-modal__subtitle">{experimentTitle}</p>
+          </div>
+          <button type="button" className="btn btn--neutral btn--icon help-modal__close" onClick={onClose} aria-label="إغلاق المساعدة">
+            <Icon name="close" size={22} />
+          </button>
+        </header>
+
+        <div className="help-modal__body">
+          <p id="help-modal-intro" className="help-modal__intro">
+            {guide.intro}
+          </p>
+
+          <ol className="help-steps">
+            {guide.hints.map((hint, index) => (
+              <li key={HINT_TITLES[index]} className="help-step">
+                <span className="help-step__number" aria-hidden="true">
+                  {formatNumber(index + 1)}
+                </span>
+                <div className="help-step__content">
+                  <h3 className="help-step__title">{HINT_TITLES[index]}</h3>
+                  <p className="help-step__text">{hint}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+
+          <aside className="help-fact" aria-label="معلومة سريعة">
+            <span className="help-fact__icon" aria-hidden="true">
+              <Icon name="lightbulb" filled size={22} />
+            </span>
+            <div>
+              <h3 className="help-fact__title">معلومة سريعة</h3>
+              <p className="help-fact__text">{guide.fact}</p>
+            </div>
+          </aside>
+        </div>
+
+        <footer className="help-modal__footer">
+          <button type="button" className="btn btn--primary btn--block" onClick={onClose}>
+            <span>فهمت، يلا نجرب!</span>
+            <Icon name="science" size={22} />
+          </button>
+        </footer>
+      </div>
+    </dialog>
+  );
+}

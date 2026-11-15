@@ -6,28 +6,36 @@ import { readJSON, writeJSON } from '../lib/storage.js';
  * Shared student state
  * ---------------------------------------------------------------------------
  * Misbar never collects personal data: a student is only a nickname, a
- * geometric cartoon avatar and a star balance. The profile is persisted in
- * localStorage and shared by every view (catalog now, playground & dashboard
- * in later batches).
+ * geometric cartoon avatar, a star balance and the list of Playground
+ * challenges already completed. The profile is persisted in localStorage and
+ * shared by every view (catalog, playground, and the dashboard in Batch 3).
  */
 
-/** Versioned key so future schema changes can migrate cleanly. */
+/**
+ * Versioned key so future schema changes can migrate cleanly.
+ * (Batch 2 only *added* `completedChallenges`; older v1 data is still valid.)
+ */
 export const STUDENT_STORAGE_KEY = 'misbar:student:v1';
 
 const NICKNAME_MAX_LENGTH = 24;
+
+/** Upper bound on stored challenge ids (defensive against hand-edited data). */
+const MAX_COMPLETED_CHALLENGES = 100;
 
 /** Default profile for a first-time visitor. */
 export const DEFAULT_STUDENT = Object.freeze({
   nickname: 'بطل الفضاء',
   avatarId: DEFAULT_AVATAR_ID,
   stars: 12,
+  /** Experiment ids whose Playground challenge earned its +1 star. */
+  completedChallenges: Object.freeze([]),
 });
 
 /**
  * Validate data coming from storage (it may be stale or hand-edited) and
  * fill anything missing with defaults.
  * @param {unknown} raw
- * @returns {{ nickname: string, avatarId: string, stars: number }}
+ * @returns {{ nickname: string, avatarId: string, stars: number, completedChallenges: string[] }}
  */
 function sanitizeStudent(raw) {
   const source = raw && typeof raw === 'object' ? raw : {};
@@ -46,7 +54,15 @@ function sanitizeStudent(raw) {
       ? Math.floor(source.stars)
       : DEFAULT_STUDENT.stars;
 
-  return { nickname, avatarId, stars };
+  const completedChallenges = Array.isArray(source.completedChallenges)
+    ? [
+        ...new Set(
+          source.completedChallenges.filter((id) => typeof id === 'string' && id.length <= 64),
+        ),
+      ].slice(0, MAX_COMPLETED_CHALLENGES)
+    : [];
+
+  return { nickname, avatarId, stars, completedChallenges };
 }
 
 /** Load the stored profile (or the defaults on first visit). */
@@ -62,10 +78,18 @@ function studentReducer(state, action) {
       return sanitizeStudent({ ...state, avatarId: action.avatarId });
     case 'addStars':
       return { ...state, stars: Math.max(0, state.stars + Math.trunc(action.amount)) };
+    case 'completeChallenge':
+      // Once per experiment: a repeated completion never awards another star.
+      if (state.completedChallenges.includes(action.experimentId)) return state;
+      return {
+        ...state,
+        stars: state.stars + 1,
+        completedChallenges: [...state.completedChallenges, action.experimentId],
+      };
     case 'hydrate':
       return sanitizeStudent(action.student);
     case 'reset':
-      return { ...DEFAULT_STUDENT };
+      return { ...DEFAULT_STUDENT, completedChallenges: [] };
     default:
       return state;
   }
@@ -74,7 +98,7 @@ function studentReducer(state, action) {
 const StudentContext = createContext(null);
 
 /**
- * Provides `{ student, setNickname, setAvatar, addStars, resetStudent }`.
+ * Provides `{ student, setNickname, setAvatar, addStars, completeChallenge, resetStudent }`.
  */
 export function StudentProvider({ children }) {
   const [student, dispatch] = useReducer(studentReducer, undefined, loadStudent);
@@ -101,6 +125,8 @@ export function StudentProvider({ children }) {
       setNickname: (nickname) => dispatch({ type: 'setNickname', nickname }),
       setAvatar: (avatarId) => dispatch({ type: 'setAvatar', avatarId }),
       addStars: (amount) => dispatch({ type: 'addStars', amount }),
+      /** Mark an experiment's challenge as done and award +1 star (only the first time). */
+      completeChallenge: (experimentId) => dispatch({ type: 'completeChallenge', experimentId }),
       resetStudent: () => dispatch({ type: 'reset' }),
     }),
     [],

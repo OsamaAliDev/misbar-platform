@@ -51,3 +51,46 @@ Playground is Batch 2 and the real Dashboard is Batch 3.
 - [x] Ignore the zip's mobile Teacher Dashboard screen (bottom navigation bar) — not reproduced.
 - [x] Manus checkpoint saved.
 - [x] Batch 1 pushed to GitHub repository `OsamaAliDev/misbar-platform` (existing history preserved, no force-push).
+
+---
+
+# Batch 2 TODO — Unified Interactive Playground, Nour's Help Modal, 6 real simulations
+
+Source: user Batch 2 request. Keep everything from Batch 1 intact (Catalog view, locked CSS
+variables in `src/index.css`, `public/assets/nour.png`, `src/data/experiments.js`, `localStorage`
+student state). Match the layout and proportions of the Playground (`_2` mobile, `_3` desktop) and
+Help Modal (`_7`) screens in the Stitch zip.
+
+## B1. Strict design rules (inherited from `src/index.css`)
+- [x] `dir="rtl" lang="ar"`, `Cairo` font exclusively.
+- [x] Strictly flat: ZERO `box-shadow`, ZERO CSS gradients, ZERO `backdrop-filter`/glass, ZERO Unicode emojis (inline SVG + Material Symbols Outlined only).
+- [x] `2px solid var(--outline)` (`#E3D9CC`) and `20px` border-radius on all cards, panels, modals and buttons.
+- [x] Role colours: controls/sliders/toggles purple `--accent-tools` / `--accent-tools-soft`; live results strip & scientific readings cyan `--accent-info` / `--accent-info-soft`; help button & modal header coral `--accent-help` / `--accent-help-soft`; stars & challenge completion mustard `--accent-reward` / `--accent-reward-soft`; primary actions blue `--accent-primary`.
+
+## B2. Unified Playground view (`src/components/PlaygroundView.jsx`)
+- [x] Header bar — right side: back button (`arrow_forward` in RTL) returning to `catalog`, active experiment title, subject category pill.
+- [x] Header bar — left side: dynamic star counter pill (`١٢ نجمة`, updated live when stars are earned) + coral button "محتاج مساعدة؟" (`#EF6B5E` fill, `#FFFFFF` text).
+- [x] Main 2-column workspace: Desktop `1366x768` fits cleanly with zero vertical clipping; Mobile `< 768px` stacks cleanly in 1 column.
+- [x] Right panel (Controls card): title "أدوات التحكم في التجربة", purple sliders/toggles/presets specific to the selected experiment, plus Play/Pause and Reset ("إعادة ضبط") buttons.
+- [x] Left panel: interactive `<canvas>` / animated SVG simulation stage (`#FFFFFF` surface, `2px solid #E3D9CC`, `20px` radius).
+- [x] Live Result Strip directly below the stage (`#D9F0F7` fill, `2px solid #53BBD9`, `20px` radius) showing real-time Arabic values and units.
+- [x] Bottom Mascot Challenge & Tip Bar: transparent `public/assets/nour.png` mascot + experiment-specific interactive challenge prompt + "تحقق من التحدي" / "أتممت التجربة (+١ نجمة)" button that awards +1 star once per experiment, saved in `localStorage`.
+
+## B3. Nour's Help Modal (`src/components/HelpModal.jsx`)
+- [x] Opens when clicking "محتاج مساعدة؟".
+- [x] Flat modal card (`#FFFFFF`, `2px solid #E3D9CC`, `20px` radius) with coral header "مساعدة نُور" and transparent `nour.png` avatar.
+- [x] 3 tailored step-by-step hints for the active experiment: 1. الفكرة الأساسية, 2. جرّب تغيّر إيه؟, 3. القاعدة العلمية.
+- [x] Blue "فهمت، يلا نجرب!" close button.
+
+## B4. All 6 real interactive simulations (`src/simulations/`)
+- [x] `MotionSimulation.jsx` (قانون الحركة والسرعة والتسارع): moving cart on a measured track; controls for Pushing Force (`N`), Mass (`kg`) and Friction toggle; live acceleration (a = F_net / m) and velocity (v).
+- [x] `LeverSimulation.jsx` (توازن القوى والرافعة): balanced beam on a fulcrum; controls for Left/Right Weights (`كجم`) and Distances (`متر`); real-time torque tilt physics and "حالة توازن مثالية!" indicator when τ1 = τ2.
+- [x] `OrbitSimulation.jsx` (مسار الكواكب والجاذبية): central star and orbiting planet; controls for Star Mass and Orbital Radius; live orbital velocity, period and gravitational pull readout.
+- [x] `FractionsSimulation.jsx` (الكسور والنسب بالمساحة): visual fraction grid & circle pie; controls for Numerator and Denominator; live simplified fraction, decimal and percentage (`%`).
+- [x] `OpticsSimulation.jsx` (انعكاس وانكسار الضوء): light beam crossing between two optical media (الهواء، الماء، الزجاج); controls for Incidence Angle (`°`) and Medium; real-time reflected and refracted rays obeying Snell's Law.
+- [x] `StatesOfMatterSimulation.jsx` (حالات المادة والحرارة): particle chamber with animated molecules; Temperature slider (`-20°C` to `120°C`) and Heat/Cool quick buttons; smooth transition between صلب, سائل and غاز with live state readout.
+
+## B5. Responsive & delivery
+- [x] Responsive from `320px` to `1366px`: zero horizontal scroll, all controls accessible on mobile.
+- [x] Batch 1 behaviour unchanged (catalog, search, filters, dashboard placeholder, student state).
+- [x] Manus checkpoint saved and Batch 2 pushed to `OsamaAliDev/misbar-platform` (no force-push).

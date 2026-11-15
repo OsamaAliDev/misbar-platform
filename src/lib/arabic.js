@@ -50,6 +50,35 @@ export function formatNumber(value) {
   return arabicNumberFormat.format(value);
 }
 
+/** Cache of decimal formatters keyed by "min-max" fraction digits. */
+const decimalFormats = new Map();
+
+/**
+ * Format a measurement with Arabic-Indic digits and the Arabic decimal
+ * separator, e.g. 2.5 → "٢٫٥", -12 → "؜-١٢".
+ *
+ * `signDisplay: 'negative'` avoids a confusing "-٠" when a tiny negative
+ * value rounds to zero.
+ *
+ * @param {number} value
+ * @param {number} [maxDigits=1]  maximum fraction digits
+ * @param {number} [minDigits=0]  minimum fraction digits (keeps widths stable)
+ * @returns {string}
+ */
+export function formatDecimal(value, maxDigits = 1, minDigits = 0) {
+  const key = `${minDigits}-${maxDigits}`;
+  let format = decimalFormats.get(key);
+  if (!format) {
+    format = new Intl.NumberFormat('ar-EG', {
+      minimumFractionDigits: minDigits,
+      maximumFractionDigits: maxDigits,
+      signDisplay: 'negative',
+    });
+    decimalFormats.set(key, format);
+  }
+  return format.format(value);
+}
+
 /**
  * Grammatically correct Arabic count of stars (dual and plural forms).
  * @param {number} count
