@@ -6,6 +6,23 @@
 
 Built with **Vite + React** (plain, well-commented JavaScript), the Cairo typeface and a strictly flat, locked design system (see [`DESIGN.md`](./DESIGN.md)). Product requirements live in [`PRD.md`](./PRD.md).
 
+## Tech stack (actual)
+
+| Layer | What the code really uses |
+| --- | --- |
+| Build tool / dev server | **Vite 8** (`vite.config.js`) |
+| UI library | **React 19** with plain JavaScript (`.jsx`) — no TypeScript |
+| Styling | **Plain CSS** with CSS custom properties (`src/index.css` + one `.css` file per component). **No Tailwind**, no CSS-in-JS, no UI kit |
+| Routing | Small hash router in `src/state/navigation.jsx` (`#/`, `#/playground/<id>`, `#/dashboard`) — no React Router |
+| State & storage | React context + `localStorage` (`misbar:student:v1`) — nickname, avatar, stars and completed challenges only |
+| Simulations | Animated inline SVG driven by `requestAnimationFrame` — no canvas/physics library |
+| Fonts & icons | Google Fonts **Cairo** + **Material Symbols Outlined** (loaded in `index.html`) |
+| Package manager | **pnpm 11** (pinned in `package.json` → `packageManager`) |
+| Backend | **None.** It is a static site; `supabase/schema.sql` is only a draft for a possible future batch and is not used by the app |
+| Hosting | Any static host: `pnpm build` → `dist/` |
+
+This is **not** a Next.js project, and it does not use Tailwind. Runtime dependencies are only `react` and `react-dom`; dev dependencies are only `vite` and `@vitejs/plugin-react`.
+
 ## Delivery batches
 
 | Batch | Scope | Status |
@@ -23,9 +40,31 @@ pnpm build       # static production build in dist/
 pnpm preview     # serve the production build locally
 ```
 
+Requirements: Node.js 20.19+ (or 22.12+). If pnpm is not installed, run `corepack enable` once, or prefix the commands with `npx pnpm@11.25.0`.
+
+On Windows (PowerShell), for example in `D:\Projects\misbar-platform`:
+
+```powershell
+git clone https://github.com/OsamaAliDev/misbar-platform.git D:\Projects\misbar-platform
+cd D:\Projects\misbar-platform
+corepack enable
+pnpm install
+pnpm dev
+```
+
+### Environment variables
+
+None are required today. [`.env.example`](./.env.example) is a secret-free template: copy it to `.env.local` (git-ignored) only if a future feature needs a setting. Anything prefixed `VITE_` is bundled into the public site, so never put secrets there.
+
 ## Project structure
 
 ```text
+package.json                  scripts + the only 4 dependencies (react, react-dom, vite, plugin-react)
+pnpm-lock.yaml                exact dependency lockfile
+pnpm-workspace.yaml           pnpm settings (no dependency lifecycle scripts allowed)
+vite.config.js                Vite + React plugin, dev server on port 3000
+.env.example                  secret-free environment template (no variables required yet)
+.gitignore                    node_modules, dist, .env / .env.* (except .env.example)
 index.html                    dir="rtl" lang="ar", Cairo + Material Symbols Outlined
 public/
   assets/nour.png             «نُور» mascot — transparent PNG extracted from the Stitch kit

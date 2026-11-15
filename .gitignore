@@ -1,14 +1,27 @@
 # Dependencies
-node_modules
+node_modules/
 
 # Build output
-dist
+dist/
+dist-ssr/
 
-# Environment files (never commit secrets)
-.env*
+# Environment files (never commit secrets).
+# .env.example is the only committed template and must contain no secrets.
+.env
+.env.*
+*.local
+!.env.example
 *.pem
 
-# Logs & OS noise
+# Logs
 npm-debug.log*
 pnpm-debug.log*
+yarn-debug.log*
+*.log
+
+# Editor & OS noise
+.vscode/*
+!.vscode/extensions.json
+.idea/
 .DS_Store
+Thumbs.db
