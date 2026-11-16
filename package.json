@@ -8,7 +8,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:api": "API_PORT=3002 node --env-file-if-exists=.env server/index.mjs",
+    "start": "NODE_ENV=production node --env-file-if-exists=.env server/index.mjs",
+    "test:saas": "node --test server/test*.mjs",
+    "test:rls": "bash supabase/tests/run-rls-proof.sh"
   },
   "dependencies": {
     "react": "^19.3.1",

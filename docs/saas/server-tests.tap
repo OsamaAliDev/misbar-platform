@@ -1,0 +1,172 @@
+TAP version 13
+# Subtest: configuration fails closed, including blanks; production mock requires explicit opt-in
+ok 1 - configuration fails closed, including blanks; production mock requires explicit opt-in
+  ---
+  duration_ms: 3.118393
+  type: 'test'
+  ...
+# Subtest: async salted scrypt is verified in constant-time with non-plaintext storage
+ok 2 - async salted scrypt is verified in constant-time with non-plaintext storage
+  ---
+  duration_ms: 228.716455
+  type: 'test'
+  ...
+# Subtest: staff roles, tenant isolation, ownership and platform aggregation enforce 403
+ok 3 - staff roles, tenant isolation, ownership and platform aggregation enforce 403
+  ---
+  duration_ms: 757.243055
+  type: 'test'
+  ...
+# Subtest: PIN attempts are account-keyed, the fifth failure is 429 and attempts persist across restart
+ok 4 - PIN attempts are account-keyed, the fifth failure is 429 and attempts persist across restart
+  ---
+  duration_ms: 753.644961
+  type: 'test'
+  ...
+# Subtest: peer IP rate limiter deliberately ignores spoofed forwarded-for headers
+ok 5 - peer IP rate limiter deliberately ignores spoofed forwarded-for headers
+  ---
+  duration_ms: 392.50941
+  type: 'test'
+  ...
+# Subtest: child fields/PIN never leak, nickname validation and duplicate enrollment are enforced
+ok 6 - child fields/PIN never leak, nickname validation and duplicate enrollment are enforced
+  ---
+  duration_ms: 565.459752
+  type: 'test'
+  ...
+# Subtest: once-only import preserves bounded validated guest progress, without renaming a child
+ok 7 - once-only import preserves bounded validated guest progress, without renaming a child
+  ---
+  duration_ms: 434.950057
+  type: 'test'
+  ...
+# Subtest: original six-challenge, three-mission, outfit thresholds and idempotency are authoritative
+ok 8 - original six-challenge, three-mission, outfit thresholds and idempotency are authoritative
+  ---
+  duration_ms: 515.310214
+  type: 'test'
+  ...
+# Subtest: opaque session expiration, logout, student rebinding and restart all clear authorization
+ok 9 - opaque session expiration, logout, student rebinding and restart all clear authorization
+  ---
+  duration_ms: 618.958762
+  type: 'test'
+  ...
+# Subtest: HTTP body limits, same origin, unknown routes, safe static fallback and redacted logging
+ok 10 - HTTP body limits, same origin, unknown routes, safe static fallback and redacted logging
+  ---
+  duration_ms: 330.599828
+  type: 'test'
+  ...
+# Subtest: chunked bodies above 32 KiB receive JSON 413 and malformed JSON receives 400
+ok 11 - chunked bodies above 32 KiB receive JSON 413 and malformed JSON receives 400
+  ---
+  duration_ms: 251.744275
+  type: 'test'
+  ...
+# Subtest: first import cannot reset pre-existing one-time award markers or reduce canonical stars
+ok 12 - first import cannot reset pre-existing one-time award markers or reduce canonical stars
+  ---
+  duration_ms: 412.906434
+  type: 'test'
+  ...
+# Subtest: preserved proxy Host allows same-origin browser POST; forwarded headers cannot authorize another origin
+ok 13 - preserved proxy Host allows same-origin browser POST; forwarded headers cannot authorize another origin
+  ---
+  duration_ms: 323.37398
+  type: 'test'
+  ...
+# Subtest: revised scope: inactive/zero-cap metadata does not gate earning/enrollment, and platform is counts-only
+ok 14 - revised scope: inactive/zero-cap metadata does not gate earning/enrollment, and platform is counts-only
+  ---
+  duration_ms: 530.711854
+  type: 'test'
+  ...
+# Subtest: staff uses password grant, then GoTrue user and canonical session; no staff self-role
+ok 15 - staff uses password grant, then GoTrue user and canonical session; no staff self-role
+  ---
+  duration_ms: 8.034351
+  type: 'test'
+  ...
+# Subtest: anonymous signup is exactly {}, followed by database PIN RPC and validated canonical student session
+ok 16 - anonymous signup is exactly {}, followed by database PIN RPC and validated canonical student session
+  ---
+  duration_ms: 5.261222
+  type: 'test'
+  ...
+# Subtest: failed database PIN RPC maps account rate-limit and cleans up the unbound Auth session
+ok 17 - failed database PIN RPC maps account rate-limit and cleans up the unbound Auth session
+  ---
+  duration_ms: 1.839358
+  type: 'test'
+  ...
+# Subtest: class creation uses GoTrue-verified school/caller IDs and only explicit safe columns
+ok 18 - class creation uses GoTrue-verified school/caller IDs and only explicit safe columns
+  ---
+  duration_ms: 1.544512
+  type: 'test'
+  ...
+# Subtest: class listing and roster are tenant/owner constrained with explicit PIN-free snake-to-camel projection
+ok 19 - class listing and roster are tenant/owner constrained with explicit PIN-free snake-to-camel projection
+  ---
+  duration_ms: 2.485339
+  type: 'test'
+  ...
+# Subtest: cross-row staff requests, students reading rosters and platform reading students are forbidden before child transport
+ok 20 - cross-row staff requests, students reading rosters and platform reading students are forbidden before child transport
+  ---
+  duration_ms: 3.133201
+  type: 'test'
+  ...
+# Subtest: enrollment sends only exact create_student args and maps DB duplicate errors
+ok 21 - enrollment sends only exact create_student args and maps DB duplicate errors
+  ---
+  duration_ms: 3.867864
+  type: 'test'
+  ...
+# Subtest: import/action use exact RPC names and canonical outputs, while arbitrary stars never reach DB
+ok 22 - import/action use exact RPC names and canonical outputs, while arbitrary stars never reach DB
+  ---
+  duration_ms: 2.071413
+  type: 'test'
+  ...
+# Subtest: expired GoTrue authorization returns session_expired and actual upstream failures never fall back to mock
+ok 23 - expired GoTrue authorization returns session_expired and actual upstream failures never fall back to mock
+  ---
+  duration_ms: 53.903446
+  type: 'test'
+  ...
+# Subtest: logout validates the existing GoTrue user then revokes with the same bearer and no cookies
+ok 24 - logout validates the existing GoTrue user then revokes with the same bearer and no cookies
+  ---
+  duration_ms: 1.171061
+  type: 'test'
+  ...
+# Subtest: platform counts uses only platform_counts RPC and strips every non-count field
+ok 25 - platform counts uses only platform_counts RPC and strips every non-count field
+  ---
+  duration_ms: 2.685202
+  type: 'test'
+  ...
+# Subtest: subscription metadata and RPC canEarn false cannot create a billing gate in revised scope
+ok 26 - subscription metadata and RPC canEarn false cannot create a billing gate in revised scope
+  ---
+  duration_ms: 1.509226
+  type: 'test'
+  ...
+# Subtest: GoTrue 400 invalid-grant is invalid_credentials, not an upstream outage
+ok 27 - GoTrue 400 invalid-grant is invalid_credentials, not an upstream outage
+  ---
+  duration_ms: 0.716846
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6313.861552

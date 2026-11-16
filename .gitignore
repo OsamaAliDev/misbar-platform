@@ -25,3 +25,7 @@ yarn-debug.log*
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local SaaS mock data and temporary test artifacts (never ship children/staff records).
+.data/
+.tmp-saas/

@@ -16,6 +16,7 @@ export default defineConfig({
     port: 3000,
     strictPort: true,
     allowedHosts: true,
+    proxy: { '/api/saas': { target: 'http://127.0.0.1:3002', changeOrigin: false } },
   },
   preview: {
     host: '0.0.0.0',
