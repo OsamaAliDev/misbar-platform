@@ -29,11 +29,13 @@
   --accent-primary-text: #FFFFFF;
   --accent-primary-soft: #D6E9FA;
   --accent-primary-soft-text: #1B5E99;
+  --accent-primary-hover: #1B5E99; /* primary button hover fill (same in both themes) */
 
   /* -- Accent: rewards, stars & progress --------------------------------- */
   --accent-reward: #F0B429;
   --accent-reward-soft: #FCEBC0;
   --accent-reward-text: #6E4F00;
+  --text-on-reward: #2B2824; /* text on a solid mustard fill (same in both themes) */
 
   /* -- Accent: help & alerts -------------------------------------------- */
   --accent-help: #EF6B5E;
@@ -72,6 +74,45 @@
   --duration-base: 260ms;
 
   color-scheme: light;
+}
+
+/* ==========================================================================
+   Night theme — game screens only (#/lobby, #/heroes, #/vault, #/ranks)
+   --------------------------------------------------------------------------
+   Scoped: <App /> sets data-theme="night" on the game-screens wrapper; the
+   catalog and the lab never receive it and stay cream. While a game screen
+   is open, <body> follows too, so overscroll areas match.
+
+   ALL night colours live in this one block. The five accents and their
+   roles are unchanged (blue = main actions, mustard = stars & rewards,
+   coral = help, purple = tools, cyan = info); only the neutrals and the
+   soft tints are re-mapped for a dark base.
+   ========================================================================== */
+
+[data-theme='night'],
+body:has([data-theme='night']) {
+  /* Neutrals: deep navy base */
+  --bg-canvas: #141A2E;
+  --surface-card: #1D2540;
+  --surface-subtle: #252E4D;
+  --outline: #34406A;
+  --text-primary: #F6F1E9;
+  --text-secondary: #B8BDD6;
+
+  /* Soft tints of the same five accents, darkened for the navy base;
+     each "-text" colour stays readable on its soft tint. */
+  --accent-primary-soft: #1C3456;
+  --accent-primary-soft-text: #9CCBF5;
+  --accent-reward-soft: #3A3216;
+  --accent-reward-text: #F7D57A;
+  --accent-help-soft: #3D2330;
+  --accent-help-text: #F7A9A1;
+  --accent-tools-soft: #2E2550;
+  --accent-tools-text: #CDB2F2;
+  --accent-info-soft: #173847;
+  --accent-info-text: #9ADBEE;
+
+  color-scheme: dark;
 }
 
 /* ==========================================================================
@@ -196,6 +237,11 @@ button {
   --icon-fill: 1;
 }
 
+/* Direction-aware glyphs (arrows, chevrons): drawn for RTL, mirrored in LTR. */
+[dir='ltr'] .icon--dir {
+  transform: scaleX(-1);
+}
+
 /* -- Buttons ------------------------------------------------------------- */
 .btn {
   display: inline-flex;
@@ -238,7 +284,7 @@ button {
 @media (hover: hover) {
   /* Hover darkens the fill; the outline border stays locked. */
   .btn--primary:hover {
-    background-color: var(--accent-primary-soft-text);
+    background-color: var(--accent-primary-hover);
   }
 
   .btn--neutral:hover {

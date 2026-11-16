@@ -6,5 +6,7 @@
  */
 const BASE = import.meta.env.BASE_URL;
 
-/** «نُور» — the platform mascot, a transparent PNG extracted from the Stitch kit. */
+/** The original star mascot from the Stitch kit (transparent PNG). Retired from the
+ *  guide role in Phase 2 — the chosen hero guides now — and kept only as a
+ *  decorative picture on placeholder panels. */
 export const NOUR_SRC = `${BASE}assets/nour.png`;

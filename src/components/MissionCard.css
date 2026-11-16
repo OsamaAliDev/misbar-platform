@@ -1,0 +1,155 @@
+/* <MissionCard /> — flat card, icon · text + progress · action. */
+.mission-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.mission-card.is-complete {
+  background-color: var(--accent-reward-soft);
+}
+
+.mission-card__icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--accent-info-text);
+  background-color: var(--accent-info-soft);
+  border: var(--border-width) solid var(--accent-info);
+  border-radius: 50%;
+}
+
+.mission-card.is-complete .mission-card__icon,
+.mission-card.is-claimed .mission-card__icon {
+  color: var(--accent-reward-text);
+  background-color: var(--accent-reward-soft);
+  border-color: var(--accent-reward);
+}
+
+.mission-card__body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mission-card__title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.mission-card__text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
+}
+
+.mission-card__progress {
+  margin-block-start: 4px;
+}
+
+.mission-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.mission-card__reward {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--accent-reward-text);
+}
+
+.mission-card__reward .icon {
+  color: var(--accent-reward);
+}
+
+.mission-card__action {
+  flex-shrink: 0;
+}
+
+.mission-card__claim {
+  background-color: var(--accent-reward);
+  color: var(--text-on-reward);
+  animation: mission-pop 600ms var(--ease-out) both;
+}
+
+@media (hover: hover) {
+  .mission-card__claim:hover {
+    background-color: var(--accent-reward-soft);
+    color: var(--accent-reward-text);
+  }
+}
+
+/* Status label, not a control: a small round pill (badge shape). */
+.mission-card__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--text-secondary);
+  background-color: var(--surface-subtle);
+  border: var(--border-width) dashed var(--outline);
+  border-radius: var(--radius-round);
+  white-space: nowrap;
+}
+
+.mission-card__chip--done {
+  color: var(--accent-reward-text);
+  background-color: var(--accent-reward-soft);
+  border-style: solid;
+  border-color: var(--accent-reward);
+}
+
+@keyframes mission-pop {
+  0% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 560px) {
+  .mission-card {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .mission-card__body {
+    flex-basis: calc(100% - 62px);
+  }
+
+  /* Phones: the action row sits under the text, aligned with it. */
+  .mission-card__action {
+    margin-inline-start: 62px;
+    width: calc(100% - 62px);
+  }
+
+  .mission-card__claim {
+    width: 100%;
+  }
+}

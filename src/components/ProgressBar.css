@@ -1,0 +1,26 @@
+/* <ProgressBar /> — flat track, fill anchored at the inline-start edge. */
+.progress-bar {
+  --progress-fill: var(--accent-reward);
+  display: flex;
+  block-size: 12px;
+  overflow: hidden;
+  background-color: var(--surface-subtle);
+  border: var(--border);
+  border-radius: var(--radius-round);
+}
+
+.progress-bar__fill {
+  display: block;
+  block-size: 100%;
+  background-color: var(--progress-fill);
+  border-radius: var(--radius-round);
+  transition: inline-size var(--duration-base) var(--ease-out);
+}
+
+.progress-bar--primary {
+  --progress-fill: var(--accent-primary);
+}
+
+.progress-bar--info {
+  --progress-fill: var(--accent-info);
+}

@@ -7,20 +7,35 @@ import './App.css';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
+import { I18nProvider, useI18n } from './i18n/index.jsx';
 import { NavigationProvider } from './state/navigation.jsx';
 import { StudentProvider } from './state/student.jsx';
 
 /**
+ * Re-mounts the app when the language changes, so every number, string and
+ * mirrored layout is rebuilt for the new language in one pass. Student
+ * progress and the current route live in the providers above and survive.
+ */
+function LocalizedApp() {
+  const { lang } = useI18n();
+  return <App key={lang} />;
+}
+
+/**
  * Entry point.
- *  - <StudentProvider>    shared student profile (nickname, avatar, stars)
- *  - <NavigationProvider> current view: catalog | playground | dashboard
+ *  - <I18nProvider>       language (ar | en), t() helper, <html lang dir>
+ *  - <StudentProvider>    shared student profile (nickname, avatar, stars,
+ *                         hero, missions, outfits) persisted in localStorage
+ *  - <NavigationProvider> current view from the URL hash
  */
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <StudentProvider>
-      <NavigationProvider>
-        <App />
-      </NavigationProvider>
-    </StudentProvider>
+    <I18nProvider>
+      <StudentProvider>
+        <NavigationProvider>
+          <LocalizedApp />
+        </NavigationProvider>
+      </StudentProvider>
+    </I18nProvider>
   </StrictMode>,
 );

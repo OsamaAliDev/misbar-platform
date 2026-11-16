@@ -3,24 +3,34 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 /**
  * Client-side navigation for مِسبار.
  * ---------------------------------------------------------------------------
- * The app has three top-level views. Navigation is kept in the URL hash so
- * that:
+ * Navigation is kept in the URL hash so that:
  *   • the browser back/forward buttons work,
  *   • a view can be deep-linked or refreshed,
  *   • the static build needs no server-side SPA rewrites.
  *
  * Hash format
  *   #/                              → catalog
- *   #/playground/<experimentId>     → playground   (real lab: Batch 2)
- *   #/dashboard                     → dashboard    (real board: Batch 3)
+ *   #/playground/<experimentId>     → playground (the lab)
+ *   #/dashboard                     → dashboard  (placeholder)
+ *   #/lobby                         → hero lobby     ┐
+ *   #/heroes                        → hero select    │ game screens
+ *   #/vault                         → outfit vault   │ (scoped night theme)
+ *   #/ranks                         → rank ladder    ┘
  */
 
-/** The three views of the platform. */
+/** Every top-level view of the platform. */
 export const VIEWS = Object.freeze({
   CATALOG: 'catalog',
   PLAYGROUND: 'playground',
   DASHBOARD: 'dashboard',
+  LOBBY: 'lobby',
+  HEROES: 'heroes',
+  VAULT: 'vault',
+  RANKS: 'ranks',
 });
+
+/** The game screens, rendered in the scoped night theme. */
+export const GAME_VIEWS = Object.freeze([VIEWS.LOBBY, VIEWS.HEROES, VIEWS.VAULT, VIEWS.RANKS]);
 
 const KNOWN_VIEWS = new Set(Object.values(VIEWS));
 
@@ -58,7 +68,7 @@ export function buildHash(view, params = {}) {
   if (view === VIEWS.PLAYGROUND) {
     return `#/${VIEWS.PLAYGROUND}/${encodeURIComponent(params.experimentId ?? '')}`;
   }
-  if (view === VIEWS.DASHBOARD) return `#/${VIEWS.DASHBOARD}`;
+  if (view !== VIEWS.CATALOG && KNOWN_VIEWS.has(view)) return `#/${view}`;
   return '#/';
 }
 

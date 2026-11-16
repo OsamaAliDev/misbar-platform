@@ -1,0 +1,158 @@
+/* ==========================================================================
+   Game header (night theme screens)
+   ========================================================================== */
+
+.game-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: 'brand nav end';
+  align-items: center;
+  gap: 12px 20px;
+  min-height: 76px;
+  padding: 12px 24px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.game-header__brand {
+  grid-area: brand;
+  display: flex;
+  align-items: center;
+  min-height: var(--touch-target);
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--radius-inner);
+}
+
+.game-header__end {
+  grid-area: end;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.game-header__library {
+  min-height: var(--touch-target);
+  padding-inline: 16px;
+  font-size: 15px;
+}
+
+.game-header__library-icon {
+  color: var(--accent-primary);
+}
+
+/* -- Nav tabs ------------------------------------------------------------ */
+.game-nav {
+  grid-area: nav;
+  min-width: 0;
+}
+
+.game-nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.game-nav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: var(--touch-target);
+  padding-inline: 14px;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  border: var(--border);
+  border-color: transparent;
+  border-radius: var(--radius);
+  transition:
+    background-color var(--duration-fast) ease,
+    color var(--duration-fast) ease;
+}
+
+@media (hover: hover) {
+  .game-nav__link:hover {
+    color: var(--text-primary);
+    background-color: var(--surface-subtle);
+  }
+}
+
+/* Current screen: soft blue fill (main-action family); border = outline. */
+.game-nav__link[aria-current='page'] {
+  color: var(--accent-primary-soft-text);
+  background-color: var(--accent-primary-soft);
+  border-color: var(--outline);
+}
+
+/* -- Tablets & phones: tabs move to their own full-width row -------------- */
+@media (max-width: 1023px) {
+  .game-header {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'brand end'
+      'nav nav';
+    padding: 12px 16px;
+  }
+
+  .game-nav__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .game-nav__link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .game-header {
+    min-height: 60px;
+    padding: 8px 12px 10px;
+    gap: 8px;
+  }
+
+  .game-header__end {
+    gap: 6px;
+  }
+
+  /* Icon-only library link, still a 44×44 target (label kept for AT). */
+  .game-header__library {
+    width: var(--touch-target);
+    padding: 0;
+  }
+
+  .game-header__library-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .game-nav__list {
+    gap: 6px;
+  }
+
+  /* Icon above label so 4 tabs fit from 320px without scrolling. */
+  .game-nav__link {
+    flex-direction: column;
+    gap: 2px;
+    min-height: 56px;
+    padding: 6px 4px;
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .game-nav__label {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}

@@ -38,24 +38,47 @@ export function normalizeArabic(text = '') {
     .trim();
 }
 
-const arabicNumberFormat = new Intl.NumberFormat('ar-EG');
+/* --------------------------------------------------------------------------
+   Number formatting follows the interface language.
+   Arabic uses Arabic-Indic digits ("١٢"), English uses Western digits ("12").
+   The i18n provider calls `setNumberLocale()` whenever the language changes
+   (and the app remounts), so every formatted number follows the language.
+   -------------------------------------------------------------------------- */
+let numberLocale = 'ar-EG';
+
+/** Cache of Intl.NumberFormat instances keyed by locale + options. */
+const numberFormats = new Map();
+
+function getNumberFormat(options = {}) {
+  const key = `${numberLocale}|${JSON.stringify(options)}`;
+  let format = numberFormats.get(key);
+  if (!format) {
+    format = new Intl.NumberFormat(numberLocale, options);
+    numberFormats.set(key, format);
+  }
+  return format;
+}
 
 /**
- * Format a number with Arabic-Indic digits, matching the Stitch copy
- * ("١٢ نجمة", "الكل (٦)").
+ * Select the locale used by `formatNumber` / `formatDecimal`.
+ * @param {string} locale e.g. "ar-EG" or "en-US"
+ */
+export function setNumberLocale(locale) {
+  numberLocale = locale;
+}
+
+/**
+ * Format a whole number in the current language ("١٢" in Arabic, "12" in English).
  * @param {number} value
  * @returns {string}
  */
 export function formatNumber(value) {
-  return arabicNumberFormat.format(value);
+  return getNumberFormat().format(value);
 }
 
-/** Cache of decimal formatters keyed by "min-max" fraction digits. */
-const decimalFormats = new Map();
-
 /**
- * Format a measurement with Arabic-Indic digits and the Arabic decimal
- * separator, e.g. 2.5 → "٢٫٥", -12 → "؜-١٢".
+ * Format a measurement in the current language, e.g. 2.5 → "٢٫٥" (Arabic)
+ * or "2.5" (English).
  *
  * `signDisplay: 'negative'` avoids a confusing "-٠" when a tiny negative
  * value rounds to zero.
@@ -66,17 +89,11 @@ const decimalFormats = new Map();
  * @returns {string}
  */
 export function formatDecimal(value, maxDigits = 1, minDigits = 0) {
-  const key = `${minDigits}-${maxDigits}`;
-  let format = decimalFormats.get(key);
-  if (!format) {
-    format = new Intl.NumberFormat('ar-EG', {
-      minimumFractionDigits: minDigits,
-      maximumFractionDigits: maxDigits,
-      signDisplay: 'negative',
-    });
-    decimalFormats.set(key, format);
-  }
-  return format.format(value);
+  return getNumberFormat({
+    minimumFractionDigits: minDigits,
+    maximumFractionDigits: maxDigits,
+    signDisplay: 'negative',
+  }).format(value);
 }
 
 /**

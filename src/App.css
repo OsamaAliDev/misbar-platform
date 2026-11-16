@@ -9,6 +9,16 @@
   min-width: 0;
 }
 
+/* Game screens: the wrapper carries data-theme="night" (see index.css).
+   <body> follows via :has(); this background also covers browsers without
+   :has() support. */
+.app-shell--game {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+}
+
 @media (max-width: 480px) {
   .app-layout {
     gap: 16px;

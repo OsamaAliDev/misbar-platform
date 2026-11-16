@@ -47,69 +47,36 @@
   }
 }
 
-/* -- Brand ---------------------------------------------------------------- */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-.brand__mark {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--accent-primary-soft);
-  border: var(--border-width) solid var(--accent-primary);
-  border-radius: 12px;
-}
-
-.brand__mark svg {
-  width: 22px;
-  height: 22px;
-}
-
-.brand__word {
-  font-size: 26px;
-  font-weight: 800;
-  line-height: 1;
-  white-space: nowrap;
-}
-
 /* -- Student chip ----------------------------------------------------------- */
 .student-chip {
   display: flex;
   align-items: center;
   gap: 8px;
-  min-width: 0;
+  min-width: var(--touch-target);
+  min-height: var(--touch-target);
+  justify-content: center;
+  padding-inline: 2px;
+  border-radius: var(--radius-round);
+  color: inherit;
+  text-decoration: none;
+}
+
+/* The chip opens the hero lobby: a flat ring on hover (no fill change). */
+@media (hover: hover) {
+  .student-chip:hover .student-chip__name {
+    color: var(--accent-primary-soft-text);
+  }
+
+  .student-chip:hover .avatar {
+    outline: var(--border-width) solid var(--accent-primary);
+    outline-offset: 2px;
+  }
 }
 
 .student-chip__name {
   font-size: 15px;
   font-weight: 700;
   white-space: nowrap;
-}
-
-/* -- Star balance --------------------------------------------------------- */
-.star-balance {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
-  height: 40px;
-  padding-inline: 14px;
-  background-color: var(--accent-reward-soft);
-  border: var(--border-width) solid var(--accent-reward);
-  border-radius: var(--radius-round);
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-.star-balance .icon {
-  color: var(--accent-reward);
 }
 
 /* -- Teacher / parent portal button ---------------------------------------- */
@@ -163,40 +130,6 @@
 
   .app-header__end {
     gap: 6px;
-  }
-
-  .brand {
-    gap: 8px;
-  }
-
-  .brand__mark {
-    width: 34px;
-    height: 34px;
-    border-radius: 10px;
-  }
-
-  .brand__mark svg {
-    width: 19px;
-    height: 19px;
-  }
-
-  .brand__word {
-    font-size: 22px;
-  }
-
-  .star-balance {
-    height: 36px;
-    padding-inline: 10px;
-    gap: 4px;
-  }
-
-  .star-balance .icon {
-    --icon-size: 18px;
-  }
-
-  /* "١٢" only — the word stays in the accessible label. */
-  .star-balance__unit {
-    display: none;
   }
 
   /* Icon-only portal button, still a 44×44 touch target. */

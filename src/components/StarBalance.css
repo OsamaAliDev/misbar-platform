@@ -1,0 +1,37 @@
+/* -- Star balance (moved unchanged from AppHeader.css) -------------------- */
+.star-balance {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  height: 40px;
+  padding-inline: 14px;
+  background-color: var(--accent-reward-soft);
+  border: var(--border-width) solid var(--accent-reward);
+  border-radius: var(--radius-round);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.star-balance .icon {
+  color: var(--accent-reward);
+}
+
+@media (max-width: 640px) {
+  .star-balance {
+    height: 36px;
+    padding-inline: 10px;
+    gap: 4px;
+  }
+
+  .star-balance .icon {
+    --icon-size: 18px;
+  }
+
+  /* "١٢" only — the word stays in the accessible label. */
+  .star-balance__unit {
+    display: none;
+  }
+}

@@ -1,0 +1,178 @@
+/* ==========================================================================
+   Rank ladder (#/ranks)
+   ========================================================================== */
+
+/* Ascending in the DOM, drawn highest-first (a ladder you climb). */
+.ranks__ladder {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Rail joining the rank icons; cards cover it, so it shows in the gaps. */
+.ranks__ladder::before {
+  content: '';
+  position: absolute;
+  inset-block: 40px;
+  inset-inline-start: 43px;
+  width: var(--border-width);
+  background-color: var(--outline);
+}
+
+.rank-step {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 18px;
+}
+
+.rank-step.is-current {
+  background-color: var(--accent-primary-soft);
+}
+
+.rank-step.is-locked .rank-step__name,
+.rank-step.is-locked .rank-step__text {
+  color: var(--text-secondary);
+}
+
+.rank-step__icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: var(--border-width) solid;
+  border-radius: 50%;
+}
+
+.rank-step__icon--primary {
+  color: var(--accent-primary-soft-text);
+  background-color: var(--accent-primary-soft);
+  border-color: var(--accent-primary);
+}
+.rank-step__icon--reward {
+  color: var(--accent-reward-text);
+  background-color: var(--accent-reward-soft);
+  border-color: var(--accent-reward);
+}
+.rank-step__icon--help {
+  color: var(--accent-help-text);
+  background-color: var(--accent-help-soft);
+  border-color: var(--accent-help);
+}
+.rank-step__icon--tools {
+  color: var(--accent-tools-text);
+  background-color: var(--accent-tools-soft);
+  border-color: var(--accent-tools);
+}
+.rank-step__icon--info {
+  color: var(--accent-info-text);
+  background-color: var(--accent-info-soft);
+  border-color: var(--accent-info);
+}
+.rank-step__icon--locked {
+  color: var(--text-secondary);
+  background-color: var(--surface-subtle);
+  border-color: var(--outline);
+}
+
+.rank-step__body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rank-step__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+}
+
+.rank-step__name {
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.rank-step__from {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-reward-text);
+}
+
+.rank-step__from .icon {
+  color: var(--accent-reward);
+}
+
+.rank-step__text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.rank-step__progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-block-start: 6px;
+  max-width: 460px;
+}
+
+.rank-step__hint {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-primary-soft-text);
+}
+
+.rank-step__status {
+  flex-shrink: 0;
+}
+
+.rank-step__needs {
+  color: var(--text-secondary);
+  background-color: var(--surface-subtle);
+  border-color: var(--outline);
+}
+
+@media (max-width: 560px) {
+  .ranks__ladder::before {
+    inset-inline-start: 37px;
+  }
+
+  .rank-step {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .rank-step__icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .rank-step__body {
+    flex-basis: calc(100% - 58px);
+  }
+
+  .rank-step__status {
+    margin-inline-start: 58px;
+  }
+
+  .rank-step__name {
+    font-size: 17px;
+  }
+}

@@ -1,12 +1,16 @@
 import { useEffect, useRef } from 'react';
 import { HINT_TITLES } from '../data/guides.js';
 import { formatNumber } from '../lib/arabic.js';
-import { NOUR_SRC } from '../lib/assets.js';
+import { useGuide, useHeroLine } from '../state/guide.js';
+import HeroAvatar from './HeroAvatar.jsx';
 import Icon from './Icon.jsx';
 import './HelpModal.css';
 
 /**
- * <HelpModal /> — "مساعدة نُور" (Stitch Help Modal screen `_7`).
+ * <HelpModal /> — "مساعدة <hero>" (Stitch Help Modal screen `_7`).
+ *
+ * The student's guide hero opens the modal with one of their "hint" lines
+ * in a speech bubble (a new line each time the modal opens).
  *
  * Built on the native <dialog> element opened with showModal(): the browser
  * provides the focus trap, Escape to close, inert background and focus
@@ -20,6 +24,8 @@ import './HelpModal.css';
  */
 export default function HelpModal({ open, onClose, experimentTitle, guide }) {
   const dialogRef = useRef(null);
+  const { hero, name } = useGuide();
+  const hintLine = useHeroLine(hero.id, 'hint', open);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -45,11 +51,11 @@ export default function HelpModal({ open, onClose, experimentTitle, guide }) {
       <div className="help-modal__card">
         <header className="help-modal__header">
           <span className="help-modal__avatar">
-            <img src={NOUR_SRC} alt="" width="48" height="48" />
+            <HeroAvatar hero={hero} size={52} />
           </span>
           <div className="help-modal__heading">
             <h2 id="help-modal-title" className="help-modal__title">
-              مساعدة نُور
+              {`مساعدة ${name}`}
             </h2>
             <p className="help-modal__subtitle">{experimentTitle}</p>
           </div>
@@ -59,6 +65,10 @@ export default function HelpModal({ open, onClose, experimentTitle, guide }) {
         </header>
 
         <div className="help-modal__body">
+          <div className="help-modal__guide">
+            <HeroAvatar hero={hero} size={44} className="help-modal__guide-avatar" />
+            <p className="speech-bubble help-modal__bubble">{hintLine}</p>
+          </div>
           <p id="help-modal-intro" className="help-modal__intro">
             {guide.intro}
           </p>

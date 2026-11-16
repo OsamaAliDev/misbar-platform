@@ -1,17 +1,19 @@
+import { buildHash, VIEWS } from '../state/navigation.jsx';
 import { useStudent } from '../state/student.jsx';
-import { formatNumber, formatStarCount } from '../lib/arabic.js';
 import Avatar from './Avatar.jsx';
 import BrandMark from './BrandMark.jsx';
 import Icon from './Icon.jsx';
 import MascotGreeting from './MascotGreeting.jsx';
+import StarBalance from './StarBalance.jsx';
 import './AppHeader.css';
 
 /**
  * <AppHeader /> — catalog top bar (Stitch Catalog header).
  *
- * Start (right): logo + wordmark, and on wide screens Nour's greeting badge.
- * End (left):    the student's avatar & nickname, star balance, and the
- *                "لوحة المعلم وولي الأمر" portal button.
+ * Start (right): logo + wordmark, and on wide screens the guide hero's
+ *                greeting badge (a link to the hero lobby).
+ * End (left):    the student's avatar & nickname (a link to the hero lobby),
+ *                star balance, and the "لوحة المعلم وولي الأمر" portal button.
  *
  * @param {object}   props
  * @param {Function} props.onOpenDashboard   called when the portal button is pressed
@@ -29,20 +31,20 @@ export default function AppHeader({ onOpenDashboard, isDashboardOpen = false }) 
       </div>
 
       <div className="app-header__end">
-        {/* Student identity: nickname + geometric avatar only (no personal data). */}
-        <div className="student-chip" title={student.nickname}>
+        {/* Student identity: nickname + geometric avatar only (no personal data).
+            It opens the hero lobby. */}
+        <a
+          className="student-chip"
+          href={buildHash(VIEWS.LOBBY)}
+          title={`${student.nickname} · ساحة الأبطال`}
+          aria-label={`${student.nickname} · ساحة الأبطال`}
+        >
           <Avatar avatarId={student.avatarId} size={36} />
           <span className="student-chip__name">{student.nickname}</span>
-        </div>
+        </a>
 
         {/* Star balance — reward colour family. */}
-        <div className="star-balance" role="status" aria-label={`رصيدك: ${formatStarCount(student.stars)}`}>
-          <Icon name="star" filled size={22} />
-          <span aria-hidden="true">
-            {formatNumber(student.stars)}
-            <span className="star-balance__unit"> نجمة</span>
-          </span>
-        </div>
+        <StarBalance />
 
         <button
           type="button"

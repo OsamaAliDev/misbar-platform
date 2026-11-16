@@ -1,14 +1,21 @@
 import { useEffect, useState } from 'react';
-import { NOUR_SRC } from '../lib/assets.js';
+import { useGuide, useHeroLine } from '../state/guide.js';
 import { useStudent } from '../state/student.jsx';
+import HeroAvatar from './HeroAvatar.jsx';
 import Icon from './Icon.jsx';
 import './ChallengeBar.css';
 
 /**
- * <ChallengeBar /> — Nour's challenge & tip bar under the workspace.
+ * <ChallengeBar /> — the guide hero's challenge & tip bar under the workspace.
+ *
+ * The student's chosen hero (src/state/guide.js) speaks in a speech bubble:
+ *   idle        the experiment tip              ("نصيحة <hero>: …")
+ *   wrong       a gentle "wrong" line + the retry hint
+ *   met/success a "celebrate" line + what to do / the success message
+ *   completed   an "encourage" line (challenge already done)
  *
  * States:
- *   not met    blue  "تحقق من التحدي"      → pressing it shows Nour's retry hint
+ *   not met    blue  "تحقق من التحدي"      → pressing it shows the retry hint
  *   met        gold  "أتممت التجربة (+١ نجمة)" → awards +1 star (once per experiment)
  *   completed  disabled "تم إنجاز التحدي"   (remembered in localStorage)
  *
@@ -19,9 +26,12 @@ import './ChallengeBar.css';
  */
 export default function ChallengeBar({ experimentId, challenge, met }) {
   const { student, completeChallenge } = useStudent();
+  const { hero, name } = useGuide();
   const completed = student.completedChallenges.includes(experimentId);
   /** null | 'retry' | 'success' */
   const [feedback, setFeedback] = useState(null);
+  /** Counts presses so every press can pick a fresh hero line. */
+  const [attempt, setAttempt] = useState(0);
 
   // A retry hint is stale as soon as the condition becomes true.
   useEffect(() => {
@@ -30,6 +40,7 @@ export default function ChallengeBar({ experimentId, challenge, met }) {
 
   const handleClick = () => {
     if (completed) return;
+    setAttempt((count) => count + 1);
     if (met) {
       completeChallenge(experimentId);
       setFeedback('success');
@@ -38,23 +49,30 @@ export default function ChallengeBar({ experimentId, challenge, met }) {
     }
   };
 
-  let message;
+  // What the hero says: a situation line (celebrate / encourage / wrong)
+  // followed by the experiment-specific sentence.
+  let situation = 'hint';
+  let detail = challenge.tip;
   let messageTone = 'tip';
   if (feedback === 'success') {
-    message = challenge.success;
+    situation = 'celebrate';
+    detail = challenge.success;
     messageTone = 'success';
   } else if (completed) {
-    message = 'خلّصت التحدي ده وخدت نجمتك! كمّل جرّب براحتك واكتشف أكتر.';
+    situation = 'encourage';
+    detail = 'خلّصت التحدي ده وخدت نجمتك! كمّل جرّب براحتك واكتشف أكتر.';
     messageTone = 'success';
   } else if (feedback === 'retry') {
-    message = challenge.retry;
+    situation = 'wrong';
+    detail = challenge.retry;
     messageTone = 'retry';
   } else if (met) {
-    message = 'ممتاز! وصلت للهدف، اضغط الزرار عشان تاخد نجمتك.';
+    situation = 'celebrate';
+    detail = 'وصلت للهدف، اضغط الزرار عشان تاخد نجمتك.';
     messageTone = 'success';
-  } else {
-    message = `نصيحة نُور: ${challenge.tip}`;
   }
+  const heroLine = useHeroLine(hero.id, situation, attempt);
+  const lead = situation === 'hint' ? `نصيحة ${name}:` : heroLine;
 
   let button;
   if (completed) {
@@ -86,18 +104,21 @@ export default function ChallengeBar({ experimentId, challenge, met }) {
       aria-labelledby="challenge-title"
     >
       <span className="challenge-bar__mascot">
-        <img src={NOUR_SRC} alt="" width="56" height="56" />
+        <HeroAvatar hero={hero} size={60} />
       </span>
       <div className="challenge-bar__text">
         <h2 id="challenge-title" className="challenge-bar__title">
           <span className="badge badge--reward challenge-bar__label">
             <Icon name="emoji_events" size={16} />
-            تحدي نُور
+            {`تحدي ${name}`}
           </span>
           <span className="challenge-bar__prompt">{challenge.prompt}</span>
         </h2>
-        <p className={`challenge-bar__message challenge-bar__message--${messageTone}`} aria-live="polite">
-          {message}
+        <p
+          className={`speech-bubble challenge-bar__message challenge-bar__message--${messageTone}`}
+          aria-live="polite"
+        >
+          <strong className="challenge-bar__lead">{lead}</strong> {detail}
         </p>
       </div>
       {button}

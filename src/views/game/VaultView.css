@@ -1,0 +1,213 @@
+/* ==========================================================================
+   Outfit vault (#/vault)
+   ========================================================================== */
+
+/* -- Hero picker ---------------------------------------------------------- */
+.vault__picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.vault__pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--touch-target);
+  padding-block: 4px;
+  padding-inline: 4px 16px;
+  cursor: pointer;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius-round);
+  transition: background-color var(--duration-fast) ease;
+}
+
+@media (hover: hover) {
+  .vault__pick:hover {
+    background-color: var(--surface-subtle);
+  }
+}
+
+.vault__pick.is-selected {
+  background-color: var(--accent-primary-soft);
+  color: var(--accent-primary-soft-text);
+}
+
+.vault__pick:has(.vault__pick-input:focus-visible) {
+  outline: 3px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+.vault__pick-name {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* -- Slots ---------------------------------------------------------------- */
+.vault__slots {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.outfit-slot {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.outfit-slot__art {
+  height: 300px;
+  padding-block-start: 16px;
+}
+
+/* Locked / unlocked placeholder: hanger + lock, no outfit art. */
+.outfit-slot__placeholder {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 12px 12px 0;
+  height: 288px;
+  padding: 0;
+  background-color: var(--surface-subtle);
+  border: var(--border-width) dashed var(--outline);
+  border-radius: var(--radius-inner);
+}
+
+.outfit-slot__hanger {
+  color: var(--text-secondary);
+}
+
+.outfit-slot__lock {
+  position: absolute;
+  top: 12px;
+  inset-inline-end: 12px;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  color: var(--text-secondary);
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: 50%;
+}
+
+.outfit-slot.is-ready .outfit-slot__lock {
+  color: var(--accent-reward-text);
+  background-color: var(--accent-reward-soft);
+  border-color: var(--accent-reward);
+}
+
+.outfit-slot.is-unlocked .outfit-slot__placeholder {
+  background-color: var(--accent-tools-soft);
+  border-color: var(--accent-tools);
+}
+
+.outfit-slot.is-unlocked .outfit-slot__hanger,
+.outfit-slot.is-unlocked .outfit-slot__lock {
+  color: var(--accent-tools-text);
+}
+
+.outfit-slot__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 14px 16px 16px;
+}
+
+.outfit-slot__name {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.outfit-slot__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.outfit-slot__cost {
+  white-space: normal;
+}
+
+.outfit-slot__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.outfit-slot__status--unlocked {
+  color: var(--accent-tools-text);
+}
+
+/* Unlock = reward action: solid mustard, dark text (both themes). */
+.outfit-slot__unlock {
+  margin-block-start: auto;
+  width: 100%;
+  min-height: var(--touch-target);
+  background-color: var(--accent-reward);
+  color: var(--text-on-reward);
+}
+
+.outfit-slot__unlock:disabled {
+  background-color: var(--surface-subtle);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+
+.outfit-slot__unlock:disabled:active {
+  transform: none;
+}
+
+@media (hover: hover) {
+  .outfit-slot__unlock:not(:disabled):hover {
+    background-color: var(--accent-reward-soft);
+    color: var(--accent-reward-text);
+  }
+}
+
+/* -- Responsive ----------------------------------------------------------- */
+@media (max-width: 1023px) {
+  .vault__slots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .vault__picker {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vault__pick {
+    padding-inline-end: 10px;
+  }
+
+  .vault__slots {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .outfit-slot__art {
+    height: 260px;
+  }
+
+  .outfit-slot__placeholder {
+    height: 180px;
+  }
+}

@@ -4,6 +4,8 @@
  * The mark is a four-point "probe" star (مِسبار = probe) with a reward-yellow
  * core, set in a soft-blue tile; the wordmark is Cairo ExtraBold.
  */
+import './BrandMark.css';
+
 export default function BrandMark() {
   return (
     <div className="brand">
