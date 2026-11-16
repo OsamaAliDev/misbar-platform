@@ -1,3 +1,4 @@
+import ThemeToggle from './ThemeToggle.jsx';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { getCategory, getExperimentById } from '../data/experiments.js';
 import { getGuide } from '../data/guides.js';
@@ -137,6 +138,7 @@ function PlaygroundHeader({ experiment, onBack, onOpenHelp }) {
       </div>
 
       <div className="playground-header__end">
+        <ThemeToggle />
         <div
           className={`star-counter ${bumping ? 'is-bumping' : ''}`.trim()}
           role="status"

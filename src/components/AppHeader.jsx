@@ -1,3 +1,4 @@
+import ThemeToggle from './ThemeToggle.jsx';
 import { buildHash, VIEWS } from '../state/navigation.jsx';
 import { useStudent } from '../state/student.jsx';
 import Avatar from './Avatar.jsx';
@@ -31,6 +32,7 @@ export default function AppHeader({ onOpenDashboard, isDashboardOpen = false }) 
       </div>
 
       <div className="app-header__end">
+        <ThemeToggle />
         {/* Student identity: nickname + geometric avatar only (no personal data).
             It opens the hero lobby. */}
         <a

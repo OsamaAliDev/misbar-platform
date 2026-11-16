@@ -9,6 +9,7 @@ import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import { I18nProvider, useI18n } from './i18n/index.jsx';
 import { NavigationProvider } from './state/navigation.jsx';
+import { ThemeProvider } from './state/theme.jsx';
 import { StudentProvider } from './state/student.jsx';
 
 /**
@@ -33,7 +34,7 @@ createRoot(document.getElementById('root')).render(
     <I18nProvider>
       <StudentProvider>
         <NavigationProvider>
-          <LocalizedApp />
+          <ThemeProvider><LocalizedApp /></ThemeProvider>
         </NavigationProvider>
       </StudentProvider>
     </I18nProvider>

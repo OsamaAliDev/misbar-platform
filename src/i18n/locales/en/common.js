@@ -7,6 +7,8 @@ function starCount({ count = 0 }) {
 
 /** Shared strings — English. */
 export default {
+  themeNight: 'Night mode',
+  themeLight: 'Light mode',
   siteName: 'Misbar',
   starCount,
   starsUnit: 'stars',

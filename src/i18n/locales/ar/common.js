@@ -10,6 +10,8 @@ function starCount({ count = 0 }) {
 
 /** Shared strings — Arabic (default). */
 export default {
+  themeNight: 'الوضع الليلي',
+  themeLight: 'الوضع الفاتح',
   siteName: 'مِسبار',
   starCount,
   /** Short unit shown after the number in star counters: "١٢ نجمة". */

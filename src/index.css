@@ -23,6 +23,7 @@
   --outline: #E3D9CC;
   --text-primary: #2B2824;
   --text-secondary: #5C5650;
+  --modal-scrim: rgb(43 40 36 / 55%);
 
   /* -- Accent: primary actions (start / run / continue) ------------------- */
   --accent-primary: #2F8FE0;
@@ -77,20 +78,18 @@
 }
 
 /* ==========================================================================
-   Night theme — game screens only (#/lobby, #/heroes, #/vault, #/ranks)
+   Night theme — global explicit choice, game-screen default
    --------------------------------------------------------------------------
-   Scoped: <App /> sets data-theme="night" on the game-screens wrapper; the
-   catalog and the lab never receive it and stay cream. While a game screen
-   is open, <body> follows too, so overscroll areas match.
-
+   ThemeProvider applies data-theme to html for every screen and native dialog.
+   Library/lab/dashboard default to cream; game routes default to night.
+   A stored explicit choice overrides all route defaults.
    ALL night colours live in this one block. The five accents and their
    roles are unchanged (blue = main actions, mustard = stars & rewards,
    coral = help, purple = tools, cyan = info); only the neutrals and the
    soft tints are re-mapped for a dark base.
    ========================================================================== */
 
-[data-theme='night'],
-body:has([data-theme='night']) {
+html[data-theme='night'] {
   /* Neutrals: deep navy base */
   --bg-canvas: #141A2E;
   --surface-card: #1D2540;
@@ -98,6 +97,7 @@ body:has([data-theme='night']) {
   --outline: #34406A;
   --text-primary: #F6F1E9;
   --text-secondary: #B8BDD6;
+  --modal-scrim: rgb(10 14 27 / 72%);
 
   /* Soft tints of the same five accents, darkened for the navy base;
      each "-text" colour stays readable on its soft tint. */
@@ -435,3 +435,7 @@ button {
     scroll-behavior: auto !important;
   }
 }
+
+/* Mirror only UI directions, never science geometry. */
+[dir='ltr'] .speech-bubble::before { right: auto; left: -8px; transform: translateY(-50%) rotate(-135deg); }
+[dir='ltr'] .control-toggle.is-on .control-toggle__thumb { transform: translateX(20px); }

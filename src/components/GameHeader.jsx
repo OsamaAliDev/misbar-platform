@@ -1,3 +1,4 @@
+import ThemeToggle from './ThemeToggle.jsx';
 import { useI18n } from '../i18n/index.jsx';
 import { buildHash, VIEWS } from '../state/navigation.jsx';
 import BrandMark from './BrandMark.jsx';
@@ -52,6 +53,7 @@ export default function GameHeader({ currentView }) {
       </nav>
 
       <div className="game-header__end">
+        <ThemeToggle />
         <StarBalance />
         <a className="btn btn--neutral game-header__library" href={buildHash(VIEWS.CATALOG)}>
           <Icon name="menu_book" size={20} className="game-header__library-icon" />

@@ -21,7 +21,7 @@ html:has(dialog[open]) {
 
 /* Flat scrim: --text-primary (#2B2824) at 55% — no blur, no glass. */
 .help-modal::backdrop {
-  background-color: rgba(43, 40, 36, 0.55);
+  background-color: var(--modal-scrim);
 }
 
 .help-modal[open] {

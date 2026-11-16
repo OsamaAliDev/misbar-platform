@@ -131,7 +131,7 @@ export default function App() {
     .join(' ');
 
   return (
-    <div className={shellClass} data-theme={isGame ? 'night' : undefined}>
+    <div className={shellClass}>
       <div className="app-container app-layout">
         {header}
         <main key={routeKey} className="app-main view-enter">
