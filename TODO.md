@@ -104,7 +104,7 @@ Help Modal (`_7`) screens in the Stitch zip.
 
 - [x] Latest phone/tablet request: same hero greeting button (avatar + greeting + direction-aware chevron) remains visible and clickable in AppHeader at phone/tablet widths; no duplicate alternative greeting; test390/768 and both languages/themes.
 
-# Phase 5A — saas-foundation
+# Phase 5A initial request — superseded by the 13:31 attached protocol
 
 - [ ] Step 1: Add SQL migration based on supabase/schema.sql with schools, profiles(role,school_id), classes(teacher_id,school_id,join_code), students(class_id,nickname,pin_hash,hero_id,stars,unlocked_outfits,claimed_missions), experiment_progress(student_id,experiment_id,stars,completed_at), subscriptions(school_id,plan,status,student_limit,valid_until). NO email, real-name or phone student columns. RLS EVERY table: school staff tenant-only, teacher own classes only, student own row only, platform_admin aggregate stats only. Execute and include proof schoolA cannot read schoolB; identify remote vs local proof honestly.
 - [ ] Step 2: Email teacher/admin Supabase Auth; student class code + nickname +4digitPIN; hash server-side, rate-limit attempts, no cleartext PIN in response/browser storage/logs. If Supabase env absent use local mock SAME interface and state exactly which settings needed. Supabase failures do not silently fallback. Session authorization and trusted role provisioning, no self-admin registration.
@@ -112,3 +112,13 @@ Help Modal (`_7`) screens in the Stitch zip.
 - [ ] Step 4: Teacher login, create class with join code, class roster showing each student's stars/rank, student login; Arabic/English, light/night, fit-to-screen and mobile/tablet as before. Include minimal enrollment with nickname/PIN only so a created class is usable. Never claim controls work without checking them.
 - [ ] Step 5: Expired/inactive subscription clear message; students can view but cannot earn new stars; enforce gate on server/RPC, not only CSS. Platform_admin page manually create school/set plan/student_limit/valid_until with manual invoicing, NO payments, parent accounts or analytics dashboard.
 - [ ] Step 6: Commit PER step, update DECISIONS.md with judgment calls; no forcepush, only saas-foundation branch. Final report Verified/NOT verified, commit hashes, executable RLS result, real Supabase vs mock parts, screenshots one per section. No publication claim or main merge in this phase.
+
+# Phase 5A current seven-step protocol — saas-foundation
+
+- [x] 1. Read handoff/decisions/schema/status, pinned install/build baseline, create STATUS.md and branch from latestmain. Push STATUS after every step/sub-step; table statuses only verified when actually run.
+- [ ] 2. Migration: schools,profiles(role,school_id),classes(school_id,teacher_id,join_code),students(class_id,nickname,pin_hash,hero_id,stars,unlocked_outfits,claimed_missions),experiment_progress(student_id,experiment_id,stars,completed_at),subscriptions(school_id,plan,status,student_limit,valid_until); no studentPII/contact/photo columns.
+- [ ] 3. EVERY tableRLS; schoolA cannotread/writeB; teacheronlyownclasses/students; studentownrow; platform_adminaggregatecounts only, nochildrows. SQLtestproof. RealSupabase only ifcredentialsavailable, otherwise explicitly NOT run remotely.
+- [ ] 4. Server PINhash and failedattemptlimit; studentclasscode+nickname+4digitPIN; teacher/adminSupabaseemailauth; no plainPIN persistence.
+- [ ] 5. One data-accessmodule with sameinterface guestlocalStorage and Supabaseadapter; import guestprogressoncefirststudentlogin. WithnoSUPABASE_URL/ANON .env use labeledmock, not realSupabase. Nocommittedsecrets, .env.example current.
+- [ ] 6. Arabic/Englishlight/nightviewportfit: studentlogin,teacherlogin,classcreatejoincode, roster nickname/stars/rank. Preserveexistingdesign plainCSSnodeps.
+- [ ] 7. Cleaninstall/build, noconsoleerrors, existingguest/screens unchanged, manualbrowsermockflow createclass/studentjoins/earnsstars/teachersees. FinalSTATUS Verified/NOTverified table, screenshotsonepersection andcommithashes. Never main/forcepush; no subscriptiongate/payments/parentaccounts/analytics inthisrun.
