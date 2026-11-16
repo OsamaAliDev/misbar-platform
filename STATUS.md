@@ -1,4 +1,4 @@
-# Last updated: 2026-11-16 14:01 EET — Current step: 7 complete — final evidence/report
+# Last updated: 2026-11-16 14:01 EET — Current step: Complete — Phase5A foundation
 
 | Step | Status | Commit hash | Evidence / limits |
 |---|---|---|---|
@@ -8,7 +8,7 @@
 | 4. Student PIN and staff email Auth | Done (verified) | 4d21887 +46de107 | Mock auth/API27/27 and delayed-auth4/4 passed. Supabase transport fixtures only; real Auth NOT run. |
 | 5. Guest/Supabase adapters and first import | Done (verified) | ada4373 | Actual mock8-stage school flow passed; guest15 stayed unchanged while school earned19 and re-login did not import again. |
 | 6. Bilingual/theme-aware logins, classes and roster | Done (verified) | f20e705 | 80/80 mock-auth UI viewport cases plus browser enrollment/roster flow passed; lifecycle regression fixes being added under finalQA. |
-| 7. Final clean build, guest regression and school flow | Done (verified) | final QA evidence commit (git log -- docs/saas) | Clean production25feb9b: backend27/27, guest192/192, school80/80, schoolflow8 stages and auth races4/4 passed; no console errors/warnings on acceptance flows. |
+| 7. Final clean build, guest regression and school flow | Done (verified) | db9acb0 | Clean production25feb9b: backend27/27, guest192/192, school80/80, schoolflow8 and auth races4/4 passed. Final report/screenshots committed; real Supabase NOT run. |
 
 ## Doing now
 
@@ -22,7 +22,7 @@ All seven scoped foundation steps are complete. Remote Supabase execution remain
 
 ## Blockers and decisions I need from the owner
 
-No decision is needed to finish the authorized mock. Real Supabase testing is unavailable until SUPABASE_URL and SUPABASE_ANON_KEY are supplied in ignored .env, the migration is applied and anonymous Auth is enabled. Secrets must not be committed. The local PostgreSQL proof is supplemental, not a remote Supabase result.
+No blocker remains for the completed mock foundation. Real Supabase testing is unavailable until SUPABASE_URL and SUPABASE_ANON_KEY are supplied in ignored .env, the migration is applied and anonymous Auth is enabled. Secrets must not be committed. The local PostgreSQL proof is supplemental, not a remote Supabase result.
 
 ## How to resume
 

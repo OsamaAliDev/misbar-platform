@@ -32,7 +32,7 @@ Evidence files: [clean clone](./clean-clone-verification.json), [backend TAP](./
 | 4. Auth/server | 4d21887 | Hashed PIN, rate limits, tenant/role authorization, labeled mock and Supabase transport. |
 | 5. Adapters/import | ada4373,46de107 | Guest/server adapters, once-only import and generation-scoped auth/logout/queues. |
 | 6. School screens | f20e705 | Bilingual/theme-aware logins, classes/code, enrollment and roster. |
-| 7. Final QA | Final QA evidence commit (recorded in STATUS.md after commit) | Final production acceptance and screenshot/report evidence. |
+| 7. Final QA | db9acb0237545d682dfb89186b8836ab3706f47b | Final production acceptance and screenshot/report evidence. |
 | Additional clean-build/icon fixes | 9757543,25feb9b | Clean-clone verification and missing login glyph in the existing icon subset. |
 
 Branch was created from main **e1bad49e71921b816ba92027796f3585aeb1fa6c**. A final read-only GitHub check found main had separately advanced to **873c991d12f5c380bf381f924e023deda48587c3**; this run did not push, merge or force-push main and did not rebase the foundation branch onto that separately advanced version. Inspect the current main before any future owner-authorized merge. STATUS updates and work commits were pushed to saas-foundation throughout.
