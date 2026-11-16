@@ -1,0 +1,14 @@
+{
+  "testedCommit": "302ddfe0c9bfe4332ad0435bff5a37d41b8a6557",
+  "source": "fresh GitHub clone origin/saas-foundation",
+  "install": "pnpm11.25.0 install --frozen-lockfile (pass)",
+  "build": "vite production build (pass)",
+  "backendTests": {
+    "passed": 27,
+    "failed": 0,
+    "skipped": 0
+  },
+  "appDependenciesAdded": 0,
+  "lockfileChanged": false,
+  "mode": "mock; real Supabase NOT run"
+}
