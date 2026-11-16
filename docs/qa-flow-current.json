@@ -1,0 +1,162 @@
+{
+  "pass": true,
+  "events": [
+    {
+      "step": "first visit and hero selection",
+      "student": {
+        "nickname": "بطل الفضاء",
+        "avatarId": "rocket",
+        "stars": 12,
+        "completedChallenges": [],
+        "heroId": "sharara",
+        "claimedMissions": [],
+        "unlockedOutfits": []
+      },
+      "route": "http://localhost:3000/#/lobby",
+      "lang": "ar",
+      "theme": "night"
+    },
+    {
+      "step": "language keyboard refocus and default themes",
+      "student": {
+        "nickname": "بطل الفضاء",
+        "avatarId": "rocket",
+        "stars": 12,
+        "completedChallenges": [],
+        "heroId": "sharara",
+        "claimedMissions": [],
+        "unlockedOutfits": []
+      },
+      "route": "http://localhost:3000/#/",
+      "lang": "en",
+      "theme": "night"
+    },
+    {
+      "step": "fraction challenge earned",
+      "student": {
+        "nickname": "بطل الفضاء",
+        "avatarId": "rocket",
+        "stars": 13,
+        "completedChallenges": [
+          "fractions-area"
+        ],
+        "heroId": "sharara",
+        "claimedMissions": [],
+        "unlockedOutfits": []
+      },
+      "route": "http://localhost:3000/#/playground/fractions-area",
+      "lang": "en",
+      "theme": "night"
+    },
+    {
+      "step": "first mission and rank change",
+      "student": {
+        "nickname": "بطل الفضاء",
+        "avatarId": "rocket",
+        "stars": 15,
+        "completedChallenges": [
+          "fractions-area"
+        ],
+        "heroId": "sharara",
+        "claimedMissions": [
+          "first-discovery"
+        ],
+        "unlockedOutfits": []
+      },
+      "route": "http://localhost:3000/#/lobby",
+      "lang": "en",
+      "theme": "night"
+    },
+    {
+      "step": "lever challenge earned",
+      "student": {
+        "nickname": "بطل الفضاء",
+        "avatarId": "rocket",
+        "stars": 16,
+        "completedChallenges": [
+          "fractions-area",
+          "lever-balance"
+        ],
+        "heroId": "sharara",
+        "claimedMissions": [
+          "first-discovery"
+        ],
+        "unlockedOutfits": []
+      },
+      "route": "http://localhost:3000/#/playground/lever-balance",
+      "lang": "en",
+      "theme": "night"
+    },
+    {
+      "step": "second mission and rank change",
+      "student": {
+        "nickname": "بطل الفضاء",
+        "avatarId": "rocket",
+        "stars": 19,
+        "completedChallenges": [
+          "fractions-area",
+          "lever-balance"
+        ],
+        "heroId": "sharara",
+        "claimedMissions": [
+          "first-discovery",
+          "two-experiments"
+        ],
+        "unlockedOutfits": []
+      },
+      "route": "http://localhost:3000/#/lobby",
+      "lang": "en",
+      "theme": "night"
+    },
+    {
+      "step": "vault unlock without spending",
+      "student": {
+        "nickname": "بطل الفضاء",
+        "avatarId": "rocket",
+        "stars": 19,
+        "completedChallenges": [
+          "fractions-area",
+          "lever-balance"
+        ],
+        "heroId": "sharara",
+        "claimedMissions": [
+          "first-discovery",
+          "two-experiments"
+        ],
+        "unlockedOutfits": [
+          "sharara:2"
+        ]
+      },
+      "route": "http://localhost:3000/#/vault",
+      "lang": "en",
+      "theme": "night"
+    },
+    {
+      "step": "all header switches and persistent reload",
+      "student": {
+        "nickname": "بطل الفضاء",
+        "avatarId": "rocket",
+        "stars": 19,
+        "completedChallenges": [
+          "fractions-area",
+          "lever-balance"
+        ],
+        "heroId": "sharara",
+        "claimedMissions": [
+          "first-discovery",
+          "two-experiments"
+        ],
+        "unlockedOutfits": [
+          "sharara:2"
+        ]
+      },
+      "route": "http://localhost:3000/#/playground/fractions-area",
+      "lang": "en",
+      "theme": "night"
+    }
+  ],
+  "errors": [],
+  "bad_requests": [],
+  "earned_via_ui": true,
+  "reward_seeding": false
+}

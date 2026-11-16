@@ -1,0 +1,183 @@
+/* ==========================================================================
+   App header
+   ========================================================================== */
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 76px;
+  padding: 12px 24px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.app-header__start,
+.app-header__end {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.app-header__end {
+  gap: 12px;
+}
+
+.app-header__divider {
+  flex-shrink: 0;
+  width: 2px;
+  height: 28px;
+  background-color: var(--outline);
+}
+
+/* Nour's greeting lives in the header only when there is room for it;
+   otherwise <MascotGreeting variant="strip"> is shown under the header. */
+.app-header__divider,
+.app-header__greeting {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .app-header__divider,
+  .app-header__greeting {
+    display: flex;
+  }
+}
+
+/* -- Student chip ----------------------------------------------------------- */
+.student-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: var(--touch-target);
+  min-height: var(--touch-target);
+  justify-content: center;
+  padding-inline: 2px;
+  border-radius: var(--radius-round);
+  color: inherit;
+  text-decoration: none;
+}
+
+/* The chip opens the hero lobby: a flat ring on hover (no fill change). */
+@media (hover: hover) {
+  .student-chip:hover .student-chip__name {
+    color: var(--accent-primary-soft-text);
+  }
+
+  .student-chip:hover .avatar {
+    outline: var(--border-width) solid var(--accent-primary);
+    outline-offset: 2px;
+  }
+}
+
+.student-chip__name {
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* -- Teacher / parent portal button ---------------------------------------- */
+.teacher-btn {
+  flex-shrink: 0;
+  min-height: var(--touch-target);
+  padding-inline: 16px;
+  font-size: 15px;
+}
+
+.teacher-btn__icon {
+  color: var(--accent-help);
+}
+
+@media (hover: hover) {
+  .teacher-btn:hover {
+    border-color: var(--accent-help);
+    color: var(--accent-help-text);
+  }
+}
+
+/* The dashboard is the current view (fill tint only; border stays outline). */
+.teacher-btn[aria-current='page'] {
+  background-color: var(--accent-help-soft);
+  color: var(--accent-help-text);
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+/* Narrow tablets: keep the avatar, hide the nickname text. */
+@media (max-width: 760px) {
+  .student-chip__name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* Phones: compact header (Stitch mobile Catalog). */
+@media (max-width: 640px) {
+  .app-header {
+    min-height: 60px;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .app-header__end {
+    gap: 6px;
+  }
+
+  /* Icon-only portal button, still a 44×44 touch target. */
+  .teacher-btn {
+    width: var(--touch-target);
+    padding: 0;
+  }
+
+  .teacher-btn__icon {
+    --icon-size: 22px;
+  }
+
+  .teacher-btn__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 360px) {
+  .app-header {
+    padding-inline: 10px;
+  }
+
+  .student-chip .avatar {
+    width: 32px !important;
+    height: 32px !important;
+  }
+}
+
+/* Preferences remain real 44px buttons; narrow headers wrap instead of clipping. */
+.app-header { flex-wrap: wrap; }
+.app-header__end { flex-wrap: wrap; }
+@media (max-width: 767px) {
+  .app-header__start { flex: 1 1 100%; }
+  .app-header__end { width: 100%; justify-content: space-between; }
+}
+
+/* Keep the same hero-lobby greeting visible at every width. */
+.app-header__greeting { display: flex; min-width: 0; }
+@media (max-width: 1199px) {
+  .app-header__start { flex: 1 1 100%; flex-wrap: wrap; justify-content: space-between; }
+  .app-header__end { width: 100%; justify-content: flex-end; }
+}
+@media (max-width: 480px) {
+  .app-header__greeting { flex: 1 1 100%; justify-content: flex-start; }
+  .app-header__end { justify-content: space-between; }
+}

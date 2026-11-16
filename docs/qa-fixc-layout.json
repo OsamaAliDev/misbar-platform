@@ -1,0 +1,5146 @@
+[
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "scroll": [
+      1366,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 971.796875,
+        "y": 262.65625,
+        "w": 349.203125,
+        "h": 358.625,
+        "bottom": 621.28125,
+        "right": 1321
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 623.296875,
+        "y": 247.375,
+        "w": 127.546875,
+        "h": 151.265625,
+        "bottom": 398.640625,
+        "right": 750.84375
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 262.609375,
+        "y": 247.375,
+        "w": 127.5625,
+        "h": 151.265625,
+        "bottom": 398.640625,
+        "right": 390.171875
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 623.296875,
+        "y": 485.28125,
+        "w": 127.546875,
+        "h": 151.265625,
+        "bottom": 636.546875,
+        "right": 750.84375
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 262.609375,
+        "y": 485.28125,
+        "w": 127.5625,
+        "h": 151.265625,
+        "bottom": 636.546875,
+        "right": 390.171875
+      }
+    ],
+    "header": {
+      "x": 43,
+      "y": 15.359375,
+      "w": 1280,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1323
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "ar",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "scroll": [
+      1366,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 902.171875,
+        "y": 166.375,
+        "w": 418.828125,
+        "h": 356.625,
+        "bottom": 523,
+        "right": 1321
+      }
+    ],
+    "header": {
+      "x": 43,
+      "y": 15.359375,
+      "w": 1280,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1323
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "scroll": [
+      1366,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 1013.640625,
+        "y": 292.328125,
+        "w": 307.359375,
+        "h": 358.625,
+        "bottom": 650.953125,
+        "right": 1321
+      }
+    ],
+    "header": {
+      "x": 43,
+      "y": 15.359375,
+      "w": 1280,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1323
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "scroll": [
+      1366,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 43,
+      "y": 15.359375,
+      "w": 1280,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1323
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "scroll": [
+      1920,
+      1080
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 1251.390625,
+        "y": 348.390625,
+        "w": 346.609375,
+        "h": 508.390625,
+        "bottom": 856.78125,
+        "right": 1598
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 900.71875,
+        "y": 306.4375,
+        "w": 126.59375,
+        "h": 210,
+        "bottom": 516.4375,
+        "right": 1027.3125
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 537.96875,
+        "y": 306.4375,
+        "w": 126.59375,
+        "h": 210,
+        "bottom": 516.4375,
+        "right": 664.5625
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 900.71875,
+        "y": 688.75,
+        "w": 126.59375,
+        "h": 210,
+        "bottom": 898.75,
+        "right": 1027.3125
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 537.96875,
+        "y": 688.75,
+        "w": 126.59375,
+        "h": 210,
+        "bottom": 898.75,
+        "right": 664.5625
+      }
+    ],
+    "header": {
+      "x": 320,
+      "y": 20,
+      "w": 1280,
+      "h": 72,
+      "bottom": 92,
+      "right": 1600
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "ar",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "scroll": [
+      1920,
+      1080
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 1180.734375,
+        "y": 245.84375,
+        "w": 417.265625,
+        "h": 506.390625,
+        "bottom": 752.234375,
+        "right": 1598
+      }
+    ],
+    "header": {
+      "x": 320,
+      "y": 20,
+      "w": 1280,
+      "h": 72,
+      "bottom": 92,
+      "right": 1600
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "scroll": [
+      1920,
+      1080
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 1294.140625,
+        "y": 315.5625,
+        "w": 303.859375,
+        "h": 508.390625,
+        "bottom": 823.953125,
+        "right": 1598
+      }
+    ],
+    "header": {
+      "x": 320,
+      "y": 20,
+      "w": 1280,
+      "h": 72,
+      "bottom": 92,
+      "right": 1600
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "scroll": [
+      1920,
+      1080
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 320,
+      "y": 20,
+      "w": 1280,
+      "h": 72,
+      "bottom": 92,
+      "right": 1600
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "scroll": [
+      390,
+      1365
+    ],
+    "outside": [
+      {
+        "class": "hero-card__bio",
+        "text": "أسرع واحد في الفريق، وبيعشق الحركة والسرعة.",
+        "x": 213.328125,
+        "y": 844.734375,
+        "w": 148.671875,
+        "h": 39,
+        "bottom": 883.734375,
+        "right": 362
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 203.328125,
+        "y": 887.734375,
+        "w": 168.671875,
+        "h": 36,
+        "bottom": 923.734375,
+        "right": 372
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "قلب فريق مِسبار، بيشجّع كل مستكشف جديد.",
+        "x": 28,
+        "y": 844.734375,
+        "w": 148.671875,
+        "h": 39,
+        "bottom": 883.734375,
+        "right": 176.671875
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 18,
+        "y": 887.734375,
+        "w": 168.671875,
+        "h": 36,
+        "bottom": 923.734375,
+        "right": 186.671875
+      },
+      {
+        "class": "hero-card__name",
+        "text": "سُهيل",
+        "x": 311,
+        "y": 1066.546875,
+        "w": 51,
+        "h": 23.390625,
+        "bottom": 1089.9375,
+        "right": 362
+      },
+      {
+        "class": "badge badge--info hero-card__title",
+        "text": "publicمستكشف الفضاء",
+        "x": 229,
+        "y": 1094.9375,
+        "w": 133,
+        "h": 24.796875,
+        "bottom": 1119.734375,
+        "right": 362
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "بيرسم خرايط النجوم وبيحلم يزور كل الكواكب.",
+        "x": 213.328125,
+        "y": 1124.734375,
+        "w": 148.671875,
+        "h": 39,
+        "bottom": 1163.734375,
+        "right": 362
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 203.328125,
+        "y": 1184.53125,
+        "w": 168.671875,
+        "h": 36,
+        "bottom": 1220.53125,
+        "right": 372
+      },
+      {
+        "class": "hero-card__name",
+        "text": "شَرارة",
+        "x": 128.671875,
+        "y": 1066.546875,
+        "w": 48,
+        "h": 23.390625,
+        "bottom": 1089.9375,
+        "right": 176.671875
+      },
+      {
+        "class": "badge badge--help hero-card__title",
+        "text": "boltخبيرة الطاقة والحرارة",
+        "x": 28,
+        "y": 1094.9375,
+        "w": 148.671875,
+        "h": 41.59375,
+        "bottom": 1136.53125,
+        "right": 176.671875
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "خبيرة الحرارة والطاقة، وفاهمة سر تحوّل المادة.",
+        "x": 28,
+        "y": 1141.53125,
+        "w": 148.671875,
+        "h": 39,
+        "bottom": 1180.53125,
+        "right": 176.671875
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 18,
+        "y": 1184.53125,
+        "w": 168.671875,
+        "h": 36,
+        "bottom": 1220.53125,
+        "right": 186.671875
+      },
+      {
+        "class": "hero-select__status",
+        "text": "تم الحفظ! لُبنى معاك في كل تجربة.",
+        "x": 30,
+        "y": 1252.53125,
+        "w": 330,
+        "h": 22.5,
+        "bottom": 1275.03125,
+        "right": 360
+      },
+      {
+        "class": "btn btn--primary hero-select__continue",
+        "text": "يلا على الساحة مع لُبنىarrow_back",
+        "x": 30,
+        "y": 1287.03125,
+        "w": 330,
+        "h": 48,
+        "bottom": 1335.03125,
+        "right": 360
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 195,
+        "y": 348.734375,
+        "w": 177,
+        "h": 294,
+        "bottom": 642.734375,
+        "right": 372
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 203.328125,
+        "y": 666.390625,
+        "w": 168.671875,
+        "h": 112.15625,
+        "bottom": 778.546875,
+        "right": 372
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 666.390625,
+        "w": 168.671875,
+        "h": 112.15625,
+        "bottom": 778.546875,
+        "right": 186.671875
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 203.328125,
+        "y": 946.390625,
+        "w": 168.671875,
+        "h": 112.15625,
+        "bottom": 1058.546875,
+        "right": 372
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 946.390625,
+        "w": 168.671875,
+        "h": 112.15625,
+        "bottom": 1058.546875,
+        "right": 186.671875
+      }
+    ],
+    "header": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 182.890625,
+      "bottom": 198.890625,
+      "right": 374
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "ar",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "scroll": [
+      390,
+      1927
+    ],
+    "outside": [
+      {
+        "class": "speech-bubble lobby__bubble",
+        "text": "أنا معاك، هنحلّها سطر سطر.",
+        "x": 32,
+        "y": 801.640625,
+        "w": 260,
+        "h": 48,
+        "bottom": 849.640625,
+        "right": 292
+      },
+      {
+        "class": "lobby__stat-label",
+        "text": "نجومك",
+        "x": 249,
+        "y": 901.640625,
+        "w": 43,
+        "h": 22.390625,
+        "bottom": 924.03125,
+        "right": 292
+      },
+      {
+        "class": "lobby__stat-value",
+        "text": "١٢",
+        "x": 249,
+        "y": 924.03125,
+        "w": 43,
+        "h": 39.09375,
+        "bottom": 963.125,
+        "right": 292
+      },
+      {
+        "class": "lobby__stat-label",
+        "text": "رتبتك",
+        "x": 116,
+        "y": 1012.421875,
+        "w": 176,
+        "h": 22.390625,
+        "bottom": 1034.8125,
+        "right": 292
+      },
+      {
+        "class": "lobby__rank-name",
+        "text": "المستكشف الصغير",
+        "x": 116,
+        "y": 1034.8125,
+        "w": 176,
+        "h": 27,
+        "bottom": 1061.8125,
+        "right": 292
+      },
+      {
+        "class": "lobby__rank-next",
+        "text": "فاضل نجمتان وتوصل لرتبة «المخترع».",
+        "x": 34,
+        "y": 1095.125,
+        "w": 322,
+        "h": 21,
+        "bottom": 1116.125,
+        "right": 356
+      },
+      {
+        "class": "game-section-title",
+        "text": "مهامك",
+        "x": 16,
+        "y": 1204.125,
+        "w": 358,
+        "h": 28,
+        "bottom": 1232.125,
+        "right": 374
+      },
+      {
+        "class": "lobby__missions-hint",
+        "text": "خلّص تحديات التجارب عشان تكمّل المهام وتكسب نجوم زيادة.",
+        "x": 16,
+        "y": 1232.125,
+        "w": 358,
+        "h": 22.390625,
+        "bottom": 1254.515625,
+        "right": 374
+      },
+      {
+        "class": "mission-card__title",
+        "text": "أول اكتشاف",
+        "x": 30,
+        "y": 1278.515625,
+        "w": 268,
+        "h": 22.390625,
+        "bottom": 1300.90625,
+        "right": 298
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحدي تجربة واحدة.",
+        "x": 30,
+        "y": 1304.90625,
+        "w": 268,
+        "h": 21,
+        "bottom": 1325.90625,
+        "right": 298
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ١starالمكافأة: نجمتان",
+        "x": 30,
+        "y": 1349.90625,
+        "w": 268,
+        "h": 20.796875,
+        "bottom": 1370.703125,
+        "right": 298
+      },
+      {
+        "class": "mission-card__title",
+        "text": "عالِم نشيط",
+        "x": 30,
+        "y": 1450.703125,
+        "w": 268,
+        "h": 22.390625,
+        "bottom": 1473.09375,
+        "right": 298
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحديات تجربتين.",
+        "x": 30,
+        "y": 1477.09375,
+        "w": 268,
+        "h": 21,
+        "bottom": 1498.09375,
+        "right": 298
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ٢starالمكافأة: ٣ نجوم",
+        "x": 30,
+        "y": 1522.09375,
+        "w": 268,
+        "h": 20.796875,
+        "bottom": 1542.890625,
+        "right": 298
+      },
+      {
+        "class": "mission-card__title",
+        "text": "جولة العلوم",
+        "x": 30,
+        "y": 1622.890625,
+        "w": 268,
+        "h": 22.390625,
+        "bottom": 1645.28125,
+        "right": 298
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحدي في الفيزياء والرياضيات والفلك.",
+        "x": 30,
+        "y": 1649.28125,
+        "w": 268,
+        "h": 21,
+        "bottom": 1670.28125,
+        "right": 298
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ٣starالمكافأة: ٥ نجوم",
+        "x": 30,
+        "y": 1694.28125,
+        "w": 268,
+        "h": 20.796875,
+        "bottom": 1715.078125,
+        "right": 298
+      },
+      {
+        "class": "btn btn--primary lobby__enter",
+        "text": "scienceادخل مكتبة التجارب",
+        "x": 16,
+        "y": 1787.078125,
+        "w": 358,
+        "h": 56,
+        "bottom": 1843.078125,
+        "right": 374
+      },
+      {
+        "class": "btn btn--neutral lobby__vault",
+        "text": "checkroomخزانة الأزياء",
+        "x": 16,
+        "y": 1855.078125,
+        "w": 358,
+        "h": 56,
+        "bottom": 1911.078125,
+        "right": 374
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 229.546875,
+        "w": 354,
+        "h": 284,
+        "bottom": 513.546875,
+        "right": 372
+      }
+    ],
+    "header": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 182.890625,
+      "bottom": 198.890625,
+      "right": 374
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "scroll": [
+      390,
+      2119
+    ],
+    "outside": [
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ١",
+        "x": 288,
+        "y": 883.734375,
+        "w": 68,
+        "h": 25.1875,
+        "bottom": 908.921875,
+        "right": 356
+      },
+      {
+        "class": "badge badge--tools",
+        "text": "الزي الأساسي",
+        "x": 248,
+        "y": 916.921875,
+        "w": 108,
+        "h": 28,
+        "bottom": 944.921875,
+        "right": 356
+      },
+      {
+        "class": "badge badge--primary",
+        "text": "checkلابسه دلوقتي",
+        "x": 116,
+        "y": 916.921875,
+        "w": 126,
+        "h": 28,
+        "bottom": 944.921875,
+        "right": 242
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ٢",
+        "x": 285,
+        "y": 1182.921875,
+        "w": 71,
+        "h": 25.1875,
+        "bottom": 1208.109375,
+        "right": 356
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starيتفتح عند ١٦ نجمة",
+        "x": 206,
+        "y": 1216.109375,
+        "w": 150,
+        "h": 28,
+        "bottom": 1244.109375,
+        "right": 356
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "فاضل ٤ نجوم",
+        "x": 277,
+        "y": 1252.109375,
+        "w": 79,
+        "h": 21,
+        "bottom": 1273.109375,
+        "right": 356
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openافتح المكان",
+        "x": 34,
+        "y": 1281.109375,
+        "w": 322,
+        "h": 44,
+        "bottom": 1325.109375,
+        "right": 356
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ٣",
+        "x": 281,
+        "y": 1563.109375,
+        "w": 75,
+        "h": 25.1875,
+        "bottom": 1588.296875,
+        "right": 356
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starيتفتح عند ٢٢ نجمة",
+        "x": 204,
+        "y": 1596.296875,
+        "w": 152,
+        "h": 28,
+        "bottom": 1624.296875,
+        "right": 356
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "فاضل ١٠ نجوم",
+        "x": 274,
+        "y": 1632.296875,
+        "w": 82,
+        "h": 21,
+        "bottom": 1653.296875,
+        "right": 356
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openافتح المكان",
+        "x": 34,
+        "y": 1661.296875,
+        "w": 322,
+        "h": 44,
+        "bottom": 1705.296875,
+        "right": 356
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ٤",
+        "x": 287,
+        "y": 1943.296875,
+        "w": 69,
+        "h": 25.1875,
+        "bottom": 1968.484375,
+        "right": 356
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starيتفتح عند ٢٨ نجمة",
+        "x": 203,
+        "y": 1976.484375,
+        "w": 153,
+        "h": 28,
+        "bottom": 2004.484375,
+        "right": 356
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "فاضل ١٦ نجمة",
+        "x": 270,
+        "y": 2012.484375,
+        "w": 86,
+        "h": 21,
+        "bottom": 2033.484375,
+        "right": 356
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openافتح المكان",
+        "x": 34,
+        "y": 2041.484375,
+        "w": 322,
+        "h": 44,
+        "bottom": 2085.484375,
+        "right": 356
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 585.734375,
+        "w": 354,
+        "h": 284,
+        "bottom": 869.734375,
+        "right": 372
+      }
+    ],
+    "header": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 182.890625,
+      "bottom": 198.890625,
+      "right": 374
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "scroll": [
+      390,
+      1070
+    ],
+    "outside": [
+      {
+        "class": "rank-step__name",
+        "text": "المستكشف الصغير",
+        "x": 148,
+        "y": 898.296875,
+        "w": 152,
+        "h": 23.796875,
+        "bottom": 922.09375,
+        "right": 300
+      },
+      {
+        "class": "rank-step__text",
+        "text": "بداية الرحلة: كل سؤال هو اكتشاف جديد.",
+        "x": 32,
+        "y": 926.09375,
+        "w": 268,
+        "h": 21.6875,
+        "bottom": 947.78125,
+        "right": 300
+      },
+      {
+        "class": "rank-step__hint",
+        "text": "فاضل نجمتان وتوصل لرتبة «المخترع».",
+        "x": 32,
+        "y": 975.78125,
+        "w": 268,
+        "h": 22.390625,
+        "bottom": 998.171875,
+        "right": 300
+      },
+      {
+        "class": "badge badge--primary",
+        "text": "رتبتك الحالية",
+        "x": 203,
+        "y": 1010.171875,
+        "w": 97,
+        "h": 28,
+        "bottom": 1038.171875,
+        "right": 300
+      },
+      {
+        "class": "badge rank-step__needs",
+        "text": "محتاجة ١٤ نجمة",
+        "x": 184,
+        "y": 822.109375,
+        "w": 116,
+        "h": 28,
+        "bottom": 850.109375,
+        "right": 300
+      }
+    ],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 182.890625,
+      "bottom": 198.890625,
+      "right": 374
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "scroll": [
+      320,
+      1425
+    ],
+    "outside": [
+      {
+        "class": "hero-card__name",
+        "text": "شِهاب",
+        "x": 245,
+        "y": 810.859375,
+        "w": 51,
+        "h": 23.390625,
+        "bottom": 834.25,
+        "right": 296
+      },
+      {
+        "class": "badge badge--primary hero-card__title",
+        "text": "speedمتسابق السرعة",
+        "x": 177.546875,
+        "y": 839.25,
+        "w": 118.453125,
+        "h": 41.59375,
+        "bottom": 880.84375,
+        "right": 296
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "أسرع واحد في الفريق، وبيعشق الحركة والسرعة.",
+        "x": 177.546875,
+        "y": 885.84375,
+        "w": 118.453125,
+        "h": 58.5,
+        "bottom": 944.34375,
+        "right": 296
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 167.546875,
+        "y": 948.34375,
+        "w": 138.453125,
+        "h": 36,
+        "bottom": 984.34375,
+        "right": 306
+      },
+      {
+        "class": "hero-card__name",
+        "text": "نُور",
+        "x": 119.453125,
+        "y": 810.859375,
+        "w": 23,
+        "h": 23.390625,
+        "bottom": 834.25,
+        "right": 142.453125
+      },
+      {
+        "class": "badge badge--reward hero-card__title",
+        "text": "starبطل مِسبار",
+        "x": 49.453125,
+        "y": 839.25,
+        "w": 93,
+        "h": 24.796875,
+        "bottom": 864.046875,
+        "right": 142.453125
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "قلب فريق مِسبار، بيشجّع كل مستكشف جديد.",
+        "x": 24,
+        "y": 869.046875,
+        "w": 118.453125,
+        "h": 58.5,
+        "bottom": 927.546875,
+        "right": 142.453125
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 14,
+        "y": 948.34375,
+        "w": 138.453125,
+        "h": 36,
+        "bottom": 984.34375,
+        "right": 152.453125
+      },
+      {
+        "class": "hero-card__name",
+        "text": "سُهيل",
+        "x": 245,
+        "y": 1111.03125,
+        "w": 51,
+        "h": 23.390625,
+        "bottom": 1134.421875,
+        "right": 296
+      },
+      {
+        "class": "badge badge--info hero-card__title",
+        "text": "publicمستكشف الفضاء",
+        "x": 177.546875,
+        "y": 1139.421875,
+        "w": 118.453125,
+        "h": 41.59375,
+        "bottom": 1181.015625,
+        "right": 296
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "بيرسم خرايط النجوم وبيحلم يزور كل الكواكب.",
+        "x": 177.546875,
+        "y": 1186.015625,
+        "w": 118.453125,
+        "h": 58.5,
+        "bottom": 1244.515625,
+        "right": 296
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 167.546875,
+        "y": 1248.515625,
+        "w": 138.453125,
+        "h": 36,
+        "bottom": 1284.515625,
+        "right": 306
+      },
+      {
+        "class": "hero-card__name",
+        "text": "شَرارة",
+        "x": 94.453125,
+        "y": 1111.03125,
+        "w": 48,
+        "h": 23.390625,
+        "bottom": 1134.421875,
+        "right": 142.453125
+      },
+      {
+        "class": "badge badge--help hero-card__title",
+        "text": "boltخبيرة الطاقة والحرارة",
+        "x": 24,
+        "y": 1139.421875,
+        "w": 118.453125,
+        "h": 41.59375,
+        "bottom": 1181.015625,
+        "right": 142.453125
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "خبيرة الحرارة والطاقة، وفاهمة سر تحوّل المادة.",
+        "x": 24,
+        "y": 1186.015625,
+        "w": 118.453125,
+        "h": 58.5,
+        "bottom": 1244.515625,
+        "right": 142.453125
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 14,
+        "y": 1248.515625,
+        "w": 138.453125,
+        "h": 36,
+        "bottom": 1284.515625,
+        "right": 152.453125
+      },
+      {
+        "class": "hero-select__status",
+        "text": "تم الحفظ! لُبنى معاك في كل تجربة.",
+        "x": 26,
+        "y": 1316.515625,
+        "w": 268,
+        "h": 22.5,
+        "bottom": 1339.015625,
+        "right": 294
+      },
+      {
+        "class": "btn btn--primary hero-select__continue",
+        "text": "يلا على الساحة مع لُبنىarrow_back",
+        "x": 26,
+        "y": 1351.015625,
+        "w": 268,
+        "h": 48,
+        "bottom": 1399.015625,
+        "right": 294
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 160,
+        "y": 393.171875,
+        "w": 146,
+        "h": 290,
+        "bottom": 683.171875,
+        "right": 306
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 167.546875,
+        "y": 705.265625,
+        "w": 138.453125,
+        "h": 97.59375,
+        "bottom": 802.859375,
+        "right": 306
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 705.265625,
+        "w": 138.453125,
+        "h": 97.59375,
+        "bottom": 802.859375,
+        "right": 152.453125
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 167.546875,
+        "y": 1005.4375,
+        "w": 138.453125,
+        "h": 97.59375,
+        "bottom": 1103.03125,
+        "right": 306
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 1005.4375,
+        "w": 138.453125,
+        "h": 97.59375,
+        "bottom": 1103.03125,
+        "right": 152.453125
+      }
+    ],
+    "header": {
+      "x": 12,
+      "y": 12,
+      "w": 296,
+      "h": 232.890625,
+      "bottom": 244.890625,
+      "right": 308
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "ar",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "scroll": [
+      320,
+      2024
+    ],
+    "outside": [
+      {
+        "class": "lobby__greeting",
+        "text": "أهلاً يا بطل الفضاء!",
+        "x": 60,
+        "y": 788.578125,
+        "w": 172,
+        "h": 27,
+        "bottom": 815.578125,
+        "right": 232
+      },
+      {
+        "class": "speech-bubble lobby__bubble",
+        "text": "يلا نجرّب! كل تجربة بتعلّمنا حاجة جديدة.",
+        "x": 28,
+        "y": 840.078125,
+        "w": 198,
+        "h": 72,
+        "bottom": 912.078125,
+        "right": 226
+      },
+      {
+        "class": "lobby__stat-label",
+        "text": "نجومك",
+        "x": 183,
+        "y": 962.078125,
+        "w": 43,
+        "h": 22.390625,
+        "bottom": 984.46875,
+        "right": 226
+      },
+      {
+        "class": "lobby__stat-value",
+        "text": "١٢",
+        "x": 183,
+        "y": 984.46875,
+        "w": 43,
+        "h": 39.09375,
+        "bottom": 1023.5625,
+        "right": 226
+      },
+      {
+        "class": "lobby__stat-label",
+        "text": "رتبتك",
+        "x": 50,
+        "y": 1072.859375,
+        "w": 176,
+        "h": 22.390625,
+        "bottom": 1095.25,
+        "right": 226
+      },
+      {
+        "class": "lobby__rank-name",
+        "text": "المستكشف الصغير",
+        "x": 50,
+        "y": 1095.25,
+        "w": 176,
+        "h": 27,
+        "bottom": 1122.25,
+        "right": 226
+      },
+      {
+        "class": "lobby__rank-next",
+        "text": "فاضل نجمتان وتوصل لرتبة «المخترع».",
+        "x": 30,
+        "y": 1155.5625,
+        "w": 260,
+        "h": 21,
+        "bottom": 1176.5625,
+        "right": 290
+      },
+      {
+        "class": "game-section-title",
+        "text": "مهامك",
+        "x": 12,
+        "y": 1264.5625,
+        "w": 296,
+        "h": 25.1875,
+        "bottom": 1289.75,
+        "right": 308
+      },
+      {
+        "class": "lobby__missions-hint",
+        "text": "خلّص تحديات التجارب عشان تكمّل المهام وتكسب نجوم زيادة.",
+        "x": 12,
+        "y": 1289.75,
+        "w": 296,
+        "h": 44.78125,
+        "bottom": 1334.53125,
+        "right": 308
+      },
+      {
+        "class": "mission-card__title",
+        "text": "أول اكتشاف",
+        "x": 26,
+        "y": 1358.53125,
+        "w": 206,
+        "h": 22.390625,
+        "bottom": 1380.921875,
+        "right": 232
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحدي تجربة واحدة.",
+        "x": 26,
+        "y": 1384.921875,
+        "w": 206,
+        "h": 21,
+        "bottom": 1405.921875,
+        "right": 232
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ١starالمكافأة: نجمتان",
+        "x": 26,
+        "y": 1429.921875,
+        "w": 206,
+        "h": 20.796875,
+        "bottom": 1450.71875,
+        "right": 232
+      },
+      {
+        "class": "mission-card__title",
+        "text": "عالِم نشيط",
+        "x": 26,
+        "y": 1530.71875,
+        "w": 206,
+        "h": 22.390625,
+        "bottom": 1553.109375,
+        "right": 232
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحديات تجربتين.",
+        "x": 26,
+        "y": 1557.109375,
+        "w": 206,
+        "h": 21,
+        "bottom": 1578.109375,
+        "right": 232
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ٢starالمكافأة: ٣ نجوم",
+        "x": 26,
+        "y": 1602.109375,
+        "w": 206,
+        "h": 20.796875,
+        "bottom": 1622.90625,
+        "right": 232
+      },
+      {
+        "class": "mission-card__title",
+        "text": "جولة العلوم",
+        "x": 26,
+        "y": 1702.90625,
+        "w": 206,
+        "h": 22.390625,
+        "bottom": 1725.296875,
+        "right": 232
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحدي في الفيزياء والرياضيات والفلك.",
+        "x": 26,
+        "y": 1729.296875,
+        "w": 206,
+        "h": 42,
+        "bottom": 1771.296875,
+        "right": 232
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ٣starالمكافأة: ٥ نجوم",
+        "x": 26,
+        "y": 1795.296875,
+        "w": 206,
+        "h": 20.796875,
+        "bottom": 1816.09375,
+        "right": 232
+      },
+      {
+        "class": "btn btn--primary lobby__enter",
+        "text": "scienceادخل مكتبة التجارب",
+        "x": 12,
+        "y": 1888.09375,
+        "w": 296,
+        "h": 56,
+        "bottom": 1944.09375,
+        "right": 308
+      },
+      {
+        "class": "btn btn--neutral lobby__vault",
+        "text": "checkroomخزانة الأزياء",
+        "x": 12,
+        "y": 1956.09375,
+        "w": 296,
+        "h": 56,
+        "bottom": 2012.09375,
+        "right": 308
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 273.984375,
+        "w": 292,
+        "h": 280,
+        "bottom": 553.984375,
+        "right": 306
+      }
+    ],
+    "header": {
+      "x": 12,
+      "y": 12,
+      "w": 296,
+      "h": 232.890625,
+      "bottom": 244.890625,
+      "right": 308
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "scroll": [
+      320,
+      2149
+    ],
+    "outside": [
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ١",
+        "x": 222,
+        "y": 924.171875,
+        "w": 68,
+        "h": 25.1875,
+        "bottom": 949.359375,
+        "right": 290
+      },
+      {
+        "class": "badge badge--tools",
+        "text": "الزي الأساسي",
+        "x": 182,
+        "y": 957.359375,
+        "w": 108,
+        "h": 28,
+        "bottom": 985.359375,
+        "right": 290
+      },
+      {
+        "class": "badge badge--primary",
+        "text": "checkلابسه دلوقتي",
+        "x": 50,
+        "y": 957.359375,
+        "w": 126,
+        "h": 28,
+        "bottom": 985.359375,
+        "right": 176
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ٢",
+        "x": 219,
+        "y": 1220.953125,
+        "w": 71,
+        "h": 25.1875,
+        "bottom": 1246.140625,
+        "right": 290
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starيتفتح عند ١٦ نجمة",
+        "x": 140,
+        "y": 1254.140625,
+        "w": 150,
+        "h": 28,
+        "bottom": 1282.140625,
+        "right": 290
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "فاضل ٤ نجوم",
+        "x": 211,
+        "y": 1290.140625,
+        "w": 79,
+        "h": 21,
+        "bottom": 1311.140625,
+        "right": 290
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openافتح المكان",
+        "x": 30,
+        "y": 1319.140625,
+        "w": 260,
+        "h": 44,
+        "bottom": 1363.140625,
+        "right": 290
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ٣",
+        "x": 215,
+        "y": 1598.734375,
+        "w": 75,
+        "h": 25.1875,
+        "bottom": 1623.921875,
+        "right": 290
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starيتفتح عند ٢٢ نجمة",
+        "x": 138,
+        "y": 1631.921875,
+        "w": 152,
+        "h": 28,
+        "bottom": 1659.921875,
+        "right": 290
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "فاضل ١٠ نجوم",
+        "x": 208,
+        "y": 1667.921875,
+        "w": 82,
+        "h": 21,
+        "bottom": 1688.921875,
+        "right": 290
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openافتح المكان",
+        "x": 30,
+        "y": 1696.921875,
+        "w": 260,
+        "h": 44,
+        "bottom": 1740.921875,
+        "right": 290
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ٤",
+        "x": 221,
+        "y": 1976.515625,
+        "w": 69,
+        "h": 25.1875,
+        "bottom": 2001.703125,
+        "right": 290
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starيتفتح عند ٢٨ نجمة",
+        "x": 137,
+        "y": 2009.703125,
+        "w": 153,
+        "h": 28,
+        "bottom": 2037.703125,
+        "right": 290
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "فاضل ١٦ نجمة",
+        "x": 204,
+        "y": 2045.703125,
+        "w": 86,
+        "h": 21,
+        "bottom": 2066.703125,
+        "right": 290
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openافتح المكان",
+        "x": 30,
+        "y": 2074.703125,
+        "w": 260,
+        "h": 44,
+        "bottom": 2118.703125,
+        "right": 290
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 630.171875,
+        "w": 292,
+        "h": 280,
+        "bottom": 910.171875,
+        "right": 306
+      }
+    ],
+    "header": {
+      "x": 12,
+      "y": 12,
+      "w": 296,
+      "h": 232.890625,
+      "bottom": 244.890625,
+      "right": 308
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "scroll": [
+      320,
+      1242
+    ],
+    "outside": [
+      {
+        "class": "rank-step__name",
+        "text": "المستكشف الصغير",
+        "x": 82,
+        "y": 1005.609375,
+        "w": 152,
+        "h": 23.796875,
+        "bottom": 1029.40625,
+        "right": 234
+      },
+      {
+        "class": "rank-step__text",
+        "text": "بداية الرحلة: كل سؤال هو اكتشاف جديد.",
+        "x": 28,
+        "y": 1057.796875,
+        "w": 206,
+        "h": 43.375,
+        "bottom": 1101.171875,
+        "right": 234
+      },
+      {
+        "class": "rank-step__hint",
+        "text": "فاضل نجمتان وتوصل لرتبة «المخترع».",
+        "x": 28,
+        "y": 1129.171875,
+        "w": 206,
+        "h": 44.78125,
+        "bottom": 1173.953125,
+        "right": 234
+      },
+      {
+        "class": "badge badge--primary",
+        "text": "رتبتك الحالية",
+        "x": 137,
+        "y": 1185.953125,
+        "w": 97,
+        "h": 28,
+        "bottom": 1213.953125,
+        "right": 234
+      },
+      {
+        "class": "rank-step__name",
+        "text": "المخترع",
+        "x": 176,
+        "y": 848.4375,
+        "w": 58,
+        "h": 23.796875,
+        "bottom": 872.234375,
+        "right": 234
+      },
+      {
+        "class": "rank-step__text",
+        "text": "بتجرّب أفكارك وبتشوف نتيجتها بنفسك.",
+        "x": 28,
+        "y": 876.234375,
+        "w": 206,
+        "h": 43.375,
+        "bottom": 919.609375,
+        "right": 234
+      },
+      {
+        "class": "badge rank-step__needs",
+        "text": "محتاجة ١٤ نجمة",
+        "x": 118,
+        "y": 931.609375,
+        "w": 116,
+        "h": 28,
+        "bottom": 959.609375,
+        "right": 234
+      },
+      {
+        "class": "rank-step__text",
+        "text": "فاهم الأدوات وبتنظّم تجاربك كويس.",
+        "x": 28,
+        "y": 716.875,
+        "w": 206,
+        "h": 43.375,
+        "bottom": 760.25,
+        "right": 234
+      },
+      {
+        "class": "badge rank-step__needs",
+        "text": "محتاجة ١٨ نجمة",
+        "x": 116,
+        "y": 772.25,
+        "w": 118,
+        "h": 28,
+        "bottom": 800.25,
+        "right": 234
+      }
+    ],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 12,
+      "y": 12,
+      "w": 296,
+      "h": 232.890625,
+      "bottom": 244.890625,
+      "right": 308
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "scroll": [
+      768,
+      1349
+    ],
+    "outside": [
+      {
+        "class": "hero-card__name",
+        "text": "سُهيل",
+        "x": 541.8125,
+        "y": 1091.171875,
+        "w": 62,
+        "h": 28.59375,
+        "bottom": 1119.765625,
+        "right": 603.8125
+      },
+      {
+        "class": "badge badge--info hero-card__title",
+        "text": "publicمستكشف الفضاء",
+        "x": 459.8125,
+        "y": 1125.765625,
+        "w": 144,
+        "h": 26.1875,
+        "bottom": 1151.953125,
+        "right": 603.8125
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "بيرسم خرايط النجوم وبيحلم يزور كل الكواكب.",
+        "x": 405.703125,
+        "y": 1157.953125,
+        "w": 198.109375,
+        "h": 42,
+        "bottom": 1199.953125,
+        "right": 603.8125
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 393.703125,
+        "y": 1203.953125,
+        "w": 222.109375,
+        "h": 36,
+        "bottom": 1239.953125,
+        "right": 615.8125
+      },
+      {
+        "class": "hero-card__name",
+        "text": "شَرارة",
+        "x": 174.125,
+        "y": 1091.171875,
+        "w": 58,
+        "h": 28.59375,
+        "bottom": 1119.765625,
+        "right": 232.125
+      },
+      {
+        "class": "badge badge--help hero-card__title",
+        "text": "boltخبيرة الطاقة والحرارة",
+        "x": 74.125,
+        "y": 1125.765625,
+        "w": 158,
+        "h": 26.1875,
+        "bottom": 1151.953125,
+        "right": 232.125
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "خبيرة الحرارة والطاقة، وفاهمة سر تحوّل المادة.",
+        "x": 34.015625,
+        "y": 1157.953125,
+        "w": 198.109375,
+        "h": 42,
+        "bottom": 1199.953125,
+        "right": 232.125
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 22.015625,
+        "y": 1203.953125,
+        "w": 222.109375,
+        "h": 36,
+        "bottom": 1239.953125,
+        "right": 244.125
+      },
+      {
+        "class": "hero-select__status",
+        "text": "تم الحفظ! لُبنى معاك في كل تجربة.",
+        "x": 506,
+        "y": 1282.0625,
+        "w": 224,
+        "h": 22.5,
+        "bottom": 1304.5625,
+        "right": 730
+      },
+      {
+        "class": "btn btn--primary hero-select__continue",
+        "text": "يلا على الساحة مع لُبنىarrow_back",
+        "x": 38,
+        "y": 1269.3125,
+        "w": 232,
+        "h": 48,
+        "bottom": 1317.3125,
+        "right": 270
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 384,
+        "y": 287.71875,
+        "w": 362,
+        "h": 481.515625,
+        "bottom": 769.234375,
+        "right": 746
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 615.8125,
+        "y": 799.078125,
+        "w": 130.1875,
+        "h": 205.03125,
+        "bottom": 1004.109375,
+        "right": 746
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 244.125,
+        "y": 799.078125,
+        "w": 130.203125,
+        "h": 205.03125,
+        "bottom": 1004.109375,
+        "right": 374.328125
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 615.8125,
+        "y": 1034.4375,
+        "w": 130.1875,
+        "h": 205.03125,
+        "bottom": 1239.46875,
+        "right": 746
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 244.125,
+        "y": 1034.4375,
+        "w": 130.203125,
+        "h": 205.03125,
+        "bottom": 1239.46875,
+        "right": 374.328125
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 20,
+      "w": 728,
+      "h": 126,
+      "bottom": 146,
+      "right": 748
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "ar",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "scroll": [
+      768,
+      1599
+    ],
+    "outside": [
+      {
+        "class": "game-section-title",
+        "text": "مهامك",
+        "x": 20,
+        "y": 1053.875,
+        "w": 728,
+        "h": 28,
+        "bottom": 1081.875,
+        "right": 748
+      },
+      {
+        "class": "lobby__missions-hint",
+        "text": "خلّص تحديات التجارب عشان تكمّل المهام وتكسب نجوم زيادة.",
+        "x": 20,
+        "y": 1081.875,
+        "w": 728,
+        "h": 22.390625,
+        "bottom": 1104.265625,
+        "right": 748
+      },
+      {
+        "class": "mission-card__title",
+        "text": "أول اكتشاف",
+        "x": 150,
+        "y": 1130.265625,
+        "w": 518,
+        "h": 22.390625,
+        "bottom": 1152.65625,
+        "right": 668
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحدي تجربة واحدة.",
+        "x": 150,
+        "y": 1156.65625,
+        "w": 518,
+        "h": 21,
+        "bottom": 1177.65625,
+        "right": 668
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ١starالمكافأة: نجمتان",
+        "x": 150,
+        "y": 1201.65625,
+        "w": 518,
+        "h": 20.796875,
+        "bottom": 1222.453125,
+        "right": 668
+      },
+      {
+        "class": "mission-card__title",
+        "text": "عالِم نشيط",
+        "x": 150,
+        "y": 1264.453125,
+        "w": 518,
+        "h": 22.390625,
+        "bottom": 1286.84375,
+        "right": 668
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحديات تجربتين.",
+        "x": 150,
+        "y": 1290.84375,
+        "w": 518,
+        "h": 21,
+        "bottom": 1311.84375,
+        "right": 668
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ٢starالمكافأة: ٣ نجوم",
+        "x": 150,
+        "y": 1335.84375,
+        "w": 518,
+        "h": 20.796875,
+        "bottom": 1356.640625,
+        "right": 668
+      },
+      {
+        "class": "mission-card__title",
+        "text": "جولة العلوم",
+        "x": 150,
+        "y": 1398.640625,
+        "w": 518,
+        "h": 22.390625,
+        "bottom": 1421.03125,
+        "right": 668
+      },
+      {
+        "class": "mission-card__text",
+        "text": "خلّص تحدي في الفيزياء والرياضيات والفلك.",
+        "x": 150,
+        "y": 1425.03125,
+        "w": 518,
+        "h": 21,
+        "bottom": 1446.03125,
+        "right": 668
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "٠ من ٣starالمكافأة: ٥ نجوم",
+        "x": 150,
+        "y": 1470.03125,
+        "w": 518,
+        "h": 20.796875,
+        "bottom": 1490.828125,
+        "right": 668
+      },
+      {
+        "class": "btn btn--primary lobby__enter",
+        "text": "scienceادخل مكتبة التجارب",
+        "x": 184,
+        "y": 1522.828125,
+        "w": 564,
+        "h": 56,
+        "bottom": 1578.828125,
+        "right": 748
+      },
+      {
+        "class": "btn btn--neutral lobby__vault",
+        "text": "checkroomخزانة الأزياء",
+        "x": 20,
+        "y": 1522.828125,
+        "w": 152,
+        "h": 56,
+        "bottom": 1578.828125,
+        "right": 172
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 456.40625,
+        "y": 187.359375,
+        "w": 289.59375,
+        "h": 467.515625,
+        "bottom": 654.875,
+        "right": 746
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 20,
+      "w": 728,
+      "h": 126,
+      "bottom": 146,
+      "right": 748
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "scroll": [
+      768,
+      1343
+    ],
+    "outside": [
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ٣",
+        "x": 655,
+        "y": 1163.265625,
+        "w": 75,
+        "h": 25.1875,
+        "bottom": 1188.453125,
+        "right": 730
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starيتفتح عند ٢٢ نجمة",
+        "x": 578,
+        "y": 1196.453125,
+        "w": 152,
+        "h": 28,
+        "bottom": 1224.453125,
+        "right": 730
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "فاضل ١٠ نجوم",
+        "x": 648,
+        "y": 1232.453125,
+        "w": 82,
+        "h": 21,
+        "bottom": 1253.453125,
+        "right": 730
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openافتح المكان",
+        "x": 410,
+        "y": 1261.453125,
+        "w": 320,
+        "h": 44,
+        "bottom": 1305.453125,
+        "right": 730
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "زي رقم ٤",
+        "x": 289,
+        "y": 1163.265625,
+        "w": 69,
+        "h": 25.1875,
+        "bottom": 1188.453125,
+        "right": 358
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starيتفتح عند ٢٨ نجمة",
+        "x": 205,
+        "y": 1196.453125,
+        "w": 153,
+        "h": 28,
+        "bottom": 1224.453125,
+        "right": 358
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "فاضل ١٦ نجمة",
+        "x": 272,
+        "y": 1232.453125,
+        "w": 86,
+        "h": 21,
+        "bottom": 1253.453125,
+        "right": 358
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openافتح المكان",
+        "x": 38,
+        "y": 1261.453125,
+        "w": 320,
+        "h": 44,
+        "bottom": 1305.453125,
+        "right": 358
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 394,
+        "y": 373.078125,
+        "w": 352,
+        "h": 284,
+        "bottom": 657.078125,
+        "right": 746
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 20,
+      "w": 728,
+      "h": 126,
+      "bottom": 146,
+      "right": 748
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "scroll": [
+      768,
+      1024
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 20,
+      "y": 20,
+      "w": 728,
+      "h": 126,
+      "bottom": 146,
+      "right": 748
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "scroll": [
+      1024,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 735.609375,
+        "y": 262.65625,
+        "w": 266.390625,
+        "h": 358.625,
+        "bottom": 621.28125,
+        "right": 1002
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 466.21875,
+        "y": 247.375,
+        "w": 97.171875,
+        "h": 151.265625,
+        "bottom": 398.640625,
+        "right": 563.390625
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 187.765625,
+        "y": 247.375,
+        "w": 97.171875,
+        "h": 151.265625,
+        "bottom": 398.640625,
+        "right": 284.9375
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 466.21875,
+        "y": 485.28125,
+        "w": 97.171875,
+        "h": 151.265625,
+        "bottom": 636.546875,
+        "right": 563.390625
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 187.765625,
+        "y": 485.28125,
+        "w": 97.171875,
+        "h": 151.265625,
+        "bottom": 636.546875,
+        "right": 284.9375
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 15.359375,
+      "w": 984,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1004
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "ar",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "scroll": [
+      1024,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 681.84375,
+        "y": 166.375,
+        "w": 320.15625,
+        "h": 356.625,
+        "bottom": 523,
+        "right": 1002
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 15.359375,
+      "w": 984,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1004
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "scroll": [
+      1024,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 768.640625,
+        "y": 292.328125,
+        "w": 233.359375,
+        "h": 343.125,
+        "bottom": 635.453125,
+        "right": 1002
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 15.359375,
+      "w": 984,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1004
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "scroll": [
+      1024,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 20,
+      "y": 15.359375,
+      "w": 984,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1004
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "ar",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "scroll": [
+      1366,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 45,
+        "y": 273.90625,
+        "w": 349.203125,
+        "h": 358.625,
+        "bottom": 632.53125,
+        "right": 394.203125
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 615.15625,
+        "y": 264.25,
+        "w": 127.546875,
+        "h": 151.265625,
+        "bottom": 415.515625,
+        "right": 742.703125
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 975.828125,
+        "y": 264.25,
+        "w": 127.5625,
+        "h": 151.265625,
+        "bottom": 415.515625,
+        "right": 1103.390625
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 615.15625,
+        "y": 490.90625,
+        "w": 127.546875,
+        "h": 151.265625,
+        "bottom": 642.171875,
+        "right": 742.703125
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 975.828125,
+        "y": 490.90625,
+        "w": 127.5625,
+        "h": 151.265625,
+        "bottom": 642.171875,
+        "right": 1103.390625
+      }
+    ],
+    "header": {
+      "x": 43,
+      "y": 15.359375,
+      "w": 1280,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1323
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "en",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "scroll": [
+      1366,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 45,
+        "y": 166.375,
+        "w": 418.828125,
+        "h": 356.625,
+        "bottom": 523,
+        "right": 463.828125
+      }
+    ],
+    "header": {
+      "x": 43,
+      "y": 15.359375,
+      "w": 1280,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1323
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "scroll": [
+      1366,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 45,
+        "y": 292.328125,
+        "w": 307.359375,
+        "h": 358.625,
+        "bottom": 650.953125,
+        "right": 352.359375
+      }
+    ],
+    "header": {
+      "x": 43,
+      "y": 15.359375,
+      "w": 1280,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1323
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "scroll": [
+      1366,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 43,
+      "y": 15.359375,
+      "w": 1280,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1323
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "scroll": [
+      1920,
+      1080
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 322,
+        "y": 360.390625,
+        "w": 346.609375,
+        "h": 508.390625,
+        "bottom": 868.78125,
+        "right": 668.609375
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 892.6875,
+        "y": 324.4375,
+        "w": 126.59375,
+        "h": 210,
+        "bottom": 534.4375,
+        "right": 1019.28125
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 1255.4375,
+        "y": 324.4375,
+        "w": 126.59375,
+        "h": 210,
+        "bottom": 534.4375,
+        "right": 1382.03125
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 892.6875,
+        "y": 694.75,
+        "w": 126.59375,
+        "h": 210,
+        "bottom": 904.75,
+        "right": 1019.28125
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 1255.4375,
+        "y": 694.75,
+        "w": 126.59375,
+        "h": 210,
+        "bottom": 904.75,
+        "right": 1382.03125
+      }
+    ],
+    "header": {
+      "x": 320,
+      "y": 20,
+      "w": 1280,
+      "h": 72,
+      "bottom": 92,
+      "right": 1600
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "en",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "scroll": [
+      1920,
+      1080
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 322,
+        "y": 245.84375,
+        "w": 417.265625,
+        "h": 506.390625,
+        "bottom": 752.234375,
+        "right": 739.265625
+      }
+    ],
+    "header": {
+      "x": 320,
+      "y": 20,
+      "w": 1280,
+      "h": 72,
+      "bottom": 92,
+      "right": 1600
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "scroll": [
+      1920,
+      1080
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 322,
+        "y": 315.5625,
+        "w": 303.859375,
+        "h": 508.390625,
+        "bottom": 823.953125,
+        "right": 625.859375
+      }
+    ],
+    "header": {
+      "x": 320,
+      "y": 20,
+      "w": 1280,
+      "h": 72,
+      "bottom": 92,
+      "right": 1600
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "scroll": [
+      1920,
+      1080
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 320,
+      "y": 20,
+      "w": 1280,
+      "h": 72,
+      "bottom": 92,
+      "right": 1600
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "scroll": [
+      390,
+      1387
+    ],
+    "outside": [
+      {
+        "class": "hero-card__bio",
+        "text": "The fastest on the team, crazy about motion and speed.",
+        "x": 28,
+        "y": 844.734375,
+        "w": 148.671875,
+        "h": 58.5,
+        "bottom": 903.234375,
+        "right": 176.671875
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 18,
+        "y": 907.234375,
+        "w": 168.671875,
+        "h": 36,
+        "bottom": 943.234375,
+        "right": 186.671875
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "The heart of Team Misbar, cheering on every new explorer.",
+        "x": 213.328125,
+        "y": 844.734375,
+        "w": 148.671875,
+        "h": 58.5,
+        "bottom": 903.234375,
+        "right": 362
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 203.328125,
+        "y": 907.234375,
+        "w": 168.671875,
+        "h": 36,
+        "bottom": 943.234375,
+        "right": 372
+      },
+      {
+        "class": "hero-card__name",
+        "text": "Suhail",
+        "x": 28,
+        "y": 1086.046875,
+        "w": 50,
+        "h": 23.390625,
+        "bottom": 1109.4375,
+        "right": 78
+      },
+      {
+        "class": "badge badge--info hero-card__title",
+        "text": "publicSpace Explorer",
+        "x": 28,
+        "y": 1114.4375,
+        "w": 114,
+        "h": 24.796875,
+        "bottom": 1139.234375,
+        "right": 142
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "Maps the stars and dreams of visiting every planet.",
+        "x": 28,
+        "y": 1144.234375,
+        "w": 148.671875,
+        "h": 58.5,
+        "bottom": 1202.734375,
+        "right": 176.671875
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 18,
+        "y": 1206.734375,
+        "w": 168.671875,
+        "h": 36,
+        "bottom": 1242.734375,
+        "right": 186.671875
+      },
+      {
+        "class": "hero-card__name",
+        "text": "Sharara",
+        "x": 213.328125,
+        "y": 1086.046875,
+        "w": 62,
+        "h": 23.390625,
+        "bottom": 1109.4375,
+        "right": 275.328125
+      },
+      {
+        "class": "badge badge--help hero-card__title",
+        "text": "boltEnergy & Heat Expert",
+        "x": 213.328125,
+        "y": 1114.4375,
+        "w": 147,
+        "h": 24.796875,
+        "bottom": 1139.234375,
+        "right": 360.328125
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "Knows all about heat and energy, and how matter changes.",
+        "x": 213.328125,
+        "y": 1144.234375,
+        "w": 148.671875,
+        "h": 58.5,
+        "bottom": 1202.734375,
+        "right": 362
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 203.328125,
+        "y": 1206.734375,
+        "w": 168.671875,
+        "h": 36,
+        "bottom": 1242.734375,
+        "right": 372
+      },
+      {
+        "class": "hero-select__status",
+        "text": "Saved! Lubna will guide you in every experiment.",
+        "x": 30,
+        "y": 1274.734375,
+        "w": 330,
+        "h": 22.5,
+        "bottom": 1297.234375,
+        "right": 360
+      },
+      {
+        "class": "btn btn--primary hero-select__continue",
+        "text": "Go to the lobby with Lubnaarrow_back",
+        "x": 30,
+        "y": 1309.234375,
+        "w": 330,
+        "h": 48,
+        "bottom": 1357.234375,
+        "right": 360
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 348.734375,
+        "w": 177,
+        "h": 294,
+        "bottom": 642.734375,
+        "right": 195
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 666.390625,
+        "w": 168.671875,
+        "h": 112.15625,
+        "bottom": 778.546875,
+        "right": 186.671875
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 203.328125,
+        "y": 666.390625,
+        "w": 168.671875,
+        "h": 112.15625,
+        "bottom": 778.546875,
+        "right": 372
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 965.890625,
+        "w": 168.671875,
+        "h": 112.15625,
+        "bottom": 1078.046875,
+        "right": 186.671875
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 203.328125,
+        "y": 965.890625,
+        "w": 168.671875,
+        "h": 112.15625,
+        "bottom": 1078.046875,
+        "right": 372
+      }
+    ],
+    "header": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 182.890625,
+      "bottom": 198.890625,
+      "right": 374
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "en",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "scroll": [
+      390,
+      1990
+    ],
+    "outside": [
+      {
+        "class": "speech-bubble lobby__bubble",
+        "text": "There are no mistakes here, only new data.",
+        "x": 98,
+        "y": 799.640625,
+        "w": 260,
+        "h": 72,
+        "bottom": 871.640625,
+        "right": 358
+      },
+      {
+        "class": "lobby__stat-label",
+        "text": "Your stars",
+        "x": 98,
+        "y": 921.640625,
+        "w": 62,
+        "h": 22.390625,
+        "bottom": 944.03125,
+        "right": 160
+      },
+      {
+        "class": "lobby__stat-value",
+        "text": "12",
+        "x": 98,
+        "y": 944.03125,
+        "w": 62,
+        "h": 39.09375,
+        "bottom": 983.125,
+        "right": 160
+      },
+      {
+        "class": "lobby__stat-label",
+        "text": "Your rank",
+        "x": 98,
+        "y": 1032.421875,
+        "w": 130,
+        "h": 22.390625,
+        "bottom": 1054.8125,
+        "right": 228
+      },
+      {
+        "class": "lobby__rank-name",
+        "text": "Young Explorer",
+        "x": 98,
+        "y": 1054.8125,
+        "w": 130,
+        "h": 27,
+        "bottom": 1081.8125,
+        "right": 228
+      },
+      {
+        "class": "lobby__rank-next",
+        "text": "2 stars more to reach “Inventor”.",
+        "x": 34,
+        "y": 1115.125,
+        "w": 322,
+        "h": 21,
+        "bottom": 1136.125,
+        "right": 356
+      },
+      {
+        "class": "game-section-title",
+        "text": "Your missions",
+        "x": 16,
+        "y": 1224.125,
+        "w": 358,
+        "h": 28,
+        "bottom": 1252.125,
+        "right": 374
+      },
+      {
+        "class": "lobby__missions-hint",
+        "text": "Finish experiment challenges to complete missions and earn bonus stars.",
+        "x": 16,
+        "y": 1252.125,
+        "w": 358,
+        "h": 44.78125,
+        "bottom": 1296.90625,
+        "right": 374
+      },
+      {
+        "class": "mission-card__title",
+        "text": "First Discovery",
+        "x": 92,
+        "y": 1320.90625,
+        "w": 268,
+        "h": 22.390625,
+        "bottom": 1343.296875,
+        "right": 360
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish 1 experiment challenge.",
+        "x": 92,
+        "y": 1347.296875,
+        "w": 268,
+        "h": 21,
+        "bottom": 1368.296875,
+        "right": 360
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 1starReward: 2 stars",
+        "x": 92,
+        "y": 1392.296875,
+        "w": 268,
+        "h": 20.796875,
+        "bottom": 1413.09375,
+        "right": 360
+      },
+      {
+        "class": "mission-card__title",
+        "text": "Busy Scientist",
+        "x": 92,
+        "y": 1493.09375,
+        "w": 268,
+        "h": 22.390625,
+        "bottom": 1515.484375,
+        "right": 360
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish 2 experiment challenges.",
+        "x": 92,
+        "y": 1519.484375,
+        "w": 268,
+        "h": 21,
+        "bottom": 1540.484375,
+        "right": 360
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 2starReward: 3 stars",
+        "x": 92,
+        "y": 1564.484375,
+        "w": 268,
+        "h": 20.796875,
+        "bottom": 1585.28125,
+        "right": 360
+      },
+      {
+        "class": "mission-card__title",
+        "text": "Science Tour",
+        "x": 92,
+        "y": 1665.28125,
+        "w": 268,
+        "h": 22.390625,
+        "bottom": 1687.671875,
+        "right": 360
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish a challenge in physics, math and astronomy.",
+        "x": 92,
+        "y": 1691.671875,
+        "w": 268,
+        "h": 42,
+        "bottom": 1733.671875,
+        "right": 360
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 3starReward: 5 stars",
+        "x": 92,
+        "y": 1757.671875,
+        "w": 268,
+        "h": 20.796875,
+        "bottom": 1778.46875,
+        "right": 360
+      },
+      {
+        "class": "btn btn--primary lobby__enter",
+        "text": "scienceEnter the experiment library",
+        "x": 16,
+        "y": 1850.46875,
+        "w": 358,
+        "h": 56,
+        "bottom": 1906.46875,
+        "right": 374
+      },
+      {
+        "class": "btn btn--neutral lobby__vault",
+        "text": "checkroomOutfit vault",
+        "x": 16,
+        "y": 1918.46875,
+        "w": 358,
+        "h": 56,
+        "bottom": 1974.46875,
+        "right": 374
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 229.546875,
+        "w": 354,
+        "h": 284,
+        "bottom": 513.546875,
+        "right": 372
+      }
+    ],
+    "header": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 182.890625,
+      "bottom": 198.890625,
+      "right": 374
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "scroll": [
+      390,
+      2119
+    ],
+    "outside": [
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 1",
+        "x": 34,
+        "y": 883.734375,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 908.921875,
+        "right": 95
+      },
+      {
+        "class": "badge badge--tools",
+        "text": "Starter outfit",
+        "x": 34,
+        "y": 916.921875,
+        "w": 103,
+        "h": 28,
+        "bottom": 944.921875,
+        "right": 137
+      },
+      {
+        "class": "badge badge--primary",
+        "text": "checkWearing now",
+        "x": 143,
+        "y": 916.921875,
+        "w": 123,
+        "h": 28,
+        "bottom": 944.921875,
+        "right": 266
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 2",
+        "x": 34,
+        "y": 1182.921875,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 1208.109375,
+        "right": 95
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starUnlocks at 16 stars",
+        "x": 34,
+        "y": 1216.109375,
+        "w": 156,
+        "h": 28,
+        "bottom": 1244.109375,
+        "right": 190
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "4 stars to go",
+        "x": 34,
+        "y": 1252.109375,
+        "w": 76,
+        "h": 21,
+        "bottom": 1273.109375,
+        "right": 110
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openUnlock slot",
+        "x": 34,
+        "y": 1281.109375,
+        "w": 322,
+        "h": 44,
+        "bottom": 1325.109375,
+        "right": 356
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 3",
+        "x": 34,
+        "y": 1563.109375,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 1588.296875,
+        "right": 95
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starUnlocks at 22 stars",
+        "x": 34,
+        "y": 1596.296875,
+        "w": 156,
+        "h": 28,
+        "bottom": 1624.296875,
+        "right": 190
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "10 stars to go",
+        "x": 34,
+        "y": 1632.296875,
+        "w": 84,
+        "h": 21,
+        "bottom": 1653.296875,
+        "right": 118
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openUnlock slot",
+        "x": 34,
+        "y": 1661.296875,
+        "w": 322,
+        "h": 44,
+        "bottom": 1705.296875,
+        "right": 356
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 4",
+        "x": 34,
+        "y": 1943.296875,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 1968.484375,
+        "right": 95
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starUnlocks at 28 stars",
+        "x": 34,
+        "y": 1976.484375,
+        "w": 156,
+        "h": 28,
+        "bottom": 2004.484375,
+        "right": 190
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "16 stars to go",
+        "x": 34,
+        "y": 2012.484375,
+        "w": 84,
+        "h": 21,
+        "bottom": 2033.484375,
+        "right": 118
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openUnlock slot",
+        "x": 34,
+        "y": 2041.484375,
+        "w": 322,
+        "h": 44,
+        "bottom": 2085.484375,
+        "right": 356
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 18,
+        "y": 585.734375,
+        "w": 354,
+        "h": 284,
+        "bottom": 869.734375,
+        "right": 372
+      }
+    ],
+    "header": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 182.890625,
+      "bottom": 198.890625,
+      "right": 374
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "scroll": [
+      390,
+      1135
+    ],
+    "outside": [
+      {
+        "class": "rank-step__name",
+        "text": "Young Explorer",
+        "x": 90,
+        "y": 941.671875,
+        "w": 110,
+        "h": 23.796875,
+        "bottom": 965.46875,
+        "right": 200
+      },
+      {
+        "class": "rank-step__text",
+        "text": "The journey begins: every question is a new discovery.",
+        "x": 90,
+        "y": 969.46875,
+        "w": 268,
+        "h": 43.375,
+        "bottom": 1012.84375,
+        "right": 358
+      },
+      {
+        "class": "rank-step__hint",
+        "text": "2 stars more to reach “Inventor”.",
+        "x": 90,
+        "y": 1040.84375,
+        "w": 268,
+        "h": 22.390625,
+        "bottom": 1063.234375,
+        "right": 358
+      },
+      {
+        "class": "badge badge--primary",
+        "text": "Current rank",
+        "x": 90,
+        "y": 1075.234375,
+        "w": 100,
+        "h": 28,
+        "bottom": 1103.234375,
+        "right": 190
+      },
+      {
+        "class": "rank-step__text",
+        "text": "You test your own ideas and see the results.",
+        "x": 90,
+        "y": 831.796875,
+        "w": 268,
+        "h": 21.6875,
+        "bottom": 853.484375,
+        "right": 358
+      },
+      {
+        "class": "badge rank-step__needs",
+        "text": "Needs 14 stars",
+        "x": 90,
+        "y": 865.484375,
+        "w": 113,
+        "h": 28,
+        "bottom": 893.484375,
+        "right": 203
+      }
+    ],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 16,
+      "y": 16,
+      "w": 358,
+      "h": 182.890625,
+      "bottom": 198.890625,
+      "right": 374
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "scroll": [
+      320,
+      1453
+    ],
+    "outside": [
+      {
+        "class": "hero-card__name",
+        "text": "Shihab",
+        "x": 24,
+        "y": 833.359375,
+        "w": 55,
+        "h": 23.390625,
+        "bottom": 856.75,
+        "right": 79
+      },
+      {
+        "class": "badge badge--primary hero-card__title",
+        "text": "speedSpeed Racer",
+        "x": 24,
+        "y": 861.75,
+        "w": 100,
+        "h": 24.796875,
+        "bottom": 886.546875,
+        "right": 124
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "The fastest on the team, crazy about motion and speed.",
+        "x": 24,
+        "y": 891.546875,
+        "w": 118.453125,
+        "h": 58.5,
+        "bottom": 950.046875,
+        "right": 142.453125
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 14,
+        "y": 954.046875,
+        "w": 138.453125,
+        "h": 36,
+        "bottom": 990.046875,
+        "right": 152.453125
+      },
+      {
+        "class": "hero-card__name",
+        "text": "Nour",
+        "x": 177.546875,
+        "y": 833.359375,
+        "w": 38,
+        "h": 23.390625,
+        "bottom": 856.75,
+        "right": 215.546875
+      },
+      {
+        "class": "badge badge--reward hero-card__title",
+        "text": "starMisbar Hero",
+        "x": 177.546875,
+        "y": 861.75,
+        "w": 100,
+        "h": 24.796875,
+        "bottom": 886.546875,
+        "right": 277.546875
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "The heart of Team Misbar, cheering on every new explorer.",
+        "x": 177.546875,
+        "y": 891.546875,
+        "w": 118.453125,
+        "h": 58.5,
+        "bottom": 950.046875,
+        "right": 296
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 167.546875,
+        "y": 954.046875,
+        "w": 138.453125,
+        "h": 36,
+        "bottom": 990.046875,
+        "right": 306
+      },
+      {
+        "class": "hero-card__name",
+        "text": "Suhail",
+        "x": 24,
+        "y": 1116.734375,
+        "w": 50,
+        "h": 23.390625,
+        "bottom": 1140.125,
+        "right": 74
+      },
+      {
+        "class": "badge badge--info hero-card__title",
+        "text": "publicSpace Explorer",
+        "x": 24,
+        "y": 1145.125,
+        "w": 114,
+        "h": 24.796875,
+        "bottom": 1169.921875,
+        "right": 138
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "Maps the stars and dreams of visiting every planet.",
+        "x": 24,
+        "y": 1174.921875,
+        "w": 118.453125,
+        "h": 58.5,
+        "bottom": 1233.421875,
+        "right": 142.453125
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 14,
+        "y": 1254.21875,
+        "w": 138.453125,
+        "h": 36,
+        "bottom": 1290.21875,
+        "right": 152.453125
+      },
+      {
+        "class": "hero-card__name",
+        "text": "Sharara",
+        "x": 177.546875,
+        "y": 1116.734375,
+        "w": 62,
+        "h": 23.390625,
+        "bottom": 1140.125,
+        "right": 239.546875
+      },
+      {
+        "class": "badge badge--help hero-card__title",
+        "text": "boltEnergy & Heat Expert",
+        "x": 177.546875,
+        "y": 1145.125,
+        "w": 118.453125,
+        "h": 41.59375,
+        "bottom": 1186.71875,
+        "right": 296
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "Knows all about heat and energy, and how matter changes.",
+        "x": 177.546875,
+        "y": 1191.71875,
+        "w": 118.453125,
+        "h": 58.5,
+        "bottom": 1250.21875,
+        "right": 296
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 167.546875,
+        "y": 1254.21875,
+        "w": 138.453125,
+        "h": 36,
+        "bottom": 1290.21875,
+        "right": 306
+      },
+      {
+        "class": "hero-select__status",
+        "text": "Saved! Lubna will guide you in every experiment.",
+        "x": 26,
+        "y": 1322.21875,
+        "w": 268,
+        "h": 45,
+        "bottom": 1367.21875,
+        "right": 294
+      },
+      {
+        "class": "btn btn--primary hero-select__continue",
+        "text": "Go to the lobby with Lubnaarrow_back",
+        "x": 26,
+        "y": 1379.21875,
+        "w": 268,
+        "h": 48,
+        "bottom": 1427.21875,
+        "right": 294
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 415.671875,
+        "w": 146,
+        "h": 290,
+        "bottom": 705.671875,
+        "right": 160
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 727.765625,
+        "w": 138.453125,
+        "h": 97.59375,
+        "bottom": 825.359375,
+        "right": 152.453125
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 167.546875,
+        "y": 727.765625,
+        "w": 138.453125,
+        "h": 97.59375,
+        "bottom": 825.359375,
+        "right": 306
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 1011.140625,
+        "w": 138.453125,
+        "h": 97.59375,
+        "bottom": 1108.734375,
+        "right": 152.453125
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 167.546875,
+        "y": 1011.140625,
+        "w": 138.453125,
+        "h": 97.59375,
+        "bottom": 1108.734375,
+        "right": 306
+      }
+    ],
+    "header": {
+      "x": 12,
+      "y": 12,
+      "w": 296,
+      "h": 232.890625,
+      "bottom": 244.890625,
+      "right": 308
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "en",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "scroll": [
+      320,
+      2024
+    ],
+    "outside": [
+      {
+        "class": "lobby__greeting",
+        "text": "Hi, Space hero!",
+        "x": 88,
+        "y": 788.578125,
+        "w": 129,
+        "h": 27,
+        "bottom": 815.578125,
+        "right": 217
+      },
+      {
+        "class": "speech-bubble lobby__bubble",
+        "text": "There are no mistakes here, only new data.",
+        "x": 94,
+        "y": 840.078125,
+        "w": 198,
+        "h": 72,
+        "bottom": 912.078125,
+        "right": 292
+      },
+      {
+        "class": "lobby__stat-label",
+        "text": "Your stars",
+        "x": 94,
+        "y": 962.078125,
+        "w": 62,
+        "h": 22.390625,
+        "bottom": 984.46875,
+        "right": 156
+      },
+      {
+        "class": "lobby__stat-value",
+        "text": "12",
+        "x": 94,
+        "y": 984.46875,
+        "w": 62,
+        "h": 39.09375,
+        "bottom": 1023.5625,
+        "right": 156
+      },
+      {
+        "class": "lobby__stat-label",
+        "text": "Your rank",
+        "x": 94,
+        "y": 1072.859375,
+        "w": 130,
+        "h": 22.390625,
+        "bottom": 1095.25,
+        "right": 224
+      },
+      {
+        "class": "lobby__rank-name",
+        "text": "Young Explorer",
+        "x": 94,
+        "y": 1095.25,
+        "w": 130,
+        "h": 27,
+        "bottom": 1122.25,
+        "right": 224
+      },
+      {
+        "class": "lobby__rank-next",
+        "text": "2 stars more to reach “Inventor”.",
+        "x": 30,
+        "y": 1155.5625,
+        "w": 260,
+        "h": 21,
+        "bottom": 1176.5625,
+        "right": 290
+      },
+      {
+        "class": "game-section-title",
+        "text": "Your missions",
+        "x": 12,
+        "y": 1264.5625,
+        "w": 296,
+        "h": 25.1875,
+        "bottom": 1289.75,
+        "right": 308
+      },
+      {
+        "class": "lobby__missions-hint",
+        "text": "Finish experiment challenges to complete missions and earn bonus stars.",
+        "x": 12,
+        "y": 1289.75,
+        "w": 296,
+        "h": 44.78125,
+        "bottom": 1334.53125,
+        "right": 308
+      },
+      {
+        "class": "mission-card__title",
+        "text": "First Discovery",
+        "x": 88,
+        "y": 1358.53125,
+        "w": 206,
+        "h": 22.390625,
+        "bottom": 1380.921875,
+        "right": 294
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish 1 experiment challenge.",
+        "x": 88,
+        "y": 1384.921875,
+        "w": 206,
+        "h": 21,
+        "bottom": 1405.921875,
+        "right": 294
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 1starReward: 2 stars",
+        "x": 88,
+        "y": 1429.921875,
+        "w": 206,
+        "h": 20.796875,
+        "bottom": 1450.71875,
+        "right": 294
+      },
+      {
+        "class": "mission-card__title",
+        "text": "Busy Scientist",
+        "x": 88,
+        "y": 1530.71875,
+        "w": 206,
+        "h": 22.390625,
+        "bottom": 1553.109375,
+        "right": 294
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish 2 experiment challenges.",
+        "x": 88,
+        "y": 1557.109375,
+        "w": 206,
+        "h": 21,
+        "bottom": 1578.109375,
+        "right": 294
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 2starReward: 3 stars",
+        "x": 88,
+        "y": 1602.109375,
+        "w": 206,
+        "h": 20.796875,
+        "bottom": 1622.90625,
+        "right": 294
+      },
+      {
+        "class": "mission-card__title",
+        "text": "Science Tour",
+        "x": 88,
+        "y": 1702.90625,
+        "w": 206,
+        "h": 22.390625,
+        "bottom": 1725.296875,
+        "right": 294
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish a challenge in physics, math and astronomy.",
+        "x": 88,
+        "y": 1729.296875,
+        "w": 206,
+        "h": 42,
+        "bottom": 1771.296875,
+        "right": 294
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 3starReward: 5 stars",
+        "x": 88,
+        "y": 1795.296875,
+        "w": 206,
+        "h": 20.796875,
+        "bottom": 1816.09375,
+        "right": 294
+      },
+      {
+        "class": "btn btn--primary lobby__enter",
+        "text": "scienceEnter the experiment library",
+        "x": 12,
+        "y": 1888.09375,
+        "w": 296,
+        "h": 56,
+        "bottom": 1944.09375,
+        "right": 308
+      },
+      {
+        "class": "btn btn--neutral lobby__vault",
+        "text": "checkroomOutfit vault",
+        "x": 12,
+        "y": 1956.09375,
+        "w": 296,
+        "h": 56,
+        "bottom": 2012.09375,
+        "right": 308
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 273.984375,
+        "w": 292,
+        "h": 280,
+        "bottom": 553.984375,
+        "right": 306
+      }
+    ],
+    "header": {
+      "x": 12,
+      "y": 12,
+      "w": 296,
+      "h": 232.890625,
+      "bottom": 244.890625,
+      "right": 308
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "scroll": [
+      320,
+      2149
+    ],
+    "outside": [
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 1",
+        "x": 30,
+        "y": 924.171875,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 949.359375,
+        "right": 91
+      },
+      {
+        "class": "badge badge--tools",
+        "text": "Starter outfit",
+        "x": 30,
+        "y": 957.359375,
+        "w": 103,
+        "h": 28,
+        "bottom": 985.359375,
+        "right": 133
+      },
+      {
+        "class": "badge badge--primary",
+        "text": "checkWearing now",
+        "x": 139,
+        "y": 957.359375,
+        "w": 123,
+        "h": 28,
+        "bottom": 985.359375,
+        "right": 262
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 2",
+        "x": 30,
+        "y": 1220.953125,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 1246.140625,
+        "right": 91
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starUnlocks at 16 stars",
+        "x": 30,
+        "y": 1254.140625,
+        "w": 156,
+        "h": 28,
+        "bottom": 1282.140625,
+        "right": 186
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "4 stars to go",
+        "x": 30,
+        "y": 1290.140625,
+        "w": 76,
+        "h": 21,
+        "bottom": 1311.140625,
+        "right": 106
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openUnlock slot",
+        "x": 30,
+        "y": 1319.140625,
+        "w": 260,
+        "h": 44,
+        "bottom": 1363.140625,
+        "right": 290
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 3",
+        "x": 30,
+        "y": 1598.734375,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 1623.921875,
+        "right": 91
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starUnlocks at 22 stars",
+        "x": 30,
+        "y": 1631.921875,
+        "w": 156,
+        "h": 28,
+        "bottom": 1659.921875,
+        "right": 186
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "10 stars to go",
+        "x": 30,
+        "y": 1667.921875,
+        "w": 84,
+        "h": 21,
+        "bottom": 1688.921875,
+        "right": 114
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openUnlock slot",
+        "x": 30,
+        "y": 1696.921875,
+        "w": 260,
+        "h": 44,
+        "bottom": 1740.921875,
+        "right": 290
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 4",
+        "x": 30,
+        "y": 1976.515625,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 2001.703125,
+        "right": 91
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starUnlocks at 28 stars",
+        "x": 30,
+        "y": 2009.703125,
+        "w": 156,
+        "h": 28,
+        "bottom": 2037.703125,
+        "right": 186
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "16 stars to go",
+        "x": 30,
+        "y": 2045.703125,
+        "w": 84,
+        "h": 21,
+        "bottom": 2066.703125,
+        "right": 114
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openUnlock slot",
+        "x": 30,
+        "y": 2074.703125,
+        "w": 260,
+        "h": 44,
+        "bottom": 2118.703125,
+        "right": 290
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 14,
+        "y": 630.171875,
+        "w": 292,
+        "h": 280,
+        "bottom": 910.171875,
+        "right": 306
+      }
+    ],
+    "header": {
+      "x": 12,
+      "y": 12,
+      "w": 296,
+      "h": 232.890625,
+      "bottom": 244.890625,
+      "right": 308
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      320,
+      740
+    ],
+    "scroll": [
+      320,
+      1220
+    ],
+    "outside": [
+      {
+        "class": "rank-step__name",
+        "text": "Young Explorer",
+        "x": 86,
+        "y": 1030,
+        "w": 110,
+        "h": 23.796875,
+        "bottom": 1053.796875,
+        "right": 196
+      },
+      {
+        "class": "rank-step__text",
+        "text": "The journey begins: every question is a new discovery.",
+        "x": 86,
+        "y": 1057.796875,
+        "w": 206,
+        "h": 43.375,
+        "bottom": 1101.171875,
+        "right": 292
+      },
+      {
+        "class": "rank-step__hint",
+        "text": "2 stars more to reach “Inventor”.",
+        "x": 86,
+        "y": 1129.171875,
+        "w": 206,
+        "h": 22.390625,
+        "bottom": 1151.5625,
+        "right": 292
+      },
+      {
+        "class": "badge badge--primary",
+        "text": "Current rank",
+        "x": 86,
+        "y": 1163.5625,
+        "w": 100,
+        "h": 28,
+        "bottom": 1191.5625,
+        "right": 186
+      },
+      {
+        "class": "rank-step__name",
+        "text": "Inventor",
+        "x": 86,
+        "y": 870.640625,
+        "w": 64,
+        "h": 23.796875,
+        "bottom": 894.4375,
+        "right": 150
+      },
+      {
+        "class": "rank-step__text",
+        "text": "You test your own ideas and see the results.",
+        "x": 86,
+        "y": 898.4375,
+        "w": 206,
+        "h": 43.375,
+        "bottom": 941.8125,
+        "right": 292
+      },
+      {
+        "class": "badge rank-step__needs",
+        "text": "Needs 14 stars",
+        "x": 86,
+        "y": 953.8125,
+        "w": 113,
+        "h": 28,
+        "bottom": 981.8125,
+        "right": 199
+      },
+      {
+        "class": "rank-step__text",
+        "text": "You know the tools and plan your experiments well.",
+        "x": 86,
+        "y": 739.078125,
+        "w": 206,
+        "h": 43.375,
+        "bottom": 782.453125,
+        "right": 292
+      },
+      {
+        "class": "badge rank-step__needs",
+        "text": "Needs 18 stars",
+        "x": 86,
+        "y": 794.453125,
+        "w": 113,
+        "h": 28,
+        "bottom": 822.453125,
+        "right": 199
+      }
+    ],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 12,
+      "y": 12,
+      "w": 296,
+      "h": 232.890625,
+      "bottom": 244.890625,
+      "right": 308
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "scroll": [
+      768,
+      1373
+    ],
+    "outside": [
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 152.1875,
+        "y": 992.59375,
+        "w": 222.109375,
+        "h": 36,
+        "bottom": 1028.59375,
+        "right": 374.296875
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 523.875,
+        "y": 992.59375,
+        "w": 222.109375,
+        "h": 36,
+        "bottom": 1028.59375,
+        "right": 745.984375
+      },
+      {
+        "class": "hero-card__name",
+        "text": "Suhail",
+        "x": 164.1875,
+        "y": 1115.171875,
+        "w": 60,
+        "h": 28.59375,
+        "bottom": 1143.765625,
+        "right": 224.1875
+      },
+      {
+        "class": "badge badge--info hero-card__title",
+        "text": "publicSpace Explorer",
+        "x": 164.1875,
+        "y": 1149.765625,
+        "w": 124,
+        "h": 26.1875,
+        "bottom": 1175.953125,
+        "right": 288.1875
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "Maps the stars and dreams of visiting every planet.",
+        "x": 164.1875,
+        "y": 1181.953125,
+        "w": 198.109375,
+        "h": 42,
+        "bottom": 1223.953125,
+        "right": 362.296875
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 152.1875,
+        "y": 1227.953125,
+        "w": 222.109375,
+        "h": 36,
+        "bottom": 1263.953125,
+        "right": 374.296875
+      },
+      {
+        "class": "hero-card__name",
+        "text": "Sharara",
+        "x": 535.875,
+        "y": 1115.171875,
+        "w": 76,
+        "h": 28.59375,
+        "bottom": 1143.765625,
+        "right": 611.875
+      },
+      {
+        "class": "badge badge--help hero-card__title",
+        "text": "boltEnergy & Heat Expert",
+        "x": 535.875,
+        "y": 1149.765625,
+        "w": 163,
+        "h": 26.1875,
+        "bottom": 1175.953125,
+        "right": 698.875
+      },
+      {
+        "class": "hero-card__bio",
+        "text": "Knows all about heat and energy, and how matter changes.",
+        "x": 535.875,
+        "y": 1181.953125,
+        "w": 198.109375,
+        "h": 42,
+        "bottom": 1223.953125,
+        "right": 733.984375
+      },
+      {
+        "class": "hero-card__check",
+        "text": "radio_button_unchecked",
+        "x": 523.875,
+        "y": 1227.953125,
+        "w": 222.109375,
+        "h": 36,
+        "bottom": 1263.953125,
+        "right": 745.984375
+      },
+      {
+        "class": "hero-select__status",
+        "text": "Saved! Lubna will guide you in every experiment.",
+        "x": 38,
+        "y": 1306.0625,
+        "w": 315,
+        "h": 22.5,
+        "bottom": 1328.5625,
+        "right": 353
+      },
+      {
+        "class": "btn btn--primary hero-select__continue",
+        "text": "Go to the lobby with Lubnaarrow_back",
+        "x": 471,
+        "y": 1293.3125,
+        "w": 259,
+        "h": 48,
+        "bottom": 1341.3125,
+        "right": 730
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 22,
+        "y": 311.71875,
+        "w": 362,
+        "h": 481.515625,
+        "bottom": 793.234375,
+        "right": 384
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 22,
+        "y": 823.078125,
+        "w": 130.1875,
+        "h": 205.03125,
+        "bottom": 1028.109375,
+        "right": 152.1875
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 393.671875,
+        "y": 823.078125,
+        "w": 130.203125,
+        "h": 205.03125,
+        "bottom": 1028.109375,
+        "right": 523.875
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 22,
+        "y": 1058.4375,
+        "w": 130.1875,
+        "h": 205.03125,
+        "bottom": 1263.46875,
+        "right": 152.1875
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 393.671875,
+        "y": 1058.4375,
+        "w": 130.203125,
+        "h": 205.03125,
+        "bottom": 1263.46875,
+        "right": 523.875
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 20,
+      "w": 728,
+      "h": 126,
+      "bottom": 146,
+      "right": 748
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "en",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "scroll": [
+      768,
+      1599
+    ],
+    "outside": [
+      {
+        "class": "game-section-title",
+        "text": "Your missions",
+        "x": 20,
+        "y": 1053.875,
+        "w": 728,
+        "h": 28,
+        "bottom": 1081.875,
+        "right": 748
+      },
+      {
+        "class": "lobby__missions-hint",
+        "text": "Finish experiment challenges to complete missions and earn bonus stars.",
+        "x": 20,
+        "y": 1081.875,
+        "w": 728,
+        "h": 22.390625,
+        "bottom": 1104.265625,
+        "right": 748
+      },
+      {
+        "class": "mission-card__title",
+        "text": "First Discovery",
+        "x": 100,
+        "y": 1130.265625,
+        "w": 525,
+        "h": 22.390625,
+        "bottom": 1152.65625,
+        "right": 625
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish 1 experiment challenge.",
+        "x": 100,
+        "y": 1156.65625,
+        "w": 525,
+        "h": 21,
+        "bottom": 1177.65625,
+        "right": 625
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 1starReward: 2 stars",
+        "x": 100,
+        "y": 1201.65625,
+        "w": 525,
+        "h": 20.796875,
+        "bottom": 1222.453125,
+        "right": 625
+      },
+      {
+        "class": "mission-card__title",
+        "text": "Busy Scientist",
+        "x": 100,
+        "y": 1264.453125,
+        "w": 525,
+        "h": 22.390625,
+        "bottom": 1286.84375,
+        "right": 625
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish 2 experiment challenges.",
+        "x": 100,
+        "y": 1290.84375,
+        "w": 525,
+        "h": 21,
+        "bottom": 1311.84375,
+        "right": 625
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 2starReward: 3 stars",
+        "x": 100,
+        "y": 1335.84375,
+        "w": 525,
+        "h": 20.796875,
+        "bottom": 1356.640625,
+        "right": 625
+      },
+      {
+        "class": "mission-card__title",
+        "text": "Science Tour",
+        "x": 100,
+        "y": 1398.640625,
+        "w": 525,
+        "h": 22.390625,
+        "bottom": 1421.03125,
+        "right": 625
+      },
+      {
+        "class": "mission-card__text",
+        "text": "Finish a challenge in physics, math and astronomy.",
+        "x": 100,
+        "y": 1425.03125,
+        "w": 525,
+        "h": 21,
+        "bottom": 1446.03125,
+        "right": 625
+      },
+      {
+        "class": "mission-card__meta",
+        "text": "0 of 3starReward: 5 stars",
+        "x": 100,
+        "y": 1470.03125,
+        "w": 525,
+        "h": 20.796875,
+        "bottom": 1490.828125,
+        "right": 625
+      },
+      {
+        "class": "btn btn--primary lobby__enter",
+        "text": "scienceEnter the experiment library",
+        "x": 20,
+        "y": 1522.828125,
+        "w": 565,
+        "h": 56,
+        "bottom": 1578.828125,
+        "right": 585
+      },
+      {
+        "class": "btn btn--neutral lobby__vault",
+        "text": "checkroomOutfit vault",
+        "x": 597,
+        "y": 1522.828125,
+        "w": 151,
+        "h": 56,
+        "bottom": 1578.828125,
+        "right": 748
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 22,
+        "y": 187.359375,
+        "w": 289.59375,
+        "h": 467.515625,
+        "bottom": 654.875,
+        "right": 311.59375
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 20,
+      "w": 728,
+      "h": 126,
+      "bottom": 146,
+      "right": 748
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "scroll": [
+      768,
+      1343
+    ],
+    "outside": [
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 3",
+        "x": 38,
+        "y": 1163.265625,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 1188.453125,
+        "right": 99
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starUnlocks at 22 stars",
+        "x": 38,
+        "y": 1196.453125,
+        "w": 156,
+        "h": 28,
+        "bottom": 1224.453125,
+        "right": 194
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "10 stars to go",
+        "x": 38,
+        "y": 1232.453125,
+        "w": 84,
+        "h": 21,
+        "bottom": 1253.453125,
+        "right": 122
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openUnlock slot",
+        "x": 38,
+        "y": 1261.453125,
+        "w": 320,
+        "h": 44,
+        "bottom": 1305.453125,
+        "right": 358
+      },
+      {
+        "class": "outfit-slot__name",
+        "text": "Outfit 4",
+        "x": 410,
+        "y": 1163.265625,
+        "w": 61,
+        "h": 25.1875,
+        "bottom": 1188.453125,
+        "right": 471
+      },
+      {
+        "class": "badge badge--reward outfit-slot__cost",
+        "text": "starUnlocks at 28 stars",
+        "x": 410,
+        "y": 1196.453125,
+        "w": 156,
+        "h": 28,
+        "bottom": 1224.453125,
+        "right": 566
+      },
+      {
+        "class": "outfit-slot__status",
+        "text": "16 stars to go",
+        "x": 410,
+        "y": 1232.453125,
+        "w": 84,
+        "h": 21,
+        "bottom": 1253.453125,
+        "right": 494
+      },
+      {
+        "class": "btn outfit-slot__unlock",
+        "text": "lock_openUnlock slot",
+        "x": 410,
+        "y": 1261.453125,
+        "w": 320,
+        "h": 44,
+        "bottom": 1305.453125,
+        "right": 730
+      }
+    ],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 22,
+        "y": 373.078125,
+        "w": 352,
+        "h": 284,
+        "bottom": 657.078125,
+        "right": 374
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 20,
+      "w": 728,
+      "h": 126,
+      "bottom": 146,
+      "right": 748
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "scroll": [
+      768,
+      1024
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 20,
+      "y": 20,
+      "w": 728,
+      "h": 126,
+      "bottom": 146,
+      "right": 748
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "ranks",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "scroll": [
+      1024,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 22,
+        "y": 273.90625,
+        "w": 266.390625,
+        "h": 358.625,
+        "bottom": 632.53125,
+        "right": 288.390625
+      },
+      {
+        "src": "/heroes/shihab-outfit1.webp",
+        "loaded": true,
+        "x": 460.609375,
+        "y": 264.25,
+        "w": 97.171875,
+        "h": 151.265625,
+        "bottom": 415.515625,
+        "right": 557.78125
+      },
+      {
+        "src": "/heroes/nour-outfit1.webp",
+        "loaded": true,
+        "x": 739.0625,
+        "y": 264.25,
+        "w": 97.171875,
+        "h": 151.265625,
+        "bottom": 415.515625,
+        "right": 836.234375
+      },
+      {
+        "src": "/heroes/suhail-outfit1.webp",
+        "loaded": true,
+        "x": 460.609375,
+        "y": 490.90625,
+        "w": 97.171875,
+        "h": 151.265625,
+        "bottom": 642.171875,
+        "right": 557.78125
+      },
+      {
+        "src": "/heroes/sharara-outfit1.webp",
+        "loaded": true,
+        "x": 739.0625,
+        "y": 490.90625,
+        "w": 97.171875,
+        "h": 151.265625,
+        "bottom": 642.171875,
+        "right": 836.234375
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 15.359375,
+      "w": 984,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1004
+    },
+    "selected": "lubna",
+    "featured": "lubna",
+    "radioCount": 5,
+    "lang": "en",
+    "route": "heroes",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "scroll": [
+      1024,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 22,
+        "y": 166.375,
+        "w": 320.15625,
+        "h": 356.625,
+        "bottom": 523,
+        "right": 342.15625
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 15.359375,
+      "w": 984,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1004
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "lobby",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "scroll": [
+      1024,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [
+      {
+        "src": "/heroes/lubna-outfit1.webp",
+        "loaded": true,
+        "x": 22,
+        "y": 292.328125,
+        "w": 233.359375,
+        "h": 343.125,
+        "bottom": 635.453125,
+        "right": 255.359375
+      }
+    ],
+    "header": {
+      "x": 20,
+      "y": 15.359375,
+      "w": 984,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1004
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "vault",
+    "errors": []
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "scroll": [
+      1024,
+      768
+    ],
+    "outside": [],
+    "clipped": [],
+    "images": [],
+    "header": {
+      "x": 20,
+      "y": 15.359375,
+      "w": 984,
+      "h": 72,
+      "bottom": 87.359375,
+      "right": 1004
+    },
+    "selected": null,
+    "featured": null,
+    "radioCount": 0,
+    "lang": "en",
+    "route": "ranks",
+    "errors": []
+  }
+]

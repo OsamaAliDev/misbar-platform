@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Playground view
+   ========================================================================== */
+
+.playground {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+/* -- Header ------------------------------------------------------------------ */
+.playground-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  padding: 8px 12px;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.playground-header__start {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.playground-header__back {
+  flex-shrink: 0;
+}
+
+.playground-header__titles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  min-width: 0;
+}
+
+.playground-header__title {
+  min-width: 0;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.playground-header__title:focus-visible {
+  outline-offset: 4px;
+}
+
+.playground-header__end {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+/* Live star counter — reward family (matches the catalog's star balance). */
+.star-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding-inline: 14px;
+  background-color: var(--accent-reward-soft);
+  border: var(--border-width) solid var(--accent-reward);
+  border-radius: var(--radius-round);
+  color: var(--accent-reward-text);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.star-counter .icon {
+  color: var(--accent-reward);
+}
+
+.star-counter.is-bumping {
+  animation: star-bump 700ms var(--ease-out);
+}
+
+@keyframes star-bump {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.18);
+  }
+}
+
+/* Coral help button — #EF6B5E fill, #FFFFFF text. */
+.btn--help {
+  background-color: var(--accent-help);
+  color: var(--accent-primary-text);
+}
+
+@media (hover: hover) {
+  .btn--help:hover {
+    background-color: var(--accent-help-text);
+  }
+}
+
+/* -- Desktop: the whole Playground fits the viewport (1366×768) --------------
+   The app shell becomes a fixed-height column; the workspace takes the
+   remaining height and its stage/controls flex inside it. */
+@media (min-width: 1024px) and (min-height: 600px) {
+  .app-shell--fit {
+    height: 100vh;
+    height: 100dvh;
+    padding-block: 16px;
+  }
+
+  .app-shell--fit .app-layout {
+    height: 100%;
+  }
+
+  .app-shell--fit .app-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
+  .app-shell--fit .playground {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+}
+
+/* -- Mobile ------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  .playground {
+    gap: 12px;
+  }
+
+  .playground-header {
+    padding: 8px;
+  }
+
+  .playground-header__start {
+    flex-basis: 100%;
+    gap: 8px;
+  }
+
+  .playground-header__title {
+    font-size: 17px;
+  }
+
+  .playground-header__end {
+    flex: 1 1 100%;
+    justify-content: space-between;
+  }
+
+  .star-counter {
+    height: 44px;
+  }
+
+  .playground-header__help {
+    flex: 1 1 auto;
+    min-height: var(--touch-target);
+    padding-inline: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star-counter.is-bumping {
+    animation: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .app-shell--fit { height: 100dvh; padding-block: clamp(10px, 2vh, 16px); }
+  .app-shell--fit .app-layout { height: 100%; min-height: 0; }
+  .app-shell--fit .app-main { display: flex; flex: 1; min-height: 0; }
+  .app-shell--fit .playground { display: grid; flex: 1; min-height: 0; grid-template-rows: auto auto minmax(0, 1fr); }
+  .playground-header, .challenge-bar { flex-shrink: 0; }
+}

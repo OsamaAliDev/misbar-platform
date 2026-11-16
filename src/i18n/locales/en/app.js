@@ -1,0 +1,15 @@
+export default {
+  libraryTitle: 'Interactive experiment library',
+  dashboardTitle: 'Teacher and parent dashboard',
+  dashboardEyebrow: 'Progress dashboard',
+  dashboardMessage: 'Soon you can follow experiment progress and collected stars here, without any personal information.',
+  portal: 'Teacher and parent dashboard',
+  lobbyIdentity: '{nickname} · Hero lobby',
+  greetingBadge: 'Hi, hero! Ready to discover?',
+  greetingStrip: "Hi, hero! Pick an experiment and let's start together!",
+  guideGreeting: '{name} welcomes you',
+  guideLobby: '{name} · Hero lobby',
+  lobby: 'Hero lobby',
+  soon: 'Coming soon',
+  back: 'Back to the library',
+};

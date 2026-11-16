@@ -1,0 +1,242 @@
+/* ==========================================================================
+   Nour's Help Modal — flat card, coral header, three numbered steps
+   ========================================================================== */
+
+/* Lock page scroll while any modal dialog is open. */
+html:has(dialog[open]) {
+  overflow: hidden;
+}
+
+.help-modal {
+  width: min(560px, calc(100% - 24px));
+  max-width: none;
+  max-height: calc(100dvh - 24px);
+  margin: auto;
+  padding: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  color: var(--text-primary);
+}
+
+/* Flat scrim: --text-primary (#2B2824) at 55% — no blur, no glass. */
+.help-modal::backdrop {
+  background-color: var(--modal-scrim);
+}
+
+.help-modal[open] {
+  animation: rise-in var(--duration-base) var(--ease-out) both;
+}
+
+.help-modal__card {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100dvh - 24px);
+  overflow: hidden;
+  background-color: var(--surface-card);
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+/* -- Coral header: #EF6B5E fill, #FFFFFF title (same pair as the help button).
+   The experiment name sits on a white pill so small text keeps full contrast. */
+.help-modal__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: var(--accent-help);
+  border-bottom: var(--border);
+}
+
+.help-modal__avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+}
+
+/* The guide hero's face, on a white ring so it reads on the coral header. */
+.help-modal__avatar .hero-avatar {
+  width: 100%;
+  height: 100%;
+  border-color: var(--surface-card);
+}
+
+.help-modal__heading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+}
+
+.help-modal__title {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.4;
+  color: var(--accent-primary-text);
+}
+
+.help-modal__subtitle {
+  max-width: 100%;
+  padding: 2px 12px;
+  background-color: var(--surface-card);
+  border-radius: var(--radius-round);
+  font-size: 13.5px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--accent-help-text);
+}
+
+.help-modal__close {
+  flex-shrink: 0;
+}
+
+/* -- Body --------------------------------------------------------------------- */
+.help-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-height: 0;
+  padding: 16px 18px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* The guide hero's "hint" line in a speech bubble. */
+.help-modal__guide {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.help-modal__bubble {
+  font-size: 15px;
+}
+
+.help-modal__intro {
+  padding: 10px 14px;
+  background-color: var(--accent-help-soft);
+  border-radius: var(--radius-inner);
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--accent-help-text);
+}
+
+.help-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.help-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  background-color: var(--bg-canvas);
+  border: var(--border);
+  border-radius: var(--radius-inner);
+}
+
+.help-step__number {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  background-color: var(--accent-help);
+  border-radius: 50%;
+  color: var(--accent-primary-text);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.help-step__content {
+  min-width: 0;
+}
+
+.help-step__title {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.help-step__text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Quick fact — reward family */
+.help-fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 14px;
+  background-color: var(--accent-reward-soft);
+  border: var(--border-width) solid var(--accent-reward);
+  border-radius: var(--radius-inner);
+}
+
+.help-fact__icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  background-color: var(--surface-card);
+  border-radius: 50%;
+  color: var(--accent-reward-text);
+}
+
+.help-fact__title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--accent-reward-text);
+}
+
+.help-fact__text {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+/* -- Footer ------------------------------------------------------------------- */
+.help-modal__footer {
+  padding: 12px 18px 16px;
+  border-top: var(--border);
+}
+
+@media (max-width: 480px) {
+  .help-modal__header {
+    padding: 10px 12px;
+  }
+
+  .help-modal__body {
+    padding: 14px 12px;
+  }
+
+  .help-modal__footer {
+    padding: 10px 12px 12px;
+  }
+
+  .help-step {
+    padding: 10px 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .help-modal[open] {
+    animation: none;
+  }
+}

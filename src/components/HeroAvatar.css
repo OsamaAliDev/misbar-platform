@@ -1,0 +1,40 @@
+/* <HeroAvatar /> — round face crop with the hero's identity ring. */
+.hero-avatar {
+  --hero-avatar-ring: var(--outline);
+  --hero-avatar-fill: var(--surface-subtle);
+  flex-shrink: 0;
+  display: block;
+  width: var(--hero-avatar-size, 48px);
+  height: var(--hero-avatar-size, 48px);
+  overflow: hidden;
+  background-color: var(--hero-avatar-fill);
+  border: var(--border-width) solid var(--hero-avatar-ring);
+  border-radius: 50%;
+}
+
+.hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-avatar--primary {
+  --hero-avatar-ring: var(--accent-primary);
+  --hero-avatar-fill: var(--accent-primary-soft);
+}
+.hero-avatar--reward {
+  --hero-avatar-ring: var(--accent-reward);
+  --hero-avatar-fill: var(--accent-reward-soft);
+}
+.hero-avatar--help {
+  --hero-avatar-ring: var(--accent-help);
+  --hero-avatar-fill: var(--accent-help-soft);
+}
+.hero-avatar--tools {
+  --hero-avatar-ring: var(--accent-tools);
+  --hero-avatar-fill: var(--accent-tools-soft);
+}
+.hero-avatar--info {
+  --hero-avatar-ring: var(--accent-info);
+  --hero-avatar-fill: var(--accent-info-soft);
+}

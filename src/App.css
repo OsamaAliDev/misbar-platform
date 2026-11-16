@@ -1,0 +1,58 @@
+/* Vertical rhythm of the shell: header → current view. */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-main {
+  min-width: 0;
+}
+
+/* Game screens default to night; an explicit global html theme overrides it. */
+.app-shell--game {
+  --game-gap: clamp(10px, 1.5vh, 18px);
+  --game-hero-height: clamp(280px, 48vh, 560px);
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+}
+
+.app-shell--game .app-layout {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  gap: var(--game-gap);
+}
+
+.app-shell--game .app-main {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fit ordinary desktop viewports without clipping text or trapping scroll.
+   Narrow/short screens keep a natural document flow for readable content. */
+@media (min-width: 1024px) and (min-height: 700px) {
+  .app-shell--game {
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    padding-block: clamp(12px, 2vh, 20px);
+  }
+}
+
+@media (max-width: 699px) {
+  .app-shell--game {
+    --game-hero-height: min(40vh, 300px);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-layout {
+    gap: 16px;
+  }
+}

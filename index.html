@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FBF6EF" />
+    <script>
+      // Apply stored preferences before CSS/React to avoid a wrong-theme frame.
+      (() => {
+        const read = key => { try { return JSON.parse(localStorage.getItem(key)); } catch (_) { return null; } };
+        const choice = read('misbar:theme:v1'), student = read('misbar:student:v1'), lang = read('misbar:lang:v1');
+        const view = location.hash.replace(/^#\/?/, '').split('/')[0] || 'catalog';
+        const game = ['heroes','lobby','vault','ranks'].includes(view);
+        const redirect = !student?.heroId && ['catalog','lobby','vault','ranks'].includes(view);
+        const theme = ['night','light'].includes(choice) ? choice : game || redirect ? 'night' : 'light';
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]').content = theme === 'night' ? '#141A2E' : '#FBF6EF';
+        document.documentElement.lang = lang === 'en' ? 'en' : 'ar';
+        document.documentElement.dir = lang === 'en' ? 'ltr' : 'rtl';
+      })();
+    </script>
+    <meta
+      name="description"
+      content="مِسبار — مكتبة تجارب علمية ورياضية تفاعلية باللغة العربية للطلاب من ١٠ إلى ١٤ سنة: الحركة، الرافعة، الكواكب، الكسور، الضوء وحالات المادة."
+    />
+    <title>مِسبار | مكتبة التجارب التفاعلية</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts: Cairo (the only typeface) + Material Symbols Outlined (icons).
+         Keep `icon_names` alphabetical and in sync with every <Icon name> used. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0..1,0&icon_names=ac_unit,air,arrow_back,arrow_forward,balance,block,bolt,calculate,check,check_circle,checkroom,chevron_left,close,code,emoji_events,explore,flare,groups,help,home,info,insights,lightbulb,local_fire_department,lock,lock_open,menu_book,pause,play_arrow,public,radio_button_unchecked,redeem,restart_alt,science,search,search_off,speed,sports_score,stairs,star,supervisor_account,task_alt,thermostat,touch_app,travel_explore,tune,water_drop,workspace_premium&display=block"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
