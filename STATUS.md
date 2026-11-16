@@ -1,4 +1,4 @@
-# Last updated: 2026-11-16 13:41 EET — Current step: 6 complete; 3 proof and7 finalQA
+# Last updated: 2026-11-16 13:43 EET — Current step: 7 preflight fixes
 
 | Step | Status | Commit hash | Evidence / limits |
 |---|---|---|---|
@@ -7,12 +7,12 @@
 | 3. RLS isolation proof | In progress | Pending step commit | No final acceptance claim yet. |
 | 4. Student PIN and staff email Auth | Done (verified) | 4d21887 | 27/27 auth/API tests passed; real Supabase transport uses stubs only, NOT remote Auth. |
 | 5. Guest/Supabase adapters and first import | Done (verified) | ada4373 | Actual mock8-stage school flow passed; guest15 stayed unchanged while school earned19 and re-login did not import again. |
-| 6. Bilingual/theme-aware logins, classes and roster | Done (verified) | this UI step commit (git log -- src/views/saas) | 80/80 actual mock Auth school-screen cases, bilingual/theme/touch/viewport checks and browser class/enrollment/roster flow passed. |
-| 7. Final clean build, guest regression and school flow | Not started | Pending step commit | No final acceptance claim yet. |
+| 6. Bilingual/theme-aware logins, classes and roster | Done (verified) | f20e705 | 80/80 mock-auth UI viewport cases plus browser enrollment/roster flow passed; lifecycle regression fixes being added under finalQA. |
+| 7. Final clean build, guest regression and school flow | In progress | pending finalQA commit | Guest192/192, school80/80, backend27/27 and local SQL123 passed; auth lifecycle review found additional cases to fix/test. |
 
 ## Doing now
 
-School logins/classes/roster passed80 actual mock-auth viewport cases across Arabic/English, light/night,1366/1920/768/390/320px. Guest screens passed192 cases. Saving the UI step; checking a required per-experiment stars field before the final local RLS proof and clean production build.
+Final review found uncovered auth lifecycle races (delayed logout/stale restore and queued actions) and direct-RPC nickname validation weaker than HTTP. Fixing these with targeted tests before final production acceptance. Corrected local SQL proof passed123 checks, but real Supabase RLS/Auth has NOT run. No final QA completion claim yet.
 
 Mode: **mock, not real Supabase**. Real Supabase RLS and Auth have NOT run.
 
