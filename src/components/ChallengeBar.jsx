@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useI18n } from '../i18n/index.jsx';
 import { useGuide, useHeroLine } from '../state/guide.js';
 import { useStudent } from '../state/student.jsx';
 import HeroAvatar from './HeroAvatar.jsx';
@@ -25,6 +26,7 @@ import './ChallengeBar.css';
  * @param {boolean} props.met  live condition reported by the simulation
  */
 export default function ChallengeBar({ experimentId, challenge, met }) {
+  const { t } = useI18n();
   const { student, completeChallenge } = useStudent();
   const { hero, name } = useGuide();
   const completed = student.completedChallenges.includes(experimentId);
@@ -60,7 +62,7 @@ export default function ChallengeBar({ experimentId, challenge, met }) {
     messageTone = 'success';
   } else if (completed) {
     situation = 'encourage';
-    detail = 'خلّصت التحدي ده وخدت نجمتك! كمّل جرّب براحتك واكتشف أكتر.';
+    detail = t('lab.challenge.completedDetail');
     messageTone = 'success';
   } else if (feedback === 'retry') {
     situation = 'wrong';
@@ -68,32 +70,32 @@ export default function ChallengeBar({ experimentId, challenge, met }) {
     messageTone = 'retry';
   } else if (met) {
     situation = 'celebrate';
-    detail = 'وصلت للهدف، اضغط الزرار عشان تاخد نجمتك.';
+    detail = t('lab.challenge.metDetail');
     messageTone = 'success';
   }
   const heroLine = useHeroLine(hero.id, situation, attempt);
-  const lead = situation === 'hint' ? `نصيحة ${name}:` : heroLine;
+  const lead = situation === 'hint' ? t('lab.challenge.tipLead', { name }) : heroLine;
 
   let button;
   if (completed) {
     button = (
       <button type="button" className="btn challenge-bar__btn challenge-bar__btn--done" disabled>
         <Icon name="check_circle" filled size={22} />
-        <span>تم إنجاز التحدي</span>
+        <span>{t('lab.challenge.done')}</span>
       </button>
     );
   } else if (met) {
     button = (
       <button type="button" className="btn challenge-bar__btn challenge-bar__btn--claim" onClick={handleClick}>
         <Icon name="star" filled size={22} />
-        <span>أتممت التجربة (+١ نجمة)</span>
+        <span>{t('lab.challenge.claim')}</span>
       </button>
     );
   } else {
     button = (
       <button type="button" className="btn btn--primary challenge-bar__btn" onClick={handleClick}>
         <Icon name="task_alt" size={22} />
-        <span>تحقق من التحدي</span>
+        <span>{t('lab.challenge.check')}</span>
       </button>
     );
   }
@@ -110,7 +112,7 @@ export default function ChallengeBar({ experimentId, challenge, met }) {
         <h2 id="challenge-title" className="challenge-bar__title">
           <span className="badge badge--reward challenge-bar__label">
             <Icon name="emoji_events" size={16} />
-            {`تحدي ${name}`}
+            {t('lab.challenge.label', { name })}
           </span>
           <span className="challenge-bar__prompt">{challenge.prompt}</span>
         </h2>

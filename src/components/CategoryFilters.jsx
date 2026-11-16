@@ -1,27 +1,28 @@
-import { ALL_CATEGORY_ID, CATEGORIES } from '../data/experiments.js';
-import { formatNumber } from '../lib/arabic.js';
+import { ALL_CATEGORY_ID, CATEGORIES, getCategoryLabel } from '../data/experiments.js';
+import { useI18n } from '../i18n/index.jsx';
 import './CategoryFilters.css';
 
 /**
- * <CategoryFilters /> — subject filter pills ("الكل (٦)", "الفيزياء", ...).
+ * <CategoryFilters /> — subject filter pills with a total count on All.
  *
  * Toggle buttons with `aria-pressed`; exactly one is active at a time.
  *
  * @param {object}   props
  * @param {string}   props.value        active category id
  * @param {Function} props.onChange     receives the chosen category id
- * @param {number}   props.totalCount   number shown in the "الكل" pill
+ * @param {number}   props.totalCount   number shown in the All pill
  * @param {string}  [props.className]
  */
 export default function CategoryFilters({ value, onChange, totalCount, className = '' }) {
+  const { t } = useI18n();
   return (
-    <div className={`category-filters ${className}`.trim()} role="group" aria-label="تصفية حسب المادة">
+    <div className={`category-filters ${className}`.trim()} role="group" aria-label={t('catalog.filters.label')}>
       {CATEGORIES.map((category) => {
         const isActive = category.id === value;
         const label =
           category.id === ALL_CATEGORY_ID
-            ? `${category.label} (${formatNumber(totalCount)})`
-            : category.label;
+            ? t('catalog.filters.allWithCount', { count: totalCount })
+            : getCategoryLabel(t, category.id);
 
         return (
           <button

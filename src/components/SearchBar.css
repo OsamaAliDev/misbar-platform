@@ -17,10 +17,9 @@
 
 .search-bar__icon {
   position: absolute;
-  /* Physical `right` on purpose: `.icon` forces `direction: ltr` (needed for
-     ligatures), which would flip a logical inset to the left side. The app is
-     RTL-only, so the start edge is always the right edge. */
-  right: 14px;
+  /* This wrapper inherits the page direction; the glyph inside stays LTR. */
+  inset-inline-start: 14px;
+  display: flex;
   color: var(--text-secondary);
   pointer-events: none;
 }

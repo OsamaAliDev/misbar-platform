@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useI18n } from '../i18n/index.jsx';
 import Icon from './Icon.jsx';
 import './ResultStrip.css';
 
@@ -28,7 +29,8 @@ const ANNOUNCE_DELAY_MS = 1500;
  *   `spoken` is the text announced for a non-text value (e.g. a <Fraction />).
  */
 export default function ResultStrip({ readings }) {
-  const summary = readings.map(readingSentence).join('، ');
+  const { t } = useI18n();
+  const summary = readings.map(readingSentence).join(t('lab.results.separator'));
   const announcement = useDebouncedAnnouncement(summary);
 
   return (
@@ -38,7 +40,7 @@ export default function ResultStrip({ readings }) {
           <Icon name="bolt" size={20} />
         </span>
         <h2 id="result-strip-title" className="result-strip__title">
-          النتيجة المباشرة
+          {t('lab.results.title')}
         </h2>
       </div>
       <dl className="result-strip__list">

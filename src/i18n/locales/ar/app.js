@@ -1,0 +1,15 @@
+export default {
+  libraryTitle: 'مكتبة التجارب التفاعلية',
+  dashboardTitle: 'لوحة المعلم وولي الأمر',
+  dashboardEyebrow: 'لوحة المتابعة',
+  dashboardMessage: 'هنا هتتابع قريباً تقدّم الأبطال في التجارب والنجوم اللي جمعوها، من غير أي بيانات شخصية.',
+  portal: 'لوحة المعلم وولي الأمر',
+  lobbyIdentity: '{nickname} · ساحة الأبطال',
+  greetingBadge: 'أهلاً يا بطل! جاهز نكتشف؟',
+  greetingStrip: 'أهلاً يا بطل! اختار تجربة ونبدأ سوا!',
+  guideGreeting: 'ترحيب {name}',
+  guideLobby: '{name} · ساحة الأبطال',
+  lobby: 'ساحة الأبطال',
+  soon: 'قريباً',
+  back: 'العودة للمكتبة',
+};

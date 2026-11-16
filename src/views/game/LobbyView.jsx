@@ -7,6 +7,7 @@ import { getRankProgress, MISSIONS } from '../../config/game.js';
 import { HERO_IMAGE_SIZE } from '../../data/heroes.js';
 import { useI18n } from '../../i18n/index.jsx';
 import { formatNumber } from '../../lib/arabic.js';
+import { displayNickname } from '../../lib/nickname.js';
 import { useGuide, useHeroLine } from '../../state/guide.js';
 import { buildHash, VIEWS } from '../../state/navigation.jsx';
 import { useStudent } from '../../state/student.jsx';
@@ -78,7 +79,7 @@ export default function LobbyView({ onEnterLibrary }) {
             <div className="lobby__student">
               <Avatar avatarId={student.avatarId} size={48} />
               <h2 id="lobby-greeting" className="lobby__greeting">
-                {t('game.lobby.greeting', { nickname: student.nickname })}
+                {t('game.lobby.greeting', { nickname: displayNickname(student.nickname, t) })}
               </h2>
             </div>
             <div className="lobby__guide">

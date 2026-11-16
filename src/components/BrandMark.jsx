@@ -1,3 +1,4 @@
+import { useI18n } from '../i18n/index.jsx';
 /**
  * <BrandMark /> — the مِسبار logotype.
  *
@@ -7,6 +8,7 @@
 import './BrandMark.css';
 
 export default function BrandMark() {
+  const { t } = useI18n();
   return (
     <div className="brand">
       <span className="brand__mark" aria-hidden="true">
@@ -20,7 +22,7 @@ export default function BrandMark() {
           <circle cx="12" cy="12" r="3" style={{ fill: 'var(--accent-reward)' }} />
         </svg>
       </span>
-      <span className="brand__word">مِسبار</span>
+      <span className="brand__word">{t('common.siteName')}</span>
     </div>
   );
 }

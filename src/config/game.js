@@ -14,7 +14,7 @@ import { getExperimentById } from '../data/experiments.js';
  */
 
 /**
- * Non-combat rank ladder, driven by the total star count.
+ * Discovery rank ladder, driven by the total star count.
  * `minStars` must be ascending; the first rank must start at 0.
  * `tone` picks one of the five accent families for the rank's icon.
  */

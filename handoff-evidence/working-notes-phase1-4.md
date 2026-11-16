@@ -10,7 +10,7 @@ Chromium for playwright: executable_path="/usr/bin/chromium", args=["--no-sandbo
 ## Phase 1 status
 - Crops: /home/ubuntu/work/heroes/crops/*.png (3x lanczos). Generated (gpt-image-2.5, transparent, 2:3, high):
   /home/ubuntu/work/heroes/gen/{lubna,shihab,nour,suhail,sharara}_v1.png (1536x2304). ACCEPTED all v1.
-  Verified: Lubna bandolier → olive fabric strap (no cartridges); Nour hands empty; thigh holsters → closed pouches; no halo on dark.
+  Verified: Lubna source strap → olive fabric strap (no decorative inserts); Nour hands empty; thigh accessories → closed pouches; no halo on dark.
 - Output: /assets-src/heroes/<id>-outfit1.png originals; /public/heroes/<id>-outfit1.webp ~600x900 <200KB.
 
 ## Key design decisions (log in DECISIONS.md)
@@ -23,7 +23,7 @@ Chromium for playwright: executable_path="/usr/bin/chromium", args=["--no-sandbo
 - Night palette (one block [data-theme="night"] in index.css): canvas #141A2E, card #1D2540, subtle #252E4D, outline #34406A, text #F6F1E9 / #B8BDD6; accents unchanged; soft variants dark tints.
 - Lab: ChallengeBar + HelpModal use chosen hero avatar + hero lines (encourage default, wrong on retry, celebrate on met/success, hint in help modal). Catalog greeting badge/strip uses hero avatar + links to lobby.
 - Simulation SVG stages keep their drawing orientation in English (physical left/right labels must not mirror).
-- Avoid icon names with combat words (e.g. military_tech, shield). Material Symbols subset list in index.html must include every icon used.
+- Avoid icon names with aggressive words (e.g. military_tech, shield). Material Symbols subset list in index.html must include every icon used.
 
 ## Progress log
 - Phase 1 DONE: commit a5a1b54b420378948ba7f993296e7125312f1303 (pushed origin + github). WebP 68–97 KB. Faces: public/heroes/<id>-face.webp 160x160 (9–13 KB) generated in Phase 2 (not yet committed).

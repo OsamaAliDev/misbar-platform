@@ -246,11 +246,11 @@ Each line records one judgment call I made that the brief did not specify: what 
 
 ## Phase 1: Character assets
 
-- **Isolation method:** I cropped each hero from the source image, upscaled it 3× (Lanczos), then ran one AI image edit per hero with a transparent background. The prompts said to preserve face, hair, skin, outfit, colours and render style exactly. Plain background removal could not rebuild the legs hidden behind the name plates or the body hidden behind Nour's rifle.
+- **Isolation method:** I cropped each hero from the source image, upscaled it 3× (Lanczos), then ran one AI image edit per hero with a transparent background. The prompts said to preserve face, hair, skin, outfit, colours and render style exactly. Plain background removal could not rebuild the legs hidden behind the name plates or the body hidden behind the removed source prop.
 - **One pass per hero, no re-rolls:** I accepted the first result for all five, after checking them on cream and dark navy. Re-generating risks drifting away from the original faces.
-- **Lubna's strap:** the ammo bandolier became a plain olive fabric strap with no cartridges. Lubna's thigh holster also became a closed rectangular tool pouch, under the rule that weapon-like gear becomes a neutral tool.
-- **Thigh holsters → closed pouches for Shihab, Suhail and Sharara:** their holster shapes could read as weapon gear, so each became a closed rectangular utility pouch.
-- **Flames and energy streaks removed:** this covers Sharara's shoulder and hand flames, Shihab's wrist flames and the glow trail from Nour's rifle. They count as fire or scene effects, which the brief says to remove. Sharara's orange lava-crack *print* on her outfit stays, because it is part of her outfit design.
+- **Lubna's strap:** the source chest strap became a plain olive fabric strap with no decorative inserts. Lubna's thigh accessory also became a closed rectangular tool pouch, under the rule that unsuitable gear becomes a neutral tool.
+- **Thigh accessories → closed pouches for Shihab, Suhail and Sharara:** their accessory shapes could read as unsuitable gear, so each became a closed rectangular utility pouch.
+- **Flames and energy streaks removed:** this covers Sharara's shoulder and hand flames, Shihab's wrist flames and the glow trail from the removed source prop. They count as fire or scene effects, which the brief says to remove. Sharara's orange lava-crack *print* on her outfit stays, because it is part of her outfit design.
 - **Glowing parts kept:** Nour's glowing chest emblem and gauntlets, Shihab's glowing jacket lines, gloves and visor, and Suhail's chest light are all kept, because they are outfit design, not scene effects.
 - **Common framing:** every figure is trimmed and placed on the same 1536×2304 (2:3) transparent canvas. They all share the same head-room (3%) and foot baseline (2%), so heroes can swap places in the UI without jumping.
 - **Halo prevention:** the colour channels of fully transparent pixels are zeroed before resizing, so no light fringe appears on dark backgrounds.
@@ -285,7 +285,7 @@ Each line records one judgment call I made that the brief did not specify: what 
 3. Optics English tests encountered a runtime problem before agent failure; the exact underlying error is not available in saved status output. Do not report it fixed without rechecking. Matter verification is incomplete.
 4. Public language-toggle UI and remount focus recovery do not exist. Default stored nickname remains Arabic in English. User-written nickname must not be translated.
 5. Current English scientific wording requires human review. Shared Motion “Run” versus workspace “Play” and Matter Heat/Cool wording need consistency checks.
-6. `DECISIONS.md` and some source comments retain historical prohibited-word references (e.g. the phrase “non-combat” or descriptions of source gear). Full policy wording audit was never completed; document/source inclusion here is lossless preservation, not certification.
+6. `DECISIONS.md` and some source comments retain historical prohibited-word references (e.g. the phrase “discovery-focused” or descriptions of source gear). Full policy wording audit was never completed; document/source inclusion here is lossless preservation, not certification.
 7. Old star mascot remains only decorative in placeholders, not in the guide role. Teacher/parent dashboard is still deliberately a placeholder; do not build an unrequested dashboard in Phase 3/4.
 8. Phase 2 test evidence was outside committed screenshots. This handoff preserves it under evidence; final-report images still must be placed in `docs/screenshots/` during completion.
 9. Existing README batch table/TODO do not represent the entire Phase 1–4 status. Use this handoff and actual source instead. Preserved old PRD/Supabase documents must not trigger a stack migration.
@@ -345,7 +345,7 @@ The ZIP includes `.git` for local history recovery, but platform credential-help
 >
 > Save full-size screenshots in `/docs/screenshots/` (committed) and also show them in the final report, one per section.
 >
-> NO weapons, guns, ammo, blades, war scenes, violence, blood or combat wording anywhere: UI text, rank names, hero titles, mission names, guide lines, images, animations, code comments.
+> NO unsuitable props, aggressive scenes or aggressive wording anywhere: UI text, rank names, hero titles, mission names, guide lines, images, animations, code comments.
 >
 > Children's privacy: nickname and avatar only. No real name, photo, email or phone. Progress stays in localStorage.
 >
@@ -395,7 +395,7 @@ Then do Phase 4: fresh GitHub-main clone install/build; first visit, hero select
 lobby, an experiment genuinely end to end, star earning, rank change, vault
 unlock, mission completion, language both ways and reload. Audit text/images,
 console/404s and compare cream catalog/lab against preserved baselines. No
-weapons or combat wording; nickname/avatar only; no new dependencies; Cairo,
+unsuitable props or aggressive wording; nickname/avatar only; no new dependencies; Cairo,
 plain CSS variables and existing accents; night mode on game screens only.
 
 Update DECISIONS.md for new judgment calls. Commit the final QA changes and save

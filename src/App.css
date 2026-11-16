@@ -9,9 +9,7 @@
   min-width: 0;
 }
 
-/* Game screens: the wrapper carries data-theme="night" (see index.css).
-   <body> follows via :has(); this background also covers browsers without
-   :has() support. */
+/* Game screens default to night; an explicit global html theme overrides it. */
 .app-shell--game {
   --game-gap: clamp(10px, 1.5vh, 18px);
   --game-hero-height: clamp(280px, 48vh, 560px);

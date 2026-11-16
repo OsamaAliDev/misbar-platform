@@ -27,8 +27,8 @@ function paint(token) {
   return token === 'none' ? 'none' : `var(--${token})`;
 }
 
-function renderShape(shape, index) {
-  const { el, fill, stroke, text, ...attributes } = shape;
+function renderShape(shape, index, texts) {
+  const { el, fill, stroke, text, textKey, ...attributes } = shape;
   if (!ALLOWED_ELEMENTS.has(el)) return null;
 
   const Element = el;
@@ -36,7 +36,7 @@ function renderShape(shape, index) {
 
   return (
     <Element key={index} style={style} {...attributes}>
-      {el === 'text' ? text : null}
+      {el === 'text' ? (textKey ? texts[textKey] : text) : null}
     </Element>
   );
 }
@@ -46,9 +46,10 @@ function renderShape(shape, index) {
  * @param {string}   props.viewBox   SVG viewBox, e.g. "0 0 280 88"
  * @param {object[]} props.shapes    ordered shape descriptions
  * @param {string}  [props.label]    accessible description; omit for decorative use
+ * @param {object}  [props.texts]    localized text map for shapes with textKey
  * @param {string}  [props.className]
  */
-export default function FlatIllustration({ viewBox, shapes, label, className = '' }) {
+export default function FlatIllustration({ viewBox, shapes, label, texts = {}, className = '' }) {
   const a11y = label ? { role: 'img', 'aria-label': label } : { 'aria-hidden': true };
 
   return (
@@ -60,7 +61,7 @@ export default function FlatIllustration({ viewBox, shapes, label, className = '
       focusable="false"
       {...a11y}
     >
-      {shapes.map(renderShape)}
+      {shapes.map((shape, index) => renderShape(shape, index, texts))}
     </svg>
   );
 }

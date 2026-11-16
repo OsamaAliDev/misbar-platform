@@ -1,3 +1,4 @@
+import { useI18n } from '../i18n/index.jsx';
 import { NOUR_SRC } from '../lib/assets.js';
 import Icon from './Icon.jsx';
 import './PlaceholderPanel.css';
@@ -15,6 +16,7 @@ import './PlaceholderPanel.css';
  * @param {import('react').ReactNode} [props.children]  optional preview content
  */
 export default function PlaceholderPanel({ eyebrowIcon, eyebrow, title, message, onBack, children }) {
+  const { t } = useI18n();
   return (
     <section className="card placeholder-panel" aria-labelledby="view-heading">
       <img className="placeholder-panel__mascot" src={NOUR_SRC} alt="" width="112" height="112" />
@@ -24,7 +26,7 @@ export default function PlaceholderPanel({ eyebrowIcon, eyebrow, title, message,
           <Icon name={eyebrowIcon} size={16} />
           {eyebrow}
         </span>
-        <span className="badge badge--reward">قريباً</span>
+        <span className="badge badge--reward">{t('app.soon')}</span>
       </div>
 
       <h1 id="view-heading" className="placeholder-panel__title" tabIndex={-1}>
@@ -36,8 +38,8 @@ export default function PlaceholderPanel({ eyebrowIcon, eyebrow, title, message,
 
       <button type="button" className="btn btn--primary placeholder-panel__back" onClick={onBack}>
         {/* In RTL "forward" (→) points back toward the start of the page. */}
-        <Icon name="arrow_forward" size={20} />
-        <span>العودة للمكتبة</span>
+        <Icon name="arrow_forward" size={20} className="icon--dir" />
+        <span>{t('app.back')}</span>
       </button>
     </section>
   );

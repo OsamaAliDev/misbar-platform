@@ -1,3 +1,4 @@
+import LanguageToggle from './LanguageToggle.jsx';
 import ThemeToggle from './ThemeToggle.jsx';
 import { useI18n } from '../i18n/index.jsx';
 import { buildHash, VIEWS } from '../state/navigation.jsx';
@@ -53,6 +54,7 @@ export default function GameHeader({ currentView }) {
       </nav>
 
       <div className="game-header__end">
+        <LanguageToggle />
         <ThemeToggle />
         <StarBalance />
         <a className="btn btn--neutral game-header__library" href={buildHash(VIEWS.CATALOG)}>

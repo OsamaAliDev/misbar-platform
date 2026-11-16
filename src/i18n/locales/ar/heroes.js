@@ -7,7 +7,7 @@ import { NOUR_TITLE } from '../../../data/heroes.js';
  *   encourage   idle moments, before trying
  *   hint        help areas (Help Modal, tips)
  *   wrong       gentle reaction when a check is pressed too early
- * Simple, kind, Egyptian-friendly Arabic for kids. No combat wording.
+ * Simple, kind, Egyptian-friendly Arabic for kids. Discovery-focused wording.
  */
 export default {
   lubna: {

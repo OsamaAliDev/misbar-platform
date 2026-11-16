@@ -1,3 +1,4 @@
+import { useI18n } from '../i18n/index.jsx';
 import PlaceholderPanel from '../components/PlaceholderPanel.jsx';
 
 /**
@@ -8,12 +9,13 @@ import PlaceholderPanel from '../components/PlaceholderPanel.jsx';
  * @param {Function} props.onBack  returns to the catalog
  */
 export default function DashboardView({ onBack }) {
+  const { t } = useI18n();
   return (
     <PlaceholderPanel
       eyebrowIcon="insights"
-      eyebrow="لوحة المتابعة"
-      title="لوحة المعلم وولي الأمر"
-      message="هنا هتتابع قريباً تقدّم الأبطال في التجارب والنجوم اللي جمعوها، من غير أي بيانات شخصية."
+      eyebrow={t('app.dashboardEyebrow')}
+      title={t('app.dashboardTitle')}
+      message={t('app.dashboardMessage')}
       onBack={onBack}
     />
   );

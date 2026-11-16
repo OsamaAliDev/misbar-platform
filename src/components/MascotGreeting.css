@@ -1,4 +1,4 @@
-/* -- Header badge (desktop ≥ 1200px) — links to the hero lobby ----------- */
+/* -- Header badge (all screen widths) — links to the hero lobby ----------- */
 .mascot-badge {
   display: flex;
   align-items: center;
@@ -17,7 +17,9 @@
 .mascot-badge__text {
   font-size: 14px;
   font-weight: 700;
-  white-space: nowrap;
+  white-space: normal;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .mascot-badge__go {

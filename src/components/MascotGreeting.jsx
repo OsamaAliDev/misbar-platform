@@ -1,3 +1,4 @@
+import { useI18n } from '../i18n/index.jsx';
 import { buildHash, VIEWS } from '../state/navigation.jsx';
 import { useGuide } from '../state/guide.js';
 import HeroAvatar from './HeroAvatar.jsx';
@@ -19,28 +20,29 @@ import './MascotGreeting.css';
  */
 export default function MascotGreeting({ variant, className = '' }) {
   const { hero, name } = useGuide();
+  const { t } = useI18n();
   const lobbyHref = buildHash(VIEWS.LOBBY);
 
   if (variant === 'badge') {
     return (
       <a className={`mascot-badge ${className}`.trim()} href={lobbyHref}>
         <HeroAvatar hero={hero} size={40} />
-        <span className="mascot-badge__text">أهلاً يا بطل! جاهز نكتشف؟</span>
-        <span className="visually-hidden">{` ${name} · ساحة الأبطال`}</span>
+        <span className="mascot-badge__text">{t('app.greetingBadge')}</span>
+        <span className="visually-hidden">{t('app.guideLobby', { name })}</span>
         <Icon name="chevron_left" size={20} className="mascot-badge__go icon--dir" />
       </a>
     );
   }
 
   return (
-    <section className={`mascot-strip ${className}`.trim()} aria-label={`ترحيب ${name}`}>
+    <section className={`mascot-strip ${className}`.trim()} aria-label={t('app.guideGreeting', { name })}>
       <span className="mascot-strip__avatar">
         <HeroAvatar hero={hero} size={52} />
       </span>
-      <p className="speech-bubble">أهلاً يا بطل! اختار تجربة ونبدأ سوا!</p>
+      <p className="speech-bubble">{t('app.greetingStrip')}</p>
       <a className="btn btn--neutral mascot-strip__lobby" href={lobbyHref}>
         <Icon name="groups" size={20} className="mascot-strip__lobby-icon" />
-        <span>ساحة الأبطال</span>
+        <span>{t('app.lobby')}</span>
       </a>
     </section>
   );

@@ -21,7 +21,6 @@ function starPoints(cx, cy, outer, inner) {
 export const AVATARS = [
   {
     id: 'rocket',
-    label: 'صاروخ',
     tone: 'primary',
     shapes: [
       // Body
@@ -37,7 +36,6 @@ export const AVATARS = [
   },
   {
     id: 'planet',
-    label: 'كوكب',
     tone: 'info',
     shapes: [
       { el: 'circle', cx: 24, cy: 24, r: 10, fill: 'accent-info', stroke: 'accent-info-text', strokeWidth: 2 },
@@ -47,7 +45,6 @@ export const AVATARS = [
   },
   {
     id: 'atom',
-    label: 'ذرة',
     tone: 'tools',
     shapes: [
       { el: 'ellipse', cx: 24, cy: 24, rx: 16, ry: 6, stroke: 'accent-tools-text', strokeWidth: 2 },
@@ -58,7 +55,6 @@ export const AVATARS = [
   },
   {
     id: 'star',
-    label: 'نجمة',
     tone: 'reward',
     shapes: [
       { el: 'polygon', points: starPoints(24, 25, 15, 6.5), fill: 'accent-reward', stroke: 'accent-reward-text', strokeWidth: 2, strokeLinejoin: 'round' },

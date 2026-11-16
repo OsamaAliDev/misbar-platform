@@ -95,15 +95,3 @@ export function formatDecimal(value, maxDigits = 1, minDigits = 0) {
     signDisplay: 'negative',
   }).format(value);
 }
-
-/**
- * Grammatically correct Arabic count of stars (dual and plural forms).
- * @param {number} count
- * @returns {string} e.g. "نجمة واحدة", "نجمتان", "٣ نجوم", "١٢ نجمة"
- */
-export function formatStarCount(count) {
-  if (count === 1) return 'نجمة واحدة';
-  if (count === 2) return 'نجمتان';
-  if (count >= 3 && count <= 10) return `${formatNumber(count)} نجوم`;
-  return `${formatNumber(count)} نجمة`;
-}

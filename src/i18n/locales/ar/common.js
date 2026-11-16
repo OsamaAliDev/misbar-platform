@@ -12,6 +12,7 @@ function starCount({ count = 0 }) {
 export default {
   themeNight: 'الوضع الليلي',
   themeLight: 'الوضع الفاتح',
+  defaultNickname: 'بطل الفضاء',
   siteName: 'مِسبار',
   starCount,
   /** Short unit shown after the number in star counters: "١٢ نجمة". */

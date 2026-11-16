@@ -2,20 +2,10 @@ import { useDeferredValue, useMemo } from 'react';
 import CategoryFilters from '../components/CategoryFilters.jsx';
 import ExperimentCard from '../components/ExperimentCard.jsx';
 import Icon from '../components/Icon.jsx';
-import MascotGreeting from '../components/MascotGreeting.jsx';
 import SearchBar from '../components/SearchBar.jsx';
-import { ALL_CATEGORY_ID, EXPERIMENTS, filterExperiments } from '../data/experiments.js';
-import { formatNumber } from '../lib/arabic.js';
+import { ALL_CATEGORY_ID, EXPERIMENTS, buildSearchIndex, filterExperiments } from '../data/experiments.js';
+import { useI18n } from '../i18n/index.jsx';
 import './CatalogView.css';
-
-/** Arabic result-count sentence for the screen-reader live region. */
-function describeResults(count) {
-  if (count === 0) return 'لا توجد تجارب مطابقة';
-  if (count === 1) return 'تجربة واحدة';
-  if (count === 2) return 'تجربتان';
-  if (count <= 10) return `${formatNumber(count)} تجارب`;
-  return `${formatNumber(count)} تجربة`;
-}
 
 /**
  * <CatalogView /> — the Interactive Experiments Catalog.
@@ -29,12 +19,15 @@ function describeResults(count) {
  * @param {Function} props.onStartExperiment receives an experiment id
  */
 export default function CatalogView({ filters, onFiltersChange, onStartExperiment }) {
+  const { t } = useI18n();
+  // The translation helper changes only with language, not on each keystroke.
+  const searchIndex = useMemo(() => buildSearchIndex(t), [t]);
   // Keep typing responsive even on slow devices.
   const deferredQuery = useDeferredValue(filters.query);
 
   const results = useMemo(
-    () => filterExperiments(EXPERIMENTS, { query: deferredQuery, category: filters.category }),
-    [deferredQuery, filters.category],
+    () => filterExperiments(EXPERIMENTS, { query: deferredQuery, category: filters.category }, searchIndex),
+    [deferredQuery, filters.category, searchIndex],
   );
 
   const isFiltered = filters.query.trim() !== '' || filters.category !== ALL_CATEGORY_ID;
@@ -44,11 +37,9 @@ export default function CatalogView({ filters, onFiltersChange, onStartExperimen
   return (
     <div className="catalog">
       <h1 id="view-heading" className="visually-hidden" tabIndex={-1}>
-        مكتبة التجارب التفاعلية
+        {t('catalog.title')}
       </h1>
 
-      {/* Nour's welcome strip (tablet & mobile; on desktop it sits in the header). */}
-      <MascotGreeting variant="strip" />
 
       <div className="catalog__toolbar">
         <CategoryFilters
@@ -66,11 +57,11 @@ export default function CatalogView({ filters, onFiltersChange, onStartExperimen
 
       {/* Announce result changes to screen readers. */}
       <p className="visually-hidden" aria-live="polite" aria-atomic="true">
-        {isFiltered ? `النتائج: ${describeResults(results.length)}` : ''}
+        {isFiltered ? t('catalog.results', { count: results.length }) : ''}
       </p>
 
       {results.length > 0 ? (
-        <ul className="catalog__grid" aria-label="التجارب">
+        <ul className="catalog__grid" aria-label={t('catalog.gridLabel')}>
           {results.map((experiment) => (
             <li key={experiment.id} className="catalog__grid-item">
               <ExperimentCard experiment={experiment} onStart={onStartExperiment} />
@@ -82,11 +73,11 @@ export default function CatalogView({ filters, onFiltersChange, onStartExperimen
           <span className="catalog__empty-icon" aria-hidden="true">
             <Icon name="search_off" size={32} />
           </span>
-          <h2 className="catalog__empty-title">مالقيناش تجربة بالاسم ده</h2>
-          <p className="catalog__empty-text">جرّب كلمة تانية أو اختار مادة مختلفة.</p>
+          <h2 className="catalog__empty-title">{t('catalog.empty.title')}</h2>
+          <p className="catalog__empty-text">{t('catalog.empty.text')}</p>
           <button type="button" className="btn btn--neutral" onClick={resetFilters}>
             <Icon name="restart_alt" size={20} />
-            <span>عرض كل التجارب</span>
+            <span>{t('catalog.empty.showAll')}</span>
           </button>
         </div>
       )}

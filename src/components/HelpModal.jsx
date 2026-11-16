@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { HINT_TITLES } from '../data/guides.js';
+import { useI18n } from '../i18n/index.jsx';
 import { formatNumber } from '../lib/arabic.js';
 import { useGuide, useHeroLine } from '../state/guide.js';
 import HeroAvatar from './HeroAvatar.jsx';
@@ -23,9 +23,11 @@ import './HelpModal.css';
  * @param {{ intro: string, hints: string[], fact: string }} props.guide
  */
 export default function HelpModal({ open, onClose, experimentTitle, guide }) {
+  const { t } = useI18n();
   const dialogRef = useRef(null);
   const { hero, name } = useGuide();
   const hintLine = useHeroLine(hero.id, 'hint', open);
+  const hintTitles = t('lab.help.hintTitles');
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -55,11 +57,11 @@ export default function HelpModal({ open, onClose, experimentTitle, guide }) {
           </span>
           <div className="help-modal__heading">
             <h2 id="help-modal-title" className="help-modal__title">
-              {`مساعدة ${name}`}
+              {t('lab.help.title', { name })}
             </h2>
             <p className="help-modal__subtitle">{experimentTitle}</p>
           </div>
-          <button type="button" className="btn btn--neutral btn--icon help-modal__close" onClick={onClose} aria-label="إغلاق المساعدة">
+          <button type="button" className="btn btn--neutral btn--icon help-modal__close" onClick={onClose} aria-label={t('lab.help.close')}>
             <Icon name="close" size={22} />
           </button>
         </header>
@@ -75,24 +77,24 @@ export default function HelpModal({ open, onClose, experimentTitle, guide }) {
 
           <ol className="help-steps">
             {guide.hints.map((hint, index) => (
-              <li key={HINT_TITLES[index]} className="help-step">
+              <li key={index} className="help-step">
                 <span className="help-step__number" aria-hidden="true">
                   {formatNumber(index + 1)}
                 </span>
                 <div className="help-step__content">
-                  <h3 className="help-step__title">{HINT_TITLES[index]}</h3>
+                  <h3 className="help-step__title">{hintTitles[index]}</h3>
                   <p className="help-step__text">{hint}</p>
                 </div>
               </li>
             ))}
           </ol>
 
-          <aside className="help-fact" aria-label="معلومة سريعة">
+          <aside className="help-fact" aria-label={t('lab.help.fact')}>
             <span className="help-fact__icon" aria-hidden="true">
               <Icon name="lightbulb" filled size={22} />
             </span>
             <div>
-              <h3 className="help-fact__title">معلومة سريعة</h3>
+              <h3 className="help-fact__title">{t('lab.help.fact')}</h3>
               <p className="help-fact__text">{guide.fact}</p>
             </div>
           </aside>
@@ -100,7 +102,7 @@ export default function HelpModal({ open, onClose, experimentTitle, guide }) {
 
         <footer className="help-modal__footer">
           <button type="button" className="btn btn--primary btn--block" onClick={onClose}>
-            <span>فهمت، يلا نجرب!</span>
+            <span>{t('lab.help.gotIt')}</span>
             <Icon name="science" size={22} />
           </button>
         </footer>

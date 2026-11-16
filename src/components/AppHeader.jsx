@@ -1,3 +1,6 @@
+import LanguageToggle from './LanguageToggle.jsx';
+import { useI18n } from '../i18n/index.jsx';
+import { displayNickname } from '../lib/nickname.js';
 import ThemeToggle from './ThemeToggle.jsx';
 import { buildHash, VIEWS } from '../state/navigation.jsx';
 import { useStudent } from '../state/student.jsx';
@@ -22,6 +25,8 @@ import './AppHeader.css';
  */
 export default function AppHeader({ onOpenDashboard, isDashboardOpen = false }) {
   const { student } = useStudent();
+  const { t } = useI18n();
+  const nickname = displayNickname(student.nickname, t);
 
   return (
     <header className="app-header">
@@ -32,17 +37,18 @@ export default function AppHeader({ onOpenDashboard, isDashboardOpen = false }) 
       </div>
 
       <div className="app-header__end">
+        <LanguageToggle />
         <ThemeToggle />
         {/* Student identity: nickname + geometric avatar only (no personal data).
             It opens the hero lobby. */}
         <a
           className="student-chip"
           href={buildHash(VIEWS.LOBBY)}
-          title={`${student.nickname} · ساحة الأبطال`}
-          aria-label={`${student.nickname} · ساحة الأبطال`}
+          title={t('app.lobbyIdentity', { nickname })}
+          aria-label={t('app.lobbyIdentity', { nickname })}
         >
           <Avatar avatarId={student.avatarId} size={36} />
-          <span className="student-chip__name">{student.nickname}</span>
+          <span className="student-chip__name">{nickname}</span>
         </a>
 
         {/* Star balance — reward colour family. */}
@@ -56,7 +62,7 @@ export default function AppHeader({ onOpenDashboard, isDashboardOpen = false }) 
           onClick={onOpenDashboard}
         >
           <Icon name="supervisor_account" size={20} className="teacher-btn__icon" />
-          <span className="teacher-btn__label">لوحة المعلم وولي الأمر</span>
+          <span className="teacher-btn__label">{t('app.portal')}</span>
         </button>
       </div>
     </header>

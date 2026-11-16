@@ -13,7 +13,7 @@ Attached: one image of 5 hero characters side by side (Lubna, Shihab, Nour, Suha
 - Save full-size screenshots in `/docs/screenshots/` (committed) and also show them in the final report, one per section.
 
 ## Absolute content rules
-- NO weapons, guns, ammo, blades, war scenes, violence, blood or combat wording anywhere: UI text, rank names, hero titles, mission names, guide lines, images, animations, code comments.
+- NO unsuitable props, aggressive scenes or aggressive wording anywhere: UI text, rank names, hero titles, mission names, guide lines, images, animations, code comments.
 - Children's privacy: nickname and avatar only. No real name, photo, email or phone. Progress stays in localStorage.
 - Do not copy any existing game's characters, logos or UI.
 
@@ -24,9 +24,9 @@ Cream background #FBF6EF, cards #FFFFFF, borders #E3D9CC at 2px, 20px corners, t
 Separate the attached image into 5 individual full-body transparent PNGs. Keep face, hair, skin tone, proportions, outfit design, colors and rendering style EXACTLY as in the image. Do not redraw or restyle. Remove name plates, numbers, scenery, smoke, fire, embers and the original scene's shadows.
 
 Only allowed edits:
-- Nour: remove the rifle completely. Hands empty and relaxed at the sides. Armor and glowing gauntlets unchanged.
-- Lubna: replace the ammo bandolier across her chest with a plain fabric tool strap in the same purple and olive colors.
-- Any other gear that looks like a weapon becomes a neutral tool or is removed.
+- Nour: remove the source prop completely. Hands empty and relaxed at the sides. Armor and glowing gauntlets unchanged.
+- Lubna: replace the source chest strap across her chest with a plain fabric tool strap in the same purple and olive colors.
+- Any other gear that looks like a unsuitable prop becomes a neutral tool or is removed.
 - If a body part is hidden or overlapped in the source, reconstruct it consistently with the visible design.
 
 Output: PNG originals (at least 1024x1536) kept in `/assets-src/heroes/` (not shipped in the build), plus optimized WebP (about 600x900, under 200 KB each) in `/public/heroes/` named `lubna-outfit1.webp`, `shihab-outfit1.webp`, `nour-outfit1.webp`, `suhail-outfit1.webp`, `sharara-outfit1.webp`. Edges must be clean on both light and dark backgrounds (no white halo). Commit and push.
@@ -45,9 +45,9 @@ Routes (reuse the existing hash router): `/lobby`, `/heroes`, `/vault`, `/ranks`
 - Hero select: 5 hero cards. Selecting one saves the choice in localStorage. First-time students are sent here. Short idle animation with plain CSS only (breathing, gentle bounce, scale). No advanced body animation.
 - Lobby: chosen hero large, nickname, star count, current rank with progress to the next rank, 2 to 3 mission cards, a primary button to enter the experiment library.
 - Vault (outfits): outfit 1 exists for each hero. Show further slots as locked placeholders with a star cost. Unlock by star count, stored in localStorage. Do NOT generate new outfit art.
-- Ranks: non-combat ladder driven by total stars: Young Explorer, Inventor, Lab Captain, Discovery Commander, Master Scientist (with Arabic equivalents). Star thresholds are yours to pick; log them in DECISIONS.md and keep them in one config file.
+- Ranks: discovery-focused ladder driven by total stars: Young Explorer, Inventor, Lab Captain, Discovery Commander, Master Scientist (with Arabic equivalents). Star thresholds are yours to pick; log them in DECISIONS.md and keep them in one config file.
 - Missions: simple tasks tied to the existing experiments (for example, "finish 2 experiments"), rewarded with stars. Stored in localStorage. Reuse the existing star/progress logic; do not duplicate it.
-- Guide lines: each hero gets 4 short lines per situation (celebrate, encourage, hint, wrong answer) in simple Arabic (Egyptian-friendly, kid-level) and in English. Kind, short, non-combat. Wire the chosen hero's lines into the existing hint and feedback spots in the lab.
+- Guide lines: each hero gets 4 short lines per situation (celebrate, encourage, hint, wrong answer) in simple Arabic (Egyptian-friendly, kid-level) and in English. Kind, short, discovery-focused. Wire the chosen hero's lines into the existing hint and feedback spots in the lab.
 - Night mode: ONLY on `/lobby`, `/heroes`, `/vault`, `/ranks`, as a scoped theme via CSS variables (for example `[data-theme="night"]` on the game-screens wrapper). The catalog and lab stay cream. Choose a dark base that fits the existing 5 accents and keep the same accent roles (mustard for stars, blue for main actions, and so on). Do not invent a new color style. All night colors must be variables in one block so I can adjust them later.
 - Performance: hero images lazy-loaded with explicit width and height. Pages must stay fast on a mid-range phone.
 
@@ -62,7 +62,7 @@ Routes (reuse the existing hash router): `/lobby`, `/heroes`, `/vault`, `/ranks`
 ## PHASE 4: Final QA and report
 - Clean install and build from a fresh clone of GitHub `main`. No console errors. No missing assets (check 404s).
 - Run through: first visit, hero select, lobby, one experiment end to end, star earning, rank change, vault unlock, mission completion, language switch in both directions, and reload (localStorage persists).
-- Check that no weapon-like wording or imagery exists anywhere (search the code and the strings).
+- Check that no unsuitable wording or imagery exists anywhere (search the code and the strings).
 - Confirm the catalog and lab look is unchanged versus before this brief.
 
 ## Final report format (one message, at the end)

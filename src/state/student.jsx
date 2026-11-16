@@ -1,3 +1,4 @@
+import arCommon from '../i18n/locales/ar/common.js';
 import { createContext, useContext, useEffect, useMemo, useReducer } from 'react';
 import { getMission, getMissionStatus, getOutfitSlot, outfitKey } from '../config/game.js';
 import { AVATARS, DEFAULT_AVATAR_ID } from '../data/avatars.js';
@@ -31,7 +32,7 @@ const MAX_LIST_LENGTH = 100;
 
 /** Default profile for a first-time visitor. */
 export const DEFAULT_STUDENT = Object.freeze({
-  nickname: 'بطل الفضاء',
+  nickname: arCommon.defaultNickname,
   avatarId: DEFAULT_AVATAR_ID,
   stars: 12,
   /** Experiment ids whose Playground challenge earned its +1 star. */

@@ -14,7 +14,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
  *   #/dashboard                     → dashboard  (placeholder)
  *   #/lobby                         → hero lobby     ┐
  *   #/heroes                        → hero select    │ game screens
- *   #/vault                         → outfit vault   │ (scoped night theme)
+ *   #/vault                         → outfit vault   │ (night by default)
  *   #/ranks                         → rank ladder    ┘
  */
 
@@ -29,7 +29,7 @@ export const VIEWS = Object.freeze({
   RANKS: 'ranks',
 });
 
-/** The game screens, rendered in the scoped night theme. */
+/** The game screens, night by default unless the visitor explicitly chooses light. */
 export const GAME_VIEWS = Object.freeze([VIEWS.LOBBY, VIEWS.HEROES, VIEWS.VAULT, VIEWS.RANKS]);
 
 const KNOWN_VIEWS = new Set(Object.values(VIEWS));

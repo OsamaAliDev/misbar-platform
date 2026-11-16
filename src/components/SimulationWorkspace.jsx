@@ -1,3 +1,4 @@
+import { useI18n } from '../i18n/index.jsx';
 import { useSimulation } from '../simulations/SimulationContext.js';
 import Icon from './Icon.jsx';
 import ResultStrip from './ResultStrip.jsx';
@@ -27,6 +28,7 @@ import './SimulationWorkspace.css';
  * through the simulation context.
  */
 export default function SimulationWorkspace({ controls, stage, status, readings }) {
+  const { t } = useI18n();
   const { labTitle, running, toggleRunning, reset } = useSimulation();
 
   return (
@@ -37,7 +39,7 @@ export default function SimulationWorkspace({ controls, stage, status, readings 
             <Icon name="tune" size={20} />
           </span>
           <h2 id="sim-controls-title" className="sim-controls__title">
-            أدوات التحكم في التجربة
+            {t('lab.workspace.controlsTitle')}
           </h2>
         </div>
 
@@ -46,16 +48,16 @@ export default function SimulationWorkspace({ controls, stage, status, readings 
         <div className="sim-controls__actions">
           <button type="button" className="btn btn--primary sim-controls__play" onClick={toggleRunning}>
             <Icon name={running ? 'pause' : 'play_arrow'} filled size={22} />
-            <span>{running ? 'إيقاف مؤقت' : 'تشغيل'}</span>
+            <span>{t(running ? 'lab.workspace.pause' : 'lab.workspace.play')}</span>
           </button>
           <button type="button" className="btn btn--neutral sim-controls__reset" onClick={reset}>
             <Icon name="restart_alt" size={20} />
-            <span>إعادة ضبط</span>
+            <span>{t('lab.workspace.reset')}</span>
           </button>
         </div>
       </section>
 
-      <section className="sim-stage-column" aria-label="منطقة التجربة">
+      <section className="sim-stage-column" aria-label={t('lab.workspace.stageLabel')}>
         <div className="sim-stage">
           <div className="sim-stage__bar">
             <span className="sim-stage__lab">

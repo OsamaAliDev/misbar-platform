@@ -96,7 +96,11 @@ export function I18nProvider({ children }) {
   // Keep several open tabs in sync.
   useEffect(() => {
     const handleStorage = (event) => {
-      if (event.key === LANGUAGE_STORAGE_KEY) setLangState(loadLanguage());
+      if (event.key === LANGUAGE_STORAGE_KEY) {
+        const next = loadLanguage();
+        applyLanguage(next);
+        setLangState(next);
+      }
     };
     window.addEventListener('storage', handleStorage);
     return () => window.removeEventListener('storage', handleStorage);

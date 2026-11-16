@@ -1,8 +1,8 @@
 import ThemeToggle from './ThemeToggle.jsx';
+import LanguageToggle from './LanguageToggle.jsx';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { getCategory, getExperimentById } from '../data/experiments.js';
-import { getGuide } from '../data/guides.js';
-import { formatNumber, formatStarCount } from '../lib/arabic.js';
+import { getCategory, getCategoryLabel, getExperimentById, getExperimentCopy } from '../data/experiments.js';
+import { useI18n } from '../i18n/index.jsx';
 import { getSimulation } from '../simulations/index.js';
 import { SimulationContext } from '../simulations/SimulationContext.js';
 import { useStudent } from '../state/student.jsx';
@@ -15,30 +15,30 @@ import './PlaygroundView.css';
 /**
  * <PlaygroundView /> — the unified interactive Playground (Stitch `_3` / `_2`).
  *
- *   ┌ header ─ back · title · category ─────────── stars · محتاج مساعدة؟ ┐
- *   ├ workspace ─ controls card │ simulation stage + live result strip ──┤
- *   └ Nour's challenge & tip bar ─────────────────────────────────────────┘
+ *   ┌ header ─ back · title · category ─────────── stars · help ┐
+ *   ├ guide hero's challenge & tip bar ────────────────────────┤
+ *   └ workspace ─ controls │ simulation stage + live results ──┘
  *
  * One layout serves all six experiments; the experiment-specific parts come
- * from the simulation registry (src/simulations) and Nour's guides
- * (src/data/guides.js).
+ * from the simulation registry (src/simulations) and localized lab guides.
  *
  * @param {object}   props
  * @param {string}   props.experimentId
  * @param {Function} props.onBack  returns to the catalog
  */
 export default function PlaygroundView({ experimentId, onBack }) {
+  const { t } = useI18n();
   const experiment = getExperimentById(experimentId);
   const simulation = getSimulation(experimentId);
-  const guide = getGuide(experimentId);
+  const guide = experiment && simulation ? t(`lab.guides.${experimentId}`) : null;
 
-  if (!experiment || !simulation || !guide) {
+  if (!experiment || !simulation || !guide || typeof guide !== 'object') {
     return (
       <PlaceholderPanel
         eyebrowIcon="science"
-        eyebrow="ساحة التجارب"
-        title="التجربة دي مش موجودة"
-        message="يمكن الرابط اتغيّر. ارجع للمكتبة واختار تجربة تانية."
+        eyebrow={t('lab.notFound.eyebrow')}
+        title={t('lab.notFound.title')}
+        message={t('lab.notFound.message')}
         onBack={onBack}
       />
     );
@@ -53,6 +53,8 @@ function prefersReducedMotion() {
 }
 
 function Playground({ experiment, simulation, guide, onBack }) {
+  const { t } = useI18n();
+  const copy = getExperimentCopy(t, experiment.id);
   const autoPlay = simulation.autoPlay && !prefersReducedMotion();
   const [running, setRunning] = useState(autoPlay);
   const [resetKey, setResetKey] = useState(0);
@@ -91,20 +93,21 @@ function Playground({ experiment, simulation, guide, onBack }) {
         <Simulation key={resetKey} />
       </SimulationContext.Provider>
 
-
-      <HelpModal open={helpOpen} onClose={() => setHelpOpen(false)} experimentTitle={experiment.title} guide={guide} />
+      <HelpModal open={helpOpen} onClose={() => setHelpOpen(false)} experimentTitle={copy.title} guide={guide} />
     </div>
   );
 }
 
 /**
  * Playground header.
- * Start (right): back button, experiment title, category pill.
- * End (left):    live star counter, coral "محتاج مساعدة؟" button.
+ * Start: back button, experiment title, category pill.
+ * End: preferences, live star counter, coral help button.
  */
 function PlaygroundHeader({ experiment, onBack, onOpenHelp }) {
+  const { t } = useI18n();
   const { student } = useStudent();
   const category = getCategory(experiment.category);
+  const copy = getExperimentCopy(t, experiment.id);
 
   // Bump the star counter whenever a star is earned (not on first render).
   const [bumping, setBumping] = useState(false);
@@ -123,33 +126,34 @@ function PlaygroundHeader({ experiment, onBack, onOpenHelp }) {
   return (
     <header className="playground-header">
       <div className="playground-header__start">
-        <button type="button" className="btn btn--neutral btn--icon playground-header__back" onClick={onBack} aria-label="العودة للمكتبة">
-          <Icon name="arrow_forward" size={24} />
+        <button type="button" className="btn btn--neutral btn--icon playground-header__back" onClick={onBack} aria-label={t('lab.header.back')}>
+          <Icon name="arrow_forward" size={24} className="icon--dir" />
         </button>
         <div className="playground-header__titles">
           <h1 id="view-heading" className="playground-header__title" tabIndex={-1}>
-            {experiment.title}
+            {copy.title}
           </h1>
           <span className={`badge badge--${category.tone} playground-header__category`}>
             <Icon name={experiment.badgeIcon} size={16} />
-            {category.label}
+            {getCategoryLabel(t, experiment.category)}
           </span>
         </div>
       </div>
 
       <div className="playground-header__end">
         <ThemeToggle />
+        <LanguageToggle />
         <div
           className={`star-counter ${bumping ? 'is-bumping' : ''}`.trim()}
           role="status"
-          aria-label={`رصيدك: ${formatStarCount(student.stars)}`}
+          aria-label={t('common.starBalanceLabel', { count: student.stars })}
         >
           <Icon name="star" filled size={22} />
-          <span aria-hidden="true">{`${formatNumber(student.stars)} نجمة`}</span>
+          <span aria-hidden="true">{t('common.starCount', { count: student.stars })}</span>
         </div>
         <button type="button" className="btn btn--help playground-header__help" onClick={onOpenHelp} aria-haspopup="dialog">
           <Icon name="help" size={22} />
-          <span>محتاج مساعدة؟</span>
+          <span>{t('lab.header.help')}</span>
         </button>
       </div>
     </header>

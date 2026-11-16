@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import AppHeader from './components/AppHeader.jsx';
 import GameHeader from './components/GameHeader.jsx';
 import PlaygroundView from './components/PlaygroundView.jsx';
-import { ALL_CATEGORY_ID, getExperimentById } from './data/experiments.js';
+import { ALL_CATEGORY_ID, getExperimentById, getExperimentCopy } from './data/experiments.js';
 import { useI18n } from './i18n/index.jsx';
 import { GAME_VIEWS, VIEWS, useNavigation } from './state/navigation.jsx';
 import { useStudent } from './state/student.jsx';
@@ -25,20 +25,20 @@ function documentTitleFor(view, params, t) {
   const site = t('common.siteName');
   if (view === VIEWS.PLAYGROUND) {
     const experiment = getExperimentById(params.experimentId);
-    return `${experiment ? experiment.title : 'ساحة التجارب'} | ${site}`;
+    return `${experiment ? getExperimentCopy(t, experiment.id).title : t('lab.notFound.eyebrow')} | ${site}`;
   }
-  if (view === VIEWS.DASHBOARD) return `لوحة المعلم وولي الأمر | ${site}`;
+  if (view === VIEWS.DASHBOARD) return `${t('app.dashboardTitle')} | ${site}`;
   if (GAME_VIEWS.includes(view)) return `${t(`game.titles.${view}`)} | ${site}`;
-  return `${site} | مكتبة التجارب التفاعلية`;
+  return `${site} | ${t('app.libraryTitle')}`;
 }
 
 /**
  * <App /> — application shell.
  *
  * Renders exactly one view:
- *   catalog & dashboard  cream theme, shared app header
- *   playground (lab)     cream theme, its own header; fits the viewport on desktop
- *   lobby · heroes ·     night theme (data-theme="night" on the wrapper, see
+ *   catalog & dashboard  default cream, shared app header
+ *   playground (lab)     default cream, its own header; fits the viewport on desktop
+ *   lobby · heroes ·     default night (explicit theme lives on html, see
  *   vault · ranks        index.css), shared game header
  *
  * The catalog's search/filter state lives here so it survives a round trip

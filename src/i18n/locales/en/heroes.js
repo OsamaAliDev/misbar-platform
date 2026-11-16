@@ -3,7 +3,7 @@ import { NOUR_TITLE } from '../../../data/heroes.js';
 /**
  * Heroes — English.
  * Same structure as the Arabic file: 4 short lines per situation
- * (celebrate · encourage · hint · wrong). Kind, simple, non-combat.
+ * (celebrate · encourage · hint · wrong). Kind, simple, discovery-focused.
  */
 export default {
   lubna: {

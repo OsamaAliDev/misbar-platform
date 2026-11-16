@@ -9,6 +9,7 @@ function starCount({ count = 0 }) {
 export default {
   themeNight: 'Night mode',
   themeLight: 'Light mode',
+  defaultNickname: 'Space hero',
   siteName: 'Misbar',
   starCount,
   starsUnit: 'stars',
