@@ -13,7 +13,7 @@ with sync_playwright() as p:
  page.on('pageerror',lambda e:errors.append(str(e)))
  page.on('console',lambda m:errors.append(m.text) if m.type=='error' else warnings.append(m.text) if m.type=='warning' else None)
  def nav(route):
-  page.goto(URL+'/#/'+route);page.wait_for_selector('#view-heading');page.wait_for_timeout(80)
+  page.goto(URL+'/#/'+route);page.wait_for_selector('#view-heading');page.wait_for_timeout(80);page.evaluate('document.fonts.ready.then(()=>true)')
  def token():return page.evaluate("JSON.parse(sessionStorage.getItem('misbar:saas:session:v1')||'null')?.accessToken")
  def api(path,method='GET',body=None):
   r=c.request.fetch(URL+'/api/saas'+path,method=method,headers={'Authorization':'Bearer '+token()},data=body)
@@ -58,7 +58,7 @@ with sync_playwright() as p:
   nav('playground/lever-balance')
   for label,v in [('Right weight mass',4),('Right weight distance',1),('Left weight mass',2),('Left weight distance',2)]:set_slider(label,v)
   page.wait_for_timeout(2800);page.locator('.challenge-bar__btn--claim').click();page.locator('.challenge-bar__btn--done').wait_for();assert session()['student']['stars']==16
-  nav('lobby');page.locator('.mission-card__claim').first.click();page.wait_for_timeout(250);assert session()['student']['stars']==19;assert guest()==original
+  nav('lobby');page.locator('.mission-card__claim').first.click();page.wait_for_timeout(250);assert session()['student']['stars']==19;assert guest()==original;page.screenshot(path=str(ROOT/'screenshots/section-storage.png'))
   nav('vault');page.locator('.outfit-slot__unlock').first.click();page.wait_for_timeout(250);assert session()['student']['stars']==19 and session()['student']['unlockedOutfits'];record('canonical school reward/rank/unlock without spending',{'stars':19,'guestStars':15})
   logout();staff();nav('class-roster/'+cl['id']);page.locator('.saas-roster-table tbody tr').filter(has_text=nick).wait_for();assert '19' in page.locator('.saas-roster-table tbody tr').filter(has_text=nick).inner_text();page.screenshot(path=str(ROOT/'screenshots/section-roster.png'));record('teacher roster reflects server stars and rank',{'stars':19})
   logout();student_login(code,nick);assert session()['student']['stars']==19;assert guest()==original;record('re-login does not import again',{'stars':19})

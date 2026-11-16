@@ -1,4 +1,4 @@
-# Last updated: 2026-11-16 13:51 EET — Current step: 7 clean GitHub production QA
+# Last updated: 2026-11-16 13:56 EET — Current step: 7 final screenshot/glyph correction
 
 | Step | Status | Commit hash | Evidence / limits |
 |---|---|---|---|
@@ -8,11 +8,11 @@
 | 4. Student PIN and staff email Auth | Done (verified) | 4d21887 | 27/27 auth/API tests passed; real Supabase transport uses stubs only, NOT remote Auth. |
 | 5. Guest/Supabase adapters and first import | Done (verified) | ada4373 | Actual mock8-stage school flow passed; guest15 stayed unchanged while school earned19 and re-login did not import again. |
 | 6. Bilingual/theme-aware logins, classes and roster | Done (verified) | f20e705 | 80/80 mock-auth UI viewport cases plus browser enrollment/roster flow passed; lifecycle regression fixes being added under finalQA. |
-| 7. Final clean build, guest regression and school flow | In progress | 46de107 (auth fix) | Clean GitHub production acceptance is running; no final completion claim yet. |
+| 7. Final clean build, guest regression and school flow | In progress | 9757543 (clean-build evidence) | All clean production tests passed; refreshing the final one-glyph HTML change and screenshots before final report. |
 
 ## Doing now
 
-Fresh GitHub clone of saas-foundation302ddfe is undergoing pinned install/build and backend tests. Implementation and auth review fixes are saved; local RLS proof148 and delayed-auth tests4 passed. Next: serve the clean production build with explicit demonstration-only mock and rerun guest/school/browser evidence.
+Clean-production guest192/192, school80/80, school flow8 stages, guest reward flow and delayed-auth4/4 all passed. Final screenshot check found one missing icon-subset glyph; adding it without a new dependency and refreshing the clean build/screenshots. Main has separately advanced to873c991; this run has not modified or pushed main.
 
 Mode: **mock, not real Supabase**. Real Supabase RLS and Auth have NOT run.
 
