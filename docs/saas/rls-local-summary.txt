@@ -1,0 +1,152 @@
+LOCAL PostgreSQL16 auth/JWT stubs — NOT real Supabase
+Total PASS notices: 148
+Errors/failures: 0
+
+PASS: legacy parent clearly rejected; no elevation
+PASS: populated legacy classes require explicit school mapping
+PASS: additive migration preserves events and existing public-schema pgcrypto
+PASS: five PIN failures persist across separate committed requests; sixth rate limited
+PASS: concurrent enrollment succeeds without subscription configuration
+PASS: concurrent duplicate challenge awards exactly +1 and one progress row
+psql:supabase/tests/rls-proof.sql:63: NOTICE:  PASS: all 7 public tables + private attempts have RLS
+psql:supabase/tests/rls-proof.sql:64: NOTICE:  PASS: attempts has no policies
+psql:supabase/tests/rls-proof.sql:65: NOTICE:  PASS: PIN bcrypt cost12 with distinct salt and server verification
+psql:supabase/tests/rls-proof.sql:66: NOTICE:  PASS: pin_hash no client SELECT grant
+psql:supabase/tests/rls-proof.sql:69: NOTICE:  PASS: no PUBLIC helper/RPC execution
+psql:supabase/tests/rls-proof.sql:70: NOTICE:  PASS: helper/RPC locked search_path
+psql:supabase/tests/rls-proof.sql:71: NOTICE:  PASS: deferred management RPCs and subscription/metadata helpers absent
+psql:supabase/tests/rls-proof.sql:72: NOTICE:  PASS: client test roles have no superuser or RLS bypass
+psql:supabase/tests/rls-proof.sql:76: NOTICE:  PASS: teacher A all tenant boundaries + only own class/student/progress/profile
+psql:supabase/tests/rls-proof.sql:77: NOTICE:  PASS: teacher A cannot read other teacher in same school
+psql:supabase/tests/rls-proof.sql:78: NOTICE:  PASS: teacher cannot read legacy events
+psql:supabase/tests/rls-proof.sql:79: NOTICE:  PASS: teacher cannot select pin_hash
+psql:supabase/tests/rls-proof.sql:80: NOTICE:  PASS: wildcard students cannot bypass column restriction
+psql:supabase/tests/rls-proof.sql:81: NOTICE:  PASS: teacher cannot read attempts
+psql:supabase/tests/rls-proof.sql:82: NOTICE:  PASS: private student JSON not executable
+psql:supabase/tests/rls-proof.sql:83: NOTICE:  PASS: teacher cannot enroll other teacher class
+psql:supabase/tests/rls-proof.sql:84: NOTICE:  PASS: teacher cannot enroll other tenant class
+psql:supabase/tests/rls-proof.sql:85: NOTICE:  PASS: case-insensitive nickname uniqueness
+psql:supabase/tests/rls-proof.sql:86: NOTICE:  PASS: nickname limited to24 characters
+psql:supabase/tests/rls-proof.sql:90: NOTICE:  PASS: direct authorized RPC rejects email nickname
+psql:supabase/tests/rls-proof.sql:91: NOTICE:  PASS: direct authorized RPC rejects numeric phone nickname
+psql:supabase/tests/rls-proof.sql:92: NOTICE:  PASS: direct authorized RPC rejects Arabic-digit phone nickname
+psql:supabase/tests/rls-proof.sql:93: NOTICE:  PASS: direct authorized RPC rejects short URL nickname
+psql:supabase/tests/rls-proof.sql:94: NOTICE:  PASS: direct authorized RPC rejects one-character nickname
+psql:supabase/tests/rls-proof.sql:95: NOTICE:  PASS: direct authorized RPC rejects control character
+psql:supabase/tests/rls-proof.sql:96: NOTICE:  PASS: direct authorized RPC rejects bidi control
+psql:supabase/tests/rls-proof.sql:97: NOTICE:  PASS: direct authorized RPC requires an actual letter
+psql:supabase/tests/rls-proof.sql:98: NOTICE:  PASS: direct authorized RPC rejects null nickname
+psql:supabase/tests/rls-proof.sql:99: NOTICE:  PASS: direct authorized RPC accepts Arabic alias with marks and digits
+psql:supabase/tests/rls-proof.sql:100: NOTICE:  PASS: direct authorized RPC accepts English alias
+psql:supabase/tests/rls-proof.sql:101: NOTICE:  PASS: direct authorized RPC accepts mixed Arabic English alias
+psql:supabase/tests/rls-proof.sql:102: NOTICE:  PASS: direct authorized RPC trims spaces and normalizes NFC
+psql:supabase/tests/rls-proof.sql:103: NOTICE:  PASS: NFC-equivalent alias cannot bypass uniqueness
+psql:supabase/tests/rls-proof.sql:104: NOTICE:  PASS: direct authorized RPC matches HTTP edge whitespace trim
+psql:supabase/tests/rls-proof.sql:105: NOTICE:  PASS: direct authorized RPC accepts supplementary Unicode letters
+psql:supabase/tests/rls-proof.sql:106: NOTICE:  PASS: direct authorized RPC matches HTTP UTF16 maximum length
+psql:supabase/tests/rls-proof.sql:109: NOTICE:  PASS: PIN exact4 digits
+psql:supabase/tests/rls-proof.sql:110: NOTICE:  PASS: owning teacher enrollment succeeds
+psql:supabase/tests/rls-proof.sql:111: NOTICE:  PASS: staff cannot self-elevate profile role
+psql:supabase/tests/rls-proof.sql:112: NOTICE:  PASS: profile self-assignment forbidden
+psql:supabase/tests/rls-proof.sql:113: NOTICE:  PASS: staff JWT cannot PIN login
+psql:supabase/tests/rls-proof.sql:114: NOTICE:  PASS: teacher cannot read platform counts
+psql:supabase/tests/rls-proof.sql:115: NOTICE:  PASS: staff session has no subscription details or student earning flag
+psql:supabase/tests/rls-proof.sql:116: NOTICE:  PASS: teacher cannot insert another school class
+psql:supabase/tests/rls-proof.sql:117: NOTICE:  PASS: teacher cannot insert a class for another teacher
+psql:supabase/tests/rls-proof.sql:118: NOTICE:  PASS: teacher cannot update another teacher or tenant class
+psql:supabase/tests/rls-proof.sql:119: NOTICE:  PASS: teacher cannot delete another teacher or tenant class
+psql:supabase/tests/rls-proof.sql:120: NOTICE:  PASS: staff subscription table remains read-only
+psql:supabase/tests/rls-proof.sql:123: NOTICE:  PASS: teacher B reciprocal seven-table tenant isolation
+psql:supabase/tests/rls-proof.sql:124: NOTICE:  PASS: teacher B events denied
+psql:supabase/tests/rls-proof.sql:126: NOTICE:  PASS: school admin sees all A, never B across all tenant tables
+psql:supabase/tests/rls-proof.sql:127: NOTICE:  PASS: school admin events denied
+psql:supabase/tests/rls-proof.sql:128: NOTICE:  PASS: school admin enrollment within tenant
+psql:supabase/tests/rls-proof.sql:131: NOTICE:  PASS: student sees own row/progress/profile only; forged metadata ignored
+psql:supabase/tests/rls-proof.sql:132: NOTICE:  PASS: student events denied
+psql:supabase/tests/rls-proof.sql:133: NOTICE:  PASS: sanitized student session no subscription/credential/identity leakage
+psql:supabase/tests/rls-proof.sql:134: NOTICE:  PASS: student cannot select own pin_hash
+psql:supabase/tests/rls-proof.sql:135: NOTICE:  PASS: student direct SQL mutation denied
+psql:supabase/tests/rls-proof.sql:136: NOTICE:  PASS: student direct progress insert denied
+psql:supabase/tests/rls-proof.sql:137: NOTICE:  PASS: student profile escalation denied
+psql:supabase/tests/rls-proof.sql:138: NOTICE:  PASS: no arbitraryaddStars RPC
+psql:supabase/tests/rls-proof.sql:139: NOTICE:  PASS: unknown challenge rejected
+psql:supabase/tests/rls-proof.sql:140: NOTICE:  PASS: science-tour needs all3 original subject categories
+psql:supabase/tests/rls-proof.sql:141: NOTICE:  PASS: two-experiments original goal enforced
+psql:supabase/tests/rls-proof.sql:142: NOTICE:  PASS: hero/avatar allowlists enforced
+psql:supabase/tests/rls-proof.sql:143: NOTICE:  PASS: outfit2 threshold16 enforced
+psql:supabase/tests/rls-proof.sql:144: NOTICE:  PASS: duplicate challenge no extra star
+psql:supabase/tests/rls-proof.sql:145: NOTICE:  PASS: first-discovery +2 once
+psql:supabase/tests/rls-proof.sql:146: NOTICE:  PASS: canonical challenge +1
+psql:supabase/tests/rls-proof.sql:147: NOTICE:  PASS: outfit2 unlocks at16
+psql:supabase/tests/rls-proof.sql:148: NOTICE:  PASS: two-experiments +3 once
+psql:supabase/tests/rls-proof.sql:149: NOTICE:  PASS: outfit3 blocked below22
+psql:supabase/tests/rls-proof.sql:152: NOTICE:  PASS: science-tour +5 once across physics/math/astronomy
+psql:supabase/tests/rls-proof.sql:153: NOTICE:  PASS: outfit3 allowed above22
+psql:supabase/tests/rls-proof.sql:154: NOTICE:  PASS: outfit4 blocked below28
+psql:supabase/tests/rls-proof.sql:156: NOTICE:  PASS: all6 challenges + missions total28
+psql:supabase/tests/rls-proof.sql:158: NOTICE:  PASS: duplicate outfit idempotent and threshold28
+psql:supabase/tests/rls-proof.sql:159: NOTICE:  PASS: validated hero/avatar mutation succeeds
+psql:supabase/tests/rls-proof.sql:160: NOTICE:  PASS: canonical six progress rows only
+psql:supabase/tests/rls-proof.sql:161: NOTICE:  PASS: per-experiment one-star rewards recorded
+psql:supabase/tests/rls-proof.sql:164: NOTICE:  PASS: unbound anonymous Auth sees nothing across tenant tables
+psql:supabase/tests/rls-proof.sql:165: NOTICE:  PASS: unbound anonymous events denied
+psql:supabase/tests/rls-proof.sql:166: NOTICE:  PASS: unbound JWT metadata cannot assign role
+psql:supabase/tests/rls-proof.sql:167: NOTICE:  PASS: client cannot write test auth tables through SQL
+psql:supabase/tests/rls-proof.sql:170: NOTICE:  PASS: PIN failure persists #1
+psql:supabase/tests/rls-proof.sql:170: NOTICE:  PASS: PIN failure persists #2
+psql:supabase/tests/rls-proof.sql:170: NOTICE:  PASS: PIN failure persists #3
+psql:supabase/tests/rls-proof.sql:170: NOTICE:  PASS: PIN failure persists #4
+psql:supabase/tests/rls-proof.sql:170: NOTICE:  PASS: PIN failure persists #5
+psql:supabase/tests/rls-proof.sql:172: NOTICE:  PASS: account key blocks correctPIN sixth attempt across authUIDs
+psql:supabase/tests/rls-proof.sql:174: NOTICE:  PASS: failed login counters committed within transaction, not exception rollback
+psql:supabase/tests/rls-proof.sql:177: NOTICE:  PASS: 15minute window expires and PIN login succeeds
+psql:supabase/tests/rls-proof.sql:178: NOTICE:  PASS: successful PIN binds new anonymousUID
+psql:supabase/tests/rls-proof.sql:180: NOTICE:  PASS: relogin oldUID childaccess/profile revoked
+psql:supabase/tests/rls-proof.sql:182: NOTICE:  PASS: safe old student profile removed
+psql:supabase/tests/rls-proof.sql:188: NOTICE:  PASS: unconfigured subscription does not gate PIN login
+psql:supabase/tests/rls-proof.sql:189: NOTICE:  PASS: unconfigured subscription does not gate student session or expose metadata
+psql:supabase/tests/rls-proof.sql:190: NOTICE:  PASS: unconfigured subscription does not gate validated mutation
+psql:supabase/tests/rls-proof.sql:191: NOTICE:  PASS: unconfigured subscription does not gate earning stars
+psql:supabase/tests/rls-proof.sql:192: NOTICE:  PASS: ungated actions still prohibit direct SQL mutation
+psql:supabase/tests/rls-proof.sql:194: NOTICE:  PASS: owning staff can read subscription table with no configuration
+psql:supabase/tests/rls-proof.sql:195: NOTICE:  PASS: unconfigured subscription does not gate enrollment
+psql:supabase/tests/rls-proof.sql:196: NOTICE:  PASS: unconfigured subscription does not gate own class insert
+psql:supabase/tests/rls-proof.sql:197: NOTICE:  PASS: unconfigured subscription does not gate own class update
+psql:supabase/tests/rls-proof.sql:198: NOTICE:  PASS: unconfigured subscription does not gate own class delete
+psql:supabase/tests/rls-proof.sql:200: NOTICE:  PASS: over28 import rejected without consuming onceflag
+psql:supabase/tests/rls-proof.sql:201: NOTICE:  PASS: legacy import valid challenge IDs only
+psql:supabase/tests/rls-proof.sql:202: NOTICE:  PASS: import original mission goals enforced
+psql:supabase/tests/rls-proof.sql:203: NOTICE:  PASS: import outfit threshold enforced
+psql:supabase/tests/rls-proof.sql:204: NOTICE:  PASS: bounded valid legacy import succeeds once without subscription configuration
+psql:supabase/tests/rls-proof.sql:205: NOTICE:  PASS: second legacy import cannot reset canonical progress
+psql:supabase/tests/rls-proof.sql:206: NOTICE:  PASS: import preserves existing server award markers
+psql:supabase/tests/rls-proof.sql:209: NOTICE:  PASS: platform admin aggregate-only, no tenant/child SQL rows
+psql:supabase/tests/rls-proof.sql:210: NOTICE:  PASS: platform admin events denied
+psql:supabase/tests/rls-proof.sql:211: NOTICE:  PASS: platform admin no PIN SELECT
+psql:supabase/tests/rls-proof.sql:212: NOTICE:  PASS: platform RPC returns exact numeric totals only, no school or child metadata
+psql:supabase/tests/rls-proof.sql:213: NOTICE:  PASS: platform cannot enroll/read or mutate children
+psql:supabase/tests/rls-proof.sql:214: NOTICE:  PASS: platform cannot provision schools through SQL
+psql:supabase/tests/rls-proof.sql:215: NOTICE:  PASS: platform cannot manage subscriptions through SQL
+psql:supabase/tests/rls-proof.sql:216: NOTICE:  PASS: platform cannot assign staff through SQL
+psql:supabase/tests/rls-proof.sql:217: NOTICE:  PASS: platform session has no child or subscription metadata
+psql:supabase/tests/rls-proof.sql:221: NOTICE:  PASS: anon schools denied
+psql:supabase/tests/rls-proof.sql:222: NOTICE:  PASS: anon profiles denied
+psql:supabase/tests/rls-proof.sql:223: NOTICE:  PASS: anon classes denied
+psql:supabase/tests/rls-proof.sql:224: NOTICE:  PASS: anon students denied
+psql:supabase/tests/rls-proof.sql:225: NOTICE:  PASS: anon progress denied
+psql:supabase/tests/rls-proof.sql:226: NOTICE:  PASS: anon subscription denied
+psql:supabase/tests/rls-proof.sql:227: NOTICE:  PASS: anon legacy events reads closed
+psql:supabase/tests/rls-proof.sql:228: NOTICE:  PASS: legacy anonymous ingestion closed
+psql:supabase/tests/rls-proof.sql:229: NOTICE:  PASS: anon role cannot execute PIN login (anonymous Auth must use authenticated)
+psql:supabase/tests/rls-proof.sql:230: NOTICE:  PASS: anon role cannot execute platform counts
+psql:supabase/tests/rls-proof.sql:244: NOTICE:  PASS: table nickname CHECK rejects 'kid@example.com'
+psql:supabase/tests/rls-proof.sql:244: NOTICE:  PASS: table nickname CHECK rejects '0501234567'
+psql:supabase/tests/rls-proof.sql:244: NOTICE:  PASS: table nickname CHECK rejects 'https://a.co'
+psql:supabase/tests/rls-proof.sql:244: NOTICE:  PASS: table nickname CHECK rejects 'A'
+psql:supabase/tests/rls-proof.sql:244: NOTICE:  PASS: table nickname CHECK rejects 'Star
+psql:supabase/tests/rls-proof.sql:244: NOTICE:  PASS: table nickname CHECK rejects 'Star‮Kid'
+psql:supabase/tests/rls-proof.sql:244: NOTICE:  PASS: table nickname CHECK rejects 'Café_7'
+psql:supabase/tests/rls-proof.sql:244: NOTICE:  PASS: table nickname CHECK rejects '_.-123'
+psql:supabase/tests/rls-proof.sql:245: NOTICE:  PASS: classes teacher compositeFK cannot cross schools
+psql:supabase/tests/rls-proof.sql:246: NOTICE:  PASS: student class compositeFK cannot cross schools
+psql:supabase/tests/rls-proof.sql:247: NOTICE:  PASS: progress student compositeFK cannot cross schools
