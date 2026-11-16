@@ -20,6 +20,10 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 
 /** Every top-level view of the platform. */
 export const VIEWS = Object.freeze({
+  STAFF_LOGIN: 'teacher-login',
+  STUDENT_LOGIN: 'student-login',
+  CLASSES: 'classes',
+  ROSTER: 'class-roster',
   CATALOG: 'catalog',
   PLAYGROUND: 'playground',
   DASHBOARD: 'dashboard',
@@ -54,6 +58,7 @@ export function parseHash(hash) {
     });
 
   if (!KNOWN_VIEWS.has(view)) return { view: VIEWS.CATALOG, params: {} };
+  if (view === VIEWS.ROSTER) return { view, params: { classId: id ?? '' } };
   if (view === VIEWS.PLAYGROUND) return { view, params: { experimentId: id ?? '' } };
   return { view, params: {} };
 }
@@ -65,6 +70,7 @@ export function parseHash(hash) {
  * @returns {string}
  */
 export function buildHash(view, params = {}) {
+  if (view === VIEWS.ROSTER) return `#/${VIEWS.ROSTER}/${encodeURIComponent(params.classId ?? '')}`;
   if (view === VIEWS.PLAYGROUND) {
     return `#/${VIEWS.PLAYGROUND}/${encodeURIComponent(params.experimentId ?? '')}`;
   }

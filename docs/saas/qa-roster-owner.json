@@ -1,0 +1,122 @@
+[
+  {
+    "lang": "ar",
+    "width": 1366,
+    "height": 768,
+    "docWidth": 1366,
+    "docHeight": 768,
+    "scroll": [
+      {
+        "client": 295,
+        "scroll": 4013,
+        "overflow": "auto"
+      }
+    ],
+    "missingRank": false
+  },
+  {
+    "lang": "ar",
+    "width": 1920,
+    "height": 1080,
+    "docWidth": 1920,
+    "docHeight": 1080,
+    "scroll": [
+      {
+        "client": 607,
+        "scroll": 4013,
+        "overflow": "auto"
+      }
+    ],
+    "missingRank": false
+  },
+  {
+    "lang": "ar",
+    "width": 390,
+    "height": 768,
+    "docWidth": 390,
+    "docHeight": 5581,
+    "scroll": [
+      {
+        "client": 4457,
+        "scroll": 4457,
+        "overflow": "visible"
+      }
+    ],
+    "missingRank": false
+  },
+  {
+    "lang": "ar",
+    "width": 768,
+    "height": 1024,
+    "docWidth": 768,
+    "docHeight": 4959,
+    "scroll": [
+      {
+        "client": 4013,
+        "scroll": 4013,
+        "overflow": "visible"
+      }
+    ],
+    "missingRank": false
+  },
+  {
+    "lang": "en",
+    "width": 1366,
+    "height": 768,
+    "docWidth": 1366,
+    "docHeight": 768,
+    "scroll": [
+      {
+        "client": 295,
+        "scroll": 4013,
+        "overflow": "auto"
+      }
+    ],
+    "missingRank": false
+  },
+  {
+    "lang": "en",
+    "width": 1920,
+    "height": 1080,
+    "docWidth": 1920,
+    "docHeight": 1080,
+    "scroll": [
+      {
+        "client": 607,
+        "scroll": 4013,
+        "overflow": "auto"
+      }
+    ],
+    "missingRank": false
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "height": 768,
+    "docWidth": 390,
+    "docHeight": 5036,
+    "scroll": [
+      {
+        "client": 3911,
+        "scroll": 3911,
+        "overflow": "visible"
+      }
+    ],
+    "missingRank": false
+  },
+  {
+    "lang": "en",
+    "width": 768,
+    "height": 1024,
+    "docWidth": 768,
+    "docHeight": 4982,
+    "scroll": [
+      {
+        "client": 4013,
+        "scroll": 4013,
+        "overflow": "visible"
+      }
+    ],
+    "missingRank": false
+  }
+]

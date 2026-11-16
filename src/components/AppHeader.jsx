@@ -1,3 +1,4 @@
+import { AccountLink } from './SaasChrome.jsx';
 import LanguageToggle from './LanguageToggle.jsx';
 import { useI18n } from '../i18n/index.jsx';
 import { displayNickname } from '../lib/nickname.js';
@@ -39,6 +40,7 @@ export default function AppHeader({ onOpenDashboard, isDashboardOpen = false }) 
       <div className="app-header__end">
         <LanguageToggle />
         <ThemeToggle />
+        <AccountLink />
         {/* Student identity: nickname + geometric avatar only (no personal data).
             It opens the hero lobby. */}
         <a

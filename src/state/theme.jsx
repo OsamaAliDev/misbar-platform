@@ -9,7 +9,7 @@ const ThemeContext = createContext(null);
 
 export function ThemeProvider({ children }) {
   const { view } = useNavigation();
-  const { student } = useStudent();
+  const { student, isSchoolStudent, canEarn } = useStudent();
   const [choice, setChoice] = useState(() => {
     const saved = readJSON(THEME_STORAGE_KEY);
     return valid(saved) ? saved : null;

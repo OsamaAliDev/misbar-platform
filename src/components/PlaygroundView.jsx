@@ -1,3 +1,4 @@
+import { AccountLink, SaasNotice } from './SaasChrome.jsx';
 import ThemeToggle from './ThemeToggle.jsx';
 import LanguageToggle from './LanguageToggle.jsx';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -87,6 +88,7 @@ function Playground({ experiment, simulation, guide, onBack }) {
     <div className="playground">
       <PlaygroundHeader experiment={experiment} onBack={onBack} onOpenHelp={() => setHelpOpen(true)} />
 
+      <SaasNotice />
       <ChallengeBar experimentId={experiment.id} challenge={guide.challenge} met={challengeMet} />
 
       <SimulationContext.Provider value={simulationContext}>
@@ -142,6 +144,7 @@ function PlaygroundHeader({ experiment, onBack, onOpenHelp }) {
 
       <div className="playground-header__end">
         <ThemeToggle />
+        <AccountLink />
         <LanguageToggle />
         <div
           className={`star-counter ${bumping ? 'is-bumping' : ''}`.trim()}

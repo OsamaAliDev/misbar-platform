@@ -1,0 +1,158 @@
+{
+  "checks": [
+    {
+      "label": "ar staff login 1366",
+      "width": 1366,
+      "height": 768,
+      "docWidth": 1366,
+      "docHeight": 768,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "ar staff login 1920",
+      "width": 1920,
+      "height": 1080,
+      "docWidth": 1920,
+      "docHeight": 1080,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "ar staff login 390",
+      "width": 390,
+      "height": 768,
+      "docWidth": 390,
+      "docHeight": 818,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "ar staff login 768",
+      "width": 768,
+      "height": 1024,
+      "docWidth": 768,
+      "docHeight": 1024,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "ar classes 1366",
+      "width": 1366,
+      "height": 768,
+      "docWidth": 1366,
+      "docHeight": 768,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "ar classes 1920",
+      "width": 1920,
+      "height": 1080,
+      "docWidth": 1920,
+      "docHeight": 1080,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "ar classes 390",
+      "width": 390,
+      "height": 768,
+      "docWidth": 390,
+      "docHeight": 949,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "ar classes 768",
+      "width": 768,
+      "height": 1024,
+      "docWidth": 768,
+      "docHeight": 1024,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "en staff login 1366",
+      "width": 1366,
+      "height": 768,
+      "docWidth": 1366,
+      "docHeight": 768,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "en staff login 1920",
+      "width": 1920,
+      "height": 1080,
+      "docWidth": 1920,
+      "docHeight": 1080,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "en staff login 390",
+      "width": 390,
+      "height": 768,
+      "docWidth": 390,
+      "docHeight": 841,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "en staff login 768",
+      "width": 768,
+      "height": 1024,
+      "docWidth": 768,
+      "docHeight": 1024,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "en classes 1366",
+      "width": 1366,
+      "height": 768,
+      "docWidth": 1366,
+      "docHeight": 768,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "en classes 1920",
+      "width": 1920,
+      "height": 1080,
+      "docWidth": 1920,
+      "docHeight": 1080,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "en classes 390",
+      "width": 390,
+      "height": 768,
+      "docWidth": 390,
+      "docHeight": 949,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "en classes 768",
+      "width": 768,
+      "height": 1024,
+      "docWidth": 768,
+      "docHeight": 1024,
+      "headingCount": 1,
+      "smallControls": []
+    },
+    {
+      "label": "student invalid PIN",
+      "width": 390,
+      "height": 768,
+      "docWidth": 390,
+      "docHeight": 1042,
+      "headingCount": 1,
+      "smallControls": []
+    }
+  ],
+  "pageErrors": []
+}

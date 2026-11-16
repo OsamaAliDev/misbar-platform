@@ -1,0 +1,1909 @@
+{
+  "mode": "mock",
+  "results": [
+    {
+      "route": "teacher-login",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 768,
+      "h": 1024,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 768,
+      "h": 1024,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 931,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 320,
+      "h": 740,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 898,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 320,
+      "h": 740,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1036,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 768,
+      "h": 1024,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1068,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 768,
+      "h": 1024,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1055,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1238,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1225,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 320,
+      "h": 740,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1451,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 320,
+      "h": 740,
+      "lang": "ar",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1406,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 768,
+      "h": 1024,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 768,
+      "h": 1024,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 931,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 320,
+      "h": 740,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 898,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 320,
+      "h": 740,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1036,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 768,
+      "h": 1024,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1068,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 768,
+      "h": 1024,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1055,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1238,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1225,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 320,
+      "h": 740,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1451,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "صفوفي",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 320,
+      "h": 740,
+      "lang": "ar",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1406,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "heading": "قائمة طلاب الصف",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 768,
+      "h": 1024,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 768,
+      "h": 1024,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 931,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 320,
+      "h": 740,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 924,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          50.78125
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 320,
+      "h": 740,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1039,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          50.78125
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 768,
+      "h": 1024,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1068,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 768,
+      "h": 1024,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1078,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1238,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1168,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 320,
+      "h": 740,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1474,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 320,
+      "h": 740,
+      "lang": "en",
+      "theme": "light",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1373,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 768,
+      "h": 1024,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 768,
+      "h": 1024,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1024,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 931,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "teacher-login",
+      "w": 320,
+      "h": 740,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 924,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          50.78125
+        ]
+      }
+    },
+    {
+      "route": "student-login",
+      "w": 320,
+      "h": 740,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1039,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          50.78125
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 768,
+      "h": 1024,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1068,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 768,
+      "h": 1024,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 768,
+        "height": 1078,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1238,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1168,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "classes",
+      "w": 320,
+      "h": 740,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1474,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "My classes",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    },
+    {
+      "route": "class-roster/eba70c98-9cd3-4bc5-a880-3365785a30dd",
+      "w": 320,
+      "h": 740,
+      "lang": "en",
+      "theme": "night",
+      "pass": true,
+      "geometry": {
+        "width": 320,
+        "height": 1373,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "heading": "Class roster",
+        "targets": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          48,
+          48
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "pass": true,
+  "classRosterIncluded": true
+}

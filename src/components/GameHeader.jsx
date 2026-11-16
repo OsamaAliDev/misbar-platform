@@ -1,3 +1,4 @@
+import { AccountLink } from './SaasChrome.jsx';
 import LanguageToggle from './LanguageToggle.jsx';
 import ThemeToggle from './ThemeToggle.jsx';
 import { useI18n } from '../i18n/index.jsx';
@@ -56,6 +57,7 @@ export default function GameHeader({ currentView }) {
       <div className="game-header__end">
         <LanguageToggle />
         <ThemeToggle />
+        <AccountLink />
         <StarBalance />
         <a className="btn btn--neutral game-header__library" href={buildHash(VIEWS.CATALOG)}>
           <Icon name="menu_book" size={20} className="game-header__library-icon" />

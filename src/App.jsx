@@ -1,3 +1,6 @@
+import { SaasHeader, SaasNotice } from './components/SaasChrome.jsx';
+import { useSaas } from './state/saas.jsx';
+import { TeacherLoginView, StudentLoginView, ClassesView, ClassRosterView } from './views/saas/index.jsx';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import AppHeader from './components/AppHeader.jsx';
 import GameHeader from './components/GameHeader.jsx';
@@ -27,6 +30,7 @@ function documentTitleFor(view, params, t) {
     const experiment = getExperimentById(params.experimentId);
     return `${experiment ? getExperimentCopy(t, experiment.id).title : t('lab.notFound.eyebrow')} | ${site}`;
   }
+  if ([VIEWS.STAFF_LOGIN, VIEWS.STUDENT_LOGIN, VIEWS.CLASSES, VIEWS.ROSTER].includes(view)) return `${t('saas.chrome.workspace')} | ${site}`;
   if (view === VIEWS.DASHBOARD) return `${t('app.dashboardTitle')} | ${site}`;
   if (GAME_VIEWS.includes(view)) return `${t(`game.titles.${view}`)} | ${site}`;
   return `${site} | ${t('app.libraryTitle')}`;
@@ -46,8 +50,9 @@ function documentTitleFor(view, params, t) {
  */
 export default function App() {
   const { view, params, navigate } = useNavigation();
-  const { student } = useStudent();
+  const { student, isSchoolStudent, canEarn } = useStudent();
   const { t } = useI18n();
+  const { session } = useSaas();
 
   const [catalogFilters, setCatalogFilters] = useState({ query: '', category: ALL_CATEGORY_ID });
   const updateCatalogFilters = useCallback(
@@ -56,7 +61,7 @@ export default function App() {
   );
 
   const openCatalog = useCallback(() => navigate(VIEWS.CATALOG), [navigate]);
-  const openDashboard = useCallback(() => navigate(VIEWS.DASHBOARD), [navigate]);
+  const openDashboard = useCallback(() => navigate(session?.role === 'platform_admin' ? VIEWS.STAFF_LOGIN : session && session.role !== 'student' ? VIEWS.CLASSES : VIEWS.STAFF_LOGIN), [navigate, session]);
   const openLobby = useCallback(() => navigate(VIEWS.LOBBY), [navigate]);
   const openPlayground = useCallback(
     (experimentId) => navigate(VIEWS.PLAYGROUND, { experimentId }),
@@ -89,6 +94,10 @@ export default function App() {
 
   let content;
   switch (activeView) {
+    case VIEWS.STAFF_LOGIN: content = <TeacherLoginView onNavigate={navigate} />; break;
+    case VIEWS.STUDENT_LOGIN: content = <StudentLoginView onNavigate={navigate} />; break;
+    case VIEWS.CLASSES: content = <ClassesView onNavigate={navigate} />; break;
+    case VIEWS.ROSTER: content = <ClassRosterView classId={params.classId} onNavigate={navigate} />; break;
     case VIEWS.PLAYGROUND:
       content = <PlaygroundView experimentId={params.experimentId} onBack={openCatalog} />;
       break;
@@ -119,14 +128,16 @@ export default function App() {
 
   const isPlayground = activeView === VIEWS.PLAYGROUND;
   const isGame = GAME_VIEWS.includes(activeView);
+  const isSaas = [VIEWS.STAFF_LOGIN, VIEWS.STUDENT_LOGIN, VIEWS.CLASSES, VIEWS.ROSTER].includes(activeView);
 
   let header = null;
-  if (isGame) header = <GameHeader currentView={activeView} />;
+  if (isSaas) header = <SaasHeader />;
+  else if (isGame) header = <GameHeader currentView={activeView} />;
   else if (!isPlayground) {
     header = <AppHeader onOpenDashboard={openDashboard} isDashboardOpen={activeView === VIEWS.DASHBOARD} />;
   }
 
-  const shellClass = ['app-shell', isPlayground && 'app-shell--fit', isGame && 'app-shell--game']
+  const shellClass = ['app-shell', isPlayground && 'app-shell--fit', isGame && 'app-shell--game', isSaas && 'app-shell--saas']
     .filter(Boolean)
     .join(' ');
 
@@ -134,6 +145,7 @@ export default function App() {
     <div className={shellClass}>
       <div className="app-container app-layout">
         {header}
+        {!isPlayground && !isSaas && <SaasNotice />}
         <main key={routeKey} className="app-main view-enter">
           {content}
         </main>
