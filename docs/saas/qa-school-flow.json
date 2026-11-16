@@ -11,14 +11,14 @@
     {
       "name": "teacher class created with usable join code",
       "details": {
-        "classId": "6e3b327b-77ed-4255-86e4-48bc9bff2ed0",
-        "joinCode": "468C70CD3893"
+        "classId": "84e0c49c-bd32-4595-a133-ac5b2250c972",
+        "joinCode": "22527405357F"
       }
     },
     {
       "name": "student enrolled with nickname and server PIN",
       "details": {
-        "nickname": "Comet 4829599"
+        "nickname": "Comet 4830251"
       }
     },
     {
@@ -54,7 +54,9 @@
   ],
   "errors": [],
   "warnings": [],
-  "classId": "6e3b327b-77ed-4255-86e4-48bc9bff2ed0",
-  "nickname": "Comet 4829599",
-  "joinCode": "468C70CD3893"
+  "classId": "84e0c49c-bd32-4595-a133-ac5b2250c972",
+  "nickname": "Comet 4830251",
+  "joinCode": "22527405357F",
+  "servedBuildCommit": "25feb9b9f14b06064f0e75cec0640167c160364e",
+  "servedMode": "clean GitHub production build; explicit local mock"
 }

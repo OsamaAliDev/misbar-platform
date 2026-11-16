@@ -18,5 +18,7 @@
       "name": "late old school action cannot hydrate a re-login with the same mock userId",
       "pass": true
     }
-  ]
+  ],
+  "servedBuildCommit": "25feb9b9f14b06064f0e75cec0640167c160364e",
+  "servedMode": "clean GitHub production build; explicit local mock"
 }

@@ -1,5 +1,5 @@
 {
-  "testedCommit": "302ddfe0c9bfe4332ad0435bff5a37d41b8a6557",
+  "testedCommit": "25feb9b9f14b06064f0e75cec0640167c160364e",
   "source": "fresh GitHub clone origin/saas-foundation",
   "install": "pnpm11.25.0 install --frozen-lockfile (pass)",
   "build": "vite production build (pass)",
@@ -10,5 +10,13 @@
   },
   "appDependenciesAdded": 0,
   "lockfileChanged": false,
-  "mode": "mock; real Supabase NOT run"
+  "mode": "mock; real Supabase NOT run",
+  "finalProductionMatrices": {
+    "guest": 192,
+    "school": 80,
+    "schoolFlowStages": 8,
+    "authRaceCases": 4
+  },
+  "remoteMainObservedAtFinalRead": "873c991d12f5c380bf381f924e023deda48587c3",
+  "mainPushedByThisRun": false
 }

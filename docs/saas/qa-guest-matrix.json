@@ -1,0 +1,7582 @@
+{
+  "results": [
+    {
+      "route": "heroes",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "اختار بطلك",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 247.375,
+          "bottom": 398.640625,
+          "width": 127.546875,
+          "height": 151.265625
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "ساحة الأبطال",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 166.375,
+          "bottom": 523,
+          "width": 418.828125,
+          "height": 356.625
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "خزانة الأزياء",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 292.328125,
+          "bottom": 650.953125,
+          "width": 351.84375,
+          "height": 358.625
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "سلّم الرتب",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 909,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "مكتبة التجارب التفاعلية",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "لوحة المعلم وولي الأمر",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "قانون الحركة والسرعة والتسارع",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "توازن القوى والرافعة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "مسار الكواكب والجاذبية",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 651.546875,
+          "width": 884,
+          "height": 407.1875
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "الكسور والنسب بالمساحة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "انعكاس وانكسار الضوء",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "حالات المادة والحرارة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "اختار بطلك",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 267.109375,
+          "bottom": 438.546875,
+          "width": 127.25,
+          "height": 171.4375
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "ساحة الأبطال",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 189.875,
+          "bottom": 592.59375,
+          "width": 418.34375,
+          "height": 402.71875
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "خزانة الأزياء",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 303.125,
+          "bottom": 707.84375,
+          "width": 350.609375,
+          "height": 404.71875
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "سلّم الرتب",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 909,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "مكتبة التجارب التفاعلية",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "لوحة المعلم وولي الأمر",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "قانون الحركة والسرعة والتسارع",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "توازن القوى والرافعة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "مسار الكواكب والجاذبية",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 746.90625,
+          "width": 884,
+          "height": 501.90625
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "الكسور والنسب بالمساحة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "انعكاس وانكسار الضوء",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "حالات المادة والحرارة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "اختار بطلك",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 306.4375,
+          "bottom": 516.4375,
+          "width": 126.59375,
+          "height": 210
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "ساحة الأبطال",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 245.84375,
+          "bottom": 752.234375,
+          "width": 417.265625,
+          "height": 506.390625
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "خزانة الأزياء",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 315.5625,
+          "bottom": 823.953125,
+          "width": 347.828125,
+          "height": 508.390625
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "سلّم الرتب",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "مكتبة التجارب التفاعلية",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "لوحة المعلم وولي الأمر",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "قانون الحركة والسرعة والتسارع",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "توازن القوى والرافعة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "مسار الكواكب والجاذبية",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 962.90625,
+          "width": 884,
+          "height": 717.90625
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "الكسور والنسب بالمساحة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "انعكاس وانكسار الضوء",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "حالات المادة والحرارة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1415,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "اختار بطلك",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 716.390625,
+          "bottom": 828.546875,
+          "width": 168.671875,
+          "height": 112.15625
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1977,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "ساحة الأبطال",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 279.546875,
+          "bottom": 563.546875,
+          "width": 354,
+          "height": 284
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 2169,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "خزانة الأزياء",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 635.734375,
+          "bottom": 919.734375,
+          "width": 354,
+          "height": 284
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1120,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "سلّم الرتب",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 2429,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "مكتبة التجارب التفاعلية",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "لوحة المعلم وولي الأمر",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1436,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 534.828125,
+          "bottom": 751.078125,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 461.640625,
+          "width": 358,
+          "height": 249
+        },
+        "workspace": {
+          "top": 473.640625,
+          "bottom": 1419.734375,
+          "width": 358,
+          "height": 946.09375
+        },
+        "heading": "قانون الحركة والسرعة والتسارع",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1485,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 501.1875,
+          "bottom": 717.4375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 200,
+          "bottom": 428,
+          "width": 358,
+          "height": 228
+        },
+        "workspace": {
+          "top": 440,
+          "bottom": 1468.8125,
+          "width": 358,
+          "height": 1028.8125
+        },
+        "heading": "توازن القوى والرافعة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1490,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 525.1875,
+          "bottom": 741.4375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 200,
+          "bottom": 452,
+          "width": 358,
+          "height": 252
+        },
+        "workspace": {
+          "top": 464,
+          "bottom": 1474.1875,
+          "width": 358,
+          "height": 1010.1875
+        },
+        "heading": "مسار الكواكب والجاذبية",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1446,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 488.640625,
+          "bottom": 704.890625,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 440.640625,
+          "width": 358,
+          "height": 228
+        },
+        "workspace": {
+          "top": 452.640625,
+          "bottom": 1429.859375,
+          "width": 358,
+          "height": 977.21875
+        },
+        "heading": "الكسور والنسب بالمساحة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1410,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 513.828125,
+          "bottom": 730.078125,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 440.640625,
+          "width": 358,
+          "height": 228
+        },
+        "workspace": {
+          "top": 452.640625,
+          "bottom": 1393.640625,
+          "width": 358,
+          "height": 941
+        },
+        "heading": "انعكاس وانكسار الضوء",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1387,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "light",
+        "svg": {
+          "top": 546.1875,
+          "bottom": 762.4375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 200,
+          "bottom": 473,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 485,
+          "bottom": 1371.3125,
+          "width": 358,
+          "height": 886.3125
+        },
+        "heading": "حالات المادة والحرارة",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "اختار بطلك",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 247.375,
+          "bottom": 398.640625,
+          "width": 127.546875,
+          "height": 151.265625
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "ساحة الأبطال",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 166.375,
+          "bottom": 523,
+          "width": 418.828125,
+          "height": 356.625
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "خزانة الأزياء",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 292.328125,
+          "bottom": 650.953125,
+          "width": 351.84375,
+          "height": 358.625
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "سلّم الرتب",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 909,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "مكتبة التجارب التفاعلية",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "لوحة المعلم وولي الأمر",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "قانون الحركة والسرعة والتسارع",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "توازن القوى والرافعة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "مسار الكواكب والجاذبية",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 651.546875,
+          "width": 884,
+          "height": 407.1875
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "الكسور والنسب بالمساحة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "انعكاس وانكسار الضوء",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1366,
+      "h": 768,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "حالات المادة والحرارة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "اختار بطلك",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 267.109375,
+          "bottom": 438.546875,
+          "width": 127.25,
+          "height": 171.4375
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "ساحة الأبطال",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 189.875,
+          "bottom": 592.59375,
+          "width": 418.34375,
+          "height": 402.71875
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "خزانة الأزياء",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 303.125,
+          "bottom": 707.84375,
+          "width": 350.609375,
+          "height": 404.71875
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "سلّم الرتب",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 909,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "مكتبة التجارب التفاعلية",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "لوحة المعلم وولي الأمر",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "قانون الحركة والسرعة والتسارع",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "توازن القوى والرافعة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "مسار الكواكب والجاذبية",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 746.90625,
+          "width": 884,
+          "height": 501.90625
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "الكسور والنسب بالمساحة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "انعكاس وانكسار الضوء",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1536,
+      "h": 864,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "حالات المادة والحرارة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "اختار بطلك",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 306.4375,
+          "bottom": 516.4375,
+          "width": 126.59375,
+          "height": 210
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "ساحة الأبطال",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 245.84375,
+          "bottom": 752.234375,
+          "width": 417.265625,
+          "height": 506.390625
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "خزانة الأزياء",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 315.5625,
+          "bottom": 823.953125,
+          "width": 347.828125,
+          "height": 508.390625
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "سلّم الرتب",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "مكتبة التجارب التفاعلية",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "لوحة المعلم وولي الأمر",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "قانون الحركة والسرعة والتسارع",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "توازن القوى والرافعة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "مسار الكواكب والجاذبية",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 962.90625,
+          "width": 884,
+          "height": 717.90625
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "الكسور والنسب بالمساحة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "انعكاس وانكسار الضوء",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1920,
+      "h": 1080,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "حالات المادة والحرارة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1415,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "اختار بطلك",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 716.390625,
+          "bottom": 828.546875,
+          "width": 168.671875,
+          "height": 112.15625
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1977,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "ساحة الأبطال",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 279.546875,
+          "bottom": 563.546875,
+          "width": 354,
+          "height": 284
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 2169,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "خزانة الأزياء",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 635.734375,
+          "bottom": 919.734375,
+          "width": 354,
+          "height": 284
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1120,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "سلّم الرتب",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 2429,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "مكتبة التجارب التفاعلية",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "لوحة المعلم وولي الأمر",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1436,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 534.828125,
+          "bottom": 751.078125,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 461.640625,
+          "width": 358,
+          "height": 249
+        },
+        "workspace": {
+          "top": 473.640625,
+          "bottom": 1419.734375,
+          "width": 358,
+          "height": 946.09375
+        },
+        "heading": "قانون الحركة والسرعة والتسارع",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1485,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 501.1875,
+          "bottom": 717.4375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 200,
+          "bottom": 428,
+          "width": 358,
+          "height": 228
+        },
+        "workspace": {
+          "top": 440,
+          "bottom": 1468.8125,
+          "width": 358,
+          "height": 1028.8125
+        },
+        "heading": "توازن القوى والرافعة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1490,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 525.1875,
+          "bottom": 741.4375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 200,
+          "bottom": 452,
+          "width": 358,
+          "height": 252
+        },
+        "workspace": {
+          "top": 464,
+          "bottom": 1474.1875,
+          "width": 358,
+          "height": 1010.1875
+        },
+        "heading": "مسار الكواكب والجاذبية",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1446,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 488.640625,
+          "bottom": 704.890625,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 440.640625,
+          "width": 358,
+          "height": 228
+        },
+        "workspace": {
+          "top": 452.640625,
+          "bottom": 1429.859375,
+          "width": 358,
+          "height": 977.21875
+        },
+        "heading": "الكسور والنسب بالمساحة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1410,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 513.828125,
+          "bottom": 730.078125,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 440.640625,
+          "width": 358,
+          "height": 228
+        },
+        "workspace": {
+          "top": 452.640625,
+          "bottom": 1393.640625,
+          "width": 358,
+          "height": 941
+        },
+        "heading": "انعكاس وانكسار الضوء",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 390,
+      "h": 844,
+      "lang": "ar",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1387,
+        "lang": "ar",
+        "dir": "rtl",
+        "theme": "night",
+        "svg": {
+          "top": 546.1875,
+          "bottom": 762.4375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 200,
+          "bottom": 473,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 485,
+          "bottom": 1371.3125,
+          "width": 358,
+          "height": 886.3125
+        },
+        "heading": "حالات المادة والحرارة",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Choose your hero",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 264.25,
+          "bottom": 415.515625,
+          "width": 127.546875,
+          "height": 151.265625
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Hero Lobby",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 166.375,
+          "bottom": 523,
+          "width": 418.828125,
+          "height": 356.625
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Outfit Vault",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 292.328125,
+          "bottom": 650.953125,
+          "width": 351.84375,
+          "height": 358.625
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Rank Ladder",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 932,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Interactive Experiments Library",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Teacher and parent dashboard",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Motion, Speed and Acceleration",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Balancing Forces with a Lever",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Planet Orbits and Gravity",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 651.546875,
+          "width": 884,
+          "height": 407.1875
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Fractions and Percentages with Area",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Reflection and Refraction of Light",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 643.765625,
+          "width": 884,
+          "height": 399.40625
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "States of Matter and Heat",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Choose your hero",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 285.109375,
+          "bottom": 456.546875,
+          "width": 127.25,
+          "height": 171.4375
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Hero Lobby",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 189.875,
+          "bottom": 592.59375,
+          "width": 418.34375,
+          "height": 402.71875
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Outfit Vault",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 303.125,
+          "bottom": 707.84375,
+          "width": 350.609375,
+          "height": 404.71875
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Rank Ladder",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 932,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Interactive Experiments Library",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Teacher and parent dashboard",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Motion, Speed and Acceleration",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Balancing Forces with a Lever",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Planet Orbits and Gravity",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 746.90625,
+          "width": 884,
+          "height": 501.90625
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Fractions and Percentages with Area",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Reflection and Refraction of Light",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 739.125,
+          "width": 884,
+          "height": 494.125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "States of Matter and Heat",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Choose your hero",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 324.4375,
+          "bottom": 534.4375,
+          "width": 126.59375,
+          "height": 210
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Hero Lobby",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 245.84375,
+          "bottom": 752.234375,
+          "width": 417.265625,
+          "height": 506.390625
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Outfit Vault",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 315.5625,
+          "bottom": 823.953125,
+          "width": 347.828125,
+          "height": 508.390625
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Rank Ladder",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Interactive Experiments Library",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Teacher and parent dashboard",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Motion, Speed and Acceleration",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Balancing Forces with a Lever",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Planet Orbits and Gravity",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 962.90625,
+          "width": 884,
+          "height": 717.90625
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Fractions and Percentages with Area",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Reflection and Refraction of Light",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 245,
+          "bottom": 955.125,
+          "width": 884,
+          "height": 710.125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "States of Matter and Heat",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1404,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Choose your hero",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 666.390625,
+          "bottom": 778.546875,
+          "width": 168.671875,
+          "height": 112.15625
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1970,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Hero Lobby",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 229.546875,
+          "bottom": 513.546875,
+          "width": 354,
+          "height": 284
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 2119,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Outfit Vault",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": {
+          "top": 585.734375,
+          "bottom": 869.734375,
+          "width": 354,
+          "height": 284
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1135,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Rank Ladder",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 2429,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Interactive Experiments Library",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Teacher and parent dashboard",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1435,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 533.640625,
+          "bottom": 749.890625,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 485.640625,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 497.640625,
+          "bottom": 1418.546875,
+          "width": 358,
+          "height": 920.90625
+        },
+        "heading": "Motion, Speed and Acceleration",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1542,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 558.828125,
+          "bottom": 775.078125,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 485.640625,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 497.640625,
+          "bottom": 1526.453125,
+          "width": 358,
+          "height": 1028.8125
+        },
+        "heading": "Balancing Forces with a Lever",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1490,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 525.1875,
+          "bottom": 741.4375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 200,
+          "bottom": 452,
+          "width": 358,
+          "height": 252
+        },
+        "workspace": {
+          "top": 464,
+          "bottom": 1474.1875,
+          "width": 358,
+          "height": 1010.1875
+        },
+        "heading": "Planet Orbits and Gravity",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1467,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 509.640625,
+          "bottom": 725.890625,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 461.640625,
+          "width": 358,
+          "height": 249
+        },
+        "workspace": {
+          "top": 473.640625,
+          "bottom": 1450.859375,
+          "width": 358,
+          "height": 977.21875
+        },
+        "heading": "Fractions and Percentages with Area",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1469,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 573.609375,
+          "bottom": 789.859375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 485.640625,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 497.640625,
+          "bottom": 1453.421875,
+          "width": 358,
+          "height": 955.78125
+        },
+        "heading": "Reflection and Refraction of Light",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "light",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1393,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "light",
+        "svg": {
+          "top": 533.640625,
+          "bottom": 749.890625,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 485.640625,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 497.640625,
+          "bottom": 1376.953125,
+          "width": 358,
+          "height": 879.3125
+        },
+        "heading": "States of Matter and Heat",
+        "meta": "#fbf6ef",
+        "bg": "#fbf6ef",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Choose your hero",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 264.25,
+          "bottom": 415.515625,
+          "width": 127.546875,
+          "height": 151.265625
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Hero Lobby",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 166.375,
+          "bottom": 523,
+          "width": 418.828125,
+          "height": 356.625
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Outfit Vault",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 292.328125,
+          "bottom": 650.953125,
+          "width": 351.84375,
+          "height": 358.625
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Rank Ladder",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 932,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Interactive Experiments Library",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Teacher and parent dashboard",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Motion, Speed and Acceleration",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Balancing Forces with a Lever",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Planet Orbits and Gravity",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 651.546875,
+          "width": 884,
+          "height": 407.1875
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Fractions and Percentages with Area",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 661.953125,
+          "width": 884,
+          "height": 417.59375
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "Reflection and Refraction of Light",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1366,
+      "h": 768,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1366,
+        "height": 768,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 244.359375,
+          "bottom": 643.765625,
+          "width": 884,
+          "height": 399.40625
+        },
+        "challenge": {
+          "top": 97.359375,
+          "bottom": 186.359375,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 200.359375,
+          "bottom": 752.640625,
+          "width": 1280,
+          "height": 552.28125
+        },
+        "heading": "States of Matter and Heat",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Choose your hero",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 285.109375,
+          "bottom": 456.546875,
+          "width": 127.25,
+          "height": 171.4375
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Hero Lobby",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 189.875,
+          "bottom": 592.59375,
+          "width": 418.34375,
+          "height": 402.71875
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Outfit Vault",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 303.125,
+          "bottom": 707.84375,
+          "width": 350.609375,
+          "height": 404.71875
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Rank Ladder",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 932,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Interactive Experiments Library",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Teacher and parent dashboard",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Motion, Speed and Acceleration",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Balancing Forces with a Lever",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Planet Orbits and Gravity",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 746.90625,
+          "width": 884,
+          "height": 501.90625
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Fractions and Percentages with Area",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 757.3125,
+          "width": 884,
+          "height": 512.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "Reflection and Refraction of Light",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1536,
+      "h": 864,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1536,
+        "height": 864,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 739.125,
+          "width": 884,
+          "height": 494.125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 848,
+          "width": 1280,
+          "height": 647
+        },
+        "heading": "States of Matter and Heat",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Choose your hero",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 324.4375,
+          "bottom": 534.4375,
+          "width": 126.59375,
+          "height": 210
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Hero Lobby",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 245.84375,
+          "bottom": 752.234375,
+          "width": 417.265625,
+          "height": 506.390625
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Outfit Vault",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 315.5625,
+          "bottom": 823.953125,
+          "width": 347.828125,
+          "height": 508.390625
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Rank Ladder",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Interactive Experiments Library",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Teacher and parent dashboard",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Motion, Speed and Acceleration",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Balancing Forces with a Lever",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Planet Orbits and Gravity",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 962.90625,
+          "width": 884,
+          "height": 717.90625
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Fractions and Percentages with Area",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 973.3125,
+          "width": 884,
+          "height": 728.3125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "Reflection and Refraction of Light",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 1920,
+      "h": 1080,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true,
+        "desktopNoScroll": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 1920,
+        "height": 1080,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 245,
+          "bottom": 955.125,
+          "width": 884,
+          "height": 710.125
+        },
+        "challenge": {
+          "top": 98,
+          "bottom": 187,
+          "width": 1280,
+          "height": 89
+        },
+        "workspace": {
+          "top": 201,
+          "bottom": 1064,
+          "width": 1280,
+          "height": 863
+        },
+        "heading": "States of Matter and Heat",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "heroes",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1404,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Choose your hero",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 666.390625,
+          "bottom": 778.546875,
+          "width": 168.671875,
+          "height": 112.15625
+        }
+      }
+    },
+    {
+      "route": "lobby",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1970,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Hero Lobby",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 229.546875,
+          "bottom": 513.546875,
+          "width": 354,
+          "height": 284
+        }
+      }
+    },
+    {
+      "route": "vault",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "mobileHero": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 2119,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Outfit Vault",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": {
+          "top": 585.734375,
+          "bottom": 869.734375,
+          "width": 354,
+          "height": 284
+        }
+      }
+    },
+    {
+      "route": "ranks",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1135,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Rank Ladder",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "catalog",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 2429,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Interactive Experiments Library",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "dashboard",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 844,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": null,
+        "challenge": null,
+        "workspace": null,
+        "heading": "Teacher and parent dashboard",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/motion-acceleration",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1435,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 533.640625,
+          "bottom": 749.890625,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 485.640625,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 497.640625,
+          "bottom": 1418.546875,
+          "width": 358,
+          "height": 920.90625
+        },
+        "heading": "Motion, Speed and Acceleration",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/lever-balance",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1542,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 558.828125,
+          "bottom": 775.078125,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 485.640625,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 497.640625,
+          "bottom": 1526.453125,
+          "width": 358,
+          "height": 1028.8125
+        },
+        "heading": "Balancing Forces with a Lever",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/planet-orbits",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1490,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 525.1875,
+          "bottom": 741.4375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 200,
+          "bottom": 452,
+          "width": 358,
+          "height": 252
+        },
+        "workspace": {
+          "top": 464,
+          "bottom": 1474.1875,
+          "width": 358,
+          "height": 1010.1875
+        },
+        "heading": "Planet Orbits and Gravity",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/fractions-area",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1467,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 509.640625,
+          "bottom": 725.890625,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 461.640625,
+          "width": 358,
+          "height": 249
+        },
+        "workspace": {
+          "top": 473.640625,
+          "bottom": 1450.859375,
+          "width": 358,
+          "height": 977.21875
+        },
+        "heading": "Fractions and Percentages with Area",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/light-refraction",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1469,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 573.609375,
+          "bottom": 789.859375,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 485.640625,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 497.640625,
+          "bottom": 1453.421875,
+          "width": 358,
+          "height": 955.78125
+        },
+        "heading": "Reflection and Refraction of Light",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    },
+    {
+      "route": "playground/matter-states",
+      "w": 390,
+      "h": 844,
+      "lang": "en",
+      "theme": "night",
+      "checks": {
+        "horizontal": true,
+        "language": true,
+        "theme": true,
+        "keys": true,
+        "english": true,
+        "stage": true,
+        "order": true
+      },
+      "pass": true,
+      "geometry": {
+        "width": 390,
+        "height": 1393,
+        "lang": "en",
+        "dir": "ltr",
+        "theme": "night",
+        "svg": {
+          "top": 533.640625,
+          "bottom": 749.890625,
+          "width": 346,
+          "height": 216.25
+        },
+        "challenge": {
+          "top": 212.640625,
+          "bottom": 485.640625,
+          "width": 358,
+          "height": 273
+        },
+        "workspace": {
+          "top": 497.640625,
+          "bottom": 1376.953125,
+          "width": 358,
+          "height": 879.3125
+        },
+        "heading": "States of Matter and Heat",
+        "meta": "#141a2e",
+        "bg": "#141a2e",
+        "hero": null
+      }
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "bad_requests": [],
+  "pass": true,
+  "servedBuildCommit": "25feb9b9f14b06064f0e75cec0640167c160364e",
+  "servedMode": "clean GitHub production build; explicit local mock"
+}

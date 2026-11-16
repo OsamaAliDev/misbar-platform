@@ -1,24 +1,24 @@
-# Last updated: 2026-11-16 13:56 EET — Current step: 7 final screenshot/glyph correction
+# Last updated: 2026-11-16 14:01 EET — Current step: 7 complete — final evidence/report
 
 | Step | Status | Commit hash | Evidence / limits |
 |---|---|---|---|
-| 1. Baseline and STATUS | Done (verified) | ce2b317 | Pinned install and fresh main source build passed; handoff/decisions/schema read; branch and STATUS created. |
+| 1. Baseline and STATUS | Done (verified) | ce2b317 | Baseline pinned install/build, handoff/decisions/schema read, branch from main e1bad49 and STATUS protocol verified. |
 | 2. Database migration | Done (verified) | db7eb02 +302ddfe | Schema applied locally, including required experiment_progress.stars and pseudonym constraints; NOT deployed to real Supabase. |
 | 3. RLS isolation proof | Done (NOT verified) | 302ddfe | REAL Supabase RLS NOT run. Supplemental local PostgreSQL16 proof148/148 passed, including schoolA read/writeB and other-teacher class denial. |
-| 4. Student PIN and staff email Auth | Done (verified) | 4d21887 | 27/27 auth/API tests passed; real Supabase transport uses stubs only, NOT remote Auth. |
+| 4. Student PIN and staff email Auth | Done (verified) | 4d21887 +46de107 | Mock auth/API27/27 and delayed-auth4/4 passed. Supabase transport fixtures only; real Auth NOT run. |
 | 5. Guest/Supabase adapters and first import | Done (verified) | ada4373 | Actual mock8-stage school flow passed; guest15 stayed unchanged while school earned19 and re-login did not import again. |
 | 6. Bilingual/theme-aware logins, classes and roster | Done (verified) | f20e705 | 80/80 mock-auth UI viewport cases plus browser enrollment/roster flow passed; lifecycle regression fixes being added under finalQA. |
-| 7. Final clean build, guest regression and school flow | In progress | 9757543 (clean-build evidence) | All clean production tests passed; refreshing the final one-glyph HTML change and screenshots before final report. |
+| 7. Final clean build, guest regression and school flow | Done (verified) | final QA evidence commit (git log -- docs/saas) | Clean production25feb9b: backend27/27, guest192/192, school80/80, schoolflow8 stages and auth races4/4 passed; no console errors/warnings on acceptance flows. |
 
 ## Doing now
 
-Clean-production guest192/192, school80/80, school flow8 stages, guest reward flow and delayed-auth4/4 all passed. Final screenshot check found one missing icon-subset glyph; adding it without a new dependency and refreshing the clean build/screenshots. Main has separately advanced to873c991; this run has not modified or pushed main.
+Completed the seven-step foundation on saas-foundation and pushed it to GitHub. Verified: clean production build,27 backend tests,192 guest cases,80 school cases,148 local RLS checks and the full mock class→student→stars→teacher flow. NOT verified: real Supabase Auth/RLS/PostgREST (credentials missing). This run did not push/merge main or publish the public site; subscription gates, payments, parent accounts and analytics are deferred.
 
 Mode: **mock, not real Supabase**. Real Supabase RLS and Auth have NOT run.
 
 ## Remaining
 
-7. [ ] Final clean build, guest regression and school flow.
+All seven scoped foundation steps are complete. Remote Supabase execution remains NOT verified; subscription gating, payments, parent accounts and analytics are deferred.
 
 ## Blockers and decisions I need from the owner
 

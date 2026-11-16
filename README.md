@@ -6,6 +6,12 @@
 
 Built with **Vite + React** (plain, well-commented JavaScript), the Cairo typeface and a strictly flat, locked design system (see [`DESIGN.md`](./DESIGN.md)). Product requirements live in [`PRD.md`](./PRD.md).
 
+## Phase 5A foundation — current branch
+
+Read [`STATUS.md`](./STATUS.md) for verified progress and [`docs/saas/SUPABASE-SETUP.md`](./docs/saas/SUPABASE-SETUP.md) before real Supabase setup. Guests keep local browser progress; school login, classes and rosters use a Node HTTP API with an explicitly labeled local mock or a Supabase transport. Real Supabase Auth/RLS has NOT run without credentials. No subscription gate, payments, parent accounts or analytics are added in this phase.
+
+For local mock development, omit both Supabase variables and run `pnpm dev:api` alongside `pnpm dev`. For the combined production API/client, set the private real Supabase environment, run `pnpm build` then `pnpm start`. A demonstration production mock requires explicit `ALLOW_MOCK=true` and must not be used as a school production database.
+
 ## Tech stack (actual)
 
 | Layer | What the code really uses |
@@ -14,12 +20,12 @@ Built with **Vite + React** (plain, well-commented JavaScript), the Cairo typefa
 | UI library | **React 19** with plain JavaScript (`.jsx`) — no TypeScript |
 | Styling | **Plain CSS** with CSS custom properties (`src/index.css` + one `.css` file per component). **No Tailwind**, no CSS-in-JS, no UI kit |
 | Routing | Small hash router in `src/state/navigation.jsx` (`#/`, `#/playground/<id>`, `#/dashboard`) — no React Router |
-| State & storage | React context + `localStorage` (`misbar:student:v1`) — nickname, avatar, stars and completed challenges only |
+| State & storage | React context; guest `localStorage` (`misbar:student:v1`), server-canonical child progress and once-only legacy import |
 | Simulations | Animated inline SVG driven by `requestAnimationFrame` — no canvas/physics library |
 | Fonts & icons | Google Fonts **Cairo** + **Material Symbols Outlined** (loaded in `index.html`) |
 | Package manager | **pnpm 11** (pinned in `package.json` → `packageManager`) |
-| Backend | **None.** It is a static site; `supabase/schema.sql` is only a draft for a possible future batch and is not used by the app |
-| Hosting | Any static host: `pnpm build` → `dist/` |
+| Backend | Node22 HTTP/Auth/data-access server using built-ins only; local mock or private Supabase Auth/REST transport and forward SQL migration |
+| Hosting | Guest-only client can remain static; school-account features require the combined Node API plus `dist/`, not a static-only deployment |
 
 This is **not** a Next.js project, and it does not use Tailwind. Runtime dependencies are only `react` and `react-dom`; dev dependencies are only `vite` and `@vitejs/plugin-react`.
 
