@@ -7,7 +7,7 @@ import Icon from './Icon.jsx';
 import './ChallengeBar.css';
 
 /**
- * <ChallengeBar /> — the guide hero's challenge & tip bar under the workspace.
+ * <ChallengeBar /> — the guide hero's challenge & tip bar above the workspace.
  *
  * The student's chosen hero (src/state/guide.js) speaks in a speech bubble:
  *   idle        the experiment tip              ("نصيحة <hero>: …")
@@ -27,7 +27,7 @@ import './ChallengeBar.css';
  */
 export default function ChallengeBar({ experimentId, challenge, met }) {
   const { t } = useI18n();
-  const { student, completeChallenge } = useStudent();
+  const { student, completeChallenge, canEarn, syncing } = useStudent();
   const { hero, name } = useGuide();
   const completed = student.completedChallenges.includes(experimentId);
   /** null | 'retry' | 'success' */
@@ -40,12 +40,13 @@ export default function ChallengeBar({ experimentId, challenge, met }) {
     if (met) setFeedback((current) => (current === 'retry' ? null : current));
   }, [met]);
 
-  const handleClick = () => {
-    if (completed) return;
+  const handleClick = async () => {
+    if (completed || syncing) return;
     setAttempt((count) => count + 1);
     if (met) {
-      completeChallenge(experimentId);
-      setFeedback('success');
+      if (!canEarn) return;
+      const saved = await completeChallenge(experimentId);
+      if (saved) setFeedback('success');
     } else {
       setFeedback('retry');
     }
@@ -86,14 +87,14 @@ export default function ChallengeBar({ experimentId, challenge, met }) {
     );
   } else if (met) {
     button = (
-      <button type="button" className="btn challenge-bar__btn challenge-bar__btn--claim" onClick={handleClick}>
+      <button type="button" className="btn challenge-bar__btn challenge-bar__btn--claim" onClick={handleClick} disabled={syncing || (met && !canEarn)}>
         <Icon name="star" filled size={22} />
         <span>{t('lab.challenge.claim')}</span>
       </button>
     );
   } else {
     button = (
-      <button type="button" className="btn btn--primary challenge-bar__btn" onClick={handleClick}>
+      <button type="button" className="btn btn--primary challenge-bar__btn" onClick={handleClick} disabled={syncing || (met && !canEarn)}>
         <Icon name="task_alt" size={22} />
         <span>{t('lab.challenge.check')}</span>
       </button>

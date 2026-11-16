@@ -15,7 +15,7 @@ import './MissionCard.css';
  * @param {object} props.mission  entry from MISSIONS (src/config/game.js)
  */
 export default function MissionCard({ mission }) {
-  const { student, claimMission } = useStudent();
+  const { student, claimMission, canEarn, syncing } = useStudent();
   const { t } = useI18n();
   const status = getMissionStatus(mission, student);
   const copy = t(`game.missions.items.${mission.id}`);
@@ -52,7 +52,7 @@ export default function MissionCard({ mission }) {
             {t('game.missions.claimed')}
           </span>
         ) : status.complete ? (
-          <button type="button" className="btn mission-card__claim" onClick={() => claimMission(mission.id)}>
+          <button type="button" className="btn mission-card__claim" disabled={!canEarn || syncing} onClick={() => claimMission(mission.id)}>
             <Icon name="redeem" size={20} />
             <span>{t('game.missions.claim')}</span>
           </button>

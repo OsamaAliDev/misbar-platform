@@ -22,7 +22,7 @@ import './HeroSelectView.css';
  */
 export default function HeroSelectView({ onContinue }) {
   const { t } = useI18n();
-  const { student, chooseHero } = useStudent();
+  const { student, chooseHero, canEarn, syncing } = useStudent();
   /** Hero id that should play the one-time bounce. */
   const [bouncingId, setBouncingId] = useState(null);
 
@@ -31,9 +31,9 @@ export default function HeroSelectView({ onContinue }) {
   const featuredId = selectedId ?? HEROES[0].id;
   const selectedName = selectedId ? t(`heroes.${selectedId}.name`) : '';
 
-  const handleChoose = (heroId) => {
-    chooseHero(heroId);
-    setBouncingId(heroId);
+  const handleChoose = async (heroId) => {
+    const saved = await chooseHero(heroId);
+    if (saved) setBouncingId(heroId);
   };
 
   return (
@@ -66,6 +66,7 @@ export default function HeroSelectView({ onContinue }) {
                     name="hero"
                     value={hero.id}
                     checked={checked}
+                    disabled={!canEarn || syncing}
                     onChange={() => handleChoose(hero.id)}
                     className="visually-hidden hero-card__input"
                   />
@@ -108,7 +109,7 @@ export default function HeroSelectView({ onContinue }) {
         <button
           type="button"
           className="btn btn--primary hero-select__continue"
-          disabled={!selectedId}
+          disabled={!selectedId || syncing}
           onClick={onContinue}
         >
           <span>{selectedId ? t('game.heroSelect.continue', { name: selectedName }) : t('game.nav.lobby')}</span>

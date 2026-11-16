@@ -10,6 +10,7 @@ import App from './App.jsx';
 import { I18nProvider, useI18n } from './i18n/index.jsx';
 import { NavigationProvider } from './state/navigation.jsx';
 import { ThemeProvider } from './state/theme.jsx';
+import { SaasProvider } from './state/saas.jsx';
 import { StudentProvider } from './state/student.jsx';
 
 /**
@@ -25,18 +26,21 @@ function LocalizedApp() {
 /**
  * Entry point.
  *  - <I18nProvider>       language (ar | en), t() helper, <html lang dir>
- *  - <StudentProvider>    shared student profile (nickname, avatar, stars,
+ *  - <SaasProvider>
+      <StudentProvider>    shared student profile (nickname, avatar, stars,
  *                         hero, missions, outfits) persisted in localStorage
  *  - <NavigationProvider> current view from the URL hash
  */
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <I18nProvider>
+      <SaasProvider>
       <StudentProvider>
         <NavigationProvider>
           <ThemeProvider><LocalizedApp /></ThemeProvider>
         </NavigationProvider>
       </StudentProvider>
+      </SaasProvider>
     </I18nProvider>
   </StrictMode>,
 );

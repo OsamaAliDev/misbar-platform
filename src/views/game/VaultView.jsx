@@ -72,7 +72,7 @@ export default function VaultView() {
 /** One outfit slot: the starter outfit, a locked placeholder, or unlocked. */
 function OutfitSlot({ hero, slot, heroName }) {
   const { t } = useI18n();
-  const { student, unlockOutfit } = useStudent();
+  const { student, unlockOutfit, canEarn, syncing } = useStudent();
 
   const isStarter = slot.cost === 0;
   const unlocked = isStarter || student.unlockedOutfits.includes(outfitKey(hero.id, slot.slot));
@@ -141,7 +141,7 @@ function OutfitSlot({ hero, slot, heroName }) {
             <button
               type="button"
               className="btn outfit-slot__unlock"
-              disabled={!reachable}
+              disabled={!reachable || !canEarn || syncing}
               onClick={() => unlockOutfit(hero.id, slot.slot)}
             >
               <Icon name="lock_open" size={20} />

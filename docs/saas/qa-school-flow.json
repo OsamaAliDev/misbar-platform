@@ -1,0 +1,60 @@
+{
+  "pass": true,
+  "mode": "mock",
+  "events": [
+    {
+      "name": "guest earned and retained15",
+      "details": {
+        "stars": 15
+      }
+    },
+    {
+      "name": "teacher class created with usable join code",
+      "details": {
+        "classId": "eba70c98-9cd3-4bc5-a880-3365785a30dd",
+        "joinCode": "EE1675863F9E"
+      }
+    },
+    {
+      "name": "student enrolled with nickname and server PIN",
+      "details": {
+        "nickname": "Comet 4829143"
+      }
+    },
+    {
+      "name": "one-time import preserves guest",
+      "details": {
+        "stars": 15,
+        "imported": true
+      }
+    },
+    {
+      "name": "canonical school reward/rank/unlock without spending",
+      "details": {
+        "stars": 19,
+        "guestStars": 15
+      }
+    },
+    {
+      "name": "teacher roster reflects server stars and rank",
+      "details": {
+        "stars": 19
+      }
+    },
+    {
+      "name": "re-login does not import again",
+      "details": {
+        "stars": 19
+      }
+    },
+    {
+      "name": "foundation-only scope: subscription gate and platform management deferred",
+      "details": null
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "classId": "eba70c98-9cd3-4bc5-a880-3365785a30dd",
+  "nickname": "Comet 4829143",
+  "joinCode": "EE1675863F9E"
+}
