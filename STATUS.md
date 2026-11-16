@@ -1,33 +1,34 @@
-# Last updated: 2026-11-16 13:32 EET — Current step: 2–6 implementation; revised scope applied
+# Last updated: 2026-11-16 13:36 EET — Current step: 2–6
 
 | Step | Status | Commit hash | Evidence / limits |
 |---|---|---|---|
-| 1. Baseline, handoff/decisions/schema read, branch and STATUS | Done (verified) | 34c6b88 | Fresh main source built successfully; pinned install succeeded. saas-foundation created from main e1bad49. |
-| 2. Database migration | In progress | Pending step commit | SQL has run locally; now removing the subscription gate explicitly deferred by the latest guidance. |
-| 3. RLS and isolation proof | In progress | Pending step commit | Local PostgreSQL proof exists. NOT run on real Supabase: SUPABASE_URL and SUPABASE_ANON_KEY are absent. |
-| 4. Student PIN auth and staff email Auth | In progress | Pending step commit | Browser teacher login against the labeled mock was verified. Real Supabase Auth has NOT run. |
-| 5. Guest/Supabase data-access adapters and once-only import | In progress | Pending step commit | Guest and school progress paths implemented; integrated flow still to run. |
-| 6. Bilingual/theme-aware logins, classes and roster | In progress | Pending step commit | Build and desktop staff login succeeded; viewport matrix and enrollment flow remain. |
+| 1. Baseline and STATUS | Done (verified) | ce2b317 | Pinned install and fresh main source build passed; handoff/decisions/schema read; branch and STATUS created. |
+| 2. Database migration | In progress | Pending step commit | No final acceptance claim yet. |
+| 3. RLS isolation proof | In progress | Pending step commit | No final acceptance claim yet. |
+| 4. Student PIN and staff email Auth | In progress | Pending step commit | No final acceptance claim yet. |
+| 5. Guest/Supabase adapters and first import | In progress | Pending step commit | No final acceptance claim yet. |
+| 6. Bilingual/theme-aware logins, classes and roster | In progress | ce2b317 (scope/status) | Bilingual school screens build; browser staff login and desktop height768 passed. Enrollment/flow and full viewport matrix pending. |
 | 7. Final clean build, guest regression and school flow | Not started | Pending step commit | No final acceptance claim yet. |
 
 ## Doing now
 
-Applying the newly attached seven-step scope. Subscription gating, student-limit enforcement and manual subscription-management screens/RPCs are deferred. The subscriptions schema and its RLS remain. Completing the local mock/Auth transport, secure PIN verification, once-only guest import and school UI; then running targeted browser and database checks. Mode: **mock, not real Supabase**.
+The seven-step UI integration builds successfully and actual browser staff login now reaches classes through strict same-origin API checks. Guest and school flow tests are running. The SQL and server tests are being revised to remove the explicitly deferred subscription gate; all work remains mock, not real Supabase.
+
+Mode: **mock, not real Supabase**. Real Supabase RLS and Auth have NOT run.
 
 ## Remaining
 
-1. Finish the revised SQL migration and local PostgreSQL isolation checks; clearly mark real Supabase RLS as NOT run.
-2. Verify and commit the server-side PIN/email mock flows and Supabase transport contracts.
-3. Verify once-only import and unchanged guest progress across login/logout.
-4. Verify Arabic/English and light/night logins, class creation/join code and roster at desktop/tablet/phone widths.
-5. Run a real browser flow against the mock: create class, enroll pseudonymous student, log in, earn stars, teacher sees stars/rank.
-6. Clean install/build, guest regression, screenshots and final Verified / NOT verified report.
-7. Push each small step and STATUS.md to saas-foundation only. Never touch main or force-push.
+2. [ ] Database migration.
+3. [ ] RLS isolation proof.
+4. [ ] Student PIN and staff email Auth.
+5. [ ] Guest/Supabase adapters and first import.
+6. [ ] Bilingual/theme-aware logins, classes and roster.
+7. [ ] Final clean build, guest regression and school flow.
 
 ## Blockers and decisions I need from the owner
 
-No decision is needed to continue the authorized local mock. Real Supabase execution is unavailable until the owner puts SUPABASE_URL and SUPABASE_ANON_KEY in the ignored .env, applies the migration and enables anonymous Auth. Secrets must not be committed. This does not block finishing the mock foundation.
+No decision is needed to finish the authorized mock. Real Supabase testing is unavailable until SUPABASE_URL and SUPABASE_ANON_KEY are supplied in ignored .env, the migration is applied and anonymous Auth is enabled. Secrets must not be committed. The local PostgreSQL proof is supplemental, not a remote Supabase result.
 
 ## How to resume
 
-Pull origin/saas-foundation and read STATUS.md first, then HANDOFF.md (historical), DECISIONS.md and supabase/schema.sql. Do not restart from main or regenerate existing assets. Read the current migration and docs/saas evidence before repeating tests. Use pnpm 11.25.0 install --frozen-lockfile and pnpm build. Start pnpm dev:api on internal3002 and pnpm dev on3000; mock is selected only when both Supabase values are missing. Keep the scope to the seven steps: no subscription gate, payments, parent accounts or analytics. Local PostgreSQL tests are supplemental, NOT remote Supabase verification.
+Pull origin/saas-foundation, read STATUS.md first, then DECISIONS.md, historical HANDOFF.md, supabase/schema.sql and docs/saas evidence. Do not recreate the branch from main or regenerate heroes. Use pnpm11.25.0 install --frozen-lockfile and pnpm build. For development start pnpm dev:api (internal3002) and pnpm dev (3000). Both Supabase values absent selects the labeled mock; partial configuration fails closed. Keep only the seven steps: no subscription gate, payments, parent accounts or analytics. Do not touch main or force-push. Reuse test evidence instead of repeating completed checks.

@@ -14,15 +14,11 @@ Browser accesses `/api/saas`. Every protected call uses `Authorization: Bearer <
 - GET /classes => {classes:[{id,name,joinCode,schoolId,teacherId}]}
 - POST /classes {name} => {class:{id,name,joinCode,schoolId,teacherId}}
 - GET /classes/:id/roster => {students:[{id,nickname,stars,heroId,completedChallenges,claimedMissions,unlockedOutfits,avatarId}]}
-- POST /classes/:id/students {nickname,pin} => {student}; enrollment allowed owning teacher/school_admin, active subscription and student_limit enforced server-side. PIN response omitted.
-- POST /student/import {progress} => {student,canEarn,imported:true}; once per student, entire server canonical progress returned; on inactive gate read-only NO imported changes. Default guest stars12; validated IDs, bound stars<=28; legacy imported state not independently trustworthy (document once-only tradeoff).
-- POST /student/action {type,experimentId?,heroId?,missionId?,slot?,avatarId?} => {student,canEarn}; types completeChallenge,claimMission,unlockOutfit,chooseHero,setAvatar ONLY. No arbitrary addStars or student nickname change; duplicate claims idempotent and subscription blocks mutation. Original six experiments, three missions and thresholds used.
-- GET /platform/schools => {schools:[{id,name,plan,status,studentLimit,validUntil,studentCount,classCount}]}; ONLY school-level aggregate/count metadata, no roster/nicknames/progress.
-- POST /platform/schools {name,plan,status,studentLimit,validUntil} => {school}
-- PATCH /platform/schools/:id {plan,status,studentLimit,validUntil} => {school}
-- POST /platform/staff {userId,schoolId,role:'school_admin'|'teacher'} => {profile}; trusted platform_admin assignment; email/Auth user created manually in Supabase dashboard. Mock provision accepts userId of seeded teacher. This enables a created school to have staff without self-assigned roles.
+- POST /classes/:id/students {nickname,pin} => {student}; enrollment allowed owning teacher/school_admin. Subscription gating/student-limit enforcement is deferred. PIN response omitted.
+- POST /student/import {progress} => {student,canEarn,imported:true}; once per student, entire server canonical progress returned; Default guest stars12; validated IDs, bound stars<=28; legacy imported state not independently trustworthy (document once-only tradeoff).
+- POST /student/action {type,experimentId?,heroId?,missionId?,slot?,avatarId?} => {student,canEarn}; types completeChallenge,claimMission,unlockOutfit,chooseHero,setAvatar ONLY. No arbitrary addStars or student nickname change; duplicate claims idempotent Original six experiments, three missions and thresholds used.
 
-Error JSON {error:'invalid_credentials'|'rate_limited'|'forbidden'|'subscription_inactive'|'student_limit'|'duplicate_nickname'|'invalid_input'|'unavailable'|'session_expired'|'not_found'}, appropriate4xx/5xx. UI translates error codes. Server canEarn default false for missing school/subscription, guests true. Subscription active requires status active and valid_until future. rank derived config/game.js.
+Error JSON {error:'invalid_credentials'|'rate_limited'|'forbidden'|'subscription_inactive'|'student_limit'|'duplicate_nickname'|'invalid_input'|'unavailable'|'session_expired'|'not_found'}, appropriate4xx/5xx. UI translates error codes. Server canEarn is true for a valid student identity; guests true. Subscriptions are schema-only with no gate in this run. rank derived config/game.js.
 
 ## Database / Supabase mode
 
@@ -33,14 +29,10 @@ Supabase staff auth email+password GoTrue. Students use Supabase anonymous Auth 
 Supabase RPC names and args:
 - student_login(p_class_code text,p_nickname text,p_pin text) returns JSON {ok,error?,studentId?,schoolId?}
 - saas_session() returns session JSON above from auth.uid/profile (includes sanitized student via helper)
-- create_student(p_class_id uuid,p_nickname text,p_pin text) returns JSON {student}; enrollment validates staff and active sub/cap
+- create_student(p_class_id uuid,p_nickname text,p_pin text) returns JSON {student}; enrollment validates staff and ownership
 - import_student_progress(p_progress jsonb) returns JSON {student,canEarn,imported}
 - apply_student_action(p_action jsonb) returns JSON {student,canEarn}
-- platform_schools() returns JSON {schools:[...]}
-- provision_school(p_name text,p_plan text,p_status text,p_student_limit int,p_valid_until timestamptz) returns JSON {school}
-- set_school_subscription(p_school_id uuid,p_plan text,p_status text,p_student_limit int,p_valid_until timestamptz) returns JSON {school}
-- assign_staff(p_user_id uuid,p_school_id uuid,p_role text) returns JSON {profile}
-Classes CRUD via table PostgREST + owning RLS (server uses validated current auth.uid school and caller ID; random join code server). Rosters selected safe columns then map snake_case to camel. DB SQL RPC is source of truth for gate/actions/import, no trusting browser totals.
+Classes CRUD via table PostgREST + owning RLS (server uses validated current auth.uid school and caller ID; random join code server). Rosters selected safe columns then map snake_case to camel. DB SQL RPC is source of truth for actions/import, no trusting browser totals.
 
 ## Frontend tasks
 
@@ -50,3 +42,7 @@ Screens agent owns ONLY src/views/saas/*, src/i18n/locales/{ar,en}/saas.js. Scre
 ## Local mock
 
 Mock is an HTTP server, not browser fake auth. Seed clearly labeled synthetic staff: admin@misbar.test / MockAdmin!2026, teacher@misbar.test / MockTeacher!2026, schooladmin@misbar.test / MockSchool!2026, other@misbar.test / MockOther!2026. Synthetic schoolsA/B and teacherB verify isolation. .data file ignored by Git; bcrypt not required mock (scrypt salt server-side). No hardcoded production accounts; refuse mock mode in NODE_ENV=production unless ALLOW_MOCK=true explicit. Never fallback to mock on actual Supabase error or partial credentials. Test engine PostgreSQL16 installed locally for executing migration/RLS with minimal auth schema stub, NOT remote Supabase.
+
+## Superseding 13:31 scope
+
+NO subscription gate, cap enforcement, manual management page/RPC, payments, parent accounts or analytics. Keep subscriptions table/RLS only. Platform_admin uses GET /platform/counts and platform_counts() returning global schoolCount/classCount/studentCount only. Owner provisions schools/staff profiles through trusted SQL, not a new UI. Student and staff screens: logins, class create and roster only. Latest pasted_content_2.txt governs; earlier gate references are historical and not implementation requirements.
