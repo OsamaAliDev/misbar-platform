@@ -35,3 +35,10 @@ Each line records one judgment call I made that the brief did not specify: what 
 - **Old star mascot:** `public/assets/nour.png` is kept and no longer used as the guide anywhere. It remains only as the decorative picture on the teacher-dashboard placeholder and the "experiment not found" panel, which are not guide roles.
 - **Round face crops:** `public/heroes/<id>-face.webp` (160×160, 9–13 KB) are cut from the same shipped WebPs. Small avatars therefore never download the 600×900 body image, which keeps phones fast.
 - **Mission status is a label, not a button:** "still working on it" is a small dashed pill. Only "claim the stars" is a real (mustard) button.
+
+## November 2026 continuation
+- Latest request supersedes the earlier game-only night scope: explicit persisted theme applies everywhere; cream lab/library/dashboard and night game defaults remain until user choice.
+- Fresh GitHub clone on wip-phase3-handoff at f6557a1: pinned install and initial build succeeded. Preserve completed phases and assets.
+- Manus attachment returned project identity/access error; diagnostics returned no active project. Continue authorized GitHub clone with build checks and local running-build tests; no replacement site or claimed publication/checkpoint.
+- Challenge bar uses DOM order between header and simulation, matching screenshot and reading order.
+- Step 1 browser evidence: all six labs passed three desktop viewport sizes with document height equal to viewport; 390×844 SVGs entirely visible, controls remain reachable by vertical page scrolling on mobile. No page exceptions.

@@ -94,3 +94,10 @@ Help Modal (`_7`) screens in the Stitch zip.
 - [x] Responsive from `320px` to `1366px`: zero horizontal scroll, all controls accessible on mobile.
 - [x] Batch 1 behaviour unchanged (catalog, search, filters, dashboard placeholder, student state).
 - [x] Manus checkpoint saved and Batch 2 pushed to `OsamaAliDev/misbar-platform` (no force-push).
+
+# November 2026 continuation — latest request
+- [x] Step 1: challenge bar above all six simulations; 1366×768, 1536×864, 1920×1080 zero page scroll; 100dvh/min-height:0 and viewBox scaling; only controls may scroll. 390×844 full simulation, zero horizontal scroll.
+- [ ] Step 2: heroes/lobby/vault/ranks key content visible without desktop scroll; selected hero 45–55vh, four thumbnails together, name/title/select action; mobile image ≤40vh.
+- [ ] Step 3: persisted light/night toggle in all three headers, all screens; cream library/lab/dashboard and night game defaults until explicit choice; existing accents/night variables, six SVG contrast, modal/bubble/control contrast, theme-color and no flash.
+- [ ] Step 4: all HANDOFF C English migration, catalog search/art, shared lab/help/shell/dashboard/default nickname, six sims, Heat/Cool and Play copy, 44px language toggle, module-level refocus, root RTL/LTR, persistence, 390px both languages; science geometry and child progress preserved.
+- [ ] Step 5: fresh clone install/build, full UI-earned flow, no console errors/404s, wording audit, theme/language every screen, reload, full-size required screenshots in docs/screenshots, per-step commits and Verified/NOT verified report plus decisions. Stay on wip branch until final merge/push; no force, no new app dependencies, plain CSS and localStorage nickname/avatar privacy.

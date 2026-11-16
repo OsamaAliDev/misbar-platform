@@ -84,11 +84,12 @@ function Playground({ experiment, simulation, guide, onBack }) {
     <div className="playground">
       <PlaygroundHeader experiment={experiment} onBack={onBack} onOpenHelp={() => setHelpOpen(true)} />
 
+      <ChallengeBar experimentId={experiment.id} challenge={guide.challenge} met={challengeMet} />
+
       <SimulationContext.Provider value={simulationContext}>
         <Simulation key={resetKey} />
       </SimulationContext.Provider>
 
-      <ChallengeBar experimentId={experiment.id} challenge={guide.challenge} met={challengeMet} />
 
       <HelpModal open={helpOpen} onClose={() => setHelpOpen(false)} experimentTitle={experiment.title} guide={guide} />
     </div>

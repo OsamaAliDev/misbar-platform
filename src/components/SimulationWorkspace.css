@@ -198,3 +198,19 @@
     margin: 2px 4px 4px;
   }
 }
+
+@media (min-width: 1024px) {
+  .sim-workspace { min-height: 0; grid-template-rows: minmax(0, 1fr); }
+  .sim-controls { overflow: hidden; }
+  .sim-controls__head, .sim-controls__actions { flex-shrink: 0; }
+  .sim-controls__body { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  .sim-stage { flex: 1; min-height: 0; }
+  .sim-stage__bar { flex-shrink: 0; }
+  .sim-stage__canvas { flex: 1; min-height: 0; aspect-ratio: auto; }
+  .result-strip { flex-shrink: 0; }
+}
+@media (max-width: 767px) {
+  .sim-stage__canvas { aspect-ratio: 640 / 400; }
+  .sim-stage__lab { font-size: 12px; }
+  .sim-stage__status { font-size: 11px; line-height: 1.4; }
+}
