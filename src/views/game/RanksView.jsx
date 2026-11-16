@@ -10,7 +10,7 @@ import './RanksView.css';
 /**
  * <RanksView /> — "سلّم الرتب" (#/ranks).
  *
- * The five non-combat ranks from src/config/game.js, driven by the total
+ * The five discovery ranks from src/config/game.js, driven by the total
  * star count. The list is in ascending order for screen readers and drawn
  * as a ladder (highest rank on top) with CSS.
  */

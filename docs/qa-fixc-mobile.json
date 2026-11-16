@@ -1,0 +1,86 @@
+[
+  {
+    "lang": "ar",
+    "width": 390,
+    "route": "heroes",
+    "maxHeroHeight": 296.1276550292969,
+    "ceiling": 337.6
+  },
+  {
+    "lang": "ar",
+    "width": 390,
+    "route": "lobby",
+    "maxHeroHeight": 285.6979064941406,
+    "ceiling": 337.6
+  },
+  {
+    "lang": "ar",
+    "width": 390,
+    "route": "vault",
+    "maxHeroHeight": 285.6981201171875,
+    "ceiling": 337.6
+  },
+  {
+    "lang": "ar",
+    "width": 320,
+    "route": "heroes",
+    "maxHeroHeight": 290.5887145996094,
+    "ceiling": 296.0
+  },
+  {
+    "lang": "ar",
+    "width": 320,
+    "route": "lobby",
+    "maxHeroHeight": 281.59027099609375,
+    "ceiling": 296.0
+  },
+  {
+    "lang": "ar",
+    "width": 320,
+    "route": "vault",
+    "maxHeroHeight": 281.5904541015625,
+    "ceiling": 296.0
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "route": "heroes",
+    "maxHeroHeight": 295.9396667480469,
+    "ceiling": 337.6
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "route": "lobby",
+    "maxHeroHeight": 285.6134338378906,
+    "ceiling": 337.6
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "route": "vault",
+    "maxHeroHeight": 285.6981201171875,
+    "ceiling": 337.6
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "route": "heroes",
+    "maxHeroHeight": 290.4976501464844,
+    "ceiling": 296.0
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "route": "lobby",
+    "maxHeroHeight": 281.67431640625,
+    "ceiling": 296.0
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "route": "vault",
+    "maxHeroHeight": 281.6739501953125,
+    "ceiling": 296.0
+  }
+]

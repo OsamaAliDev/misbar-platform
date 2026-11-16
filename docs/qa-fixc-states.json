@@ -1,0 +1,1045 @@
+{
+  "results": [
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "lubna",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "shihab",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "nour",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "suhail",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "sharara",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": "suhail",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": 14,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "ranks",
+      "state": 14,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": 14,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": 18,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "ranks",
+      "state": 18,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": 18,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": 23,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "ranks",
+      "state": 23,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": 23,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": 28,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "ranks",
+      "state": 28,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": 28,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": "unlocked",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": "claimed",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "lubna",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "shihab",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "nour",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "suhail",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "sharara",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": "suhail",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": 14,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "ranks",
+      "state": 14,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": 14,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": 18,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "ranks",
+      "state": 18,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": 18,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": 23,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "ranks",
+      "state": 23,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": 23,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": 28,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "ranks",
+      "state": 28,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": 28,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": "unlocked",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "ar",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": "claimed",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "lubna",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "shihab",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "nour",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "suhail",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "heroes",
+      "state": "sharara",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": "lubna",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": 14,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "ranks",
+      "state": 14,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": 14,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": 18,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "ranks",
+      "state": 18,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": 18,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": 23,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "ranks",
+      "state": 23,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": 23,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": 28,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "ranks",
+      "state": 28,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": 28,
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "vault",
+      "state": "unlocked",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1366,
+        768
+      ],
+      "route": "lobby",
+      "state": "claimed",
+      "scroll": [
+        1366,
+        768
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "lubna",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "shihab",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "nour",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "suhail",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "heroes",
+      "state": "sharara",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": "lubna",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": 14,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "ranks",
+      "state": 14,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": 14,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": 18,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "ranks",
+      "state": 18,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": 18,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": 23,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "ranks",
+      "state": 23,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": 23,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": 28,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "ranks",
+      "state": 28,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": 28,
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "vault",
+      "state": "unlocked",
+      "scroll": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "lang": "en",
+      "size": [
+        1920,
+        1080
+      ],
+      "route": "lobby",
+      "state": "claimed",
+      "scroll": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "errors": []
+}

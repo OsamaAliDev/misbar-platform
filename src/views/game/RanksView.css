@@ -176,3 +176,37 @@
     font-size: 17px;
   }
 }
+
+/* The full five-step ladder fits the desktop viewport; mobile keeps its
+   natural vertical reading flow and the original ascending DOM order. */
+@media (min-width: 1024px) and (min-height: 700px) {
+  .ranks__ladder {
+    flex: 1;
+    min-height: 0;
+    gap: clamp(8px, 1.2vh, 12px);
+  }
+  .ranks__ladder::before {
+    inset-inline-start: 37px;
+  }
+  .rank-step {
+    flex: 1;
+    min-height: 0;
+    gap: 14px;
+    padding: clamp(10px, 1.5vh, 16px) 14px;
+  }
+  .rank-step.is-current {
+    flex-grow: 1.35;
+  }
+  .rank-step__icon {
+    width: 44px;
+    height: 44px;
+  }
+  .rank-step__body {
+    gap: 2px;
+  }
+  .rank-step__progress {
+    gap: 4px;
+    margin-block-start: 4px;
+    max-width: 560px;
+  }
+}

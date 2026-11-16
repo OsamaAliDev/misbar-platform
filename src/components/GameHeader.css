@@ -3,13 +3,15 @@
    ========================================================================== */
 
 .game-header {
+  flex-shrink: 0;
+  min-width: 0;
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-template-areas: 'brand nav end';
   align-items: center;
-  gap: 12px 20px;
-  min-height: 76px;
-  padding: 12px 24px;
+  gap: 10px 16px;
+  min-height: 72px;
+  padding: 10px 20px;
   background-color: var(--surface-card);
   border: var(--border);
   border-radius: var(--radius);
@@ -154,5 +156,50 @@
   .game-nav__label {
     max-width: 100%;
     overflow-wrap: anywhere;
+  }
+}
+
+/* Preferences remain labelled and 44px high. Give them their own phone row
+   rather than squeezing the brand or causing horizontal page scrolling. */
+.game-header__end {
+  min-width: 0;
+}
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .game-header {
+    gap: 10px 12px;
+    padding-inline: 16px;
+  }
+  .game-nav__list {
+    gap: 4px;
+  }
+  .game-nav__link {
+    padding-inline: 10px;
+  }
+  .game-header__end {
+    gap: 8px;
+  }
+}
+@media (max-width: 640px) {
+  .game-header {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      'brand'
+      'end'
+      'nav';
+  }
+  .game-header__brand {
+    justify-self: start;
+  }
+  .game-header__end {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px;
+  }
+  .game-header__end > .preference-toggle {
+    padding-inline: 10px;
+    font-size: 13px;
+  }
+  .game-header__end > .star-balance {
+    padding-inline: 8px;
   }
 }

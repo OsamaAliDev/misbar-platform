@@ -27,6 +27,8 @@ export default function HeroSelectView({ onContinue }) {
   const [bouncingId, setBouncingId] = useState(null);
 
   const selectedId = student.heroId;
+  // Preview the first hero before a choice, without selecting or saving it.
+  const featuredId = selectedId ?? HEROES[0].id;
   const selectedName = selectedId ? t(`heroes.${selectedId}.name`) : '';
 
   const handleChoose = (heroId) => {
@@ -54,7 +56,10 @@ export default function HeroSelectView({ onContinue }) {
             const checked = hero.id === selectedId;
             const name = t(`heroes.${hero.id}.name`);
             return (
-              <li key={hero.id} className="hero-select__item">
+              <li
+                key={hero.id}
+                className={`hero-select__item ${hero.id === featuredId ? 'is-featured' : ''}`.trim()}
+              >
                 <label className={`hero-card ${checked ? 'is-selected' : ''}`.trim()}>
                   <input
                     type="radio"

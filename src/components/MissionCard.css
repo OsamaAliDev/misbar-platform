@@ -153,3 +153,50 @@
     width: 100%;
   }
 }
+
+/* Desktop lobby: three complete missions share one row. Compact spacing,
+   not hidden descriptions/progress, keeps their actions inside the viewport. */
+@media (min-width: 1024px) {
+  .lobby__mission-list .mission-card {
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr);
+    grid-template-rows: 1fr auto;
+    align-items: start;
+    min-width: 0;
+    min-height: 0;
+    gap: 8px;
+    padding: clamp(10px, 1.5vh, 16px);
+  }
+  .lobby__mission-list .mission-card__icon {
+    width: 36px;
+    height: 36px;
+  }
+  .lobby__mission-list .mission-card__body {
+    gap: 4px;
+  }
+  .lobby__mission-list .mission-card__title {
+    font-size: 15px;
+  }
+  .lobby__mission-list .mission-card__text {
+    font-size: 14px;
+  }
+  .lobby__mission-list .mission-card__meta {
+    justify-content: flex-start;
+    gap: 2px 8px;
+  }
+  .lobby__mission-list .mission-card__action {
+    grid-column: 1 / -1;
+    align-self: end;
+    min-width: 0;
+  }
+  .lobby__mission-list .mission-card__claim {
+    width: 100%;
+    min-height: var(--touch-target);
+    padding-inline: 10px;
+    font-size: 14px;
+  }
+  .lobby__mission-list .mission-card__chip {
+    max-width: 100%;
+    white-space: normal;
+  }
+}

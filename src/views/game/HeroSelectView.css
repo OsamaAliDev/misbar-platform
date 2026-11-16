@@ -1,202 +1,240 @@
-/* ==========================================================================
-   Hero select (#/heroes)
-   ========================================================================== */
-
+/* Hero select: one featured figure + all four alternatives together.
+   The DOM/radio order stays unchanged; only the featured item's placement moves. */
 .hero-select__group {
+  flex: 1;
   min-width: 0;
+  min-height: 0;
+  display: flex;
   margin: 0;
   padding: 0;
   border: 0;
 }
-
 .hero-select__grid {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  gap: var(--game-gap);
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .hero-select__item {
   min-width: 0;
+  min-height: 0;
 }
-
-/* -- Card (a <label> wrapping a visually hidden radio) -------------------- */
+.hero-select__item.is-featured {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+/* Labels still wrap a native radio; focus is drawn on the whole card. */
 .hero-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.45fr);
+  grid-template-rows: minmax(0, 1fr) auto;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
   height: 100%;
-  overflow: hidden;
   cursor: pointer;
   background-color: var(--surface-card);
   border: var(--border);
   border-radius: var(--radius);
   transition: background-color var(--duration-fast) ease;
 }
-
 @media (hover: hover) {
   .hero-card:hover {
     background-color: var(--surface-subtle);
   }
 }
-
-/* Chosen: soft blue fill (selection = main-action family) + check chip. */
 .hero-card.is-selected {
   background-color: var(--accent-primary-soft);
 }
-
 .hero-card:has(.hero-card__input:focus-visible) {
   outline: 3px solid var(--accent-primary);
   outline-offset: 2px;
 }
-
 .hero-card__stage {
-  height: 290px;
-  padding-block-start: 14px;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+  height: clamp(120px, 21vh, 220px);
+  max-height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding-block-start: 10px;
+  border-radius: var(--radius-inner);
 }
-
 .hero-card__body {
-  flex: 1;
+  grid-column: 2;
+  align-self: end;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  min-width: 0;
   gap: 6px;
   padding: 12px 12px 4px;
-  text-align: center;
+  text-align: start;
 }
-
 .hero-card__name {
-  font-size: 22px;
+  font-size: clamp(18px, 2.5vh, 22px);
   font-weight: 800;
   line-height: 1.3;
 }
-
-/* Titles may be long in English: allow wrapping inside the badge. */
 .hero-card__title {
   max-width: 100%;
+  padding-inline: 8px;
   white-space: normal;
-  text-align: center;
+  text-align: start;
   line-height: 1.4;
 }
-
 .hero-card__bio {
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.55;
+  line-height: 1.5;
   color: var(--text-secondary);
   overflow-wrap: anywhere;
 }
-
 .hero-card__check {
+  grid-column: 2;
+  align-self: start;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 6px;
-  min-height: 44px;
-  padding: 8px 12px 12px;
+  min-height: 36px;
+  padding: 4px 12px 10px;
   font-size: 15px;
   font-weight: 800;
   color: var(--text-secondary);
 }
-
 .hero-card.is-selected .hero-card__check {
   color: var(--accent-primary-soft-text);
 }
-
 .hero-card.is-selected .hero-card__check .icon {
   color: var(--accent-primary);
 }
-
-/* -- Footer: saved status + continue ------------------------------------- */
+/* The featured image consumes viewport height, not a fixed tall card. */
+.is-featured .hero-card {
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+}
+.is-featured .hero-card__stage {
+  height: var(--game-hero-height);
+}
+.is-featured .hero-card__name {
+  font-size: clamp(26px, 3.6vh, 36px);
+}
+.is-featured .hero-card__body {
+  gap: 10px;
+}
 .hero-select__footer {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px 20px;
-  padding: 14px 20px;
+  padding: 10px 16px;
 }
-
 .hero-select__status {
-  font-size: 16px;
+  min-width: 0;
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.5;
 }
-
+.hero-select__continue {
+  flex-shrink: 0;
+}
 .hero-select__continue:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-
 .hero-select__continue:disabled:active {
   transform: none;
 }
-
-/* -- Responsive ----------------------------------------------------------- */
-@media (max-width: 1099px) {
+/* Outside the desktop height budget, let content determine the row height. */
+@media (max-width: 1023px), (max-height: 699px) {
+  .hero-select__group {
+    flex: none;
+  }
   .hero-select__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, auto);
+  }
+  .hero-card {
+    min-height: 220px;
   }
 }
-
-@media (max-width: 699px) {
+@media (max-width: 899px) {
   .hero-select__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-rows: auto;
   }
-
+  .hero-select__item.is-featured {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .is-featured .hero-card {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+@media (max-width: 699px) {
+  .hero-card {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    align-items: start;
+  }
   .hero-card__stage {
-    height: 240px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: clamp(80px, 14vh, 130px);
+    padding-block-start: 6px;
   }
-
+  .hero-card__body {
+    grid-column: 1;
+    align-self: start;
+    padding: 8px 10px 4px;
+    gap: 5px;
+  }
+  .hero-card__name {
+    font-size: 18px;
+  }
+  .hero-card__title {
+    padding-inline: 6px;
+    font-size: 12px;
+  }
+  .hero-card__bio {
+    font-size: 13px;
+  }
+  .hero-card__check {
+    grid-column: 1;
+    padding-inline: 10px;
+  }
+  .is-featured .hero-card {
+    grid-template-rows: 1fr auto;
+    align-items: center;
+  }
+  .is-featured .hero-card__stage {
+    grid-row: 1 / span 2;
+    height: var(--game-hero-height);
+    max-height: 40vh;
+  }
+  .is-featured .hero-card__body,
+  .is-featured .hero-card__check {
+    grid-column: 2;
+  }
+  .is-featured .hero-card__body {
+    align-self: end;
+  }
   .hero-select__footer {
     flex-direction: column;
     align-items: stretch;
-    padding: 14px;
+    padding: 12px;
   }
-
   .hero-select__continue {
     width: 100%;
-  }
-}
-
-/* Phones: one hero per row, image beside the text. */
-@media (max-width: 480px) {
-  .hero-select__grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .hero-card {
-    display: grid;
-    grid-template-columns: 112px minmax(0, 1fr);
-    grid-template-areas:
-      'stage body'
-      'stage check';
-    align-items: center;
-  }
-
-  .hero-card__stage {
-    grid-area: stage;
-    align-self: stretch;
-    height: 176px;
-    padding-block-start: 8px;
-  }
-
-  .hero-card__body {
-    grid-area: body;
-    align-items: flex-start;
-    padding: 12px 12px 0;
-    text-align: start;
-  }
-
-  .hero-card__title {
-    text-align: start;
-  }
-
-  .hero-card__check {
-    grid-area: check;
-    justify-content: flex-start;
-    padding: 4px 12px 10px;
+    padding-block: 8px;
   }
 }

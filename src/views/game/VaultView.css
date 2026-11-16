@@ -211,3 +211,68 @@
     height: 180px;
   }
 }
+
+/* Desktop slots share the remaining viewport budget. Their body never shrinks;
+   the artwork yields first, retaining every cost, status and unlock control. */
+@media (min-width: 1024px) {
+  .vault__picker {
+    flex-shrink: 0;
+  }
+  .vault__slots {
+    flex: 1;
+    min-height: 0;
+    grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(0, 1fr));
+    gap: var(--game-gap);
+  }
+  .outfit-slot {
+    min-width: 0;
+    min-height: 0;
+  }
+  .outfit-slot__art {
+    flex: 1;
+    min-height: 0;
+    height: var(--game-hero-height);
+    max-height: var(--game-hero-height);
+    padding-block-start: 10px;
+  }
+  .outfit-slot__placeholder {
+    margin: 10px 10px 0;
+    padding: 0;
+  }
+  .outfit-slot__body {
+    flex: 0 0 auto;
+    gap: 6px;
+    padding: 10px 12px 12px;
+  }
+  .outfit-slot__unlock {
+    min-height: var(--touch-target);
+  }
+}
+@media (min-width: 1024px) and (max-height: 699px) {
+  .vault__slots {
+    flex: none;
+  }
+  .outfit-slot__art {
+    flex: none;
+    height: var(--game-hero-height);
+  }
+}
+@media (max-width: 699px) {
+  .outfit-slot__art {
+    height: var(--game-hero-height);
+    max-height: 40vh;
+  }
+  .outfit-slot__placeholder {
+    height: min(24vh, 180px);
+  }
+  .vault .game-page__head > .badge {
+    max-width: 100%;
+    white-space: normal;
+  }
+  .vault__pick {
+    min-width: 0;
+  }
+  .vault__pick-name {
+    overflow-wrap: anywhere;
+  }
+}
