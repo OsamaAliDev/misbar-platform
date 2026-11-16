@@ -62,7 +62,7 @@ function starType(mass) {
 }
 
 export default function OrbitSimulation() {
-  const { t, lang } = useI18n();
+  const { t } = useI18n();
   const s = (key, vars) => t(`lab.sims.planet-orbits.${key}`, vars);
   const { running } = useSimulation();
   const [mass, setMass] = useState(DEFAULTS.mass);

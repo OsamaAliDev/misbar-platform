@@ -37,8 +37,8 @@ export default {
     quickControl: 'تحكم سريع',
     prepare: 'حضّر المادة بسرعة',
     actions: {
-      heat: 'سخّن {value}{degree}',
-      cool: 'برّد {value}{degree}',
+      heat: 'سخّن',
+      cool: 'برّد',
     },
   },
   materials: {

@@ -188,7 +188,7 @@ export default function OpticsSimulation() {
 
       {/* Angle arcs (SVG angles: −90° is up, 90° is down) */}
       <AngleArc startDeg={-90} endDeg={-90 + angle} radius={58} labelRadius={88} color="accent-reward-text" label={degrees(angle)} />
-      <AngleArc startDeg={-90} endDeg={-90 - angle} radius={46} labelRadius={76} color="accent-tools" label={degrees(angle)} />
+      <AngleArc startDeg={-90} endDeg={-90 - angle} radius={46} labelRadius={76} color="accent-tools-text" label={degrees(angle)} />
       {refractionDeg !== null ? (
         <AngleArc
           startDeg={90}

@@ -55,7 +55,7 @@ function piePoint(angle, radius = PIE.r) {
 }
 
 export default function FractionsSimulation() {
-  const { t, lang } = useI18n();
+  const { t } = useI18n();
   const s = (key, vars) => t(`lab.sims.fractions-area.${key}`, vars);
   const { running } = useSimulation();
   const [numerator, setNumerator] = useState(DEFAULTS.numerator);
@@ -90,6 +90,9 @@ export default function FractionsSimulation() {
     if (isCurrent(k)) return 'accent-reward';
     return k < numerator ? 'accent-info' : 'surface-card';
   };
+
+  // Solid accent fills need stable dark ink; soft-tint text tokens lighten at night.
+  const partStroke = (k) => (k < numerator ? 'text-on-reward' : 'text-secondary');
 
   // -- Pie slices ------------------------------------------------------------
   const sliceAngle = 360 / denominator;
@@ -135,16 +138,16 @@ export default function FractionsSimulation() {
 
       {/* Circle model */}
       {denominator === 1 ? (
-        <circle cx={PIE.x} cy={PIE.y} r={PIE.r} style={paint(partFill(0), 'text-secondary', 2)} />
+        <circle cx={PIE.x} cy={PIE.y} r={PIE.r} style={paint(partFill(0), partStroke(0), 2)} />
       ) : (
         slices.map((slice) => (
-          <path key={slice.k} d={slice.d} strokeLinejoin="round" style={paint(partFill(slice.k), 'text-secondary', 2)} />
+          <path key={slice.k} d={slice.d} strokeLinejoin="round" style={paint(partFill(slice.k), partStroke(slice.k), 2)} />
         ))
       )}
       {showGroups && denominator > 1
         ? Array.from({ length: simpleD }, (_, j) => {
             const edge = piePoint(j * g * sliceAngle);
-            return <line key={j} x1={PIE.x} y1={PIE.y} x2={edge.x} y2={edge.y} style={paint(null, 'text-primary', 5)} />;
+            return <line key={j} x1={PIE.x} y1={PIE.y} x2={edge.x} y2={edge.y} style={paint(null, j * g < numerator ? 'text-on-reward' : 'text-primary', 5)} />;
           })
         : null}
       <circle cx={PIE.x} cy={PIE.y} r={PIE.r} style={paint(null, 'text-primary', 3)} />
@@ -157,7 +160,7 @@ export default function FractionsSimulation() {
             textAnchor="middle"
             fontSize={labelSize}
             fontWeight="800"
-            style={paint(isCurrent(slice.k) ? 'accent-reward-text' : 'surface-card')}
+            style={paint('text-on-reward')}
           >
             {formatNumber(slice.k + 1)}
           </text>
@@ -172,7 +175,7 @@ export default function FractionsSimulation() {
         const box = cellBox(k);
         return (
           <g key={k}>
-            <rect x={box.x} y={box.y} width={cellW} height={cellH} style={paint(partFill(k), 'text-secondary', 2)} />
+            <rect x={box.x} y={box.y} width={cellW} height={cellH} style={paint(partFill(k), partStroke(k), 2)} />
             {countIndex >= 0 && k < counted ? (
               <text
                 x={box.x + cellW / 2}
@@ -180,7 +183,7 @@ export default function FractionsSimulation() {
                 textAnchor="middle"
                 fontSize={labelSize}
                 fontWeight="800"
-                style={paint(isCurrent(k) ? 'accent-reward-text' : 'surface-card')}
+                style={paint('text-on-reward')}
               >
                 {formatNumber(k + 1)}
               </text>
@@ -198,7 +201,7 @@ export default function FractionsSimulation() {
                 y={first.y}
                 width={g * cellW}
                 height={cellH}
-                style={paint(null, 'text-primary', 5)}
+                style={paint(null, j * g < numerator ? 'text-on-reward' : 'text-primary', 5)}
               />
             );
           })

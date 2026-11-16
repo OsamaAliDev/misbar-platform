@@ -337,7 +337,6 @@ export default function StatesOfMatterSimulation() {
   };
   const status = statusByState[stateId];
 
-  const degrees = (value) => `${formatNumber(value)}${s('units.degree')}`;
   const changeTarget = (value) => setTarget(clamp(value, T_MIN, T_MAX));
   const controls = (
     <>
@@ -353,8 +352,8 @@ export default function StatesOfMatterSimulation() {
       <ControlQuickActions
         label={s('controls.quickControl')}
         actions={[
-          { id: 'heat', label: s('controls.actions.heat', { value: formatNumber(10), degree: s('units.degree') }), icon: 'local_fire_department', disabled: target >= T_MAX, onClick: () => changeTarget(target + 10) },
-          { id: 'cool', label: s('controls.actions.cool', { value: formatNumber(10), degree: s('units.degree') }), icon: 'ac_unit', disabled: target <= T_MIN, onClick: () => changeTarget(target - 10) },
+          { id: 'heat', label: s('controls.actions.heat'), icon: 'local_fire_department', disabled: target >= T_MAX, onClick: () => changeTarget(target + 10) },
+          { id: 'cool', label: s('controls.actions.cool'), icon: 'ac_unit', disabled: target <= T_MIN, onClick: () => changeTarget(target - 10) },
         ]}
       />
       <ControlChoice

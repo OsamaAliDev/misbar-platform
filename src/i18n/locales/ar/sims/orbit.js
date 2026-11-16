@@ -36,7 +36,7 @@ export default {
     period: 'زمن الدورة',
     periodUnit: 'يوم',
     gravity: 'شدة الجذب',
-    gravityUnit: '× جذب الأرض',
+    gravityUnit: '× جذب الشمس للأرض',
     orbits: 'دورات مكتملة',
     orbitsUnit: 'دورة',
   },

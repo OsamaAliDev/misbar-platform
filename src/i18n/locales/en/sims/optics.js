@@ -8,11 +8,11 @@ export default {
   },
   units: {
     degree: '°',
-    degreeWord: '°',
+    degreeWord: 'degrees', // needs human review
     percent: '%',
   },
   stage: {
-    ariaLabel: 'Light ray from {from} to {to} at {angle}{degreeWord}', // needs human review
+    ariaLabel: 'Light ray from {from} to {to} at an incidence angle of {angle} {degreeWord}', // needs human review
     refractiveIndex: 'Refractive index {value}', // needs human review
   },
   status: {
@@ -33,7 +33,7 @@ export default {
     refractionAngle: 'Refraction angle', // needs human review
     criticalAngle: 'Critical angle', // needs human review
     reflectedLight: 'Reflected light', // needs human review
-    noRefraction: 'No bending', // needs human review
+    noRefraction: 'No refraction', // needs human review
     none: 'None', // needs human review
   },
 };

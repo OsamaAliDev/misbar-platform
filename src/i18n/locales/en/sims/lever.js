@@ -10,13 +10,13 @@ export default {
     // needs human review
     torque: 'N·m',
     // needs human review
-    degreeWord: '°',
+    degreeWord: 'degrees',
     // needs human review
     degree: '°',
   },
   stage: {
     // needs human review
-    ariaLabel: 'Lever: {rightMass} {kilogram} weight on right, {leftMass} {kilogram} weight on left, tilt angle {angle}{degreeWord}',
+    ariaLabel: 'Lever: {rightMass} {kilogram} weight on right, {leftMass} {kilogram} weight on left, tilt angle {angle} {degreeWord}',
     // needs human review
     rightTorque: 'Right torque {value} {torque}',
     // needs human review
@@ -40,13 +40,13 @@ export default {
   },
   controls: {
     // needs human review
-    rightMass: 'Right mass',
+    rightMass: 'Right weight mass',
     // needs human review
-    rightDistance: 'Right distance',
+    rightDistance: 'Right weight distance from pivot',
     // needs human review
-    leftMass: 'Left mass',
+    leftMass: 'Left weight mass',
     // needs human review
-    leftDistance: 'Left distance',
+    leftDistance: 'Left weight distance from pivot',
   },
   sides: {
     right: 'right',
@@ -58,7 +58,7 @@ export default {
     // needs human review
     leftTorque: 'Left torque',
     // needs human review
-    torqueDifference: 'Torque gap',
+    torqueDifference: 'Torque difference',
     // needs human review
     tilt: 'Tilt angle',
     // needs human review

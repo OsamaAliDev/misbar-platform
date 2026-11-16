@@ -13,7 +13,7 @@ export default {
   units: {
     degree: '°',
     celsius: '°C', // needs human review
-    ariaCelsius: '°C', // needs human review
+    ariaCelsius: 'degrees Celsius', // needs human review
     speed: 'm/s', // needs human review
   },
   temperatures: {
@@ -21,7 +21,7 @@ export default {
     boiling: '100°C', // needs human review
   },
   stage: {
-    ariaLabel: 'Chamber with water particles: {state}, temperature {temperature}{unit}', // needs human review
+    ariaLabel: 'Chamber with water particles: {state}, temperature {temperature} {unit}', // needs human review
     heaterOn: 'Heater on', // needs human review
     coolerOn: 'Cooling on', // needs human review
     stableTemperature: 'Temperature steady', // needs human review
@@ -38,8 +38,8 @@ export default {
     quickControl: 'Quick control', // needs human review
     prepare: 'Set a state', // needs human review
     actions: {
-      heat: 'Heat {value}{degree}', // needs human review
-      cool: 'Cool {value}{degree}', // needs human review
+      heat: 'Heat', // needs human review
+      cool: 'Cool', // needs human review
     },
   },
   materials: {

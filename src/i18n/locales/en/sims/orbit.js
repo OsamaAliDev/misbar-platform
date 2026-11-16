@@ -60,7 +60,7 @@ export default {
     // needs human review
     gravity: 'Gravity',
     // needs human review
-    gravityUnit: '× Earth gravity',
+    gravityUnit: '× Sun’s pull on Earth',
     // needs human review
     orbits: 'Full orbits',
     // needs human review

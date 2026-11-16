@@ -49,7 +49,7 @@ export default {
     slowing: 'The cart slows from friction',
     // needs human review
     steady: 'The cart moves at steady speed',
-    ready: 'Press “Run” to push',
+    ready: 'Press “Play” to push',
     paused: 'The experiment is paused',
   },
   controls: {
