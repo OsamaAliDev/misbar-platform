@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ControlSlider } from '../components/SimulationControls.jsx';
 import SimulationWorkspace from '../components/SimulationWorkspace.jsx';
+import { useI18n } from '../i18n/index.jsx';
 import { formatDecimal, formatNumber } from '../lib/arabic.js';
 import { useChallengeReport, useSimulation } from './SimulationContext.js';
 import { DEG, clamp, paint, useAnimationFrame } from './simulationUtils.js';
@@ -65,6 +66,8 @@ function stepBeam(beam, dt, { netTorque, inertia }) {
 
 /** Weight block standing on the beam (drawn inside the rotated beam group). */
 function WeightBlock({ centerX, mass, fill, stroke }) {
+  const { t } = useI18n();
+  const s = (key, vars) => t(`lab.sims.lever-balance.${key}`, vars);
   const size = blockSize(mass);
   const top = PIVOT_Y - BEAM_THICKNESS / 2 - size;
   return (
@@ -72,7 +75,7 @@ function WeightBlock({ centerX, mass, fill, stroke }) {
       <rect x={centerX - size / 2} y={top} width={size} height={size} rx={8} style={paint(fill, stroke, 3)} />
       <line x1={centerX - size / 4} y1={top + 9} x2={centerX + size / 4} y2={top + 9} style={paint(null, stroke, 3)} />
       <text x={centerX} y={top - 10} textAnchor="middle" fontSize="17" fontWeight="800" style={paint('text-primary')}>
-        {`${formatNumber(mass)} كجم`}
+        {s('weight.mass', { value: formatNumber(mass), kilogram: s('units.kilogram') })}
       </text>
     </g>
   );
@@ -80,6 +83,8 @@ function WeightBlock({ centerX, mass, fill, stroke }) {
 
 export default function LeverSimulation() {
   const { running } = useSimulation();
+  const { t } = useI18n();
+  const s = (key, vars) => t(`lab.sims.lever-balance.${key}`, vars);
   const [rightMass, setRightMass] = useState(DEFAULTS.rightMass);
   const [rightDistance, setRightDistance] = useState(DEFAULTS.rightDistance);
   const [leftMass, setLeftMass] = useState(DEFAULTS.leftMass);
@@ -114,7 +119,13 @@ export default function LeverSimulation() {
       className="sim-svg"
       viewBox="0 0 640 400"
       role="img"
-      aria-label={`رافعة: ثقل ${formatNumber(rightMass)} كجم على اليمين وثقل ${formatNumber(leftMass)} كجم على اليسار، زاوية الميل ${formatDecimal(Math.abs(angleDeg))} درجة`}
+      aria-label={s('stage.ariaLabel', {
+        rightMass: formatNumber(rightMass),
+        kilogram: s('units.kilogram'),
+        leftMass: formatNumber(leftMass),
+        angle: formatDecimal(Math.abs(angleDeg)),
+        degreeWord: s('units.degreeWord'),
+      })}
     >
       {/* Ground */}
       <rect x={-640} y={GROUND_Y} width={1920} height={200} style={paint('surface-subtle')} />
@@ -122,12 +133,12 @@ export default function LeverSimulation() {
 
       {/* Torque comparison bars */}
       <text x={490} y={30} textAnchor="middle" fontSize="15" style={paint('text-secondary')}>
-        {`العزم الأيمن ${formatNumber(rightTorque)} نيوتن·متر`}
+        {s('stage.rightTorque', { value: formatNumber(rightTorque), torque: s('units.torque') })}
       </text>
       <rect x={390} y={42} width={210} height={16} rx={8} style={paint('surface-subtle')} />
       {rightBar > 0 ? <rect x={600 - rightBar} y={42} width={rightBar} height={16} rx={8} style={paint('accent-reward')} /> : null}
       <text x={150} y={30} textAnchor="middle" fontSize="15" style={paint('text-secondary')}>
-        {`العزم الأيسر ${formatNumber(leftTorque)} نيوتن·متر`}
+        {s('stage.leftTorque', { value: formatNumber(leftTorque), torque: s('units.torque') })}
       </text>
       <rect x={40} y={42} width={210} height={16} rx={8} style={paint('surface-subtle')} />
       {leftBar > 0 ? <rect x={40} y={42} width={leftBar} height={16} rx={8} style={paint('accent-tools')} /> : null}
@@ -137,7 +148,7 @@ export default function LeverSimulation() {
         <g>
           <rect x={200} y={78} width={240} height={44} rx={20} style={paint('accent-reward-soft', 'accent-reward', 2)} />
           <text x={320} y={107} textAnchor="middle" fontSize="20" fontWeight="800" style={paint('accent-reward-text')}>
-            حالة توازن مثالية!
+            {s('stage.perfectBalance')}
           </text>
         </g>
       ) : null}
@@ -184,7 +195,7 @@ export default function LeverSimulation() {
                     fontSize="15"
                     style={paint('text-secondary')}
                   >
-                    {`${formatNumber(d)} م`}
+                    {s('stage.distanceTick', { value: formatNumber(d), meterShort: s('units.meterShort') })}
                   </text>
                 ))
               : null}
@@ -210,47 +221,47 @@ export default function LeverSimulation() {
   // -- Status chip -----------------------------------------------------------
   let status;
   if (balanced) {
-    status = { tone: 'reward', icon: 'check_circle', text: 'حالة توازن مثالية! العزم الأيمن = العزم الأيسر' };
+    status = { tone: 'reward', icon: 'check_circle', text: s('status.balanced') };
   } else if (netTorque > 0) {
-    status = { tone: 'info', icon: 'balance', text: 'العزم الأيمن أكبر، فالرافعة بتميل ناحية اليمين' };
+    status = { tone: 'info', icon: 'balance', text: s('status.rightBigger') };
   } else {
-    status = { tone: 'info', icon: 'balance', text: 'العزم الأيسر أكبر، فالرافعة بتميل ناحية اليسار' };
+    status = { tone: 'info', icon: 'balance', text: s('status.leftBigger') };
   }
 
   const distanceFormat = (value) => formatDecimal(value, 1);
   const controls = (
     <>
-      <ControlSlider label="كتلة الثقل الأيمن" swatch="accent-reward" value={rightMass} min={1} max={10} unit="كجم" onChange={setRightMass} />
+      <ControlSlider label={s('controls.rightMass')} swatch="accent-reward" value={rightMass} min={1} max={10} unit={s('units.kilogram')} onChange={setRightMass} />
       <ControlSlider
-        label="بُعد الثقل الأيمن عن الارتكاز"
+        label={s('controls.rightDistance')}
         value={rightDistance}
         min={0.5}
         max={4}
         step={0.5}
-        unit="متر"
+        unit={s('units.meterWord')}
         format={distanceFormat}
         onChange={setRightDistance}
       />
-      <ControlSlider label="كتلة الثقل الأيسر" swatch="accent-tools" value={leftMass} min={1} max={10} unit="كجم" onChange={setLeftMass} />
+      <ControlSlider label={s('controls.leftMass')} swatch="accent-tools" value={leftMass} min={1} max={10} unit={s('units.kilogram')} onChange={setLeftMass} />
       <ControlSlider
-        label="بُعد الثقل الأيسر عن الارتكاز"
+        label={s('controls.leftDistance')}
         value={leftDistance}
         min={0.5}
         max={4}
         step={0.5}
-        unit="متر"
+        unit={s('units.meterWord')}
         format={distanceFormat}
         onChange={setLeftDistance}
       />
     </>
   );
 
-  const tiltSide = angleDeg > 0.05 ? 'يمين' : angleDeg < -0.05 ? 'يسار' : '';
+  const tiltSide = angleDeg > 0.05 ? s('sides.right') : angleDeg < -0.05 ? s('sides.left') : '';
   const readings = [
-    { id: 'right', label: 'العزم الأيمن', value: formatNumber(rightTorque), unit: 'نيوتن·متر' },
-    { id: 'left', label: 'العزم الأيسر', value: formatNumber(leftTorque), unit: 'نيوتن·متر' },
-    { id: 'diff', label: 'فرق العزم', value: formatNumber(Math.abs(netTorque)), unit: 'نيوتن·متر' },
-    { id: 'tilt', label: 'زاوية الميل', value: `${formatDecimal(Math.abs(angleDeg))}°`, unit: tiltSide },
+    { id: 'right', label: s('readings.rightTorque'), value: formatNumber(rightTorque), unit: s('units.torque') },
+    { id: 'left', label: s('readings.leftTorque'), value: formatNumber(leftTorque), unit: s('units.torque') },
+    { id: 'diff', label: s('readings.torqueDifference'), value: formatNumber(Math.abs(netTorque)), unit: s('units.torque') },
+    { id: 'tilt', label: s('readings.tilt'), value: s('readings.tiltValue', { value: formatDecimal(Math.abs(angleDeg)), degree: s('units.degree') }), unit: tiltSide },
   ];
 
   return <SimulationWorkspace controls={controls} stage={stage} status={status} readings={readings} />;

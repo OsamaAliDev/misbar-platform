@@ -1,0 +1,19 @@
+{
+  "snapshotPurpose": "WIP handoff, not a Phase 3 completion or new deployment",
+  "mainCommit": "752693ffcb5e9da15053bddbab2fc496ae254dca",
+  "publishedCommit": "752693ffcb5e9da15053bddbab2fc496ae254dca",
+  "deployStatus": "success",
+  "publishedUrl": "https://misbar-zrxurzxq.manus.space",
+  "branch": "wip-phase3-handoff",
+  "requestedCommitSubject": "WIP: Phase 3 in progress (handoff)",
+  "handoffBuildExitCode": 0,
+  "buildCommand": "npx -y pnpm@11.25.0 install --frozen-lockfile && npx -y pnpm@11.25.0 run build",
+  "outputDirectory": "dist",
+  "autoPublishAtRead": true,
+  "canonicalProvider": "manus",
+  "githubRepository": "OsamaAliDev/misbar-platform",
+  "excludedFromZip": [
+    "node_modules",
+    "dist"
+  ]
+}

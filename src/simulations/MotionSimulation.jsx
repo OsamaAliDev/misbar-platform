@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ControlSlider, ControlToggle } from '../components/SimulationControls.jsx';
 import SimulationWorkspace from '../components/SimulationWorkspace.jsx';
+import { useI18n } from '../i18n/index.jsx';
 import { formatDecimal, formatNumber } from '../lib/arabic.js';
 import { useChallengeReport, useSimulation } from './SimulationContext.js';
 import { SvgArrow } from './SvgArrow.jsx';
@@ -70,6 +71,8 @@ function stepMotion(state, dt, { force, mass, friction }) {
 
 export default function MotionSimulation() {
   const { running, setRunning } = useSimulation();
+  const { t } = useI18n();
+  const s = (key, vars) => t(`lab.sims.motion-acceleration.${key}`, vars);
   const [force, setForce] = useState(DEFAULTS.force);
   const [mass, setMass] = useState(DEFAULTS.mass);
   const [friction, setFriction] = useState(DEFAULTS.friction);
@@ -114,7 +117,13 @@ export default function MotionSimulation() {
       className="sim-svg"
       viewBox="0 0 640 400"
       role="img"
-      aria-label={`عربة كتلتها ${formatNumber(mass)} كجم على مسار طوله ${formatNumber(TRACK_LENGTH)} متر، قطعت ${formatDecimal(motion.x)} متر`}
+      aria-label={s('stage.ariaLabel', {
+        mass: formatNumber(mass),
+        kilogram: s('units.kilogram'),
+        length: formatNumber(TRACK_LENGTH),
+        meterWord: s('units.meterWord'),
+        distance: formatDecimal(motion.x),
+      })}
     >
       {/* Ground (bleeds past the viewBox on wide stages) */}
       <rect x={-640} y={GROUND_Y} width={1920} height={200} style={paint('surface-subtle')} />
@@ -136,13 +145,13 @@ export default function MotionSimulation() {
         );
       })}
       <text x={280} y={GROUND_Y + 76} textAnchor="middle" fontSize="16" style={paint('text-secondary')}>
-        المسافة بالمتر
+        {s('stage.distanceLabel')}
       </text>
 
       {/* Start line */}
       <line x1={START_X} y1={180} x2={START_X} y2={GROUND_Y} strokeDasharray="6 6" style={paint(null, 'accent-primary', 3)} />
       <text x={START_X} y={170} textAnchor="middle" fontSize="16" style={paint('accent-primary-soft-text')}>
-        البداية
+        {s('stage.start')}
       </text>
 
       {/* Finish flag */}
@@ -161,20 +170,20 @@ export default function MotionSimulation() {
       )}
       <rect x={FINISH_X - 36} y={168} width={36} height={24} style={paint(null, 'text-primary', 2)} />
       <text x={FINISH_X} y={156} textAnchor="middle" fontSize="16" style={paint('text-primary')}>
-        النهاية
+        {s('stage.finish')}
       </text>
 
       {/* Formula tag */}
       <rect x={300} y={18} width={320} height={44} rx={20} style={paint('accent-info-soft', 'accent-info', 2)} />
       <text x={460} y={47} textAnchor="middle" fontSize="17" style={paint('accent-info-text')}>
-        التسارع = القوة المحصلة ÷ الكتلة
+        {s('stage.formula')}
       </text>
 
       {/* Legend */}
       {[
-        { x: 236, color: 'accent-primary', label: 'قوة الدفع' },
-        { x: 140, color: 'accent-help', label: 'الاحتكاك' },
-        { x: 50, color: 'accent-info', label: 'السرعة' },
+        { x: 236, color: 'accent-primary', label: s('stage.legend.push') },
+        { x: 140, color: 'accent-help', label: s('stage.legend.friction') },
+        { x: 50, color: 'accent-info', label: s('stage.legend.speed') },
       ].map((item) => (
         <g key={item.label}>
           <SvgArrow x1={item.x + 26} y1={28} x2={item.x - 26} y2={28} color={`var(--${item.color})`} width={4} />
@@ -188,7 +197,7 @@ export default function MotionSimulation() {
       <g transform={`translate(${front} 0)`}>
         <rect x={0} y={BODY_Y} width={CART_W} height={CART_H} rx={12} style={paint('accent-tools-soft', 'accent-tools-text', 3)} />
         <text x={CART_W / 2} y={BODY_Y + 35} textAnchor="middle" fontSize="20" fontWeight="800" style={paint('accent-tools-text')}>
-          {`${formatNumber(mass)} كجم`}
+          {s('cart.mass', { value: formatNumber(mass), kilogram: s('units.kilogram') })}
         </text>
         {[26, CART_W - 26].map((wheelX) => (
           <g key={wheelX} transform={`rotate(${wheelAngle} ${wheelX} ${WHEEL_Y})`}>
@@ -233,30 +242,34 @@ export default function MotionSimulation() {
   // -- Status chip -----------------------------------------------------------
   let status;
   if (motion.finished) {
-    status = { tone: 'reward', icon: 'sports_score', text: `وصلت العربة لخط النهاية في ${formatDecimal(motion.t)} ثانية` };
+    status = {
+      tone: 'reward',
+      icon: 'sports_score',
+      text: s('status.finished', { time: formatDecimal(motion.t), second: s('units.secondWord') }),
+    };
   } else if (running && stuck) {
     status = {
       tone: 'help',
       icon: 'block',
-      text: force === 0 ? 'مفيش قوة دفع، العربة واقفة مكانها' : 'الاحتكاك أقوى من قوة الدفع، العربة مش قادرة تتحرك',
+      text: force === 0 ? s('status.noPush') : s('status.frictionStopped'),
     };
   } else if (running) {
-    if (acceleration > 1e-9) status = { tone: 'primary', icon: 'speed', text: 'العربة بتتسارع' };
-    else if (acceleration < -1e-9) status = { tone: 'help', icon: 'speed', text: 'العربة بتتباطأ بسبب الاحتكاك' };
-    else status = { tone: 'primary', icon: 'speed', text: 'العربة ماشية بسرعة ثابتة' };
+    if (acceleration > 1e-9) status = { tone: 'primary', icon: 'speed', text: s('status.accelerating') };
+    else if (acceleration < -1e-9) status = { tone: 'help', icon: 'speed', text: s('status.slowing') };
+    else status = { tone: 'primary', icon: 'speed', text: s('status.steady') };
   } else if (motion.x === 0) {
-    status = { tone: 'info', icon: 'touch_app', text: 'اضغط «تشغيل» عشان تبدأ الدفع' };
+    status = { tone: 'info', icon: 'touch_app', text: s('status.ready') };
   } else {
-    status = { tone: 'info', icon: 'pause', text: 'التجربة متوقفة مؤقتاً' };
+    status = { tone: 'info', icon: 'pause', text: s('status.paused') };
   }
 
   const controls = (
     <>
-      <ControlSlider label="قوة الدفع" swatch="accent-primary" value={force} min={0} max={60} unit="نيوتن" onChange={setForce} />
-      <ControlSlider label="كتلة العربة" swatch="accent-tools-soft" value={mass} min={1} max={20} unit="كجم" onChange={setMass} />
+      <ControlSlider label={s('controls.pushForce')} swatch="accent-primary" value={force} min={0} max={60} unit={s('units.newton')} onChange={setForce} />
+      <ControlSlider label={s('controls.cartMass')} swatch="accent-tools-soft" value={mass} min={1} max={20} unit={s('units.kilogram')} onChange={setMass} />
       <ControlToggle
-        label="الاحتكاك مع الأرض"
-        description={friction ? `قوة الاحتكاك القصوى ${formatNumber(frictionN)} نيوتن` : 'أرضية ناعمة جداً من غير احتكاك'}
+        label={s('controls.floorFriction')}
+        description={friction ? s('controls.maxFriction', { value: formatNumber(frictionN), newton: s('units.newton') }) : s('controls.noFriction')}
         checked={friction}
         onChange={setFriction}
       />
@@ -264,11 +277,11 @@ export default function MotionSimulation() {
   );
 
   const readings = [
-    { id: 'net', label: 'القوة المحصلة', value: formatDecimal(fNet), unit: 'نيوتن' },
-    { id: 'acc', label: 'التسارع', value: formatDecimal(acceleration, 2), unit: 'م/ث²' },
-    { id: 'vel', label: 'السرعة', value: formatDecimal(motion.v), unit: 'م/ث' },
-    { id: 'dist', label: 'المسافة', value: formatDecimal(motion.x), unit: 'متر' },
-    { id: 'time', label: 'الزمن', value: formatDecimal(motion.t), unit: 'ثانية' },
+    { id: 'net', label: s('readings.netForce'), value: formatDecimal(fNet), unit: s('units.newton') },
+    { id: 'acc', label: s('readings.acceleration'), value: formatDecimal(acceleration, 2), unit: s('units.acceleration') },
+    { id: 'vel', label: s('readings.speed'), value: formatDecimal(motion.v), unit: s('units.velocity') },
+    { id: 'dist', label: s('readings.distance'), value: formatDecimal(motion.x), unit: s('units.meterWord') },
+    { id: 'time', label: s('readings.time'), value: formatDecimal(motion.t), unit: s('units.secondWord') },
   ];
 
   return <SimulationWorkspace controls={controls} stage={stage} status={status} readings={readings} />;

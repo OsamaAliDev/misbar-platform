@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useI18n } from '../i18n/index.jsx';
 import { ControlChoice, ControlSlider } from '../components/SimulationControls.jsx';
 import SimulationWorkspace from '../components/SimulationWorkspace.jsx';
 import { formatDecimal, formatNumber } from '../lib/arabic.js';
@@ -19,11 +20,10 @@ import { DEG, paint, useAnimationFrame } from './simulationUtils.js';
  */
 
 const MEDIA = {
-  air: { label: 'الهواء', n: 1.0, fill: 'surface-card' },
-  water: { label: 'الماء', n: 1.33, fill: 'accent-info-soft' },
-  glass: { label: 'الزجاج', n: 1.5, fill: 'accent-primary-soft' },
+  air: { n: 1.0, fill: 'surface-card' },
+  water: { n: 1.33, fill: 'accent-info-soft' },
+  glass: { n: 1.5, fill: 'accent-primary-soft' },
 };
-const MEDIUM_OPTIONS = Object.entries(MEDIA).map(([value, medium]) => ({ value, label: medium.label }));
 
 // Drawing (SVG units, viewBox 640×400)
 const HIT_X = 320;
@@ -80,6 +80,8 @@ function AngleArc({ startDeg, endDeg, radius, color, label, labelRadius }) {
 }
 
 export default function OpticsSimulation() {
+  const { t } = useI18n();
+  const s = (key, vars) => t(`lab.sims.light-refraction.${key}`, vars);
   const { running } = useSimulation();
   const [angle, setAngle] = useState(DEFAULTS.angle);
   const [fromId, setFromId] = useState(DEFAULTS.from);
@@ -90,6 +92,9 @@ export default function OpticsSimulation() {
 
   const from = MEDIA[fromId];
   const to = MEDIA[toId];
+  const fromLabel = s(`media.${fromId}`);
+  const toLabel = s(`media.${toId}`);
+  const mediumOptions = Object.keys(MEDIA).map((value) => ({ value, label: s(`media.${value}`) }));
   const incidence = angle * DEG;
   const sinRefraction = (from.n / to.n) * Math.sin(incidence);
   const totalReflection = sinRefraction > 1;
@@ -118,13 +123,20 @@ export default function OpticsSimulation() {
   const along = (a, b, t) => ({ x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t });
 
   const refractionDeg = refraction === null ? null : refraction / DEG;
+  const degrees = (value) => `${formatNumber(value)}${s('units.degree')}`;
+  const decimalDegrees = (value) => `${formatDecimal(value)}${s('units.degree')}`;
 
   const stage = (
     <svg
       className="sim-svg"
       viewBox="0 0 640 400"
       role="img"
-      aria-label={`شعاع ضوء خارج من ${from.label} إلى ${to.label} بزاوية سقوط ${formatNumber(angle)} درجة`}
+      aria-label={s('stage.ariaLabel', {
+        from: fromLabel,
+        to: toLabel,
+        angle: formatNumber(angle),
+        degreeWord: s('units.degreeWord'),
+      })}
     >
       {/* The two media */}
       <rect x={-640} y={-200} width={1920} height={400} style={paint(from.fill)} />
@@ -133,16 +145,16 @@ export default function OpticsSimulation() {
 
       {/* Medium labels */}
       <text x={560} y={40} textAnchor="middle" fontSize="20" fontWeight="800" style={paint('text-primary')}>
-        {from.label}
+        {fromLabel}
       </text>
       <text x={560} y={64} textAnchor="middle" fontSize="14" style={paint('text-secondary')}>
-        {`معامل الانكسار ${formatDecimal(from.n, 2, 2)}`}
+        {s('stage.refractiveIndex', { value: formatDecimal(from.n, 2, 2) })}
       </text>
       <text x={560} y={352} textAnchor="middle" fontSize="20" fontWeight="800" style={paint('text-primary')}>
-        {to.label}
+        {toLabel}
       </text>
       <text x={560} y={376} textAnchor="middle" fontSize="14" style={paint('text-secondary')}>
-        {`معامل الانكسار ${formatDecimal(to.n, 2, 2)}`}
+        {s('stage.refractiveIndex', { value: formatDecimal(to.n, 2, 2) })}
       </text>
 
       {/* Normal */}
@@ -175,8 +187,8 @@ export default function OpticsSimulation() {
         : null}
 
       {/* Angle arcs (SVG angles: −90° is up, 90° is down) */}
-      <AngleArc startDeg={-90} endDeg={-90 + angle} radius={58} labelRadius={88} color="accent-reward-text" label={`${formatNumber(angle)}°`} />
-      <AngleArc startDeg={-90} endDeg={-90 - angle} radius={46} labelRadius={76} color="accent-tools" label={`${formatNumber(angle)}°`} />
+      <AngleArc startDeg={-90} endDeg={-90 + angle} radius={58} labelRadius={88} color="accent-reward-text" label={degrees(angle)} />
+      <AngleArc startDeg={-90} endDeg={-90 - angle} radius={46} labelRadius={76} color="accent-tools" label={degrees(angle)} />
       {refractionDeg !== null ? (
         <AngleArc
           startDeg={90}
@@ -184,7 +196,7 @@ export default function OpticsSimulation() {
           radius={58}
           labelRadius={88}
           color="accent-info-text"
-          label={`${formatDecimal(refractionDeg)}°`}
+          label={decimalDegrees(refractionDeg)}
         />
       ) : null}
 
@@ -203,22 +215,21 @@ export default function OpticsSimulation() {
   // -- Status chip -----------------------------------------------------------
   let status;
   if (totalReflection) {
-    status = { tone: 'reward', icon: 'flare', text: 'انعكاس كلّي داخلي! الضوء كله ارتد ومعدّاش' };
+    status = { tone: 'reward', icon: 'flare', text: s('status.totalReflection') };
   } else if (from.n === to.n) {
-    status = { tone: 'info', icon: 'info', text: 'نفس الوسط: الضوء بيكمل في خط مستقيم من غير انكسار' };
+    status = { tone: 'info', icon: 'info', text: s('status.sameMedium') };
   } else if (angle === 0) {
-    status = { tone: 'info', icon: 'info', text: 'الضوء نازل عمودي على السطح، فمش بيغيّر اتجاهه' };
+    status = { tone: 'info', icon: 'info', text: s('status.straightOn') };
   } else if (to.n > from.n) {
-    status = { tone: 'primary', icon: 'info', text: 'الضوء دخل وسط أكثف، فقرّب من العمود المقام' };
+    status = { tone: 'primary', icon: 'info', text: s('status.denser') };
   } else {
-    status = { tone: 'tools', icon: 'info', text: 'الضوء دخل وسط أقل كثافة، فبعد عن العمود المقام' };
+    status = { tone: 'tools', icon: 'info', text: s('status.lessDense') };
   }
 
-  const degrees = (value) => `${formatNumber(value)}°`;
   const controls = (
     <>
       <ControlSlider
-        label="زاوية السقوط"
+        label={s('controls.incidenceAngle')}
         swatch="accent-reward"
         value={angle}
         min={0}
@@ -226,21 +237,21 @@ export default function OpticsSimulation() {
         format={degrees}
         onChange={setAngle}
       />
-      <ControlChoice label="الوسط الأول (اللي جاي منه الضوء)" options={MEDIUM_OPTIONS} value={fromId} onChange={setFromId} />
-      <ControlChoice label="الوسط التاني" options={MEDIUM_OPTIONS} value={toId} onChange={setToId} />
+      <ControlChoice label={s('controls.firstMedium')} options={mediumOptions} value={fromId} onChange={setFromId} />
+      <ControlChoice label={s('controls.secondMedium')} options={mediumOptions} value={toId} onChange={setToId} />
     </>
   );
 
   const readings = [
-    { id: 'incidence', label: 'زاوية السقوط', value: degrees(angle) },
-    { id: 'reflection', label: 'زاوية الانعكاس', value: degrees(angle) },
+    { id: 'incidence', label: s('readings.incidenceAngle'), value: degrees(angle) },
+    { id: 'reflection', label: s('readings.reflectionAngle'), value: degrees(angle) },
     totalReflection
-      ? { id: 'refraction', label: 'زاوية الانكسار', value: 'مفيش انكسار', isText: true }
-      : { id: 'refraction', label: 'زاوية الانكسار', value: `${formatDecimal(refractionDeg)}°` },
+      ? { id: 'refraction', label: s('readings.refractionAngle'), value: s('readings.noRefraction'), isText: true }
+      : { id: 'refraction', label: s('readings.refractionAngle'), value: decimalDegrees(refractionDeg) },
     critical === null
-      ? { id: 'critical', label: 'الزاوية الحرجة', value: 'مفيش', isText: true }
-      : { id: 'critical', label: 'الزاوية الحرجة', value: `${formatDecimal(critical / DEG)}°` },
-    { id: 'reflected', label: 'الضوء المنعكس', value: formatNumber(Math.round(reflected * 100)), unit: '٪' },
+      ? { id: 'critical', label: s('readings.criticalAngle'), value: s('readings.none'), isText: true }
+      : { id: 'critical', label: s('readings.criticalAngle'), value: decimalDegrees(critical / DEG) },
+    { id: 'reflected', label: s('readings.reflectedLight'), value: formatNumber(Math.round(reflected * 100)), unit: s('units.percent') },
   ];
 
   return <SimulationWorkspace controls={controls} stage={stage} status={status} readings={readings} />;

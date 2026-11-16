@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ControlChoice, ControlSlider, ControlToggle } from '../components/SimulationControls.jsx';
 import SimulationWorkspace from '../components/SimulationWorkspace.jsx';
 import { formatDecimal, formatNumber } from '../lib/arabic.js';
+import { useI18n } from '../i18n/index.jsx';
 import { useChallengeReport, useSimulation } from './SimulationContext.js';
 import { SvgArrow } from './SvgArrow.jsx';
 import { clamp, paint, seededRandom, useAnimationFrame } from './simulationUtils.js';
@@ -37,9 +38,9 @@ const DEFAULTS = { mass: 1, radius: 1.5, vectors: true };
 
 /** Real planets of our Solar System (M = 1 solar mass). */
 const PLANET_PRESETS = [
-  { value: '0.7', label: 'الزهرة', radius: 0.7 },
-  { value: '1', label: 'الأرض', radius: 1 },
-  { value: '1.5', label: 'المريخ', radius: 1.5 },
+  { value: '0.7', labelKey: 'planets.venus', radius: 0.7 },
+  { value: '1', labelKey: 'planets.earth', radius: 1 },
+  { value: '1.5', labelKey: 'planets.mars', radius: 1.5 },
 ];
 
 /** Fixed background star field (same on every visit). */
@@ -55,12 +56,14 @@ const BACKGROUND_STARS = (() => {
 
 /** Star family by mass (a simplified main-sequence picture). */
 function starType(mass) {
-  if (mass < 0.8) return { name: 'قزم أحمر صغير', tone: 'help', fill: 'accent-help', halo: 'accent-help-soft', edge: 'accent-help-text' };
-  if (mass <= 1.6) return { name: 'نجم شبيه بالشمس', tone: 'reward', fill: 'accent-reward', halo: 'accent-reward-soft', edge: 'accent-reward-text' };
-  return { name: 'نجم أزرق عملاق', tone: 'info', fill: 'accent-info', halo: 'accent-info-soft', edge: 'accent-info-text' };
+  if (mass < 0.8) return { nameKey: 'starTypes.redDwarf', tone: 'help', fill: 'accent-help', halo: 'accent-help-soft', edge: 'accent-help-text' };
+  if (mass <= 1.6) return { nameKey: 'starTypes.sunLike', tone: 'reward', fill: 'accent-reward', halo: 'accent-reward-soft', edge: 'accent-reward-text' };
+  return { nameKey: 'starTypes.blueGiant', tone: 'info', fill: 'accent-info', halo: 'accent-info-soft', edge: 'accent-info-text' };
 }
 
 export default function OrbitSimulation() {
+  const { t, lang } = useI18n();
+  const s = (key, vars) => t(`lab.sims.planet-orbits.${key}`, vars);
   const { running } = useSimulation();
   const [mass, setMass] = useState(DEFAULTS.mass);
   const [radius, setRadius] = useState(DEFAULTS.radius);
@@ -98,6 +101,7 @@ export default function OrbitSimulation() {
 
   // -- Stage ---------------------------------------------------------------
   const type = starType(mass);
+  const typeName = s(type.nameKey);
   const starR = starPx(mass);
   const orbitR = orbitPx(radius);
   const planetX = CENTER_X + orbitR * Math.cos(orbit.phi);
@@ -118,7 +122,7 @@ export default function OrbitSimulation() {
       className="sim-svg"
       viewBox="0 0 640 400"
       role="img"
-      aria-label={`${type.name} وحواليه كوكب على مدار نصف قطره ${formatDecimal(radius)} وحدة فلكية`}
+      aria-label={s('stage.ariaLabel', { star: typeName, radius: formatDecimal(radius) })}
     >
       {BACKGROUND_STARS.map((star) => (
         <circle key={star.id} cx={star.x} cy={star.y} r={star.r} style={paint('outline')} />
@@ -137,7 +141,7 @@ export default function OrbitSimulation() {
               fontSize="14"
               style={{ ...paint('text-secondary'), stroke: 'var(--surface-card)', strokeWidth: 5, paintOrder: 'stroke' }}
             >
-              {`${formatNumber(au)} و.ف`}
+              {`${formatNumber(au)} ${s('stage.distanceUnit')}`}
             </text>
           </g>
         );
@@ -189,13 +193,13 @@ export default function OrbitSimulation() {
             width={5}
           />
           {[
-            { x: 590, color: 'accent-help', label: 'الجاذبية' },
-            { x: 500, color: 'accent-info', label: 'السرعة' },
+            { x: 590, color: 'accent-help', key: 'gravity' },
+            { x: 500, color: 'accent-info', key: 'speed' },
           ].map((item) => (
-            <g key={item.label}>
+            <g key={item.key}>
               <SvgArrow x1={item.x + 24} y1={26} x2={item.x - 24} y2={26} color={`var(--${item.color})`} width={4} />
               <text x={item.x} y={54} textAnchor="middle" fontSize="15" style={paint('text-secondary')}>
-                {item.label}
+                {s(`stage.vector.${item.key}`)}
               </text>
             </g>
           ))}
@@ -208,35 +212,36 @@ export default function OrbitSimulation() {
     </svg>
   );
 
-  const status = { tone: type.tone, icon: 'flare', text: `${type.name} • كتلته ${formatDecimal(mass)} من كتلة الشمس` };
+  const status = { tone: type.tone, icon: 'flare', text: s('status.starMass', { name: typeName, value: formatDecimal(mass) }) };
+  const planetOptions = PLANET_PRESETS.map((option) => ({ ...option, label: s(option.labelKey) }));
 
   const controls = (
     <>
       <ControlSlider
-        label="كتلة النجم"
+        label={s('controls.starMass')}
         swatch={type.fill}
         value={mass}
         min={0.5}
         max={3}
         step={0.1}
-        unit="كتلة شمسية"
+        unit={s('controls.starMassUnit')}
         format={(value) => formatDecimal(value, 1, 1)}
         onChange={changeMass}
       />
       <ControlSlider
-        label="نصف قطر المدار"
+        label={s('controls.orbitRadius')}
         swatch="accent-primary"
         value={radius}
         min={0.5}
         max={3}
         step={0.1}
-        unit="و.ف"
+        unit={s('controls.orbitRadiusUnit')}
         format={(value) => formatDecimal(value, 1, 1)}
         onChange={changeRadius}
       />
       <ControlChoice
-        label="جرّب مدار كوكب حقيقي حوالين الشمس"
-        options={PLANET_PRESETS}
+        label={s('controls.planetPreset')}
+        options={planetOptions}
         isSelected={(option) => mass === 1 && radius === option.radius}
         onChange={(_, option) => {
           setMass(1);
@@ -245,8 +250,8 @@ export default function OrbitSimulation() {
         }}
       />
       <ControlToggle
-        label="أسهم الجاذبية والسرعة"
-        description="الجاذبية دايماً ناحية النجم، والسرعة مماسة للمدار"
+        label={s('controls.vectors')}
+        description={s('controls.vectorsDescription')}
         checked={vectors}
         onChange={setVectors}
       />
@@ -254,10 +259,10 @@ export default function OrbitSimulation() {
   );
 
   const readings = [
-    { id: 'speed', label: 'السرعة المدارية', value: formatDecimal(speed), unit: 'كم/ث' },
-    { id: 'period', label: 'زمن الدورة', value: formatNumber(Math.round(periodDays)), unit: 'يوم' },
-    { id: 'gravity', label: 'شدة الجذب', value: formatDecimal(gravity, 2), unit: '× جذب الأرض' },
-    { id: 'orbits', label: 'دورات مكتملة', value: formatNumber(completedOrbits), unit: 'دورة' },
+    { id: 'speed', label: s('readings.speed'), value: formatDecimal(speed), unit: s('readings.speedUnit') },
+    { id: 'period', label: s('readings.period'), value: formatNumber(Math.round(periodDays)), unit: s('readings.periodUnit') },
+    { id: 'gravity', label: s('readings.gravity'), value: formatDecimal(gravity, 2), unit: s('readings.gravityUnit') },
+    { id: 'orbits', label: s('readings.orbits'), value: formatNumber(completedOrbits), unit: s('readings.orbitsUnit') },
   ];
 
   return <SimulationWorkspace controls={controls} stage={stage} status={status} readings={readings} />;

@@ -3,6 +3,7 @@ import Fraction from '../components/Fraction.jsx';
 import { ControlChoice, ControlSlider, ControlToggle } from '../components/SimulationControls.jsx';
 import SimulationWorkspace from '../components/SimulationWorkspace.jsx';
 import { formatDecimal, formatNumber } from '../lib/arabic.js';
+import { useI18n } from '../i18n/index.jsx';
 import { useChallengeReport, useSimulation } from './SimulationContext.js';
 import { gcd, paint, useAnimationFrame } from './simulationUtils.js';
 
@@ -32,8 +33,6 @@ const PRESETS = [
 ].map((preset) => ({
   ...preset,
   value: `${preset.n}/${preset.d}`,
-  label: <Fraction numerator={preset.n} denominator={preset.d} size="sm" />,
-  ariaLabel: `${formatNumber(preset.n)} على ${formatNumber(preset.d)}`,
 }));
 
 /**
@@ -56,6 +55,8 @@ function piePoint(angle, radius = PIE.r) {
 }
 
 export default function FractionsSimulation() {
+  const { t, lang } = useI18n();
+  const s = (key, vars) => t(`lab.sims.fractions-area.${key}`, vars);
   const { running } = useSimulation();
   const [numerator, setNumerator] = useState(DEFAULTS.numerator);
   const [denominator, setDenominator] = useState(DEFAULTS.denominator);
@@ -115,9 +116,9 @@ export default function FractionsSimulation() {
 
   const caption = running
     ? numerator > 0
-      ? `بنعدّ الأجزاء الملوّنة: ${formatNumber(counted)} من ${formatNumber(denominator)}`
-      : 'مفيش أجزاء ملوّنة نعدّها'
-    : 'البسط = الأجزاء الملوّنة • المقام = كل الأجزاء';
+      ? s('stage.caption.counting', { counted: formatNumber(counted), denominator: formatNumber(denominator) })
+      : s('stage.caption.empty')
+    : s('stage.caption.idle');
 
   const labelSize = denominator > 8 ? 15 : 19;
 
@@ -126,7 +127,7 @@ export default function FractionsSimulation() {
       className="sim-svg"
       viewBox="0 0 640 400"
       role="img"
-      aria-label={`دائرة ومستطيل مقسومين ${formatNumber(denominator)} أجزاء متساوية، ملوّن منهم ${formatNumber(numerator)}`}
+      aria-label={s('stage.ariaLabel', { denominator: formatNumber(denominator), numerator: formatNumber(numerator) })}
     >
       <text x={320} y={44} textAnchor="middle" fontSize="18" style={paint('text-primary')}>
         {caption}
@@ -163,7 +164,7 @@ export default function FractionsSimulation() {
         ) : null,
       )}
       <text x={PIE.x} y={PIE.y + PIE.r + 34} textAnchor="middle" fontSize="17" style={paint('text-secondary')}>
-        الدائرة
+        {s('stage.circle')}
       </text>
 
       {/* Rectangle model */}
@@ -204,7 +205,7 @@ export default function FractionsSimulation() {
         : null}
       <rect x={GRID.x} y={GRID.y} width={GRID.w} height={GRID.h} style={paint(null, 'text-primary', 3)} />
       <text x={GRID.x + GRID.w / 2} y={GRID.y + GRID.h + 34} textAnchor="middle" fontSize="17" style={paint('text-secondary')}>
-        المستطيل
+        {s('stage.rectangle')}
       </text>
     </svg>
   );
@@ -212,19 +213,25 @@ export default function FractionsSimulation() {
   // -- Status chip -----------------------------------------------------------
   let status;
   if (numerator === 0) {
-    status = { tone: 'info', icon: 'info', text: 'مفيش ولا جزء ملوّن، يعني الكسر = صفر' };
+    status = { tone: 'info', icon: 'info', text: s('status.zero') };
   } else if (numerator === denominator) {
-    status = { tone: 'reward', icon: 'check_circle', text: 'الشكل كله ملوّن، يعني الكسر = واحد صحيح' };
+    status = { tone: 'reward', icon: 'check_circle', text: s('status.whole') };
   } else if (g > 1) {
-    status = { tone: 'primary', icon: 'calculate', text: `الكسر ده ينفع يتبسّط: نقسم البسط والمقام على ${formatNumber(g)}` };
+    status = { tone: 'primary', icon: 'calculate', text: s('status.reducible', { value: formatNumber(g) }) };
   } else {
-    status = { tone: 'info', icon: 'check_circle', text: 'الكسر ده في أبسط صورة' };
+    status = { tone: 'info', icon: 'check_circle', text: s('status.simplest') };
   }
+
+  const presetOptions = PRESETS.map((preset) => ({
+    ...preset,
+    label: <Fraction numerator={preset.n} denominator={preset.d} size="sm" />,
+    ariaLabel: s('presets.ariaLabel', { numerator: formatNumber(preset.n), denominator: formatNumber(preset.d) }),
+  }));
 
   const controls = (
     <>
       <ControlSlider
-        label="البسط (الأجزاء الملوّنة)"
+        label={s('controls.numerator')}
         swatch="accent-info"
         value={numerator}
         min={0}
@@ -232,15 +239,15 @@ export default function FractionsSimulation() {
         onChange={setNumerator}
       />
       <ControlSlider
-        label="المقام (عدد الأجزاء)"
+        label={s('controls.denominator')}
         value={denominator}
         min={1}
         max={12}
         onChange={changeDenominator}
       />
       <ControlChoice
-        label="كسور مشهورة"
-        options={PRESETS}
+        label={s('controls.presets')}
+        options={presetOptions}
         isSelected={(option) => option.n === numerator && option.d === denominator}
         onChange={(_, option) => {
           setDenominator(option.d);
@@ -248,8 +255,8 @@ export default function FractionsSimulation() {
         }}
       />
       <ControlToggle
-        label="إظهار أبسط صورة"
-        description="خطوط سميكة بتجمع الأجزاء حسب الكسر المبسّط"
+        label={s('controls.simplify')}
+        description={s('controls.simplifyDescription')}
         checked={simplify}
         onChange={setSimplify}
       />
@@ -259,18 +266,18 @@ export default function FractionsSimulation() {
   const readings = [
     {
       id: 'fraction',
-      label: 'الكسر',
+      label: s('readings.fraction'),
       value: <Fraction numerator={numerator} denominator={denominator} />,
-      spoken: `${formatNumber(numerator)} على ${formatNumber(denominator)}`,
+      spoken: s('readings.fractionSpoken', { numerator: formatNumber(numerator), denominator: formatNumber(denominator) }),
     },
     {
       id: 'simple',
-      label: 'أبسط صورة',
+      label: s('readings.simplest'),
       value: numerator === 0 ? formatNumber(0) : simpleD === 1 ? formatNumber(simpleN) : <Fraction numerator={simpleN} denominator={simpleD} />,
-      spoken: `${formatNumber(simpleN)} على ${formatNumber(simpleD)}`,
+      spoken: s('readings.simplestSpoken', { numerator: formatNumber(simpleN), denominator: formatNumber(simpleD) }),
     },
-    { id: 'decimal', label: 'الكسر العشري', value: formatDecimal(numerator / denominator, 3) },
-    { id: 'percent', label: 'النسبة المئوية', value: formatDecimal((numerator / denominator) * 100, 1), unit: '٪' },
+    { id: 'decimal', label: s('readings.decimal'), value: formatDecimal(numerator / denominator, 3) },
+    { id: 'percent', label: s('readings.percent'), value: formatDecimal((numerator / denominator) * 100, 1), unit: s('readings.percentUnit') },
   ];
 
   return <SimulationWorkspace controls={controls} stage={stage} status={status} readings={readings} />;

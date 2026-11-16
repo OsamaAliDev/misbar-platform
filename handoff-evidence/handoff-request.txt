@@ -1,0 +1,25 @@
+Credits are nearly exhausted, so STOP all building now. Do NOT continue Phase 3 or start Phase 4. Do not redo anything. Your only job now is a complete handoff package so I can continue in another Manus conversation that has credits.
+
+1. Create ONE zip file containing:
+   - The full current project folder exactly as it is right now (including uncommitted and half-finished Phase 3 work), but WITHOUT node_modules and dist.
+   - /assets-src/heroes/ (the 5 PNG originals) and /public/heroes/ (the WebP files).
+   - A new file HANDOFF.md at the root (details below).
+   - DECISIONS.md and /docs/screenshots/ (if they exist).
+   Also run `git add -A` and commit everything as "WIP: Phase 3 in progress (handoff)" on a separate branch named `wip-phase3-handoff`, and push that branch. Do NOT push it to main, and do not force-push anything. Give me the commit hash and the branch link, plus the zip file as a download.
+
+2. Write HANDOFF.md in plain English with these sections. Be exact and complete, no summaries of summaries:
+   A. Status table per phase (0, 1, 2, 3, 4): Done / In progress / Not started. For each: commit hash, what was verified (and how), and what was NOT verified.
+   B. Phase 3 in detail (most important):
+      - Which locale files exist, and for each of the 6 simulations: fully migrated / partially migrated / not started.
+      - Which components/files still contain hardcoded Arabic strings (list file paths, and roughly how many strings).
+      - Which subagent was working on what when credits ran out, and whether its output was merged, partial, or lost.
+      - Whether the language toggle, RTL/LTR switching (dir and lang on the root), persistence in localStorage, and the AppHeader/GameHeader/PlaygroundHeader changes are done, partial, or not started.
+      - Whether the project currently BUILDS. Run the build now and paste the real result and any errors. Do not guess.
+   C. Remaining work, as an ordered checklist with file paths, in the exact order you would do it. Include the leftover note: after the subagents, check matter-simulation heat/cool English button labels against the English guide tip ("heat and cool buttons"), and the module-level flag to refocus after remount.
+   D. Architecture notes a new session needs: stack (Vite + React + plain CSS, hash router, localStorage), folder structure, where the translation helper and locale files live, how the translation keys are named, where hero config, rank config (star thresholds), mission config and the night-theme variables live, the localStorage keys used, and the Nour placeholder title constant.
+   E. All judgment calls (copy of DECISIONS.md) and known problems or bugs.
+   F. Deployment: the published URL (https://misbar-zrxurzxq.manus.space), whether the published version matches the latest main, and the exact steps to redeploy.
+   G. Absolute rules to keep (copy them from my original brief): no weapons or combat wording anywhere, children's privacy (nickname and avatar only), no new dependencies, plain CSS with CSS variables, cream design system for catalog and lab, night mode only on game screens, never claim something works without verifying it.
+   H. A ready-to-paste "continue prompt" in English that I can give a fresh session, telling it to read HANDOFF.md first, run git status and a build, then finish only the missing Phase 3 work, commit and push, then do Phase 4 and the final report.
+
+3. Final message: only the zip download, the branch name, the commit hash, and a 5-line summary of where things stand. Do not do any other work.

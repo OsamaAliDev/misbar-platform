@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useI18n } from '../i18n/index.jsx';
 import { ControlChoice, ControlQuickActions, ControlSlider } from '../components/SimulationControls.jsx';
 import SimulationWorkspace from '../components/SimulationWorkspace.jsx';
 import { formatNumber } from '../lib/arabic.js';
@@ -45,7 +46,6 @@ const LIQUID_GRAVITY = 900;
 
 const DEFAULT_TARGET = -10;
 
-const STATE_LABELS = { solid: 'صلب', liquid: 'سائل', gas: 'غاز' };
 const STATE_COLORS = {
   solid: ['accent-info-soft', 'accent-info-text'],
   liquid: ['accent-primary', 'accent-primary-soft-text'],
@@ -192,6 +192,8 @@ function stepChamber(chamber, dt, target) {
 }
 
 export default function StatesOfMatterSimulation() {
+  const { t } = useI18n();
+  const s = (key, vars) => t(`lab.sims.matter-states.${key}`, vars);
   const { running } = useSimulation();
   const [target, setTarget] = useState(DEFAULT_TARGET);
   const [chamber, setChamber] = useState(() => ({
@@ -215,19 +217,19 @@ export default function StatesOfMatterSimulation() {
   let stateLabel;
   if (melted <= 0) {
     stateId = 'solid';
-    stateLabel = STATE_LABELS.solid;
+    stateLabel = s('states.solid');
   } else if (melted < 1) {
     stateId = 'melting';
-    stateLabel = cooling ? 'بيتجمد' : 'بينصهر';
+    stateLabel = cooling ? s('states.freezing') : s('states.melting');
   } else if (boiled <= 0) {
     stateId = 'liquid';
-    stateLabel = STATE_LABELS.liquid;
+    stateLabel = s('states.liquid');
   } else if (boiled < 1) {
     stateId = 'boiling';
-    stateLabel = cooling ? 'بيتكثف' : 'بيغلي';
+    stateLabel = cooling ? s('states.condensing') : s('states.boiling');
   } else {
     stateId = 'gas';
-    stateLabel = STATE_LABELS.gas;
+    stateLabel = s('states.gas');
   }
   const activeStates = {
     solid: melted < 1,
@@ -238,13 +240,18 @@ export default function StatesOfMatterSimulation() {
   // -- Stage ---------------------------------------------------------------
   const thermoY = (t) => 316 - ((t - T_MIN) / (T_MAX - T_MIN)) * 246;
   const heaterColor = heating ? 'accent-help' : cooling ? 'accent-info' : 'outline';
+  const celsius = (value) => `${formatNumber(value)}${s('units.celsius')}`;
 
   const stage = (
     <svg
       className="sim-svg"
       viewBox="0 0 640 400"
       role="img"
-      aria-label={`حجرة فيها جزيئات مية في الحالة: ${stateLabel}، ودرجة الحرارة ${formatNumber(Math.round(temperature))} درجة مئوية`}
+      aria-label={s('stage.ariaLabel', {
+        state: stateLabel,
+        temperature: formatNumber(Math.round(temperature)),
+        unit: s('units.ariaCelsius'),
+      })}
     >
       {/* State ladder */}
       {[
@@ -271,7 +278,7 @@ export default function StatesOfMatterSimulation() {
               fontWeight="800"
               style={paint(active ? 'accent-primary-soft-text' : 'text-secondary')}
             >
-              {STATE_LABELS[item.id]}
+              {s(`states.${item.id}`)}
             </text>
           </g>
         );
@@ -297,7 +304,7 @@ export default function StatesOfMatterSimulation() {
       {/* Heater / cooler plate */}
       <rect x={CHAMBER.left} y={CHAMBER.bottom + 16} width={CHAMBER.right - CHAMBER.left} height={16} rx={8} style={paint(heaterColor)} />
       <text x={(CHAMBER.left + CHAMBER.right) / 2} y={CHAMBER.bottom + 60} textAnchor="middle" fontSize="16" style={paint('text-secondary')}>
-        {heating ? 'السخّان شغّال' : cooling ? 'التبريد شغّال' : 'درجة الحرارة ثابتة'}
+        {s(heating ? 'stage.heaterOn' : cooling ? 'stage.coolerOn' : 'stage.stableTemperature')}
       </text>
 
       {/* Thermometer */}
@@ -308,7 +315,7 @@ export default function StatesOfMatterSimulation() {
         <g key={t}>
           <line x1={572} y1={thermoY(t)} x2={584} y2={thermoY(t)} style={paint(null, 'text-secondary', 2)} />
           <text x={608} y={thermoY(t) + 5} textAnchor="middle" fontSize="14" style={paint('text-secondary')}>
-            {`${formatNumber(t)}°`}
+            {`${formatNumber(t)}${s('units.degree')}`}
           </text>
         </g>
       ))}
@@ -322,20 +329,20 @@ export default function StatesOfMatterSimulation() {
 
   // -- Status chip -----------------------------------------------------------
   const statusByState = {
-    solid: { tone: 'info', icon: 'ac_unit', text: 'صلب: الجزيئات بتتذبذب في أماكنها' },
-    melting: { tone: 'primary', icon: 'thermostat', text: `${stateLabel}… الحرارة ثابتة عند ٠°م لحد ما التحوّل يخلص` },
-    liquid: { tone: 'info', icon: 'water_drop', text: 'سائل: الجزيئات بتنزلق جنب بعض' },
-    boiling: { tone: 'primary', icon: 'thermostat', text: `${stateLabel}… الحرارة ثابتة عند ١٠٠°م لحد ما التحوّل يخلص` },
-    gas: { tone: 'info', icon: 'air', text: 'غاز: الجزيئات بتطير بحرية في الحجرة كلها' },
+    solid: { tone: 'info', icon: 'ac_unit', text: s('status.solid') },
+    melting: { tone: 'primary', icon: 'thermostat', text: s('status.melting', { state: stateLabel, temperature: s('temperatures.melting') }) },
+    liquid: { tone: 'info', icon: 'water_drop', text: s('status.liquid') },
+    boiling: { tone: 'primary', icon: 'thermostat', text: s('status.boiling', { state: stateLabel, temperature: s('temperatures.boiling') }) },
+    gas: { tone: 'info', icon: 'air', text: s('status.gas') },
   };
   const status = statusByState[stateId];
 
-  const celsius = (value) => `${formatNumber(value)}°م`;
+  const degrees = (value) => `${formatNumber(value)}${s('units.degree')}`;
   const changeTarget = (value) => setTarget(clamp(value, T_MIN, T_MAX));
   const controls = (
     <>
       <ControlSlider
-        label="درجة حرارة السخّان"
+        label={s('controls.heaterTemperature')}
         swatch="accent-help"
         value={target}
         min={T_MIN}
@@ -344,18 +351,18 @@ export default function StatesOfMatterSimulation() {
         onChange={changeTarget}
       />
       <ControlQuickActions
-        label="تحكم سريع"
+        label={s('controls.quickControl')}
         actions={[
-          { id: 'heat', label: 'سخّن ١٠°', icon: 'local_fire_department', disabled: target >= T_MAX, onClick: () => changeTarget(target + 10) },
-          { id: 'cool', label: 'برّد ١٠°', icon: 'ac_unit', disabled: target <= T_MIN, onClick: () => changeTarget(target - 10) },
+          { id: 'heat', label: s('controls.actions.heat', { value: formatNumber(10), degree: s('units.degree') }), icon: 'local_fire_department', disabled: target >= T_MAX, onClick: () => changeTarget(target + 10) },
+          { id: 'cool', label: s('controls.actions.cool', { value: formatNumber(10), degree: s('units.degree') }), icon: 'ac_unit', disabled: target <= T_MIN, onClick: () => changeTarget(target - 10) },
         ]}
       />
       <ControlChoice
-        label="حضّر المادة بسرعة"
+        label={s('controls.prepare')}
         options={[
-          { value: '-10', label: 'ثلج' },
-          { value: '25', label: 'مية' },
-          { value: '110', label: 'بخار' },
+          { value: '-10', label: s('materials.ice') },
+          { value: '25', label: s('materials.water') },
+          { value: '110', label: s('materials.steam') },
         ]}
         value={String(target)}
         onChange={(value) => changeTarget(Number(value))}
@@ -363,17 +370,17 @@ export default function StatesOfMatterSimulation() {
     </>
   );
 
-  const shapeText = stateId === 'solid' ? 'شكل وحجم ثابتين' : stateId === 'gas' ? 'بيملا الحجرة كلها' : 'حجم ثابت وشكل متغيّر';
+  const shapeText = stateId === 'solid' ? s('shape.solid') : stateId === 'gas' ? s('shape.gas') : s('shape.liquid');
   const readings = [
-    { id: 'temp', label: 'درجة حرارة المادة', value: celsius(Math.round(temperature)) },
-    { id: 'state', label: 'الحالة', value: stateLabel, isText: true },
+    { id: 'temp', label: s('readings.temperature'), value: celsius(Math.round(temperature)) },
+    { id: 'state', label: s('readings.state'), value: stateLabel, isText: true },
     {
       id: 'speed',
-      label: 'سرعة الجزيئات',
+      label: s('readings.particleSpeed'),
       value: formatNumber(Math.round(RMS_SPEED_FACTOR * Math.sqrt(temperature + 273.15))),
-      unit: 'م/ث',
+      unit: s('units.speed'),
     },
-    { id: 'shape', label: 'الشكل والحجم', value: shapeText, isText: true },
+    { id: 'shape', label: s('readings.shapeVolume'), value: shapeText, isText: true },
   ];
 
   return <SimulationWorkspace controls={controls} stage={stage} status={status} readings={readings} />;
