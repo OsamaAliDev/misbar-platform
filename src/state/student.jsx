@@ -147,54 +147,63 @@ const StudentContext = createContext(null);
  */
 export function StudentProvider({ children }) {
   const [guest, dispatch] = useReducer(studentReducer, undefined, loadStudent);
-  const { session, adapter, updateStudent, reportError, loading } = useSaas();
+  const { session, adapter, updateStudent, reportError, loading, authPending, authVersion, hasCredential } = useSaas();
   const [syncing, setSyncing] = useState(false);
   const account = useRef(null);
-  account.current = session?.role === 'student' ? session.userId : null;
+  const binding = session?.role === 'student' ? `${authVersion}:${session.userId}` : null;
+  account.current = binding;
+  const restoring = authPending || (hasCredential && !session);
   const queue = useRef(Promise.resolve());
   const imports = useRef(new Set());
   const local = useMemo(() => createLocalStorageAdapter({ sanitize: sanitizeStudent, reduce: studentReducer, initial: DEFAULT_STUDENT }), []);
   const schoolStudent = session?.role === 'student';
   const student = schoolStudent && session.student ? sanitizeStudent(session.student) : guest;
-  const canEarn = !schoolStudent || (session.canEarn === true && !syncing);
+  const canEarn = !restoring && !syncing && (!schoolStudent || session.canEarn === true);
   // School state never writes the guest key; logout restores the unchanged guest.
-  useEffect(() => { local.save(guest); }, [guest, local]);
+  useEffect(() => { if (!restoring && !schoolStudent) local.save(guest); }, [guest, local, restoring, schoolStudent]);
   useEffect(() => {
     const sync = (event) => { if (event.key === STUDENT_STORAGE_KEY) dispatch({ type: 'hydrate', student: local.peek() }); };
     window.addEventListener('storage', sync);
     return () => window.removeEventListener('storage', sync);
   }, [local]);
-  useEffect(() => { setSyncing(false); }, [session?.userId]);
+  useEffect(() => { setSyncing(false); }, [binding]);
   useEffect(() => {
-    if (!schoolStudent || session.imported || !session.canEarn || imports.current.has(session.userId)) return;
+    if (!schoolStudent || session.imported || !session.canEarn || imports.current.has(binding)) return;
     const id = session.userId;
-    imports.current.add(id);
+    const currentBinding = binding;
+    const accessToken = readSession()?.accessToken;
+    const current = () => account.current === currentBinding && readSession()?.accessToken === accessToken;
+    imports.current.add(currentBinding);
     setSyncing(true);
     // Serialize first import with actions, including StrictMode's effect replay.
     queue.current = queue.current.catch(() => {}).then(async () => {
-      if (account.current !== id || !readSession()) return;
+      if (!current()) return;
       try {
-        const result = await adapter.import(local.peek());
-        if (account.current === id) updateStudent(result, id);
-      } catch (failure) { if (account.current === id) reportError(failure); }
-      finally { if (account.current === id) setSyncing(false); }
+        const result = await adapter.import(local.peek(), { accessToken });
+        if (current()) updateStudent(result, id, authVersion);
+      } catch (failure) { if (current()) reportError(failure, authVersion); }
+      finally { if (current()) setSyncing(false); }
     });
-  }, [schoolStudent, session, adapter, local, updateStudent, reportError]);
+  }, [schoolStudent, session, binding, authVersion, adapter, local, updateStudent, reportError]);
   const actions = useMemo(() => {
     const perform = (action) => {
+      if (restoring) return Promise.resolve(false);
       if (!schoolStudent) { dispatch(action); return Promise.resolve(true); }
       const id = session.userId;
+      const currentBinding = binding;
+      const accessToken = readSession()?.accessToken;
+      const current = () => account.current === currentBinding && readSession()?.accessToken === accessToken;
       if (!session.canEarn) { reportError({ code: 'forbidden' }); return Promise.resolve(false); }
       const job = queue.current.catch(() => {}).then(async () => {
-        if (account.current !== id || !readSession()) return false;
+        if (!current()) return false;
         setSyncing(true);
         try {
-          const result = await adapter.apply(action);
-          if (account.current !== id) return false;
-          updateStudent(result, id);
+          const result = await adapter.apply(action, { accessToken });
+          if (!current()) return false;
+          updateStudent(result, id, authVersion);
           return true;
-        } catch (failure) { if (account.current === id) reportError(failure); return false; }
-        finally { if (account.current === id) setSyncing(false); }
+        } catch (failure) { if (current()) reportError(failure, authVersion); return false; }
+        finally { if (current()) setSyncing(false); }
       });
       queue.current = job;
       return job;
@@ -209,8 +218,8 @@ export function StudentProvider({ children }) {
       unlockOutfit: (heroId, slot) => perform({ type: 'unlockOutfit', heroId, slot }),
       resetStudent: () => perform({ type: 'reset' }),
     };
-  }, [schoolStudent, session, adapter, updateStudent, reportError]);
-  const value = useMemo(() => ({ student, ...actions, canEarn, syncing: schoolStudent && (syncing || loading), isSchoolStudent: schoolStudent }), [student, actions, canEarn, schoolStudent, syncing, loading]);
+  }, [schoolStudent, session, restoring, binding, authVersion, adapter, updateStudent, reportError]);
+  const value = useMemo(() => ({ student, ...actions, canEarn, syncing: restoring || (schoolStudent && (syncing || loading)), isSchoolStudent: schoolStudent }), [student, actions, canEarn, schoolStudent, syncing, loading, restoring]);
   return <StudentContext.Provider value={value}>{children}</StudentContext.Provider>;
 }
 /** Access the shared student profile and its actions. */

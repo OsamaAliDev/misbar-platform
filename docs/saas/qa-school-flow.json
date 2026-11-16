@@ -11,14 +11,14 @@
     {
       "name": "teacher class created with usable join code",
       "details": {
-        "classId": "eba70c98-9cd3-4bc5-a880-3365785a30dd",
-        "joinCode": "EE1675863F9E"
+        "classId": "6e3b327b-77ed-4255-86e4-48bc9bff2ed0",
+        "joinCode": "468C70CD3893"
       }
     },
     {
       "name": "student enrolled with nickname and server PIN",
       "details": {
-        "nickname": "Comet 4829143"
+        "nickname": "Comet 4829599"
       }
     },
     {
@@ -54,7 +54,7 @@
   ],
   "errors": [],
   "warnings": [],
-  "classId": "eba70c98-9cd3-4bc5-a880-3365785a30dd",
-  "nickname": "Comet 4829143",
-  "joinCode": "EE1675863F9E"
+  "classId": "6e3b327b-77ed-4255-86e4-48bc9bff2ed0",
+  "nickname": "Comet 4829599",
+  "joinCode": "468C70CD3893"
 }

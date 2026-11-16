@@ -25,8 +25,10 @@ with sync_playwright() as p:
  def staff(email='teacher@misbar.test',password='MockTeacher!2026'):
   nav('teacher-login');page.wait_for_selector('#staff-login-email');page.locator('#staff-login-email').fill(email);page.locator('#staff-login-password').fill(password);page.locator('form button[type=submit]').click();page.wait_for_url(re.compile(r'#/(classes|platform-admin)$'))
  def logout():
-  status,j=api('/logout','POST',{});assert status==200,j
-  page.evaluate("sessionStorage.removeItem('misbar:saas:session:v1')");page.reload();page.wait_for_selector('#view-heading')
+  nav('teacher-login');page.wait_for_selector('.saas-login-card strong')
+  page.locator('.saas-header button').filter(has_text='Sign out').click()
+  page.wait_for_function("sessionStorage.getItem('misbar:saas:session:v1')===null")
+  page.wait_for_selector('#staff-login-email')
  def student_login(code,nick):
   nav('student-login');page.wait_for_selector('#student-login-code');page.locator('#student-login-code').fill(code);page.locator('#student-login-nickname').fill(nick);page.locator('#student-login-pin').fill('٤٣٢١');page.locator('form button[type=submit]').click();page.wait_for_url(re.compile(r'#/(catalog|heroes|lobby)?$'));page.wait_for_timeout(250)
  def set_slider(label,value):

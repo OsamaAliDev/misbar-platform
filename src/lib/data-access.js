@@ -17,8 +17,8 @@ export function storeSession(value) {
 export class DataError extends Error {
   constructor(code, status) { super(code); this.code = code; this.status = status; }
 }
-export async function request(path, { method = 'GET', body, authenticated = true, signal } = {}) {
-  const token = authenticated ? readSession()?.accessToken : null;
+export async function request(path, { method = 'GET', body, authenticated = true, signal, accessToken } = {}) {
+  const token = authenticated ? (accessToken === undefined ? readSession()?.accessToken : accessToken) : null;
   const headers = { Accept: 'application/json' };
   if (body !== undefined) headers['Content-Type'] = 'application/json';
   if (token) headers.Authorization = `Bearer ${token}`;
@@ -56,9 +56,9 @@ export function createLocalStorageAdapter({ sanitize, reduce, initial }) {
 export function createSupabaseAdapter() {
   return {
     kind: 'supabase',
-    async read() { return request('/session'); },
-    async import(progress) { return request('/student/import', { method: 'POST', body: { progress } }); },
-    async apply(action) { return request('/student/action', { method: 'POST', body: action }); },
+    async read(options = {}) { return request('/session', options); },
+    async import(progress, options = {}) { return request('/student/import', { ...options, method: 'POST', body: { progress } }); },
+    async apply(action, options = {}) { return request('/student/action', { ...options, method: 'POST', body: action }); },
     save() { throw new DataError('forbidden', 403); },
   };
 }

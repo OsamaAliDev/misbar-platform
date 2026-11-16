@@ -15,9 +15,9 @@ export function AccountLink() {
 }
 export function SaasHeader() {
   const { t } = useI18n();
-  const { session, logout } = useSaas();
+  const { session, logout, hasCredential } = useSaas();
   const { navigate } = useNavigation();
-  const leave = async () => { await logout(); navigate(VIEWS.STAFF_LOGIN); };
+  const leave = () => { logout(); navigate(VIEWS.STAFF_LOGIN); };
   return <header className="saas-header">
     <BrandMark />
     <nav className="saas-header__links" aria-label={t('saas.chrome.navigation')}>
@@ -26,7 +26,7 @@ export function SaasHeader() {
       {!session && <a className="btn btn--neutral" href={buildHash(VIEWS.STUDENT_LOGIN)}>{t('saas.chrome.studentLogin')}</a>}
       {!session && <a className="btn btn--neutral" href={buildHash(VIEWS.STAFF_LOGIN)}>{t('saas.chrome.staffLogin')}</a>}
       <LanguageToggle /><ThemeToggle />
-      {session && <button type="button" className="btn btn--neutral" onClick={leave}>{t('saas.chrome.logout')}</button>}
+      {(session || hasCredential) && <button type="button" className="btn btn--neutral" onClick={leave}>{t('saas.chrome.logout')}</button>}
     </nav>
   </header>;
 }

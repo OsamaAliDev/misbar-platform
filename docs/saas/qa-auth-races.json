@@ -1,0 +1,22 @@
+{
+  "pass": true,
+  "mode": "mock with deliberate delayed-response fixtures",
+  "events": [
+    {
+      "name": "stored credential restoration blocks guest mutations and guest-key writes",
+      "pass": true
+    },
+    {
+      "name": "late old restoration401 cannot clear a newer login",
+      "pass": true
+    },
+    {
+      "name": "logout clears immediately and delayed revocation cannot clear or reroute a newer login",
+      "pass": true
+    },
+    {
+      "name": "late old school action cannot hydrate a re-login with the same mock userId",
+      "pass": true
+    }
+  ]
+}

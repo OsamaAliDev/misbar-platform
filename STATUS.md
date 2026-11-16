@@ -1,4 +1,4 @@
-# Last updated: 2026-11-16 13:48 EET — Current step: 7 targeted regression checks
+# Last updated: 2026-11-16 13:49 EET — Current step: 7 clean-clone preparation
 
 | Step | Status | Commit hash | Evidence / limits |
 |---|---|---|---|
@@ -8,11 +8,11 @@
 | 4. Student PIN and staff email Auth | Done (verified) | 4d21887 | 27/27 auth/API tests passed; real Supabase transport uses stubs only, NOT remote Auth. |
 | 5. Guest/Supabase adapters and first import | Done (verified) | ada4373 | Actual mock8-stage school flow passed; guest15 stayed unchanged while school earned19 and re-login did not import again. |
 | 6. Bilingual/theme-aware logins, classes and roster | Done (verified) | f20e705 | 80/80 mock-auth UI viewport cases plus browser enrollment/roster flow passed; lifecycle regression fixes being added under finalQA. |
-| 7. Final clean build, guest regression and school flow | In progress | pending lifecycle/QA commit | Happy-path school/guest flows passed after fixes; targeted delayed-response checks and final clean production acceptance still pending. |
+| 7. Final clean build, guest regression and school flow | In progress | this auth lifecycle sub-step commit | Targeted auth races4/4 and actual school/guest flows passed after guards; clean-clone production matrices still pending. |
 
 ## Doing now
 
-Auth guards now clear logout immediately, bind late results to login generation/captured token, and block guest writes during credential restoration. Full mock class/import/earn/roster flow and guest reward flow passed again using the real logout button. Targeted delayed-response tests and database pseudonym validation are finishing before the clean-clone production check.
+Four deliberate delayed-response auth regressions now passed: restoration blocks guest writes, stale401 cannot clear newer login, delayed logout cannot clear/reroute newer login, and stale child action cannot hydrate re-login with the same userId. Real logout-button school flow and ordinary guest flow also passed. Saving these fixes before clean production acceptance.
 
 Mode: **mock, not real Supabase**. Real Supabase RLS and Auth have NOT run.
 
