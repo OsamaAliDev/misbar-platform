@@ -8,7 +8,7 @@
   padding-inline: 14px;
   background-color: var(--accent-reward-soft);
   border: var(--border-width) solid var(--accent-reward);
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-inner);
   font-size: 16px;
   font-weight: 800;
   line-height: 1;

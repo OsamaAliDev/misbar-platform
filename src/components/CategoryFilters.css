@@ -44,7 +44,7 @@
   flex-shrink: 0;
   width: 10px;
   height: 10px;
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-small);
 }
 
 /* Hover tints follow each subject's colour family (Stitch Catalog). */

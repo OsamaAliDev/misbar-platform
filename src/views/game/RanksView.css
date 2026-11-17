@@ -47,7 +47,7 @@
   width: 52px;
   height: 52px;
   border: var(--border-width) solid;
-  border-radius: 50%;
+  border-radius: 33%;
 }
 
 .rank-step__icon--primary {

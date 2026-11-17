@@ -76,7 +76,7 @@
   z-index: -1;
   background-color: var(--stage-accent-soft);
   border: var(--border-width) solid var(--stage-accent);
-  border-radius: 50%;
+  border-radius: 33%;
 }
 
 .hero-stage::after {
@@ -88,7 +88,7 @@
   z-index: -1;
   background-color: var(--surface-subtle);
   border: var(--border);
-  border-radius: 50%;
+  border-radius: 33%;
 }
 
 .hero-stage--primary {

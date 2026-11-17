@@ -99,7 +99,7 @@
   margin-bottom: 4px;
   background-color: var(--accent-info-soft);
   border: var(--border-width) solid var(--accent-info);
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-inner);
   color: var(--accent-info-text);
 }
 

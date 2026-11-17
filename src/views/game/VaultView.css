@@ -23,7 +23,7 @@
   cursor: pointer;
   background-color: var(--surface-card);
   border: var(--border);
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-inner);
   transition: background-color var(--duration-fast) ease;
 }
 
@@ -97,7 +97,7 @@
   color: var(--text-secondary);
   background-color: var(--surface-card);
   border: var(--border);
-  border-radius: 50%;
+  border-radius: 33%;
 }
 
 .outfit-slot.is-ready .outfit-slot__lock {

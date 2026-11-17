@@ -36,7 +36,7 @@
   width: 36px;
   height: 36px;
   background-color: var(--accent-tools-soft);
-  border-radius: 50%;
+  border-radius: 33%;
   color: var(--accent-tools-text);
 }
 
@@ -112,7 +112,7 @@
   width: 10px;
   height: 10px;
   background-color: var(--accent-primary);
-  border-radius: 50%;
+  border-radius: var(--radius-small);
 }
 
 /* Status chips can hold a short sentence, so they may wrap. */
