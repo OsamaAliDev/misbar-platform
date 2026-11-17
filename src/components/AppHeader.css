@@ -200,3 +200,4 @@
 .app-header__greeting { gap: 6px; padding-inline: 2px 8px; }
 .app-header__greeting .hero-avatar { width: 32px; height: 32px; }
 .app-header .teacher-btn { font-size: 14px; }
+.app-header .icon { font-size: 18px; }
