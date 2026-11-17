@@ -181,3 +181,12 @@
   .app-header__greeting { flex: 1 1 100%; justify-content: flex-start; }
   .app-header__end { justify-content: space-between; }
 }
+
+/* English desktop: shrink the greeting before dropping all actions to a row. */
+@media (min-width: 1200px) {
+  [dir='ltr'] .app-header { flex-wrap: nowrap; }
+  [dir='ltr'] .app-header__start { flex: 1 1 0; }
+  [dir='ltr'] .app-header__start .brand { flex-shrink: 0; }
+  [dir='ltr'] .app-header__greeting { flex: 0 1 auto; }
+  [dir='ltr'] .app-header__end { flex: 0 1 auto; justify-content: flex-end; }
+}
