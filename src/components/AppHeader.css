@@ -6,9 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  min-height: 76px;
-  padding: 12px 24px;
+  gap: 10px;
+  min-height: 64px;
+  padding: 8px 16px;
   background-color: var(--surface-card);
   border: var(--border);
   border-radius: var(--radius);
@@ -23,7 +23,7 @@
 }
 
 .app-header__end {
-  gap: 12px;
+  gap: 8px;
 }
 
 .app-header__divider {
@@ -173,20 +173,30 @@
 
 /* Keep the same hero-lobby greeting visible at every width. */
 .app-header__greeting { display: flex; min-width: 0; }
-@media (max-width: 1199px) {
+@media (max-width: 1023px) {
   .app-header__start { flex: 1 1 100%; flex-wrap: wrap; justify-content: space-between; }
   .app-header__end { width: 100%; justify-content: flex-end; }
 }
 @media (max-width: 480px) {
-  .app-header__greeting { flex: 1 1 100%; justify-content: flex-start; }
+  .app-header__greeting { flex: 1 1 0; justify-content: flex-start; }
   .app-header__end { justify-content: space-between; }
 }
 
 /* English desktop: shrink the greeting before dropping all actions to a row. */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   [dir='ltr'] .app-header { flex-wrap: nowrap; }
   [dir='ltr'] .app-header__start { flex: 1 1 0; }
   [dir='ltr'] .app-header__start .brand { flex-shrink: 0; }
   [dir='ltr'] .app-header__greeting { flex: 0 1 auto; }
   [dir='ltr'] .app-header__end { flex: 0 1 auto; justify-content: flex-end; }
 }
+
+/* Compact catalog branding only; game/lab headers and touch targets stay intact. */
+.app-header__start { gap: 10px; }
+.app-header .brand { gap: 8px; }
+.app-header .brand__mark { width: 34px; height: 34px; }
+.app-header .brand__mark svg { width: 19px; height: 19px; }
+.app-header .brand__word { font-size: 24px; }
+.app-header__greeting { gap: 6px; padding-inline: 2px 8px; }
+.app-header__greeting .hero-avatar { width: 32px; height: 32px; }
+.app-header .teacher-btn { font-size: 14px; }
