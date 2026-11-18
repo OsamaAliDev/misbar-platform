@@ -66,3 +66,7 @@ Each line records one judgment call I made that the brief did not specify: what 
 - Independent18-itemauditfoundexplicit-theme renderingcorrect, butwhite/blueactiontext3.428:1, white/coralhelp3.028:1, andlightlobbystars1.864:1. Preservefivegraphicaccentcolorsandsimulationfiles; addsemanticprimary-actionfillusingexistingdeepblue1B5E99, stablehelptext2B2824, existingdarkcoral/purplehoverfills,andreward-textforstarcount. Onlytext-bearingactionpairschange. Nativehelpbodyremainsinternallyscrollable; itsEnglishquickfactaccesswillbeverifiedinstead ofclaimingclippingfromfirstviewmeanslostcontent.
 
 - OriginalgreetingQA caughta realintermittent390pxRTLnightoverflow408px despite matrixpassing. Fontfailureinjectionproved MaterialSymbols fallback supervisor_account spans139.97px within44pxbutton andextendsleft-17.98px. Fixshared.iconfootprintto1em×1em; hideonlyfallbackglyphwordoverflow, neverhidepageoverflow. Fontface/fontsize,touchbounds andpagegeometryarenotchanged. OriginalgreetingQAremainsbyte-identical.
+
+## تعديل شرارة الموضعي —18نوفمبر2026
+
+استخدم تعديل AI لمنطقة الصدر فقط، ثم دمجت لوحة القماش داخل قناع محدود للحفاظ على الشخصية الأصلية بدل إعادة توليدها. ثبت أن كل ما خارج القناع لم يتغير بكسلًا ببكسل، وأن alpha مطابق. أعيد تحويل الجسم إلىWebP600×900، وقص الوجه أُعيد ترميزه lossless ببكسلاته الأصلية؛ الياقة خارج حدود قص الوجه. الأصول الثلاثة متسقة، وبقية الأبطال دون تعديل.

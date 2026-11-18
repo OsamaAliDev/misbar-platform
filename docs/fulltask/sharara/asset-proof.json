@@ -1,0 +1,28 @@
+{
+  "originalSize": [
+    1536,
+    2304
+  ],
+  "newSize": [
+    1536,
+    2304
+  ],
+  "outsideEditChangedPixels": 0,
+  "alphaIdentical": true,
+  "faceAndHairAbove434Identical": true,
+  "changedPixels": 14662,
+  "faceCropPreservedHash": "c40e64943ec68ff8a527b2bc81bac70f3c4a9a91c0b6e4fdbce5013f0b09e9f5",
+  "method": "AI-edited opaque fabric patch only; original character retained everywhere else; no full-character redraw",
+  "status": "promoted-to-source-after-visual-check",
+  "bodyWebpSize": [
+    600,
+    900
+  ],
+  "faceCropPixelsIdentical": true,
+  "faceCropEncoding": "lossless re-encode; original face pixels retained because collar is outside crop",
+  "sourceFiles": [
+    "assets-src/heroes/sharara-outfit1.png",
+    "public/heroes/sharara-outfit1.webp",
+    "public/heroes/sharara-face.webp"
+  ]
+}
