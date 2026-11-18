@@ -1,0 +1,284 @@
+{
+  "url": "http://127.0.0.1:3000",
+  "checks": [
+    {
+      "item": "First visit heroes and larger portraits",
+      "verified": true,
+      "evidence": {
+        "route": "#/heroes",
+        "hero": null,
+        "width": 1366,
+        "height": 768,
+        "stages": [
+          509.28125,
+          208.03125,
+          208.03125,
+          208.046875,
+          208.046875
+        ],
+        "featured": 1
+      },
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-01-first-visit-heroes-1366x768-fullpage.png"
+    },
+    {
+      "item": "One global theme in AR/EN",
+      "verified": true,
+      "evidence": [
+        {
+          "route": "lobby",
+          "theme": "night",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "night"
+        },
+        {
+          "route": "vault",
+          "theme": "night",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "night"
+        },
+        {
+          "route": "ranks",
+          "theme": "night",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "night"
+        },
+        {
+          "route": "dashboard",
+          "theme": "night",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "night"
+        },
+        {
+          "route": "playground/motion-acceleration",
+          "theme": "night",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "night"
+        },
+        {
+          "route": "heroes",
+          "theme": "night",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "night"
+        },
+        {
+          "route": "catalog",
+          "theme": "night",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "night"
+        },
+        {
+          "route": "lobby",
+          "theme": "light",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "light"
+        },
+        {
+          "route": "vault",
+          "theme": "light",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "light"
+        },
+        {
+          "route": "ranks",
+          "theme": "light",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "light"
+        },
+        {
+          "route": "dashboard",
+          "theme": "light",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "light"
+        },
+        {
+          "route": "playground/motion-acceleration",
+          "theme": "light",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "light"
+        },
+        {
+          "route": "heroes",
+          "theme": "light",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "light"
+        },
+        {
+          "route": "catalog",
+          "theme": "light",
+          "lang": "ar",
+          "dir": "rtl",
+          "expected": "light"
+        },
+        {
+          "route": "lobby",
+          "theme": "night",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "night"
+        },
+        {
+          "route": "vault",
+          "theme": "night",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "night"
+        },
+        {
+          "route": "ranks",
+          "theme": "night",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "night"
+        },
+        {
+          "route": "dashboard",
+          "theme": "night",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "night"
+        },
+        {
+          "route": "playground/motion-acceleration",
+          "theme": "night",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "night"
+        },
+        {
+          "route": "heroes",
+          "theme": "night",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "night"
+        },
+        {
+          "route": "catalog",
+          "theme": "night",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "night"
+        },
+        {
+          "route": "lobby",
+          "theme": "light",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "light"
+        },
+        {
+          "route": "vault",
+          "theme": "light",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "light"
+        },
+        {
+          "route": "ranks",
+          "theme": "light",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "light"
+        },
+        {
+          "route": "dashboard",
+          "theme": "light",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "light"
+        },
+        {
+          "route": "playground/motion-acceleration",
+          "theme": "light",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "light"
+        },
+        {
+          "route": "heroes",
+          "theme": "light",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "light"
+        },
+        {
+          "route": "catalog",
+          "theme": "light",
+          "lang": "en",
+          "dir": "ltr",
+          "expected": "light"
+        }
+      ],
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-02-global-theme-en-night-1366x768-fullpage.png"
+    },
+    {
+      "item": "Grade → subject → experiment",
+      "verified": true,
+      "evidence": {
+        "grade": "prep-2",
+        "subject": "science",
+        "semester": 1,
+        "experiment": "matter-states"
+      },
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-03-grade-subject-term-1366x768-fullpage.png"
+    },
+    {
+      "item": "Lab1366x768 without page scroll",
+      "verified": true,
+      "evidence": {
+        "w": 1366,
+        "h": 768,
+        "pageWidth": 1366,
+        "pageHeight": 768,
+        "svgHeight": 396.40625,
+        "challengeBottom": 189.359375,
+        "workspaceTop": 203.359375
+      },
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-04-lab-no-scroll-1366x768-fullpage.png"
+    },
+    {
+      "item": "No application console errors",
+      "verified": true,
+      "evidence": {
+        "errors": []
+      },
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-05-console-check-1366x768-fullpage.png"
+    },
+    {
+      "item": "No application404s",
+      "verified": true,
+      "evidence": {
+        "failedResponses": [],
+        "responseCount": 308
+      },
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-06-no404-check-1366x768-fullpage.png"
+    }
+  ],
+  "errors": [],
+  "bad": [],
+  "assetByteProof": [],
+  "shots": {
+    "01-first-visit-heroes": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-01-first-visit-heroes-1366x768-fullpage.png",
+    "02-global-theme-ar-night": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-02-global-theme-ar-night-1366x768-fullpage.png",
+    "02-global-theme-ar-light": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-02-global-theme-ar-light-1366x768-fullpage.png",
+    "02-global-theme-en-night": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-02-global-theme-en-night-1366x768-fullpage.png",
+    "02-global-theme-en-light": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-02-global-theme-en-light-1366x768-fullpage.png",
+    "03-grade-subject-term": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-03-grade-subject-term-1366x768-fullpage.png",
+    "04-lab-no-scroll": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-04-lab-no-scroll-1366x768-fullpage.png",
+    "05-console-check": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-05-console-check-1366x768-fullpage.png",
+    "06-no404-check": "/home/ubuntu/misbar-fulltask-20261118/screenshots/FINAL-LOCAL/FINAL-LOCAL-06-no404-check-1366x768-fullpage.png"
+  },
+  "pass": true
+}

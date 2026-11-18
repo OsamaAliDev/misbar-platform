@@ -1,0 +1,210 @@
+.curriculum-browser {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.curriculum-browser__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.curriculum-browser__header,
+.curriculum-browser__group,
+.curriculum-browser__results,
+.curriculum-browser__empty,
+.curriculum-free-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.curriculum-browser__title,
+.curriculum-free-heading h2 {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.curriculum-browser__group h3,
+.curriculum-browser__results h3,
+.curriculum-browser__empty h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.curriculum-browser p,
+.curriculum-browser button,
+.curriculum-browser__path,
+.curriculum-free-heading p {
+  font-size: 16px;
+}
+
+.curriculum-browser__intro,
+.curriculum-browser__results > p,
+.curriculum-browser__empty p,
+.curriculum-free-heading p {
+  color: var(--text-secondary);
+}
+
+.curriculum-browser__stages {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.curriculum-browser__choices {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.curriculum-browser__choices--subjects,
+.curriculum-browser__choices--semesters {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.curriculum-browser__choice {
+  width: 100%;
+  height: 100%;
+  min-height: var(--touch-target);
+  padding: 12px;
+  border-radius: var(--radius-inner);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.curriculum-browser__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.curriculum-browser__actions .btn {
+  min-height: var(--touch-target);
+  padding: 10px 16px;
+}
+
+.curriculum-browser__path {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-secondary);
+}
+
+.curriculum-browser__path li {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.curriculum-browser__path li + li::before {
+  content: '/';
+  color: var(--text-secondary);
+}
+
+.curriculum-browser__path [aria-current='step'] {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.curriculum-browser__empty {
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.curriculum-browser__empty .btn {
+  margin-top: 8px;
+}
+
+.curriculum-browser__result {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.curriculum-browser__notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.curriculum-browser__notes--review {
+  padding: 8px 12px;
+  background-color: var(--accent-info-soft);
+  color: var(--accent-info-text);
+  border: var(--border);
+  border-radius: var(--radius-inner);
+}
+
+.curriculum-browser button:focus-visible {
+  outline: 3px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+.curriculum-browser__title:focus-visible {
+  outline: 3px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .curriculum-browser__stages {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .curriculum-browser__panel {
+    padding: 16px;
+  }
+
+  .curriculum-browser__choices {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .curriculum-browser__title,
+  .curriculum-free-heading h2 {
+    font-size: 20px;
+  }
+
+  .curriculum-browser__actions .btn {
+    flex: 1 1 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .curriculum-browser *,
+  .curriculum-browser *::before,
+  .curriculum-browser *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .curriculum-browser .btn:active {
+    transform: none;
+  }
+}
+
+.curriculum-browser__explanation,
+.curriculum-browser__scope {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+.curriculum-browser__source {
+  align-self: flex-start;
+  min-height: 44px;
+  min-width: 44px;
+}

@@ -1,0 +1,352 @@
+{
+  "grades": [
+    {
+      "gradeId": "primary4",
+      "gradeLabelAr": "الصف الرابع الابتدائي",
+      "stageLabelAr": "المرحلة الابتدائية",
+      "portalAccessible": false,
+      "portalYear": "2026-2027",
+      "yearBasisAr": "مسار الملفات الرسمية وبيانات كتاب العلوم؛ لا قراءة سنة من واجهة البوابة. حقوق كتاب الرياضيات الداخلية تحمل 2025.",
+      "subjectLabels": [
+        "العلوم",
+        "الرياضيات"
+      ],
+      "semesterLabels": [
+        "الفصل الدراسي الأول"
+      ],
+      "sourceUrls": [
+        "https://studentbooks.moe.gov.eg/Books/Books-Primary/",
+        "https://miskeg.app/en/books/general-primary-4/",
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/StudentBook/Science_Ar_prim4_t1.pdf",
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/StudentBook/Math_EN_P4_T1.pdf",
+        "https://edu2-egypt.com/grade-4"
+      ],
+      "id": "primary-4",
+      "labelAr": "الصف الرابع الابتدائي"
+    },
+    {
+      "gradeId": "primary5",
+      "gradeLabelAr": "الصف الخامس الابتدائي",
+      "stageLabelAr": "المرحلة الابتدائية",
+      "portalAccessible": false,
+      "portalYear": "2026-2027",
+      "yearBasisAr": "مسار كتابي الفصل الأول الرسميين؛ لا قراءة سنة من واجهة البوابة.",
+      "subjectLabels": [
+        "العلوم — نسخة باللغة الإنجليزية",
+        "الرياضيات — نسخة باللغة الإنجليزية"
+      ],
+      "semesterLabels": [
+        "الفصل الدراسي الأول (Term 1)"
+      ],
+      "sourceUrls": [
+        "https://studentbooks.moe.gov.eg/Books/Books-Primary/",
+        "https://miskeg.app/en/books/general-primary-5/",
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Science_EN_Prim5_TR1.pdf",
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Math_EN_prim5_t1.pdf",
+        "https://shbabbek.com/show/280127"
+      ],
+      "id": "primary-5",
+      "labelAr": "الصف الخامس الابتدائي"
+    },
+    {
+      "gradeId": "primary6",
+      "gradeLabelAr": "الصف السادس الابتدائي",
+      "stageLabelAr": "المرحلة الابتدائية",
+      "portalAccessible": false,
+      "portalYear": "",
+      "yearBasisAr": "السنة وطبعة الكتب غير متحققتين؛ بيانات المواد والفصلين من منصة الدروس الرسمية التي لا تعرض سنة.",
+      "subjectLabels": [
+        "العلوم",
+        "الرياضيات",
+        "Science",
+        "Math"
+      ],
+      "semesterLabels": [
+        "الترم الأول",
+        "الترم الثاني"
+      ],
+      "sourceUrls": [
+        "https://studentbooks.moe.gov.eg/Books/Books-Primary/",
+        "https://lessons.moe.gov.eg/g6/t1",
+        "https://lessons.moe.gov.eg/g6/t2"
+      ],
+      "id": "primary-6",
+      "labelAr": "الصف السادس الابتدائي"
+    },
+    {
+      "gradeId": "prep1",
+      "gradeLabelAr": "الصف الأول الإعدادي",
+      "stageLabelAr": "المرحلة الإعدادية",
+      "portalAccessible": false,
+      "portalYear": "",
+      "yearBasisAr": "2026-2027 غير متحقق. بديل العلوم موسوم بالفصل الأول 2025 وغير رسمي؛ وصف الرياضيات متضارب بين 2026 و2027 وتحديث 2025.",
+      "subjectLabels": [
+        "العلوم",
+        "الرياضيات"
+      ],
+      "semesterLabels": [
+        "الفصل الدراسي الأول"
+      ],
+      "sourceUrls": [
+        "https://studentbooks.moe.gov.eg/Books/Books-Preparatory/",
+        "https://www.scribd.com/document/782763052/كتاب-الوزارة-علوم-اولى-اعدادي-ترم-اول-2025",
+        "https://afedne1.com/library/file/176/كتاب_الرياضيات_الصف_الأول_الإعدادي_الفصل_الأول_لعام_2026"
+      ],
+      "id": "prep-1",
+      "labelAr": "الصف الأول الإعدادي"
+    },
+    {
+      "gradeId": "prep2",
+      "gradeLabelAr": "الصف الثاني الإعدادي",
+      "stageLabelAr": "المرحلة الإعدادية",
+      "portalAccessible": false,
+      "portalYear": "2026-2027",
+      "yearBasisAr": "مسار كتابي الفصل الأول الرسميين؛ لا قراءة سنة من واجهة البوابة.",
+      "subjectLabels": [
+        "العلوم",
+        "الرياضيات"
+      ],
+      "semesterLabels": [
+        "الفصل الدراسي الأول"
+      ],
+      "sourceUrls": [
+        "https://studentbooks.moe.gov.eg/Books/Books-Preparatory/",
+        "https://miskeg.app/en/books/general-prep-2/",
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/StudentBook/Science_Ar_prep2_t1.pdf",
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/StudentBook/Math_Ar_prep2_t1.pdf"
+      ],
+      "id": "prep-2",
+      "labelAr": "الصف الثاني الإعدادي"
+    },
+    {
+      "gradeId": "prep3",
+      "gradeLabelAr": "الصف الثالث الإعدادي",
+      "stageLabelAr": "المرحلة الإعدادية",
+      "portalAccessible": false,
+      "portalYear": "",
+      "yearBasisAr": "سنة البوابة غير متحققة؛ 2026-2027 والفصل الأول مذكوران في فهرس بديل، ولم تُقرأ فهارس الكتب الرسمية.",
+      "subjectLabels": [
+        "العلوم",
+        "الرياضيات"
+      ],
+      "semesterLabels": [
+        "الفصل الدراسي الأول"
+      ],
+      "sourceUrls": [
+        "https://studentbooks.moe.gov.eg/Books/Books-Preparatory/",
+        "https://miskeg.app/en/books/general-prep-3/",
+        "https://shbabbek.com/show/277775"
+      ],
+      "id": "prep-3",
+      "labelAr": "الصف الثالث الإعدادي"
+    }
+  ],
+  "semesters": [
+    1,
+    2
+  ],
+  "requestedPortalAccessible": true,
+  "mappings": [
+    {
+      "experimentId": "motion-acceleration",
+      "gradeId": "primary-4",
+      "subject": "science",
+      "terms": [
+        1
+      ],
+      "confidence": "medium",
+      "status": "needs_teacher_review",
+      "basisAr": "صلة جزئية صريحة في علوم الفصل الأول الحالي: الفصلان السادس والسابع، الصفحات المطبوعة 78–89، يربطان تغير القوة بحركة سيارة ومسافتها وسرعة انطلاقها، وتتناول الصفحة 97 جعل سطح السحب أكثر انزلاقًا لتقليل القوة اللازمة. لا يثبت ذلك حساب التسارع من F/m أو نموذج احتكاك كمي. التجربة الثابتة بهذه الامتدادات تحتاج مراجعة المعلم، وليست مطابقة كاملة معتمدة.",
+      "sourceUrls": [
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/StudentBook/Science_Ar_prim4_t1.pdf"
+      ]
+    },
+    {
+      "experimentId": "fractions-area",
+      "gradeId": "primary-5",
+      "subject": "math",
+      "terms": [
+        1
+      ],
+      "confidence": "medium",
+      "status": "needs_teacher_review",
+      "basisAr": "دعم جزئي في رياضيات الفصل الأول: الصفحتان 4–5 تمثلان الأعشار والأجزاء من مئة وألف بتقسيم المساحة إلى أجزاء متساوية، والصفحة 99 تستخدم نموذج المساحة لضرب الكسور العشرية. لا يثبت ذلك ملاءمة التجربة الثابتة لجميع مقامات n/d والتكافؤ وعرض النسبة المئوية؛ يلزم اعتماد المعلم لهذه الامتدادات.",
+      "sourceUrls": [
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Math_EN_prim5_t1.pdf"
+      ]
+    },
+    {
+      "experimentId": "matter-states",
+      "gradeId": "primary-5",
+      "subject": "science",
+      "terms": [
+        1
+      ],
+      "confidence": "medium",
+      "status": "needs_teacher_review",
+      "basisAr": "دعم جزئي في فصل دورة الماء، الصفحات 92–99 من الفصل الدراسي الأول: تبخر الماء وتأثره بالدفء وعودته سائلًا عند التبريد. لا يثبت ذلك منحنى تسخين وتبريد كاملًا للحالات الثلاث أو درجتي التحول 0 و100 مئوية. التجربة الثابتة كاملة تحتاج مراجعة المعلم ولا تُعد مطابقة مؤكدة.",
+      "sourceUrls": [
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Science_EN_Prim5_TR1.pdf"
+      ]
+    },
+    {
+      "experimentId": "planet-orbits",
+      "gradeId": "prep-1",
+      "subject": "science",
+      "terms": [
+        1
+      ],
+      "confidence": "low",
+      "status": "needs_teacher_review",
+      "basisAr": "مرشح من مصدر أقدم غير رسمي فقط: فهرس بديل العلوم الموسوم بالفصل الأول 2025 يتضمن الأرض والنظام الشمسي، الصفحة 80. لم تُثبت طبعة 2026-2027 ولا تفاصيل مدارات ستة كواكب أو ضبط سرعاتها. term 1 وصف للبديل القديم، لا إسناد مؤكد للعام الحالي. اختلاف سنة المصدر وعدم فحص تفاصيل النموذج يوجبان مراجعة المعلم قبل الاعتماد.",
+      "sourceUrls": [
+        "https://www.scribd.com/document/782763052/كتاب-الوزارة-علوم-اولى-اعدادي-ترم-اول-2025"
+      ]
+    },
+    {
+      "experimentId": "matter-states",
+      "gradeId": "prep-2",
+      "subject": "science",
+      "terms": [
+        1
+      ],
+      "confidence": "high",
+      "status": "verified",
+      "basisAr": "مطابقة مباشرة في الوحدة الأولى، درس تغير حالات المادة بالفصل الأول. الصفحتان 11–12 تتناولان تسخين الثلج ثم الماء وتحوله بين الصلب والسائل والغاز وثبات درجة الحرارة أثناء التحول عند 0 و100 مئوية للماء النقي عند الضغط الجوي المعتاد. أهداف الدرس والتحولات العكسية وفقد الحرارة في الصفحات 10–16 تدعم التبريد والتجمد والتكثف أيضًا. اعتماد درجتي التحول مقيد بهذه الشروط في المحاكاة المبسطة.",
+      "sourceUrls": [
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/StudentBook/Science_Ar_prep2_t1.pdf"
+      ]
+    }
+  ],
+  "unmapped": [
+    "lever-balance",
+    "light-refraction"
+  ],
+  "sources": [
+    {
+      "url": "https://studentbooks.moe.gov.eg/Books/Books-Primary/",
+      "title": "بوابة الكتب الدراسية — المرحلة الابتدائية",
+      "whatVerifiedAr": "عرض الاستخراج النصي هيكل المرحلة واختر الصف واختر المادة فقط، بينما أعاد الوصول التفاعلي وطلب HTTP خطأ 403. لم تُقرأ قوائم الكتب أو السنة من الواجهة. تعذر البوابة لا يعني تعذر ملفات الكتب."
+    },
+    {
+      "url": "https://studentbooks.moe.gov.eg/Books/Books-Preparatory/",
+      "title": "بوابة الكتب الدراسية — المرحلة الإعدادية",
+      "whatVerifiedAr": "أظهر الاستخراج النصي عنوان المرحلة وعناصر اختيار الصف والمادة بلا بيانات ديناميكية؛ أعاد المتصفح وطلب HTTP خطأ 403. لم تُثبت سنة أو بيانات بطاقات الكتب."
+    },
+    {
+      "url": "https://miskeg.app/en/books/general-primary-4/",
+      "title": "فهرس مسك لكتب الصف الرابع 2026–2027",
+      "whatVerifiedAr": "صفحة غير وزارية مفتوحة تربط بملفات الوزارة للفصل الأول ضمن مسار 2026_2027؛ تاريخ مراجعة الروابط المعلن 2026-10-26. استُخدمت لاكتشاف الروابط فقط، لا لإثبات موضوعات التجارب."
+    },
+    {
+      "url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/StudentBook/Science_Ar_prim4_t1.pdf",
+      "title": "كتاب العلوم العربي الرسمي — الرابع الابتدائي — الفصل الأول — 2026–2027",
+      "whatVerifiedAr": "فُتح الملف بحالة HTTP 200. الغلاف والفهرس يحددان الصف والفصل، والحقوق تذكر 2026–2027. فُحصت موضوعات الضوء، وقوة الرياح والمطاط وحركة السيارات، وتيسير سحب الأجسام. وجود الضوء لم يُعامل دليلًا على الانكسار الكمي."
+    },
+    {
+      "url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/StudentBook/Math_EN_P4_T1.pdf",
+      "title": "كتاب الرياضيات الإنجليزي الرسمي — الرابع الابتدائي — الفصل الأول — مسار 2026–2027",
+      "whatVerifiedAr": "فُتح الملف بحالة HTTP 200، وتحقق الصف والفصل من الغلاف. الفهرس يتضمن القياس والمساحة والمحيط والعمليات والعوامل والمضاعفات، ولا يثبت نموذج الكسور المكافئة والنسبة المئوية. الحقوق الداخلية تحمل 2025 وليست إثباتًا مستقلًا لإصدار 2026–2027."
+    },
+    {
+      "url": "https://edu2-egypt.com/grade-4",
+      "title": "أرشيف مشروع توثيق التعليم 2.0 — كتب الصف الرابع",
+      "whatVerifiedAr": "صفحة مفتوحة تصنف كتب العلوم والرياضيات للفصلين لعام 2022–2023. بيانات أرشيفية فقط، لم تُستخدم لإثبات المنهج الحالي. لم يُفحص كتاب رياضيات الفصل الثاني المرتبط بها بسبب صفحة تحذير فحص الفيروسات في Google Drive."
+    },
+    {
+      "url": "https://miskeg.app/en/books/general-primary-5/",
+      "title": "فهرس مسك لكتب الصف الخامس 2026–2027",
+      "whatVerifiedAr": "فهرس ثانوي مفتوح يسرد العلوم والرياضيات للفصل الأول ويربط بملفات الوزارة ضمن مسار 2026_2027. تاريخ مراجعته المعلن 2026-10-26. لا يثبت محتوى التجارب أو عدم نشر الفصل الثاني."
+    },
+    {
+      "url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Science_EN_Prim5_TR1.pdf",
+      "title": "كتاب العلوم الإنجليزي الرسمي — الخامس الابتدائي — الفصل الأول — مسار 2026–2027",
+      "whatVerifiedAr": "فُتح الملف بحالة HTTP 200، وتحقق Primary 5 وScience وTERM 1 من محتواه. فُحصت مواضع التبخر والتكاثف في الصفحات 92–99. الفهرس يتناول موضوعات الأحياء والفصول والطقس ودورة الماء، ولا يثبت تجارب الميكانيكا أو الانكسار أو المدارات."
+    },
+    {
+      "url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary5/Term1/StudentBook/Math_EN_prim5_t1.pdf",
+      "title": "كتاب الرياضيات الإنجليزي الرسمي — الخامس الابتدائي — الفصل الأول — مسار 2026–2027",
+      "whatVerifiedAr": "فُتح الملف بحالة HTTP 200 وتحقق الغلاف والفهرس. فُحص تمثيل الأعشار والأجزاء من مئة وألف بمساحة في الصفحتين 4–5، وضرب الكسور العشرية بنموذج مساحة في الصفحة 99."
+    },
+    {
+      "url": "https://shbabbek.com/show/280127",
+      "title": "كتاب الوزارة علوم الخامس الابتدائي ترم أول 2027 — شبابيك",
+      "whatVerifiedAr": "مقال ثانوي مفتوح مؤرخ 2026-08-13، يربط الكتاب بالفصل الأول 2026–2027 ويذكر موضوعات حيوية. قرينة مساعدة فقط، تلاها فحص الكتاب الرسمي."
+    },
+    {
+      "url": "https://lessons.moe.gov.eg/g6/t1",
+      "title": "منصة دروس الوزارة — السادس الابتدائي — الترم الأول",
+      "whatVerifiedAr": "صفحة رسمية مفتوحة تؤكد الصف والفصل وتسميات العلوم والرياضيات وScience وMath وروابط قوائم الدروس. لا تعرض موضوعات الدروس أو سنة طبعة كتاب. محاولة قائمة العلوم اللاحقة فشلت بخطأ SSL فلم يكتمل الفحص الموضوعي."
+    },
+    {
+      "url": "https://lessons.moe.gov.eg/g6/t2",
+      "title": "منصة دروس الوزارة — السادس الابتدائي — الترم الثاني",
+      "whatVerifiedAr": "صفحة رسمية مفتوحة تؤكد الصف والفصل وتسميات المواد وروابط قوائمها، دون فهرس موضوعات أو سنة إصدار. تثبت تسمية الفصل الثاني فقط، لا توافق تجربة أو نشر كتاب حالي."
+    },
+    {
+      "url": "https://www.scribd.com/document/782763052/كتاب-الوزارة-علوم-اولى-اعدادي-ترم-اول-2025",
+      "title": "علوم الأول الإعدادي ترم أول 2025 — نسخة غير رسمية على Scribd",
+      "whatVerifiedAr": "فُحص فهرس بديل غير رسمي موسوم بالصف والفصل الأول و2025. رغم اضطراب الترميز أمكن تمييز الأرض والنظام الشمسي في الصفحة 80 وعناوين المادة والقوى. لم تُثبت مطابقة طبعة 2026–2027 أو تفاصيل نموذج المدارات."
+    },
+    {
+      "url": "https://afedne1.com/library/file/176/كتاب_الرياضيات_الصف_الأول_الإعدادي_الفصل_الأول_لعام_2026",
+      "title": "رياضيات الأول الإعدادي الفصل الأول لعام 2026 — أفدني",
+      "whatVerifiedAr": "صفحة وصف مفتوحة تؤكد الصف والمادة والفصل، وتذكر عناوين عامة. بياناتها الزمنية متضاربة: العنوان 2026، ونوع المحتوى 2027، والتحديث 2025-06-22. لم يُفحص ملف الكتاب؛ لا تثبت نموذج الكسور بالمساحة."
+    },
+    {
+      "url": "https://miskeg.app/en/books/general-prep-2/",
+      "title": "فهرس مسك لكتب الثاني الإعدادي 2026–2027",
+      "whatVerifiedAr": "فهرس غير وزاري مفتوح، مراجع بحسب الصفحة في 2026-10-26، يربط بكتابي العلوم والرياضيات العربيين الرسميين للفصل الأول. استُخدم لاكتشاف الروابط، ثم فُحص الملفان؛ لا يثبت حالة الفصل الثاني يوم الرصد."
+    },
+    {
+      "url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/StudentBook/Science_Ar_prep2_t1.pdf",
+      "title": "العلوم الرسمي — الثاني الإعدادي — الفصل الأول — مسار 2026–2027",
+      "whatVerifiedAr": "فُتح الملف بحالة HTTP 200 وتحقق الغلاف والفهرس. فُحص درس تغير حالات المادة، الصفحات المطبوعة 10–16، وتحولات الماء بالتسخين والتبريد وثبات درجتي التحول عند 0 و100 مئوية بالشروط المذكورة."
+    },
+    {
+      "url": "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/StudentBook/Math_Ar_prep2_t1.pdf",
+      "title": "الرياضيات الرسمي — الثاني الإعدادي — الفصل الأول — مسار 2026–2027",
+      "whatVerifiedAr": "فُتح الملف بحالة HTTP 200 وتحقق الصف والمادة والفصل. فُحص الفهرس والصفحتان 2–3: أعداد نسبية وتمثيلات عددية تتضمن نسبة مئوية، دون دليل على درس مخصص لنموذج كسور المساحة."
+    },
+    {
+      "url": "https://miskeg.app/en/books/general-prep-3/",
+      "title": "فهرس مسك لكتب الثالث الإعدادي 2026–2027",
+      "whatVerifiedAr": "فهرس بديل مفتوح، مراجع بحسب الصفحة في 2026-10-26، يسرد العلوم والرياضيات للفصل الأول بالعربية والإنجليزية والفرنسية ويربط بملفات الوزارة ضمن مسار 2026_2027. لا يقدم فهارس موضوعات؛ لم يُقرأ محتوى الكتب الرسمية."
+    },
+    {
+      "url": "https://shbabbek.com/show/277775",
+      "title": "كتاب الوزارة علوم الثالث الإعدادي ترم أول 2027 — شبابيك",
+      "whatVerifiedAr": "مقال ثانوي مفتوح مؤرخ 2026-07-16، يصف جزءًا كيميائيًا من كتاب الفصل الأول 2026–2027 ويذكر مجالات عامة لأربع وحدات. ليس فهرسًا كاملًا، ولا يثبت موضع أي تجربة من الست."
+    }
+  ],
+  "limitationsAr": "بوابة الجذر متاحة بالاستخراج النصي وتعرض أربع مراحل؛ قوائم المرحلتين الحية أعادت403، فلا يُدعى فحص قوائمها أو سنة واجهتها. بيانات الصفوف والمواد تأتي من المصادر المذكورة، وسنة السادس والأول والثالث الإعدادي غير مؤكدة من كتب حالية. [1,2] تسميات فصلين متحققة بنيويًا، لكن لم يُفحص كتاب فصل ثانٍ حالي. توجد مطابقة موثقة واحدة لحالات المادة بالثاني الإعدادي، وأربعة مرشحات تحتاج مراجعة معلّم بسبب الدعم الجزئي أو طبعة أقدم. استُبعد مرشحا الكسور للرابع والثاني الإعدادي لأنهما لا يثبتان الموضوع. الرافعة والانكسار بلا موضع مدعوم، متاحان في اللعب الحر فقط. الأزواج غير المسجلة لا تملك دليلًا كافيًا؛ ذلك لا يثبت غيابها من العام كله. لا تنسخ المخرجات نصوص الكتب أو تمارينها أو صورها ولا تغيّر المحتوى العلمي.",
+  "excludedWeakCandidates": [
+    {
+      "experimentId": "fractions-area",
+      "gradeId": "primary4",
+      "subject": "math",
+      "terms": [],
+      "confidence": "low",
+      "status": "needs_teacher_review",
+      "basisAr": "مرشح ضعيف بفصل غير مؤكد: فهرس الفصل الأول يثبت المساحة والمحيط وإيجاد المساحة في الصفحة 62، لا نموذج مساحة للكسر n/d أو التكافؤ أو النسبة المئوية. لم يُفحص الفصل الثاني ولا يُسند المرشح إليه أو إلى الفصل الأول. ملف المسار الحالي يحمل حقوقًا داخلية لعام 2025، والبديل الأرشيفي 2022–2023 لا يثبت المنهج الحالي. يلزم تحقق المعلم من الموضوع والفصل والامتدادات قبل أي اعتماد؛ وجود هذا السجل ليس إثبات مطابقة.",
+      "sourceUrls": [
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Primary/Primary4/Term1/StudentBook/Math_EN_P4_T1.pdf",
+        "https://edu2-egypt.com/grade-4"
+      ]
+    },
+    {
+      "experimentId": "fractions-area",
+      "gradeId": "prep2",
+      "subject": "math",
+      "terms": [
+        1
+      ],
+      "confidence": "low",
+      "status": "needs_teacher_review",
+      "basisAr": "ارتباط جزئي في درس الأعداد الحقيقية، الصفحتان 2–3 من الفصل الأول: استعادة الأعداد النسبية بوصفها خارج قسمة عددين صحيحين، وتمثيلات عددية مكافئة تتضمن نسبة مئوية. لا يثبت ذلك درس نموذج مساحة مظللة للكسر n/d أو التحويل المتكامل إلى التكافؤ والنسبة المئوية. التجربة الثابتة تحتاج مراجعة المعلم وليست مطابقة موثقة لكسور المساحة.",
+      "sourceUrls": [
+        "https://elearnningcontent.blob.core.windows.net/elearnningcontent/2026_2027/Prepratory/Prepratory2/Term1/StudentBook/Math_Ar_prep2_t1.pdf"
+      ]
+    }
+  ]
+}

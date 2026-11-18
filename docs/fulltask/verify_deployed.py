@@ -1,0 +1,33 @@
+import json,re,sys,hashlib
+from pathlib import Path
+import requests
+from playwright.sync_api import sync_playwright
+OUT=Path(__file__).resolve().parent;URL=sys.argv[1].rstrip('/');LIVE=not URL.startswith('http://127.0.0.1');TAG='LIVE' if LIVE else 'FINAL-LOCAL';SHOTS=OUT/'screenshots'/TAG;SHOTS.mkdir(parents=True,exist_ok=True);checks=[];errors=[];bad=[];shots={};responses=[]
+def snap(page,name):
+ page.evaluate('document.fonts.ready');page.evaluate('Promise.all([...document.images].map(im=>im.decode().catch(()=>{})))');page.wait_for_timeout(120);path=SHOTS/(TAG+'-'+name+'-1366x768-fullpage.png');page.screenshot(path=str(path),full_page=True);shots[name]=str(path);return str(path)
+def record(name,ok,data,path):checks.append({'item':name,'verified':bool(ok),'evidence':data,'screenshot':path})
+def waitRoute(page,selector):page.wait_for_selector(selector);page.evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))')
+with sync_playwright() as p:
+ b=p.chromium.launch(headless=True,args=['--no-sandbox']);c=b.new_context(viewport={'width':1366,'height':768},reduced_motion='reduce');page=c.new_page();page.on('pageerror',lambda e:errors.append(str(e)));page.on('console',lambda m:errors.append(m.text) if m.type=='error' else None);page.on('response',lambda r:(responses.append({'url':r.url,'status':r.status}),bad.append({'url':r.url,'status':r.status}) if r.status>=400 else None));page.goto(URL,wait_until='domcontentloaded');page.wait_for_timeout(600)
+ if 'manus.im/' in page.url or not page.locator('.hero-select').count():
+  image=snap(page,'ACCESS-BLOCKED');report={'url':URL,'finalURL':page.url,'blocked':True,'reason':'Public visitor did not reach the app; login/access gate or non-app response','checks':[{'item':name,'verified':False,'evidence':'Blocked before application loaded','screenshot':image} for name in ['First visit heroes and larger portraits','One global theme in AR/EN','Grade → subject → experiment','Lab1366x768 without page scroll','No application console errors','No application404s']],'errors':errors,'bad':bad,'shots':shots,'pass':False};(OUT/(TAG.lower()+'-verification.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print('NOT VERIFIED: public application inaccessible',page.url);b.close();sys.exit(0)
+ waitRoute(page,'.hero-select');state=page.evaluate("()=>({route:location.hash,hero:JSON.parse(localStorage.getItem('misbar:student:v1')).heroId,width:document.documentElement.scrollWidth,height:document.documentElement.scrollHeight,stages:[...document.querySelectorAll('.hero-card__stage')].map(el=>el.getBoundingClientRect().height),featured:document.querySelectorAll('.is-featured').length})");record('First visit heroes and larger portraits',state['hero'] is None and state['route']=='#/heroes' and state['height']<=768 and state['width']<=1366 and min(state['stages'])>180,state,snap(page,'01-first-visit-heroes'))
+ page.locator('input[value=nour]').check(force=True);page.locator('.hero-select__continue').click();waitRoute(page,'.lobby');page.locator('.lobby__enter').click();waitRoute(page,'.catalog');themeProof=[]
+ for lang in ['ar','en']:
+  if page.locator('html').get_attribute('lang')!=lang:page.locator('#lang-toggle').click();page.wait_for_function('document.documentElement.lang==='+json.dumps(lang))
+  for theme in ['night','light']:
+   if page.locator('html').get_attribute('data-theme')!=theme:page.locator('#theme-toggle').click();page.wait_for_function('document.documentElement.dataset.theme==='+json.dumps(theme))
+   for route,selector in [('lobby','.lobby'),('vault','.vault'),('ranks','.ranks'),('dashboard','.placeholder'),('playground/motion-acceleration','.sim-svg'),('heroes','.hero-select'),('catalog','.catalog')]:
+    page.goto(URL+'/#/'+route);page.reload();page.wait_for_selector('#view-heading');page.evaluate('new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)))');actual=page.evaluate("()=>({theme:document.documentElement.dataset.theme,lang:document.documentElement.lang,dir:document.documentElement.dir})");themeProof.append({'route':route,**actual,'expected':theme});assert actual=={'theme':theme,'lang':lang,'dir':'rtl' if lang=='ar' else 'ltr'}
+   snap(page,'02-global-theme-'+lang+'-'+theme)
+ record('One global theme in AR/EN',True,themeProof,shots['02-global-theme-en-night'])
+ page.locator('[data-grade-id=prep-2]').click();page.locator('[data-subject-id=science]').click();page.locator('[data-term-id="1"]').click();page.wait_for_selector('#experiment-title-matter-states');path=snap(page,'03-grade-subject-term');page.locator('.experiment-card').filter(has=page.locator('#experiment-title-matter-states')).get_by_role('button').click();waitRoute(page,'.sim-svg');assert page.url.endswith('#/playground/matter-states');record('Grade → subject → experiment',True,{'grade':'prep-2','subject':'science','semester':1,'experiment':'matter-states'},path)
+ geometry=page.evaluate("()=>({w:innerWidth,h:innerHeight,pageWidth:document.documentElement.scrollWidth,pageHeight:document.documentElement.scrollHeight,svgHeight:document.querySelector('.sim-svg').getBoundingClientRect().height,challengeBottom:document.querySelector('.challenge-bar').getBoundingClientRect().bottom,workspaceTop:document.querySelector('.sim-workspace').getBoundingClientRect().top})");record('Lab1366x768 without page scroll',geometry['pageHeight']<=768 and geometry['pageWidth']<=1366 and geometry['svgHeight']>150 and geometry['challengeBottom']<=geometry['workspaceTop']+1,geometry,snap(page,'04-lab-no-scroll'))
+ record('No application console errors',not errors,{'errors':errors},snap(page,'05-console-check'));record('No application404s',not bad,{'failedResponses':bad,'responseCount':len(responses)},snap(page,'06-no404-check'));b.close()
+manifest=OUT/'final-dist-manifest.json';assetProof=[]
+if LIVE and manifest.exists():
+ m=json.loads(manifest.read_text())
+ for filename,digest in m['files'].items():
+  if filename.startswith('assets/') and filename.endswith(('.js','.css')):
+   r=requests.get(URL+'/'+filename,timeout=30);assetProof.append({'file':filename,'status':r.status_code,'expected':digest,'actual':hashlib.sha256(r.content).hexdigest(),'match':r.status_code==200 and hashlib.sha256(r.content).hexdigest()==digest})
+report={'url':URL,'checks':checks,'errors':errors,'bad':bad,'assetByteProof':assetProof,'shots':shots,'pass':all(x['verified'] for x in checks) and all(x['match'] for x in assetProof)};(OUT/(TAG.lower()+'-verification.json')).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(TAG,[(x['item'],x['verified']) for x in checks]);assert report['pass']

@@ -108,7 +108,7 @@ Help Modal (`_7`) screens in the Stitch zip.
 
 - [x] PhaseA: one persisted theme; exhaustive screen/component AR/EN light/night audit, WCAGbodycontrast4.5:1, complete BEFORE/AFTER screenshots.
 - [x] PhaseB: radiusinventory→consistent~1/3reduction; heroimageslargerand1366x768/390phonefitwithoutpagescroll; Shararaidentity-preservingclosed-chestedit/separatecommit(orhonestunchangedblocker); usability44pxfocus16pxback≤3tapsreducedmotionhorizontalfit.
-- [ ] PhaseC: verifiedEgyptian6gradeMOEstructure, no copiedcontent, existing6experimentsonly, confidentmappingorneeds teacher review, honestcomingsoon,AR/EN RTL/LTR,preserveprogressandPlayground.
+- [x] PhaseC: verifiedEgyptian6gradeMOEstructure, no copiedcontent, existing6experimentsonly, confidentmappingorneeds teacher review, honestcomingsoon,AR/EN RTL/LTR,preserveprogressandPlayground.
 - [ ] PhaseD: frozeninstallbuildQA, normalmainpush,diff/hashes, Pagesactualonly, exactsourceManuspublish and publicfirstvisit/largerheroes/globaltheme/gradeflow/labfit/noerrors/no404 evidence.
 
 ## Exact acceptance source

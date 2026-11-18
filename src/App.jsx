@@ -2,8 +2,10 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import AppHeader from './components/AppHeader.jsx';
 import GameHeader from './components/GameHeader.jsx';
 import PlaygroundView from './components/PlaygroundView.jsx';
+import { CURRICULUM_STORAGE_KEY, normalizeCurriculumSelection } from './data/curriculum.js';
 import { ALL_CATEGORY_ID, getExperimentById, getExperimentCopy } from './data/experiments.js';
 import { useI18n } from './i18n/index.jsx';
+import { readJSON, writeJSON } from './lib/storage.js';
 import { GAME_VIEWS, VIEWS, useNavigation } from './state/navigation.jsx';
 import { useStudent } from './state/student.jsx';
 import CatalogView from './views/CatalogView.jsx';
@@ -36,24 +38,41 @@ function documentTitleFor(view, params, t) {
  * <App /> — application shell.
  *
  * Renders exactly one view:
- *   catalog & dashboard  default cream, shared app header
- *   playground (lab)     default cream, its own header; fits the viewport on desktop
- *   lobby · heroes ·     default night (explicit theme lives on html, see
- *   vault · ranks        index.css), shared game header
+ *   catalog & dashboard  shared app header
+ *   playground (lab)     its own header; fits the viewport on desktop
+ *   lobby · heroes ·     shared game header
+ *   vault · ranks
+ *
+ * One global persisted theme applies to every screen (light by default).
  *
  * The catalog's search/filter state lives here so it survives a round trip
- * to another screen.
+ * to another screen. Curriculum preferences use their own localStorage key
+ * so they also survive language remounts, without touching student progress.
  */
 export default function App() {
   const { view, params, navigate } = useNavigation();
   const { student } = useStudent();
   const { t } = useI18n();
 
-  const [catalogFilters, setCatalogFilters] = useState({ query: '', category: ALL_CATEGORY_ID });
+  const [catalogFilters, setCatalogFilters] = useState(() => ({
+    query: '',
+    category: ALL_CATEGORY_ID,
+    curriculum: normalizeCurriculumSelection(readJSON(CURRICULUM_STORAGE_KEY)),
+  }));
   const updateCatalogFilters = useCallback(
-    (patch) => setCatalogFilters((current) => ({ ...current, ...patch })),
+    (patch) => setCatalogFilters((current) => ({
+      ...current,
+      ...patch,
+      curriculum: Object.prototype.hasOwnProperty.call(patch, 'curriculum')
+        ? normalizeCurriculumSelection(patch.curriculum)
+        : current.curriculum,
+    })),
     [],
   );
+
+  useEffect(() => {
+    writeJSON(CURRICULUM_STORAGE_KEY, catalogFilters.curriculum);
+  }, [catalogFilters.curriculum]);
 
   const openCatalog = useCallback(() => navigate(VIEWS.CATALOG), [navigate]);
   const openDashboard = useCallback(() => navigate(VIEWS.DASHBOARD), [navigate]);
