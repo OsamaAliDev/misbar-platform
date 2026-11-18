@@ -1,0 +1,107 @@
+[
+  {
+    "file": "src/index.css",
+    "before": "14px",
+    "after": "9px"
+  },
+  {
+    "file": "src/index.css",
+    "before": "11px",
+    "after": "7px"
+  },
+  {
+    "file": "src/index.css",
+    "before": "3px",
+    "after": "2px"
+  },
+  {
+    "file": "src/components/BrandMark.css",
+    "before": "8px",
+    "after": "5px"
+  },
+  {
+    "file": "src/components/BrandMark.css",
+    "before": "7px",
+    "after": "5px"
+  },
+  {
+    "file": "src/components/HelpModal.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/components/HelpModal.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/components/MissionCard.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/components/ResultStrip.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/components/ResultStrip.css",
+    "before": "8px",
+    "after": "5px"
+  },
+  {
+    "file": "src/components/SearchBar.css",
+    "before": "12px",
+    "after": "8px"
+  },
+  {
+    "file": "src/components/SimulationControls.css",
+    "before": "3px",
+    "after": "2px"
+  },
+  {
+    "file": "src/components/SimulationControls.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/components/SimulationControls.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/components/SimulationControls.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/components/SimulationWorkspace.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/views/game/LobbyView.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/views/game/RanksView.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/views/game/VaultView.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/views/game/game.css",
+    "before": "33%",
+    "after": "22%"
+  },
+  {
+    "file": "src/views/game/game.css",
+    "before": "33%",
+    "after": "22%"
+  }
+]
