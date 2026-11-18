@@ -1,0 +1,12 @@
+{
+  "url": "https://osamaalidev.github.io/misbar-platform/",
+  "finalURL": "https://osamaalidev.github.io/misbar-platform/",
+  "status": 200,
+  "title": [
+    "مِسبار | مكتبة التجارب التفاعلية"
+  ],
+  "scriptURLs": [
+    "/src/main.jsx"
+  ],
+  "note": "HTTP observation only; settings unchanged; no claim application works."
+}

@@ -1,0 +1,23 @@
+{
+  "githubSourceCommit": "cf6ed2a9f51c0bdc52a8f3c0195c4d090c9f392a",
+  "files": {
+    "favicon.svg": "b1e1e26a5be111664146b350e29e1aa1c0f87bd1312927a1b9621ba11daab0b1",
+    "manus-routes.json": "b212dfb45c9ea80b9709b6e0cda136f7faf84649fefab4d7758c8ca0a985aa4a",
+    "index.html": "a0fb643065982defd17a76fbdc233d0c2015dd6daff3c1cc51dcd1076ee3580f",
+    "assets/nour.png": "4e961893f3ed45363d2ea2778fefbf510756f557a5fb5ff982625e450d093010",
+    "assets/index-BpU1XylT.js": "00acc669ec19c4434c03e69f47a1e20446a2c7ac891808a5c4b92c4c3c8f7467",
+    "assets/index-CnWSnRKr.css": "6daae1067d45f6f81ceca75222926035207208598e7dd02837bec806d4075a6f",
+    "heroes/lubna-face.webp": "84cffdf9ab0f3787bc8b9900bf50818b2668eac931282aaa6dbffe862bc64a5a",
+    "heroes/lubna-outfit1.webp": "91bebe53ddb94715664aa4accd4d763337c9e1cb7ac9e39d47752ea418b7bbf8",
+    "heroes/nour-face.webp": "f280f5d737b1bcf23ac535f59d118eba28f9849bd698ba2be7dd2dfcf725fcd6",
+    "heroes/nour-outfit1.webp": "43ceac76d8810159e4d581e5b350325c52595b5dd5bc482d2321931c26f000b8",
+    "heroes/sharara-face.webp": "489e3ab0a1c25acdc3002e0ea025a6fb3b70cc8994e8fd06e643eaa1c8738451",
+    "heroes/sharara-outfit1.webp": "d2a418fc90757bb9642d922f7e5678fb713c14064b02c0249c83d1f19223e64e",
+    "heroes/shihab-face.webp": "9448189fe59c983f9cb46477174e7f329ebc90f7f8055b1a285a6262f9def780",
+    "heroes/shihab-outfit1.webp": "c46a01419b1322d485692613974af0ec95ba32d24283c6d2f9cb6aad1d18ebfc",
+    "heroes/suhail-face.webp": "e2bc35420abd1dfdb9cb61e686864d2fe0700f5c08dad316b50867c12cae4828",
+    "heroes/suhail-outfit1.webp": "730504962de9352b3c5026030ddc543907931232cb211e8f968ff77601f89d2f"
+  },
+  "freshBuildEqualsTestedBuild": true,
+  "fileCount": 16
+}

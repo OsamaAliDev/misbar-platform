@@ -1,0 +1,31 @@
+cf6ed2a9f51c0bdc52a8f3c0195c4d090c9f392a
+✓ Lockfile passes supply-chain policies (verified 2d ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +19
++++++++++++++++++++
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /home/ubuntu/.local/share/pnpm/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 19, reused 19, downloaded 0, added 19, done
+
+dependencies:
++ react 19.3.1
++ react-dom 19.3.1
+
+devDependencies:
++ @vitejs/plugin-react 6.3.0
++ vite 8.3.8
+
+Done in 1.2s using pnpm v11.25.0
+$ vite build
+vite v8.3.8 building client environment for production...
+transforming...
+[32m✓[0m 131 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[0m[32mindex.html                 [0m[1;2m  2.66 kB[0m[2m │ gzip:   1.40 kB[0m
+[2mdist/[0m[2massets/[0m[35mindex-CnWSnRKr.css  [0m[1;2m 69.48 kB[0m[2m │ gzip:  11.85 kB[0m
+[2mdist/[0m[2massets/[0m[36mindex-BpU1XylT.js   [0m[1;2m406.94 kB[0m[2m │ gzip: 123.61 kB[0m
+
+✓ built in 369ms

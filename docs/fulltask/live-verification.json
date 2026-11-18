@@ -1,0 +1,58 @@
+{
+  "url": "https://misbarshape-pkxdzeht.manus.space",
+  "finalURL": "https://manus.im/app-auth?appId=PKXDzehTGsqigSpFi867PP&redirectUri=https%3A%2F%2Fmisbarshape-pkxdzeht.manus.space%2Fmanus-oauth%2Fcallback&state=aHR0cHM6Ly9taXNiYXJzaGFwZS1wa3hkemVodC5tYW51cy5zcGFjZS8%3D&responseType=code",
+  "blocked": true,
+  "reason": "Public visitor did not reach the app; login/access gate or non-app response",
+  "checks": [
+    {
+      "item": "First visit heroes and larger portraits",
+      "verified": false,
+      "evidence": "Blocked before application loaded",
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/LIVE/LIVE-ACCESS-BLOCKED-1366x768-fullpage.png"
+    },
+    {
+      "item": "One global theme in AR/EN",
+      "verified": false,
+      "evidence": "Blocked before application loaded",
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/LIVE/LIVE-ACCESS-BLOCKED-1366x768-fullpage.png"
+    },
+    {
+      "item": "Grade → subject → experiment",
+      "verified": false,
+      "evidence": "Blocked before application loaded",
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/LIVE/LIVE-ACCESS-BLOCKED-1366x768-fullpage.png"
+    },
+    {
+      "item": "Lab1366x768 without page scroll",
+      "verified": false,
+      "evidence": "Blocked before application loaded",
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/LIVE/LIVE-ACCESS-BLOCKED-1366x768-fullpage.png"
+    },
+    {
+      "item": "No application console errors",
+      "verified": false,
+      "evidence": "Blocked before application loaded",
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/LIVE/LIVE-ACCESS-BLOCKED-1366x768-fullpage.png"
+    },
+    {
+      "item": "No application404s",
+      "verified": false,
+      "evidence": "Blocked before application loaded",
+      "screenshot": "/home/ubuntu/misbar-fulltask-20261118/screenshots/LIVE/LIVE-ACCESS-BLOCKED-1366x768-fullpage.png"
+    }
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 401 ()",
+    "[unauthenticated] missing authorization header"
+  ],
+  "bad": [
+    {
+      "url": "https://api.manus.im/user.v1.UserService/UserInfo",
+      "status": 401
+    }
+  ],
+  "shots": {
+    "ACCESS-BLOCKED": "/home/ubuntu/misbar-fulltask-20261118/screenshots/LIVE/LIVE-ACCESS-BLOCKED-1366x768-fullpage.png"
+  },
+  "pass": false
+}
