@@ -1,0 +1,13 @@
+[1mdiff --git a/docs/qa_flow_current.py b/docs/qa_flow_current.py[m
+[1mindex 511e32e..ed99cfd 100644[m
+[1m--- a/docs/qa_flow_current.py[m
+[1m+++ b/docs/qa_flow_current.py[m
+[36m@@ -23,7 +23,7 @@[m [mwith sync_playwright() as p:[m
+     page.on('response',lambda r:bad.append((r.status,r.url)) if r.status>=400 else None)[m
+     page.goto(URL);page.wait_for_selector('.hero-select')[m
+     assert page.url.endswith('#/heroes') and profile(page)['stars']==12[m
+[31m-    assert page.locator('html').get_attribute('data-theme')=='night'[m
+[32m+[m[32m    assert page.locator('html').get_attribute('data-theme')=='light'[m
+     # Native choice then actual continue action.[m
+     page.locator('input[type=radio][value=sharara]').check(force=True)[m
+     page.locator('.hero-select__continue').click()[m

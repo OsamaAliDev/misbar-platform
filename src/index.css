@@ -31,6 +31,7 @@
   --accent-primary-soft: #D6E9FA;
   --accent-primary-soft-text: #1B5E99;
   --accent-primary-hover: #1B5E99; /* primary button hover fill (same in both themes) */
+  --accent-primary-action: var(--accent-primary-hover); /* white action text needs AA contrast */
 
   /* -- Accent: rewards, stars & progress --------------------------------- */
   --accent-reward: #F0B429;
@@ -42,11 +43,14 @@
   --accent-help: #EF6B5E;
   --accent-help-soft: #FDE0DC;
   --accent-help-text: #8A2A21;
+  --text-on-help: var(--text-on-reward);
+  --accent-help-hover: #8A2A21;
 
   /* -- Accent: tools, sliders & toggles --------------------------------- */
   --accent-tools: #9B5DE0;
   --accent-tools-soft: #EBDDFA;
   --accent-tools-text: #5B2E99;
+  --accent-tools-hover: #5B2E99;
 
   /* -- Accent: info & live results -------------------------------------- */
   --accent-info: #53BBD9;
@@ -79,11 +83,11 @@
 }
 
 /* ==========================================================================
-   Night theme — global explicit choice, game-screen default
+   Night theme — one global persisted choice
    --------------------------------------------------------------------------
    ThemeProvider applies data-theme to html for every screen and native dialog.
-   Library/lab/dashboard default to cream; game routes default to night.
-   A stored explicit choice overrides all route defaults.
+   Every route defaults to light; a stored night/light choice applies everywhere.
+   Navigation and interface language never change the chosen theme.
    ALL night colours live in this one block. The five accents and their
    roles are unchanged (blue = main actions, mustard = stars & rewards,
    coral = help, purple = tools, cyan = info); only the neutrals and the
@@ -224,6 +228,9 @@ button {
   letter-spacing: normal;
   text-transform: none;
   display: inline-block;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
@@ -271,12 +278,10 @@ button {
 .btn:active {
   transform: translateY(2px);
 }
-
 .btn--primary {
-  background-color: var(--accent-primary);
+  background-color: var(--accent-primary-action);
   color: var(--accent-primary-text);
 }
-
 .btn--neutral {
   background-color: var(--surface-card);
   color: var(--text-primary);

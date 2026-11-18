@@ -1,0 +1,513 @@
+{
+  "rows": [
+    {
+      "lang": "ar",
+      "route": "heroes",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "lobby",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "vault",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "ranks",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "catalog",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "dashboard",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/motion-acceleration",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/lever-balance",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/planet-orbits",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/fractions-area",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/light-refraction",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/matter-states",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "heroes",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "lobby",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "vault",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "ranks",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "catalog",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "dashboard",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/motion-acceleration",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/lever-balance",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/planet-orbits",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/fractions-area",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/light-refraction",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/matter-states",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "heroes",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "lobby",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "vault",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "ranks",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "catalog",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "dashboard",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/motion-acceleration",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/lever-balance",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/planet-orbits",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/fractions-area",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/light-refraction",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "route": "playground/matter-states",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "heroes",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "lobby",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "vault",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "ranks",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "catalog",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "dashboard",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/motion-acceleration",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/lever-balance",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/planet-orbits",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/fractions-area",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/light-refraction",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/matter-states",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "heroes",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "lobby",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "vault",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "ranks",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "catalog",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "dashboard",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/motion-acceleration",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/lever-balance",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/planet-orbits",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/fractions-area",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/light-refraction",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/matter-states",
+      "theme": "night",
+      "expected": "night",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "heroes",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "lobby",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "vault",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "ranks",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "catalog",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "dashboard",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/motion-acceleration",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/lever-balance",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/planet-orbits",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/fractions-area",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/light-refraction",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "route": "playground/matter-states",
+      "theme": "light",
+      "expected": "light",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true,
+  "count": 72,
+  "default": "light",
+  "progressPreserved": true
+}

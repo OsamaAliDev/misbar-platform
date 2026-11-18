@@ -23,7 +23,7 @@ with sync_playwright() as p:
     page.on('response',lambda r:bad.append((r.status,r.url)) if r.status>=400 else None)
     page.goto(URL);page.wait_for_selector('.hero-select')
     assert page.url.endswith('#/heroes') and profile(page)['stars']==12
-    assert page.locator('html').get_attribute('data-theme')=='night'
+    assert page.locator('html').get_attribute('data-theme')=='light'
     # Native choice then actual continue action.
     page.locator('input[type=radio][value=sharara]').check(force=True)
     page.locator('.hero-select__continue').click()

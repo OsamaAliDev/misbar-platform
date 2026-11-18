@@ -74,7 +74,7 @@
    locked outline colour. */
 .filter-pill.is-active,
 .filter-pill.is-active:hover {
-  background-color: var(--accent-primary);
+  background-color: var(--accent-primary-action);
   border-color: var(--outline);
   color: var(--accent-primary-text);
 }

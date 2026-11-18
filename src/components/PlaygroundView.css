@@ -95,15 +95,16 @@
   }
 }
 
-/* Coral help button — #EF6B5E fill, #FFFFFF text. */
+/* Coral help button with a stable high-contrast text pair in both themes. */
 .btn--help {
   background-color: var(--accent-help);
-  color: var(--accent-primary-text);
+  color: var(--text-on-help);
 }
 
 @media (hover: hover) {
   .btn--help:hover {
-    background-color: var(--accent-help-text);
+    background-color: var(--accent-help-hover);
+    color: var(--accent-primary-text);
   }
 }
 

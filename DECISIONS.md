@@ -56,3 +56,13 @@ Each line records one judgment call I made that the brief did not specify: what 
 - Latest mobile/tablet request: keep the same hero-greeting lobby link visible in AppHeader at all widths; wrap it into its own phone row when needed, keep44px target, and remove the duplicate alternate catalog strip. Desktop greeting placement stays unchanged.
 - Final acceptance served a fresh GitHub clone of93913ed production build on port3000, not hot-reload development. Matrix192/192, greeting16/16 and genuine UI-earned flow passed with zero page/console errors, warnings or HTTP failures. Full-size screenshots were regenerated from that production build. Matrix screenshots use a chosen hero at12stars only for visual coverage; reward flow never seeds balances.
 - Software accepted through GitHub; original Manus project attachment remains unavailable. Do not claim the old public site was updated or that a Manus checkpoint was recorded.
+
+## Full task —18 November2026
+
+- User request supersedes allroute-specifictheme defaults: DEFAULT_THEME=light globally; savednight/lightchoice is honored for everyroute,AR/EN,dialogs and reload. Route/studentstate no longerparticipates in theme selection.
+- OriginalQA was rununchangedbeforephaseA and passed. User explicitlyapproved updating ONLYoutdatedthemeexpectations at12:40. Exactlyoneassertionin docs/qa_flow_current.py changesfirst-visitnight→light; allnavigation/reward/persistence/focusassertions andotherQA scriptsstayunchanged.
+- School/login views are absentfrom main; listNOTpresent/NOTverified, noforbiddenSaaSmerge.
+
+- Independent18-itemauditfoundexplicit-theme renderingcorrect, butwhite/blueactiontext3.428:1, white/coralhelp3.028:1, andlightlobbystars1.864:1. Preservefivegraphicaccentcolorsandsimulationfiles; addsemanticprimary-actionfillusingexistingdeepblue1B5E99, stablehelptext2B2824, existingdarkcoral/purplehoverfills,andreward-textforstarcount. Onlytext-bearingactionpairschange. Nativehelpbodyremainsinternallyscrollable; itsEnglishquickfactaccesswillbeverifiedinstead ofclaimingclippingfromfirstviewmeanslostcontent.
+
+- OriginalgreetingQA caughta realintermittent390pxRTLnightoverflow408px despite matrixpassing. Fontfailureinjectionproved MaterialSymbols fallback supervisor_account spans139.97px within44pxbutton andextendsleft-17.98px. Fixshared.iconfootprintto1em×1em; hideonlyfallbackglyphwordoverflow, neverhidepageoverflow. Fontface/fontsize,touchbounds andpagegeometryarenotchanged. OriginalgreetingQAremainsbyte-identical.

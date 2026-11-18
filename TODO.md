@@ -103,3 +103,41 @@ Help Modal (`_7`) screens in the Stitch zip.
 - [x] Step 5: fresh clone install/build, full UI-earned flow, no console errors/404s, wording audit, theme/language every screen, reload, full-size required screenshots in docs/screenshots, per-step commits and Verified/NOT verified report plus decisions. Stay on wip branch until final merge/push; no force, no new app dependencies, plain CSS and localStorage nickname/avatar privacy.
 
 - [x] Latest phone/tablet request: same hero greeting button (avatar + greeting + direction-aware chevron) remains visible and clickable in AppHeader at phone/tablet widths; no duplicate alternative greeting; test390/768 and both languages/themes.
+
+# Full task —18 November2026
+
+- [x] PhaseA: one persisted theme; exhaustive screen/component AR/EN light/night audit, WCAGbodycontrast4.5:1, complete BEFORE/AFTER screenshots.
+- [ ] PhaseB: radiusinventory→consistent~1/3reduction; heroimageslargerand1366x768/390phonefitwithoutpagescroll; Shararaidentity-preservingclosed-chestedit/separatecommit(orhonestunchangedblocker); usability44pxfocus16pxback≤3tapsreducedmotionhorizontalfit.
+- [ ] PhaseC: verifiedEgyptian6gradeMOEstructure, no copiedcontent, existing6experimentsonly, confidentmappingorneeds teacher review, honestcomingsoon,AR/EN RTL/LTR,preserveprogressandPlayground.
+- [ ] PhaseD: frozeninstallbuildQA, normalmainpush,diff/hashes, Pagesactualonly, exactsourceManuspublish and publicfirstvisit/largerheroes/globaltheme/gradeflow/labfit/noerrors/no404 evidence.
+
+## Exact acceptance source
+
+FULL TASK, in this exact order, phase by phase. Do NOT merge saas-foundation, do NOT touch other branches, do NOT force-push, do NOT add dependencies, do NOT change GitHub Pages settings, do NOT add new experiments or invent educational content. Keep STATUS.md updated after every phase. Push to main normally (never force) after each phase that passes its checks, so verified work is never lost. If credits are about to run out, commit only what is verified and say so. Never claim something is fixed without a full-size screenshot or real command output. List anything NOT done or NOT verified clearly.
+
+START: fresh clone of main (fetch first, report the starting hash). Set git user OsamaAliDev, email 270765662+OsamaAliDev@users.noreply.github.com. Run existing QA scripts unchanged before and after each phase.
+
+PHASE A: Theme consistency (night mode)
+Problem: night mode applies to part of the app and not the rest, so screens look mismatched.
+1. Audit EVERY screen and shared component (hero select, catalog, all 6 labs, Ranks, Vault, missions, teacher/parent page, school/login screens, header, modals, speech bubbles) in light and night, Arabic and English. Report a table: screen / theme result / problem. A likely cause: src/state/theme.jsx picks a night default on game routes but not elsewhere. Verify this yourself; do not assume.
+2. Fix so ONE theme applies to the whole app at once: either everything is night or everything is light, controlled by the single toggle, persisted, and identical in Arabic and English. Replace any hardcoded light-only or dark-only colors with theme variables. Check text contrast (WCAG AA, 4.5:1 body text) in both themes.
+3. Screenshots: before and after, full size, light and night, AR and EN, for every screen in the audit table.
+
+PHASE B: Visual polish
+4. Reduce corner roundness by roughly one third through the existing CSS variables where possible. List all radius values BEFORE changing. Keep fully round only for avatars and circular icon buttons. Pill buttons, badges and header chips become softly rounded rectangles. Do not change colors, fonts or text.
+5. Hero select screen: make the hero icons/cards clearly larger so the hero is the focus. It must still fit 1366x768 and a 390px-wide phone without page scroll. No new art style.
+6. Sharara image: edit her so she wears a closed-chest outfit (high neckline, chest fully covered), keeping the same face, hair, colors, pose, style, proportions and coral palette, and the existing no-weapons rule. Update all three assets consistently (assets-src PNG, public/heroes outfit1 WebP, face crop WebP). Commit the image change SEPARATELY so it can be reverted alone. Show BEFORE and AFTER full-size. If your tools cannot edit it while keeping the character identical, do NOT fake it and do NOT regenerate a different character: leave the original untouched and tell me clearly so I can do the edit elsewhere.
+7. Apply general usability standards across the app and report each as pass/fail: touch targets at least 44x44px; visible keyboard focus; body text at least 16px; one consistent navigation pattern with a clear way back from every screen; any lab reachable in at most 3 taps from the home screen; prefers-reduced-motion respected; no horizontal scroll at 390px. Fix only simple failures; list the rest.
+
+PHASE C: Egyptian curriculum structure
+8. Research the structure of the Egyptian Ministry of Education student-books site https://studentbooks.moe.gov.eg/Books/ (stages, grades, semesters, subjects) for Primary 4 through Preparatory 3 (six grades). Report EXACTLY what you found and where. If you cannot access it, say so and use only structure you can confirm elsewhere; never guess. Do NOT copy any textbook text, images or exercises.
+9. Reorganize the catalog around that structure: choose grade (Primary 4 to Prep 3), then subject (Science, Math), then semester if the site uses it. Map each of the 6 existing experiments to the grade(s) where it genuinely belongs in the Egyptian curriculum, using only mappings you can justify. Mark any uncertain mapping clearly in STATUS.md as "needs teacher review". Grades or subjects with no experiment yet show an honest, calm "coming soon" state, not fake content. All labels in Arabic and English with correct RTL/LTR. Keep existing localStorage data working (no loss of stars, hero, outfits) and keep the Playground reachable.
+10. Do not change the science content of the experiments themselves.
+
+PHASE D: Final checks and publish
+11. `pnpm install --frozen-lockfile`, `pnpm build`, and all existing QA scripts unchanged. Report real results. If anything fails, stop and report before publishing.
+12. Push final state to main (normal push). Report the final hash and `git diff --stat`. Report what GitHub Pages actually serves; do not change it.
+13. Publish the built dist of that exact commit as a live Manus website. If you cannot attach the old site misbar-zrxurzxq.manus.space, create a NEW Manus site and tell me clearly the URL is new.
+14. Verify the LIVE public URL (not localhost): hero select appears on first visit and hero icons are larger; one theme toggle changes the WHOLE app consistently in AR and EN; grade -> subject -> experiment navigation works; one lab fits 1366x768 without page scroll; no console errors, no 404s.
+
+FINAL MESSAGE: anything NOT done or NOT verified at the very top. Then: live URL, deployed commit hash, the Phase A audit table, the radius before/after table, the usability pass/fail table, the curriculum mapping table (experiment / grade / confidence), and a Verified / NOT verified table for step 14 with one full-size screenshot of the live site per check. Do not say "done" without the tables and the live URL.

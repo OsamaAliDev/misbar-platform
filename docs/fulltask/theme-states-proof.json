@@ -1,0 +1,288 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "primary action",
+      "hover": false,
+      "contrast": 6.757484436278427,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "primary action",
+      "hover": true,
+      "contrast": 6.757484436278427,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "help action",
+      "hover": false,
+      "contrast": 4.843755447515082,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "help action",
+      "hover": true,
+      "contrast": 8.628476714670246,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "help final fact reachable by internal scroll",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "challenge reward",
+      "hover": false,
+      "contrast": 7.868615621746082,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "challenge reward",
+      "hover": true,
+      "contrast": 6.393767804667388,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "complete mission reward",
+      "hover": false,
+      "contrast": 7.868615621746082,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "light",
+      "control": "complete mission reward",
+      "hover": true,
+      "contrast": 6.393767804667388,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "primary action",
+      "hover": false,
+      "contrast": 6.757484436278427,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "primary action",
+      "hover": true,
+      "contrast": 6.757484436278427,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "help action",
+      "hover": false,
+      "contrast": 4.843755447515082,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "help action",
+      "hover": true,
+      "contrast": 8.628476714670246,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "help final fact reachable by internal scroll",
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "challenge reward",
+      "hover": false,
+      "contrast": 7.868615621746082,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "challenge reward",
+      "hover": true,
+      "contrast": 8.953845257627577,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "complete mission reward",
+      "hover": false,
+      "contrast": 7.868615621746082,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "theme": "night",
+      "control": "complete mission reward",
+      "hover": true,
+      "contrast": 8.953845257627577,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "primary action",
+      "hover": false,
+      "contrast": 6.757484436278427,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "primary action",
+      "hover": true,
+      "contrast": 6.757484436278427,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "help action",
+      "hover": false,
+      "contrast": 4.843755447515082,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "help action",
+      "hover": true,
+      "contrast": 8.628476714670246,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "help final fact reachable by internal scroll",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "challenge reward",
+      "hover": false,
+      "contrast": 7.868615621746082,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "challenge reward",
+      "hover": true,
+      "contrast": 6.393767804667388,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "complete mission reward",
+      "hover": false,
+      "contrast": 7.868615621746082,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "control": "complete mission reward",
+      "hover": true,
+      "contrast": 6.393767804667388,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "primary action",
+      "hover": false,
+      "contrast": 6.757484436278427,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "primary action",
+      "hover": true,
+      "contrast": 6.757484436278427,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "help action",
+      "hover": false,
+      "contrast": 4.843755447515082,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "help action",
+      "hover": true,
+      "contrast": 8.628476714670246,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "help final fact reachable by internal scroll",
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "challenge reward",
+      "hover": false,
+      "contrast": 7.868615621746082,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "challenge reward",
+      "hover": true,
+      "contrast": 8.953845257627577,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "complete mission reward",
+      "hover": false,
+      "contrast": 7.868615621746082,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "theme": "night",
+      "control": "complete mission reward",
+      "hover": true,
+      "contrast": 8.953845257627577,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "progressEarnedViaUI": true,
+  "rewardSeeding": false
+}

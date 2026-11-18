@@ -8,11 +8,8 @@
       // Apply stored preferences before CSS/React to avoid a wrong-theme frame.
       (() => {
         const read = key => { try { return JSON.parse(localStorage.getItem(key)); } catch (_) { return null; } };
-        const choice = read('misbar:theme:v1'), student = read('misbar:student:v1'), lang = read('misbar:lang:v1');
-        const view = location.hash.replace(/^#\/?/, '').split('/')[0] || 'catalog';
-        const game = ['heroes','lobby','vault','ranks'].includes(view);
-        const redirect = !student?.heroId && ['catalog','lobby','vault','ranks'].includes(view);
-        const theme = ['night','light'].includes(choice) ? choice : game || redirect ? 'night' : 'light';
+        const choice = read('misbar:theme:v1'), lang = read('misbar:lang:v1');
+        const theme = ['night','light'].includes(choice) ? choice : 'light';
         document.documentElement.dataset.theme = theme;
         document.querySelector('meta[name="theme-color"]').content = theme === 'night' ? '#141A2E' : '#FBF6EF';
         document.documentElement.lang = lang === 'en' ? 'en' : 'ar';

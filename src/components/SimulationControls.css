@@ -305,7 +305,7 @@
   }
 
   .btn--tools:not(:disabled):hover {
-    background-color: var(--accent-tools);
+    background-color: var(--accent-tools-hover);
     color: var(--accent-primary-text);
   }
 }

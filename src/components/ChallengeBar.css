@@ -116,6 +116,7 @@
 @media (hover: hover) {
   .challenge-bar__btn--claim:hover {
     background-color: var(--accent-reward-soft);
+    color: var(--accent-reward-text);
   }
 }
 
