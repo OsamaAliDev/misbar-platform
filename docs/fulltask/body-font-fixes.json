@@ -1,0 +1,104 @@
+[
+  {
+    "file": "src/components/ChallengeBar.css",
+    "selector": ".challenge-bar__message",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/components/ExperimentCard.css",
+    "selector": ".experiment-card__description",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/components/HelpModal.css",
+    "selector": ".help-modal__subtitle",
+    "before": "13.5px",
+    "after": "16px"
+  },
+  {
+    "file": "src/components/HelpModal.css",
+    "selector": ".help-modal__intro",
+    "before": "15.5px",
+    "after": "16px"
+  },
+  {
+    "file": "src/components/HelpModal.css",
+    "selector": ".help-step__text",
+    "before": "15px",
+    "after": "16px"
+  },
+  {
+    "file": "src/components/MissionCard.css",
+    "selector": ".mission-card__text",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/components/MissionCard.css",
+    "selector": ".mission-card__meta",
+    "before": "13px",
+    "after": "16px"
+  },
+  {
+    "file": "src/components/MissionCard.css",
+    "selector": ".lobby__mission-list .mission-card__text",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/components/SimulationControls.css",
+    "selector": ".control__hint",
+    "before": "13px",
+    "after": "16px"
+  },
+  {
+    "file": "src/views/game/LobbyView.css",
+    "selector": ".lobby__rank-next",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/views/game/LobbyView.css",
+    "selector": ".lobby__missions-hint",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/views/game/LobbyView.css",
+    "selector": ".lobby__bubble",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/views/game/RanksView.css",
+    "selector": ".rank-step__text",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/views/game/RanksView.css",
+    "selector": ".rank-step__hint",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/views/game/VaultView.css",
+    "selector": ".outfit-slot__status",
+    "before": "14px",
+    "after": "16px"
+  },
+  {
+    "file": "src/views/game/game.css",
+    "selector": ".game-page__subtitle",
+    "before": "clamp(15px, 1.9vh, 16px)",
+    "after": "16px"
+  },
+  {
+    "file": "src/views/game/game.css",
+    "selector": ".game-page__subtitle",
+    "before": "15px",
+    "after": "16px"
+  }
+]

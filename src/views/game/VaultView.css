@@ -97,7 +97,7 @@
   color: var(--text-secondary);
   background-color: var(--surface-card);
   border: var(--border);
-  border-radius: 33%;
+  border-radius: 22%;
 }
 
 .outfit-slot.is-ready .outfit-slot__lock {
@@ -145,7 +145,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
   color: var(--text-secondary);

@@ -1,0 +1,222 @@
+{
+  "rows": [
+    {
+      "lang": "ar",
+      "w": 1366,
+      "experiment": "motion-acceleration",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 1366,
+      "experiment": "lever-balance",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 1366,
+      "experiment": "planet-orbits",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 1366,
+      "experiment": "fractions-area",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 1366,
+      "experiment": "light-refraction",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 1366,
+      "experiment": "matter-states",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 390,
+      "experiment": "motion-acceleration",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 390,
+      "experiment": "lever-balance",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 390,
+      "experiment": "planet-orbits",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 390,
+      "experiment": "fractions-area",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 390,
+      "experiment": "light-refraction",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "ar",
+      "w": 390,
+      "experiment": "matter-states",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 1366,
+      "experiment": "motion-acceleration",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 1366,
+      "experiment": "lever-balance",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 1366,
+      "experiment": "planet-orbits",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 1366,
+      "experiment": "fractions-area",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 1366,
+      "experiment": "light-refraction",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 1366,
+      "experiment": "matter-states",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 390,
+      "experiment": "motion-acceleration",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 390,
+      "experiment": "lever-balance",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 390,
+      "experiment": "planet-orbits",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 390,
+      "experiment": "fractions-area",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 390,
+      "experiment": "light-refraction",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    },
+    {
+      "lang": "en",
+      "w": 390,
+      "experiment": "matter-states",
+      "taps": 3,
+      "fromFreshFirstVisit": true,
+      "backToCatalog": true,
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

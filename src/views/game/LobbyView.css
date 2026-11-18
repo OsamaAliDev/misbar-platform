@@ -127,7 +127,7 @@
   width: 52px;
   height: 52px;
   border: var(--border-width) solid;
-  border-radius: 33%;
+  border-radius: 22%;
 }
 
 .lobby__stat-icon--reward {
@@ -183,7 +183,7 @@
 }
 
 .lobby__rank-next {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: var(--text-secondary);
@@ -217,7 +217,7 @@
 }
 
 .lobby__missions-hint {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--text-secondary);
 }
@@ -374,7 +374,7 @@
   }
   .lobby__bubble {
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 16px;
   }
   .lobby__stats {
     flex-shrink: 0;

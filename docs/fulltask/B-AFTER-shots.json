@@ -1,0 +1,273 @@
+{
+  "phase": "AFTER",
+  "source": "http://127.0.0.1:3000",
+  "beforeCommit": "e2f33dbb42e81071b88866abcb0485e5b5542afe",
+  "rows": [
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "dir": "rtl",
+      "route": "heroes",
+      "lang": "ar",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-hero-select-ar-light-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "dir": "rtl",
+      "route": "heroes",
+      "lang": "ar",
+      "w": 390,
+      "h": 844,
+      "image": "B-AFTER-hero-select-ar-light-390w-844vh-fullpage.png"
+    },
+    {
+      "width": 390,
+      "height": 768,
+      "theme": "light",
+      "dir": "rtl",
+      "route": "heroes",
+      "lang": "ar",
+      "w": 390,
+      "h": 768,
+      "image": "B-AFTER-hero-select-ar-light-390w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 878,
+      "theme": "light",
+      "dir": "rtl",
+      "route": "catalog",
+      "lang": "ar",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-catalog-ar-light-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "dir": "rtl",
+      "route": "playground/motion-acceleration",
+      "lang": "ar",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-lab-motion-ar-light-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "dir": "rtl",
+      "route": "dashboard",
+      "lang": "ar",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-teacher-parent-ar-light-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "night",
+      "dir": "rtl",
+      "route": "heroes",
+      "lang": "ar",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-hero-select-ar-night-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "night",
+      "dir": "rtl",
+      "route": "heroes",
+      "lang": "ar",
+      "w": 390,
+      "h": 844,
+      "image": "B-AFTER-hero-select-ar-night-390w-844vh-fullpage.png"
+    },
+    {
+      "width": 390,
+      "height": 768,
+      "theme": "night",
+      "dir": "rtl",
+      "route": "heroes",
+      "lang": "ar",
+      "w": 390,
+      "h": 768,
+      "image": "B-AFTER-hero-select-ar-night-390w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 878,
+      "theme": "night",
+      "dir": "rtl",
+      "route": "catalog",
+      "lang": "ar",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-catalog-ar-night-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "night",
+      "dir": "rtl",
+      "route": "playground/motion-acceleration",
+      "lang": "ar",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-lab-motion-ar-night-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "night",
+      "dir": "rtl",
+      "route": "dashboard",
+      "lang": "ar",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-teacher-parent-ar-night-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "dir": "ltr",
+      "route": "heroes",
+      "lang": "en",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-hero-select-en-light-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "light",
+      "dir": "ltr",
+      "route": "heroes",
+      "lang": "en",
+      "w": 390,
+      "h": 844,
+      "image": "B-AFTER-hero-select-en-light-390w-844vh-fullpage.png"
+    },
+    {
+      "width": 390,
+      "height": 768,
+      "theme": "light",
+      "dir": "ltr",
+      "route": "heroes",
+      "lang": "en",
+      "w": 390,
+      "h": 768,
+      "image": "B-AFTER-hero-select-en-light-390w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 878,
+      "theme": "light",
+      "dir": "ltr",
+      "route": "catalog",
+      "lang": "en",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-catalog-en-light-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "dir": "ltr",
+      "route": "playground/motion-acceleration",
+      "lang": "en",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-lab-motion-en-light-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "dir": "ltr",
+      "route": "dashboard",
+      "lang": "en",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-teacher-parent-en-light-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "night",
+      "dir": "ltr",
+      "route": "heroes",
+      "lang": "en",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-hero-select-en-night-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "theme": "night",
+      "dir": "ltr",
+      "route": "heroes",
+      "lang": "en",
+      "w": 390,
+      "h": 844,
+      "image": "B-AFTER-hero-select-en-night-390w-844vh-fullpage.png"
+    },
+    {
+      "width": 390,
+      "height": 768,
+      "theme": "night",
+      "dir": "ltr",
+      "route": "heroes",
+      "lang": "en",
+      "w": 390,
+      "h": 768,
+      "image": "B-AFTER-hero-select-en-night-390w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 878,
+      "theme": "night",
+      "dir": "ltr",
+      "route": "catalog",
+      "lang": "en",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-catalog-en-night-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "night",
+      "dir": "ltr",
+      "route": "playground/motion-acceleration",
+      "lang": "en",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-lab-motion-en-night-1366w-768vh-fullpage.png"
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "theme": "night",
+      "dir": "ltr",
+      "route": "dashboard",
+      "lang": "en",
+      "w": 1366,
+      "h": 768,
+      "image": "B-AFTER-teacher-parent-en-night-1366w-768vh-fullpage.png"
+    }
+  ],
+  "errors": [],
+  "bad": []
+}

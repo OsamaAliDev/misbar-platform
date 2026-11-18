@@ -47,7 +47,7 @@
   width: 52px;
   height: 52px;
   border: var(--border-width) solid;
-  border-radius: 33%;
+  border-radius: 22%;
 }
 
 .rank-step__icon--primary {
@@ -117,7 +117,7 @@
 }
 
 .rank-step__text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.55;
   color: var(--text-secondary);
@@ -132,7 +132,7 @@
 }
 
 .rank-step__hint {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--accent-primary-soft-text);
 }

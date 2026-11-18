@@ -60,9 +60,9 @@
   /* -- Shape ------------------------------------------------------------ */
   --border-width: 2px;
   --border: var(--border-width) solid var(--outline);
-  --radius: 14px;          /* cards, header, search bar, buttons */
-  --radius-inner: 11px;    /* boxes nested inside a card */
-  --radius-small: 3px;
+  --radius: 9px;          /* cards, header, search bar, buttons */
+  --radius-inner: 7px;    /* boxes nested inside a card */
+  --radius-small: 2px;
   --radius-round: 9999px;  /* non-interactive badges, chips & avatars */
 
   /* -- Typography -------------------------------------------------------- */

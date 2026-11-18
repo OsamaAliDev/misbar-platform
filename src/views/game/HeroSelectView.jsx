@@ -55,10 +55,11 @@ export default function HeroSelectView({ onContinue }) {
           {HEROES.map((hero, index) => {
             const checked = hero.id === selectedId;
             const name = t(`heroes.${hero.id}.name`);
+            const featured = hero.id === featuredId;
             return (
               <li
                 key={hero.id}
-                className={`hero-select__item ${hero.id === featuredId ? 'is-featured' : ''}`.trim()}
+                className={`hero-select__item ${featured ? 'is-featured' : ''}`.trim()}
               >
                 <label className={`hero-card ${checked ? 'is-selected' : ''}`.trim()}>
                   <input
@@ -67,7 +68,9 @@ export default function HeroSelectView({ onContinue }) {
                     value={hero.id}
                     checked={checked}
                     onChange={() => handleChoose(hero.id)}
-                    className="visually-hidden hero-card__input"
+                    className="hero-card__input"
+                    aria-labelledby={`hero-${hero.id}-name`}
+                    aria-describedby={`hero-${hero.id}-title hero-${hero.id}-bio`}
                   />
                   <span className={`hero-stage hero-stage--${hero.tone} hero-card__stage`}>
                     <img
@@ -77,18 +80,24 @@ export default function HeroSelectView({ onContinue }) {
                       src={hero.image}
                       width={HERO_IMAGE_SIZE.width}
                       height={HERO_IMAGE_SIZE.height}
-                      loading="lazy"
+                      loading="eager"
                       decoding="async"
                       alt=""
                     />
                   </span>
                   <span className="hero-card__body">
-                    <span className="hero-card__name">{name}</span>
-                    <span className={`badge badge--${hero.tone} hero-card__title`}>
+                    <span id={`hero-${hero.id}-name`} className="hero-card__name">{name}</span>
+                    <span
+                      id={`hero-${hero.id}-title`}
+                      className={`badge badge--${hero.tone} hero-card__title${featured ? '' : ' visually-hidden'}`}
+                    >
                       <Icon name={hero.icon} size={16} />
                       {t(`heroes.${hero.id}.title`)}
                     </span>
-                    <span className="hero-card__bio">{t(`heroes.${hero.id}.bio`)}</span>
+                    <span
+                      id={`hero-${hero.id}-bio`}
+                      className={`hero-card__bio${featured ? '' : ' visually-hidden'}`}
+                    >{t(`heroes.${hero.id}.bio`)}</span>
                   </span>
                   <span className="hero-card__check" aria-hidden="true">
                     <Icon name={checked ? 'check_circle' : 'radio_button_unchecked'} filled={checked} size={22} />

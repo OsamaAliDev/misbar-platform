@@ -22,7 +22,7 @@
   color: var(--accent-info-text);
   background-color: var(--accent-info-soft);
   border: var(--border-width) solid var(--accent-info);
-  border-radius: 33%;
+  border-radius: 22%;
 }
 
 .mission-card.is-complete .mission-card__icon,
@@ -47,7 +47,7 @@
 }
 
 .mission-card__text {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: var(--text-secondary);
@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 4px 12px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text-secondary);
 }
@@ -178,7 +178,7 @@
     font-size: 15px;
   }
   .lobby__mission-list .mission-card__text {
-    font-size: 14px;
+    font-size: 16px;
   }
   .lobby__mission-list .mission-card__meta {
     justify-content: flex-start;

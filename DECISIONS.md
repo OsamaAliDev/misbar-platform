@@ -70,3 +70,5 @@ Each line records one judgment call I made that the brief did not specify: what 
 ## تعديل شرارة الموضعي —18نوفمبر2026
 
 استخدم تعديل AI لمنطقة الصدر فقط، ثم دمجت لوحة القماش داخل قناع محدود للحفاظ على الشخصية الأصلية بدل إعادة توليدها. ثبت أن كل ما خارج القناع لم يتغير بكسلًا ببكسل، وأن alpha مطابق. أعيد تحويل الجسم إلىWebP600×900، وقص الوجه أُعيد ترميزه lossless ببكسلاته الأصلية؛ الياقة خارج حدود قص الوجه. الأصول الثلاثة متسقة، وبقية الأبطال دون تعديل.
+
+- Cross-route B QA caught issues not found by isolated label-click checks: forced native radio hit at a rounded card corner did not select; hidden badge dimensions inherited padding/min-height and could overflow during layout/font changes. Keep native radio full-card/transparent (not a1px target); explicitly anchor and normalize only visually-hidden descriptions. No page-overflow clipping, no additional QA expectation change.

@@ -1,0 +1,40 @@
+Phase B final source QA
+matrix 192 failed 0 errors 0 bad requests 0 warnings 0
+errors []
+bad requests []
+warnings []
+first visit and hero selection 12
+language keyboard refocus and default themes 12
+fraction challenge earned 13
+first mission and rank change 15
+lever challenge earned 16
+second mission and rank change 19
+vault unlock without spending 19
+all header switches and persistent reload 19
+flow PASS True [] []
+motion-acceleration 1366 True height 768 svg-bottom 662
+lever-balance 1366 True height 768 svg-bottom 662
+planet-orbits 1366 True height 768 svg-bottom 662
+fractions-area 1366 True height 768 svg-bottom 652
+light-refraction 1366 True height 768 svg-bottom 662
+matter-states 1366 True height 768 svg-bottom 662
+motion-acceleration 1536 True height 864 svg-bottom 757
+lever-balance 1536 True height 864 svg-bottom 757
+planet-orbits 1536 True height 864 svg-bottom 757
+fractions-area 1536 True height 864 svg-bottom 747
+light-refraction 1536 True height 864 svg-bottom 757
+matter-states 1536 True height 864 svg-bottom 757
+motion-acceleration 1920 True height 1080 svg-bottom 973
+lever-balance 1920 True height 1080 svg-bottom 973
+planet-orbits 1920 True height 1080 svg-bottom 973
+fractions-area 1920 True height 1080 svg-bottom 963
+light-refraction 1920 True height 1080 svg-bottom 973
+matter-states 1920 True height 1080 svg-bottom 973
+motion-acceleration 390 True height 1449 svg-bottom 760
+lever-balance 390 True height 1491 svg-bottom 723
+planet-orbits 390 True height 1505 svg-bottom 747
+fractions-area 390 True height 1461 svg-bottom 711
+light-refraction 390 True height 1416 svg-bottom 736
+matter-states 390 True height 1396 svg-bottom 771
+errors []
+greeting True 16 []

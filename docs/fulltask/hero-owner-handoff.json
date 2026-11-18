@@ -1,0 +1,85 @@
+{
+  "summary": {
+    "measuredStates": 120,
+    "noScrollPass": 120,
+    "failedStates": 0,
+    "functionalContexts": 20,
+    "screenshots": 24,
+    "errors": [],
+    "badRequests": [],
+    "pass": true
+  },
+  "viewports": [
+    {
+      "width": 1366,
+      "height": 768,
+      "states": 24,
+      "noScrollPass": 24
+    },
+    {
+      "width": 1536,
+      "height": 864,
+      "states": 24,
+      "noScrollPass": 24
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "states": 24,
+      "noScrollPass": 24
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "states": 24,
+      "noScrollPass": 24
+    },
+    {
+      "width": 390,
+      "height": 768,
+      "states": 24,
+      "noScrollPass": 24
+    }
+  ],
+  "desktopAlternativeImageHeightPx": [
+    200.03125,
+    200.046875
+  ],
+  "desktopAlternativeVsOld21vhPercent": 24.027312748015884,
+  "desktopFeaturedImageHeightPx": 491.28125,
+  "phoneFeaturedCharacterScaleIncreasePercent": [
+    12.811911487758953,
+    17.319915254237284
+  ],
+  "screenshots": [
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-light-1366x768-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-light-1366x768-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-light-390x844-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-light-390x844-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-light-390x768-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-light-390x768-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-night-1366x768-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-night-1366x768-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-night-390x844-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-night-390x844-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-night-390x768-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-ar-night-390x768-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-light-1366x768-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-light-1366x768-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-light-390x844-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-light-390x844-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-light-390x768-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-light-390x768-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-night-1366x768-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-night-1366x768-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-night-390x844-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-night-390x844-selected.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-night-390x768-preview.png",
+    "/home/ubuntu/misbar-fulltask-20261118/hero-owner-en-night-390x768-selected.png"
+  ],
+  "filesChanged": [
+    "src/views/game/HeroSelectView.jsx",
+    "src/views/game/HeroSelectView.css"
+  ],
+  "blockers": []
+}

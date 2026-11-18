@@ -23,7 +23,7 @@
   height: 36px;
   background-color: var(--surface-card);
   border: var(--border-width) solid var(--accent-info);
-  border-radius: 33%;
+  border-radius: 22%;
   color: var(--accent-info-text);
 }
 
@@ -52,7 +52,7 @@
   min-width: 0;
   padding: 3px 10px;
   background-color: var(--surface-card);
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .reading__label {

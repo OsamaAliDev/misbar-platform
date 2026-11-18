@@ -30,7 +30,7 @@
 
 .game-page__subtitle {
   max-width: 62ch;
-  font-size: clamp(15px, 1.9vh, 16px);
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   color: var(--text-secondary);
@@ -52,7 +52,7 @@
   }
 
   .game-page__subtitle {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
 
@@ -76,7 +76,7 @@
   z-index: -1;
   background-color: var(--stage-accent-soft);
   border: var(--border-width) solid var(--stage-accent);
-  border-radius: 33%;
+  border-radius: 22%;
 }
 
 .hero-stage::after {
@@ -88,7 +88,7 @@
   z-index: -1;
   background-color: var(--surface-subtle);
   border: var(--border);
-  border-radius: 33%;
+  border-radius: 22%;
 }
 
 .hero-stage--primary {

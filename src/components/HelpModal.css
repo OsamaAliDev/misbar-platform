@@ -85,7 +85,7 @@ html:has(dialog[open]) {
   padding: 2px 12px;
   background-color: var(--surface-card);
   border-radius: var(--radius-inner);
-  font-size: 13.5px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
   color: var(--accent-help-text);
@@ -114,14 +114,14 @@ html:has(dialog[open]) {
 }
 
 .help-modal__bubble {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .help-modal__intro {
   padding: 10px 14px;
   background-color: var(--accent-help-soft);
   border-radius: var(--radius-inner);
-  font-size: 15.5px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.6;
   color: var(--accent-help-text);
@@ -153,7 +153,7 @@ html:has(dialog[open]) {
   width: 34px;
   height: 34px;
   background-color: var(--accent-help);
-  border-radius: 33%;
+  border-radius: 22%;
   color: var(--text-on-help);
   font-size: 17px;
   font-weight: 800;
@@ -171,7 +171,7 @@ html:has(dialog[open]) {
 }
 
 .help-step__text {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--text-secondary);
 }
@@ -194,7 +194,7 @@ html:has(dialog[open]) {
   width: 34px;
   height: 34px;
   background-color: var(--surface-card);
-  border-radius: 33%;
+  border-radius: 22%;
   color: var(--accent-reward-text);
 }
 
@@ -206,7 +206,7 @@ html:has(dialog[open]) {
 }
 
 .help-fact__text {
-  font-size: 14.5px;
+  font-size: 16px;
   line-height: 1.7;
   color: var(--text-primary);
 }

@@ -11,7 +11,6 @@
   "alphaIdentical": true,
   "faceAndHairAbove434Identical": true,
   "changedPixels": 14662,
-  "faceCropPreservedHash": "c40e64943ec68ff8a527b2bc81bac70f3c4a9a91c0b6e4fdbce5013f0b09e9f5",
   "method": "AI-edited opaque fabric patch only; original character retained everywhere else; no full-character redraw",
   "status": "promoted-to-source-after-visual-check",
   "bodyWebpSize": [
@@ -24,5 +23,7 @@
     "assets-src/heroes/sharara-outfit1.png",
     "public/heroes/sharara-outfit1.webp",
     "public/heroes/sharara-face.webp"
-  ]
+  ],
+  "originalFaceCropHash": "c40e64943ec68ff8a527b2bc81bac70f3c4a9a91c0b6e4fdbce5013f0b09e9f5",
+  "updatedFaceCropHash": "489e3ab0a1c25acdc3002e0ea025a6fb3b70cc8994e8fd06e643eaa1c8738451"
 }
