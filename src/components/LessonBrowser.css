@@ -17,13 +17,13 @@
 }
 .lesson-browser__count {
   margin-inline-start: 10px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--accent-primary-soft-text);
 }
 .lesson-browser__note {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-secondary);
 }
 .lesson-browser__group {
@@ -66,7 +66,7 @@
   border: 2px solid var(--outline);
   border-radius: var(--radius-inner, 7px);
   font-weight: 800;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-secondary);
 }
 .lesson-row__body {
@@ -83,13 +83,13 @@
 }
 .lesson-row__pages {
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-secondary);
 }
 .lesson-row__note,
 .lesson-row__wait {
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-secondary);
 }
 .lesson-row__side {

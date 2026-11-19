@@ -324,9 +324,9 @@ button {
   padding: 2px 12px;
   border: var(--border-width) solid;
   border-radius: var(--radius-inner);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 22px;
   white-space: nowrap;
 }
 

@@ -74,7 +74,7 @@
 }
 
 .student-chip__name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -84,7 +84,7 @@
   flex-shrink: 0;
   min-height: var(--touch-target);
   padding-inline: 16px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .teacher-btn__icon {
@@ -198,6 +198,6 @@
 .app-header .brand__mark svg { width: 19px; height: 19px; }
 .app-header .brand__word { font-size: 24px; }
 .app-header__greeting { gap: 6px; padding-inline: 2px 8px; }
-.app-header__greeting .hero-avatar { width: 32px; height: 32px; }
-.app-header .teacher-btn { font-size: 14px; }
+.app-header__greeting .hero-avatar { width: 40px; height: 40px; }
+.app-header .teacher-btn { font-size: 16px; }
 .app-header .icon { font-size: 18px; }

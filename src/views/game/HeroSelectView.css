@@ -204,6 +204,31 @@
 .is-featured .hero-card__name {
   font-size: clamp(26px, 3.6vh, 36px);
 }
+/* Desktop two-row layout: the featured stage grows taller than it is wide,
+   so a square arch floats far above the figure and leaves the card half
+   empty. Instead: give the stage a controlled aspect and center it, and let
+   the spotlight become a tall panel (top/inline/bottom inset, no fixed
+   square aspect) that stands behind the entire figure exactly like the
+   thumbnail cards do. */
+@media (min-width: 1024px) {
+  .is-featured .hero-card__stage {
+    container-type: inline-size;
+    align-self: center;
+    height: min(96%, 124cqw);
+    padding-block-start: 8px;
+  }
+  .is-featured .hero-card__stage::before {
+    inset: 4% 14% 18%;
+    aspect-ratio: auto;
+    height: auto;
+    border-radius: 18%;
+  }
+  .is-featured .hero-stage__img {
+    height: 92%;
+    width: auto;
+    max-height: none;
+  }
+}
 .hero-select__footer {
   flex-shrink: 0;
   display: flex;
