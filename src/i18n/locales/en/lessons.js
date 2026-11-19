@@ -15,5 +15,5 @@ export default {
     title: 'Second-term lessons are coming',
     text: 'The current second-term Primary 4 book has not been audited yet, and we do not invent its index. The new books will build both terms with cited pages.',
   },
-  countLabel: ({ count }) => `${count} audited lessons`,
+  countLabel: ({ count }) => `· ${count} audited lessons`,
 };

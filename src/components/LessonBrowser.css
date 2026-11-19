@@ -43,23 +43,30 @@
   display: grid;
   gap: 10px;
 }
+/* Wide screens: two compact columns halve the vertical length of a 50-lesson catalog. */
+@media (min-width: 960px) {
+  .lesson-browser__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
 .lesson-row {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 14px 18px;
+  gap: 12px;
+  padding: 12px 16px;
 }
 .lesson-row__num {
   flex: none;
   display: grid;
   place-items: center;
-  min-width: 44px;
-  height: 44px;
+  min-width: 40px;
+  height: 40px;
   padding: 0 8px;
   border: 2px solid var(--outline);
   border-radius: var(--radius-inner, 7px);
   font-weight: 800;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-secondary);
 }
 .lesson-row__body {
