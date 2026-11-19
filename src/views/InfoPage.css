@@ -1,0 +1,56 @@
+/* About / Help / Privacy pages — flat cards, readable line length. */
+.info-page {
+  display: grid;
+  gap: 16px;
+  max-width: 780px;
+  margin-inline: auto;
+}
+.info-page__header {
+  display: grid;
+  gap: 4px;
+}
+.info-page__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+.info-page__subtitle {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+.info-page__section {
+  padding: 18px 22px;
+  display: grid;
+  gap: 8px;
+}
+.info-page__section-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.info-page__body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+.info-page__action {
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+.info-page__done {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent-primary-soft-text);
+}
+.info-page__back {
+  justify-self: start;
+}

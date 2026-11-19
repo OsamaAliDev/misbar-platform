@@ -410,6 +410,26 @@ button {
   border: 0 !important;
 }
 
+/* -- Skip link — hidden until keyboard focus, then a plain flat button ------ */
+.skip-link {
+  position: absolute;
+  inset-inline-start: 16px;
+  top: -64px;
+  z-index: 100;
+  padding: 10px 18px;
+  background: var(--surface-card);
+  color: var(--accent-primary-soft-text);
+  border: 2px solid var(--accent-primary);
+  border-radius: var(--radius);
+  font-weight: 700;
+  text-decoration: none;
+  transition: top 120ms var(--ease-out);
+}
+
+.skip-link:focus-visible {
+  top: 16px;
+}
+
 /* ==========================================================================
    Motion — short, physical, flat (opacity + small translate only)
    ========================================================================== */

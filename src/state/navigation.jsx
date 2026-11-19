@@ -16,6 +16,8 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
  *   #/heroes                        → hero select    │ game screens
  *   #/vault                         → outfit vault   │ (global theme)
  *   #/ranks                         → rank ladder    ┘
+ *   #/about · #/help · #/privacy    → standard info pages
+ *   any other hash                  → notfound (honest 404 screen)
  */
 
 /** Every top-level view of the platform. */
@@ -27,6 +29,10 @@ export const VIEWS = Object.freeze({
   HEROES: 'heroes',
   VAULT: 'vault',
   RANKS: 'ranks',
+  ABOUT: 'about',
+  HELP: 'help',
+  PRIVACY: 'privacy',
+  NOT_FOUND: 'notfound',
 });
 
 /** The game screens; the same global theme applies to every route. */
@@ -36,7 +42,8 @@ const KNOWN_VIEWS = new Set(Object.values(VIEWS));
 
 /**
  * Turn a location hash into a route object.
- * Unknown or malformed hashes fall back to the catalog.
+ * An empty hash is the catalog; any other unknown hash becomes the explicit
+ * 404 view so broken links stay honest instead of silently redirecting.
  * @param {string} hash e.g. "#/playground/motion-acceleration"
  * @returns {{ view: string, params: Record<string, string> }}
  */
@@ -53,7 +60,8 @@ export function parseHash(hash) {
       }
     });
 
-  if (!KNOWN_VIEWS.has(view)) return { view: VIEWS.CATALOG, params: {} };
+  if (view === undefined) return { view: VIEWS.CATALOG, params: {} };
+  if (!KNOWN_VIEWS.has(view)) return { view: VIEWS.NOT_FOUND, params: {} };
   if (view === VIEWS.PLAYGROUND) return { view, params: { experimentId: id ?? '' } };
   return { view, params: {} };
 }

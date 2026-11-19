@@ -12,7 +12,8 @@ export const CURRICULUM_GRADES = Object.freeze([
   { id: 'prep-2', stage: 'prep', labelKey: 'prep2' },
   { id: 'prep-3', stage: 'prep', labelKey: 'prep3' },
 ]);
-export const CURRICULUM_SUBJECTS = Object.freeze(['science', 'math']);
+/* ICT appears for Primary 4 as an audited browsing path; see lessons.js. */
+export const CURRICULUM_SUBJECTS = Object.freeze(['science', 'math', 'ict']);
 
 const isSemester = (value) => value === 1 || value === 2;
 const isRecord = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);

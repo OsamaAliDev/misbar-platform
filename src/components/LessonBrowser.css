@@ -1,0 +1,121 @@
+/* Lesson browser — flat, token-driven, RTL/LTR safe. */
+.lesson-browser {
+  display: grid;
+  gap: 16px;
+}
+.lesson-browser__intro {
+  display: grid;
+  gap: 6px;
+  padding: 16px 20px;
+}
+.lesson-browser__intro h3,
+.lesson-browser__term2 h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.lesson-browser__count {
+  margin-inline-start: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-primary-soft-text);
+}
+.lesson-browser__note {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.lesson-browser__group {
+  display: grid;
+  gap: 10px;
+}
+.lesson-browser__group-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.lesson-browser__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.lesson-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+}
+.lesson-row__num {
+  flex: none;
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  height: 44px;
+  padding: 0 8px;
+  border: 2px solid var(--outline);
+  border-radius: var(--radius-inner, 7px);
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.lesson-row__body {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+.lesson-row__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+.lesson-row__pages {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.lesson-row__note,
+.lesson-row__wait {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.lesson-row__side {
+  flex: none;
+  display: grid;
+  gap: 8px;
+  justify-items: stretch;
+}
+.lesson-row__chip {
+  justify-self: start;
+}
+.lesson-row__open {
+  white-space: nowrap;
+}
+.lesson-browser__term2,
+.card.lesson-browser__intro {
+  padding: 18px 20px;
+  display: grid;
+  gap: 8px;
+}
+.lesson-browser__term2 p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+@media (max-width: 560px) {
+  .lesson-row {
+    flex-wrap: wrap;
+  }
+  .lesson-row__side {
+    flex-basis: 100%;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -13,9 +13,10 @@ import './PlaceholderPanel.css';
  * @param {string}    props.title         view heading (receives focus on entry)
  * @param {string}    props.message       short explanation for the student
  * @param {Function}  props.onBack        returns to the catalog
+ * @param {boolean}   [props.hideSoon]    omit the "coming soon" chip (404 screen)
  * @param {import('react').ReactNode} [props.children]  optional preview content
  */
-export default function PlaceholderPanel({ eyebrowIcon, eyebrow, title, message, onBack, children }) {
+export default function PlaceholderPanel({ eyebrowIcon, eyebrow, title, message, onBack, hideSoon = false, children }) {
   const { t } = useI18n();
   return (
     <section className="card placeholder-panel" aria-labelledby="view-heading">
@@ -26,7 +27,7 @@ export default function PlaceholderPanel({ eyebrowIcon, eyebrow, title, message,
           <Icon name={eyebrowIcon} size={16} />
           {eyebrow}
         </span>
-        <span className="badge badge--reward">{t('app.soon')}</span>
+        {!hideSoon && <span className="badge badge--reward">{t('app.soon')}</span>}
       </div>
 
       <h1 id="view-heading" className="placeholder-panel__title" tabIndex={-1}>

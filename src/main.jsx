@@ -7,6 +7,7 @@ import './App.css';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
+import ErrorBoundary from './components/ErrorBoundary.jsx';
 import { I18nProvider, useI18n } from './i18n/index.jsx';
 import { NavigationProvider } from './state/navigation.jsx';
 import { ThemeProvider } from './state/theme.jsx';
@@ -28,15 +29,18 @@ function LocalizedApp() {
  *  - <StudentProvider>    shared student profile (nickname, avatar, stars,
  *                         hero, missions, outfits) persisted in localStorage
  *  - <NavigationProvider> current view from the URL hash
+ *  - <ErrorBoundary>      friendly fallback if any screen crashes
  */
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <I18nProvider>
-      <StudentProvider>
-        <NavigationProvider>
-          <ThemeProvider><LocalizedApp /></ThemeProvider>
-        </NavigationProvider>
-      </StudentProvider>
-    </I18nProvider>
+    <ErrorBoundary>
+      <I18nProvider>
+        <StudentProvider>
+          <NavigationProvider>
+            <ThemeProvider><LocalizedApp /></ThemeProvider>
+          </NavigationProvider>
+        </StudentProvider>
+      </I18nProvider>
+    </ErrorBoundary>
   </StrictMode>,
 );

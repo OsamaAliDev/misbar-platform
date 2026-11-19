@@ -10,6 +10,7 @@ import {
 import { EXPERIMENTS } from '../data/experiments.js';
 import { useI18n } from '../i18n/index.jsx';
 import ExperimentCard from './ExperimentCard.jsx';
+import LessonBrowser from './LessonBrowser.jsx';
 import './CurriculumBrowser.css';
 
 /** No curriculum claim is inferred here; all links come from the evidence file. */
@@ -21,6 +22,8 @@ export default function CurriculumBrowser({ value, onChange, onShowAllExperiment
   const semesters = getCurriculumSemesters();
   const needsSemester = semesters.length > 0;
   const showResults = Boolean(subject) && (!needsSemester || semester !== null);
+  /* Primary 4 gets lesson-level browsing (Science/Math/ICT) from the audit. */
+  const showsLessons = gradeId === 'primary-4' && Boolean(subject);
   const matches = useMemo(
     () => getCurriculumMatches({ gradeId, subject, semester }, EXPERIMENTS),
     [gradeId, subject, semester],
@@ -180,18 +183,28 @@ export default function CurriculumBrowser({ value, onChange, onShowAllExperiment
       {showResults && (
         <>
           <p className="curriculum-browser__scope">{t('curriculum.scopeNotice')}</p>
-          {matches.confirmed.length > 0 ? renderMatches(matches.confirmed) : (
-            <div className="card curriculum-browser__empty">
-              <h3>{t('curriculum.comingSoon.title')}</h3>
-              <p>{t('curriculum.comingSoon.text')}</p>
-            </div>
-          )}
-          {matches.unconfirmed.length > 0 && (
-            <section className="curriculum-browser__results" aria-labelledby="curriculum-unknown-heading">
-              <h3 id="curriculum-unknown-heading">{t('curriculum.unknownTitle')}</h3>
-              <p>{t('curriculum.unknownText')}</p>
-              {renderMatches(matches.unconfirmed, true)}
-            </section>
+          {showsLessons ? (
+            <LessonBrowser
+              subject={subject}
+              semester={semester}
+              onOpenExperiment={onStartExperiment}
+            />
+          ) : (
+            <>
+              {matches.confirmed.length > 0 ? renderMatches(matches.confirmed) : (
+                <div className="card curriculum-browser__empty">
+                  <h3>{t('curriculum.comingSoon.title')}</h3>
+                  <p>{t('curriculum.comingSoon.text')}</p>
+                </div>
+              )}
+              {matches.unconfirmed.length > 0 && (
+                <section className="curriculum-browser__results" aria-labelledby="curriculum-unknown-heading">
+                  <h3 id="curriculum-unknown-heading">{t('curriculum.unknownTitle')}</h3>
+                  <p>{t('curriculum.unknownText')}</p>
+                  {renderMatches(matches.unconfirmed, true)}
+                </section>
+              )}
+            </>
           )}
         </>
       )}

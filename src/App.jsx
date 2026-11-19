@@ -10,10 +10,13 @@ import { GAME_VIEWS, VIEWS, useNavigation } from './state/navigation.jsx';
 import { useStudent } from './state/student.jsx';
 import CatalogView from './views/CatalogView.jsx';
 import DashboardView from './views/DashboardView.jsx';
+import InfoPage from './views/InfoPage.jsx';
 import HeroSelectView from './views/game/HeroSelectView.jsx';
 import LobbyView from './views/game/LobbyView.jsx';
 import RanksView from './views/game/RanksView.jsx';
 import VaultView from './views/game/VaultView.jsx';
+import Footer from './components/Footer.jsx';
+import PlaceholderPanel from './components/PlaceholderPanel.jsx';
 
 /**
  * Screens that need a chosen hero. A first-time student who opens one of
@@ -31,6 +34,10 @@ function documentTitleFor(view, params, t) {
   }
   if (view === VIEWS.DASHBOARD) return `${t('app.dashboardTitle')} | ${site}`;
   if (GAME_VIEWS.includes(view)) return `${t(`game.titles.${view}`)} | ${site}`;
+  if (view === VIEWS.ABOUT) return `${t('site.about.title')} | ${site}`;
+  if (view === VIEWS.HELP) return `${t('site.help.title')} | ${site}`;
+  if (view === VIEWS.PRIVACY) return `${t('site.privacy.title')} | ${site}`;
+  if (view === VIEWS.NOT_FOUND) return `${t('site.notFound.title')} | ${site}`;
   return `${site} | ${t('app.libraryTitle')}`;
 }
 
@@ -126,6 +133,28 @@ export default function App() {
     case VIEWS.RANKS:
       content = <RanksView />;
       break;
+    case VIEWS.ABOUT:
+      content = <InfoPage page="about" onBack={openCatalog} />;
+      break;
+    case VIEWS.HELP:
+      content = <InfoPage page="help" onBack={openCatalog} />;
+      break;
+    case VIEWS.PRIVACY:
+      content = <InfoPage page="privacy" onBack={openCatalog} />;
+      break;
+    case VIEWS.NOT_FOUND:
+      /* Honest 404 screen instead of a silent redirect to the library. */
+      content = (
+        <PlaceholderPanel
+          eyebrowIcon="search_off"
+          eyebrow={t('site.notFound.eyebrow')}
+          title={t('site.notFound.title')}
+          message={t('site.notFound.message')}
+          onBack={openCatalog}
+          hideSoon
+        />
+      );
+      break;
     default:
       content = (
         <CatalogView
@@ -138,6 +167,8 @@ export default function App() {
 
   const isPlayground = activeView === VIEWS.PLAYGROUND;
   const isGame = GAME_VIEWS.includes(activeView);
+  /* Focus screens (lab, game) intentionally skip the footer; content pages keep it. */
+  const showFooter = !isPlayground && !isGame;
 
   let header = null;
   if (isGame) header = <GameHeader currentView={activeView} />;
@@ -151,11 +182,14 @@ export default function App() {
 
   return (
     <div className={shellClass}>
+      {/* Standard skip link: visible on keyboard focus, lands on the view heading. */}
+      <a className="skip-link" href="#view-heading">{t('site.skip')}</a>
       <div className="app-container app-layout">
         {header}
         <main key={routeKey} className="app-main view-enter">
           {content}
         </main>
+        {showFooter && <Footer onNavigate={(target) => navigate(target)} />}
       </div>
     </div>
   );

@@ -6,5 +6,7 @@ import curriculum from './curriculum.js';
 import game from './game.js';
 import heroes from './heroes.js';
 import lab from './lab.js';
+import lessons from './lessons.js';
+import site from './site.js';
 
-export default { app, catalog, common, curriculum, game, heroes, lab };
+export default { app, catalog, common, curriculum, game, heroes, lab, lessons, site };

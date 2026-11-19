@@ -10,7 +10,7 @@ export default {
     prep2: 'الصف الثاني الإعدادي',
     prep3: 'الصف الثالث الإعدادي',
   },
-  subjects: { science: 'العلوم', math: 'الرياضيات' },
+  subjects: { science: 'العلوم', math: 'الرياضيات', ict: 'الكمبيوتر (ICT)' },
   semesters: { 1: 'الفصل الدراسي الأول', 2: 'الفصل الدراسي الثاني' },
   chooseSubject: 'اختر المادة',
   chooseSemester: 'اختر الفصل الدراسي',

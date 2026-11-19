@@ -1,0 +1,50 @@
+/* Site footer — flat, bordered top, token colours only. */
+.site-footer {
+  margin-top: 32px;
+  border-top: 2px solid var(--outline);
+  padding: 22px 0 10px;
+  display: grid;
+  gap: 12px;
+}
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.site-footer__tagline {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.site-footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  align-items: center;
+}
+.site-footer__link,
+a.site-footer__link {
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent-primary-text-link, var(--accent-primary));
+  background: none;
+  border: none;
+  padding: 10px 2px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: var(--radius-small);
+}
+.site-footer__link:hover {
+  text-decoration: underline;
+}
+.site-footer__rights {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}

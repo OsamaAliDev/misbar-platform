@@ -10,7 +10,7 @@ export default {
     prep2: 'Preparatory 2',
     prep3: 'Preparatory 3',
   },
-  subjects: { science: 'Science', math: 'Math' },
+  subjects: { science: 'Science', math: 'Math', ict: 'Computer (ICT)' },
   semesters: { 1: 'First semester', 2: 'Second semester' },
   chooseSubject: 'Choose a subject',
   chooseSemester: 'Choose a semester',

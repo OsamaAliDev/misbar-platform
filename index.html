@@ -18,11 +18,32 @@
     </script>
     <meta
       name="description"
-      content="مِسبار — مكتبة تجارب علمية ورياضية تفاعلية باللغة العربية للطلاب من ١٠ إلى ١٤ سنة: الحركة، الرافعة، الكواكب، الكسور، الضوء وحالات المادة."
+      content="مِسبار — مكتبة تجارب علمية ورياضية تفاعلية بالعربية والمنهج المصري للطلاب من ١٠ إلى ١٤ سنة: محاكيات وأبطال ومهام ودروس الصف الرابع."
+    />
+    <meta name="author" content="Misbar project" />
+    <meta name="application-name" content="مِسبار" />
+    <!-- Social / link-preview metadata (values mirror the Arabic default UI). -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="مِسبار — Misbar" />
+    <meta property="og:title" content="مِسبار | مكتبة التجارب التفاعلية" />
+    <meta
+      property="og:description"
+      content="منصّة تعليمية عربية: تجارب فيزياء وفضاء ورياضيات تفاعلية، عالم أبطال ونجوم ومهام، وتصفّح المنهج المصري حتى الصف الثالث الإعدادي."
+    />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="مِسبار | مكتبة التجارب التفاعلية" />
+    <meta
+      name="twitter:description"
+      content="تجارب علمية ورياضية تفاعلية بالعربية للطلاب من ١٠ إلى ١٤ سنة — جرّب، أخطئ، تعلّم."
     />
     <title>مِسبار | مكتبة التجارب التفاعلية</title>
+    <!-- Icons: SVG favicons + PNG touch/app icons + PWA manifest (self-owned). -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <!-- Fonts: Cairo (the only typeface) + Material Symbols Outlined (icons).
          Keep `icon_names` alphabetical and in sync with every <Icon name> used. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,6 +58,11 @@
     />
   </head>
   <body>
+    <noscript>
+      مِسبار يحتاج JavaScript لتشغيل المحاكيات. فعّل JavaScript في متصفحك ثم أعد
+      التحميل. / Misbar needs JavaScript to run its simulations — please enable it
+      and reload.
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
