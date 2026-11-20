@@ -11,9 +11,16 @@
 
 .progress-bar__fill {
   display: block;
-  block-size: 100%;
+  align-self: stretch;
+  block-size: auto;
   background-color: var(--progress-fill);
-  border-radius: var(--radius-small);
+  /* Round only the leading edge; the trailing edge stays straight so the
+     fill merges with the unfilled track instead of looking like a separate
+     pill floating inside it (visible as a stray strip at high zoom). */
+  border-start-start-radius: var(--radius-small);
+  border-end-start-radius: var(--radius-small);
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
   transition: inline-size var(--duration-base) var(--ease-out);
 }
 

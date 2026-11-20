@@ -218,9 +218,11 @@
     padding-block-start: 8px;
   }
   .is-featured .hero-card__stage::before {
-    inset: 4% 14% 18%;
+    top: auto;
+    bottom: 5%;
+    height: 80%;
+    inset-inline: 15%;
     aspect-ratio: auto;
-    height: auto;
     border-radius: 18%;
   }
   .is-featured .hero-stage__img {
@@ -392,7 +394,17 @@
     flex: none;
   }
   .hero-select__grid {
-    min-height: 440px;
+    min-height: 0;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+  /* Natural flow must still cap the stages: an uncapped height:100% image in
+     an auto-sized row resolves to its intrinsic 600x900 and explodes the
+     whole grid (happens under browser zoom, which shortens the CSS viewport). */
+  .hero-select__grid .hero-card__stage {
+    height: min(40vh, 260px);
+  }
+  .hero-select__grid .hero-select__item.is-featured .hero-card__stage {
+    height: min(56vh, 360px);
   }
 }
 @media (prefers-reduced-motion: reduce) {

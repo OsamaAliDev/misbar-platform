@@ -75,9 +75,11 @@
 .curriculum-browser__choice {
   width: 100%;
   height: 100%;
-  min-height: var(--touch-target);
+  min-height: 56px;
   padding: 12px;
   border-radius: var(--radius-inner);
+  display: grid;
+  place-content: center;
   text-align: center;
   overflow-wrap: anywhere;
 }
@@ -86,6 +88,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  row-gap: 10px;
+  margin-block-start: 4px;
 }
 
 .curriculum-browser__actions .btn {
@@ -96,21 +100,25 @@
 .curriculum-browser__path {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 10px;
+  gap: 8px 6px;
   margin: 0;
   padding: 0;
   list-style: none;
   color: var(--text-secondary);
 }
 
+/* Each crumb is a self-contained chip so wrapped lines can never visually
+   collide with the action buttons underneath (seen at high browser zoom). */
 .curriculum-browser__path li {
   display: inline-flex;
-  gap: 10px;
-}
-
-.curriculum-browser__path li + li::before {
-  content: '/';
-  color: var(--text-secondary);
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background-color: var(--surface-subtle);
+  border: var(--border);
+  border-radius: 999px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .curriculum-browser__path [aria-current='step'] {

@@ -184,7 +184,8 @@
 /* -- Responsive ----------------------------------------------------------- */
 @media (max-width: 1023px) {
   .vault__slots {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 300px));
+    justify-content: center;
   }
 }
 
@@ -221,7 +222,8 @@
   .vault__slots {
     flex: 1;
     min-height: 0;
-    grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 340px) repeat(3, minmax(0, 300px));
+    justify-content: center;
     gap: var(--game-gap);
   }
   .outfit-slot {
@@ -231,13 +233,21 @@
   .outfit-slot__art {
     flex: 1;
     min-height: 0;
-    height: var(--game-hero-height);
-    max-height: var(--game-hero-height);
+    height: min(36vh, 300px);
     padding-block-start: 10px;
   }
   .outfit-slot__placeholder {
-    margin: 10px 10px 0;
+    margin: 10px;
     padding: 0;
+    /* Locked slots carry BOTH art and placeholder classes on the same
+       element; a percentage height here resolves against the stretched
+       card and ejects the body text below the frame. Cap it like the art. */
+    flex: 1;
+    min-height: 0;
+    height: min(36vh, 300px);
+  }
+  .vault__slots {
+    align-content: start;
   }
   .outfit-slot__body {
     flex: 0 0 auto;
@@ -247,6 +257,11 @@
   .outfit-slot__unlock {
     min-height: var(--touch-target);
   }
+  /* Long notice pills must wrap inside the panel, never run past its edge. */
+  .vault .game-page__head > .badge {
+    max-width: 100%;
+    white-space: normal;
+  }
 }
 @media (min-width: 1024px) and (max-height: 699px) {
   .vault__slots {
@@ -254,7 +269,11 @@
   }
   .outfit-slot__art {
     flex: none;
-    height: var(--game-hero-height);
+    height: min(36vh, 300px);
+  }
+  .outfit-slot__placeholder {
+    flex: none;
+    height: min(36vh, 300px);
   }
 }
 @media (max-width: 699px) {
